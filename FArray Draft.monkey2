@@ -16,6 +16,10 @@ Class FArray<T> Implements IContainer<T>
     '	It's actually only a draft. I will implement some manipulation
     '	helpers about the dimensions. The finished class will be
     '	in stdlib you will find in my repositiories.
+    '
+    '   You are invited to test it in its extreme values and make a stress test too.
+    '   Please push request if you think you can improve it or fix it.
+    '   This class will be implemented in stdlib so please avoid to make a library with it, thanks^^
 
     ' Constructor
     Method New(sizes:UInt[], data:T[])
