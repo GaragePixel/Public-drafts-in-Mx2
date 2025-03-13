@@ -1,6 +1,6 @@
 Function FArrayTest()
     
-    ' Test functions for the DimensionIterator
+    ' Test functions for the SubIterator
 
     ' Initialize the array sizes and data
     Local sizes := New UInt[](3, 2, 4, 1)
@@ -8,18 +8,18 @@ Function FArrayTest()
     Local fArray:FArray<Float> = New FArray<Float>(sizes, data)
 
     Print ""
-    Print "Print and iterate through the DimensionalIterator:"
+    Print "Print and iterate through the SubIterator:"
     Print ""
 
-    ' Test Dimension Iterator for dimension 3
-    Print "Testing Dimension Iterator for Dimension 3:"
-    For Local item:Float = Eachin fArray.Dimension(3)
+    ' Test Sub Iterator for Sub 3
+    Print "Testing Sub Iterator for Sub 3:"
+    For Local item:Float = Eachin fArray.Sub(3)
         Print item
     Next
     Print fArray
     Print fArray.ToString()
 
-    Print "Print/Insert/Erase in the LinearIterator:"
+    Print "Print/Insert/Remove in the LinearIterator:"
     Print ""
 
     ' Test Linear Iterator
@@ -28,11 +28,11 @@ Function FArrayTest()
         Print item
     Next
 
-    ' Test Erase in Linear Iterator
-    Print "Testing Erase in Linear Iterator:"
+    ' Test Remove in Linear Iterator
+    Print "Testing Remove in Linear Iterator:"
     Local linearIterator := fArray.All()
     linearIterator.Bump() ' Move to second element
-    linearIterator.Erase()
+    linearIterator.Remove()
     Print fArray
     Print fArray.ToString()
 
@@ -44,26 +44,26 @@ Function FArrayTest()
     Print fArray
     Print fArray.ToString()
 
-    Print "Insert/Erase in the DimensionIterator:"
+    Print "Insert/Remove in the SubIterator:"
     Print ""
 
-    ' Test Erase in Dimension Iterator
-    Print "Testing Erase in Dimension Iterator for Dimension 3:"
-    Local dimIterator := fArray.Dimension(3)
+    ' Test Remove in Sub Iterator
+    Print "Testing Remove in Sub Iterator for Sub 3:"
+    Local dimIterator := fArray.Sub(3)
     dimIterator.Bump() ' Move to second element
-    dimIterator.Erase()
-    For Local item:Float = Eachin fArray.Dimension(3)
+    dimIterator.Remove()
+    For Local item:Float = Eachin fArray.Sub(3)
         Print item
     Next
     Print fArray
     Print fArray.ToString()
     
-    ' Test Insert in Dimension Iterator
-    Print "Testing Insert in Dimension Iterator for Dimension 3:"
-    dimIterator = fArray.Dimension(3)
+    ' Test Insert in Sub Iterator
+    Print "Testing Insert in Sub Iterator for Sub 3:"
+    dimIterator = fArray.Sub(3)
     dimIterator.Bump() ' Move to second element
     dimIterator.Insert(88.8)
-    For Local item:Float = Eachin fArray.Dimension(3)
+    For Local item:Float = Eachin fArray.Sub(3)
         Print item
     Next
     Print fArray
@@ -72,41 +72,41 @@ Function FArrayTest()
     Print "Operations in FArray:"
     Print ""
 
-    ' Test Append new dimension
+    ' Test Append new Sub
     Local items := New Float[](20, 30, 40)
     fArray.Append(2, items)
-    Print "Testing Append new items in the dimension 2:"
+    Print "Testing Append new items in the Sub 2:"
     Print fArray
     Print fArray.ToString()
 
-    ' Test Delete dimension
-    fArray.DeleteDim(3)
-    Print "Testing Delete dimension 3:"
+    ' Test Delete Sub
+    fArray.RemoveDim(3)
+    Print "Testing Delete Sub 3:"
     Print fArray
     Print fArray.ToString()
 
-    ' Print only the dimension 2
-    Print "Testing Print the dimension 2:"
-    Print fArray.Dimension(2)
+    ' Print only the Sub 2
+    Print "Testing Print the Sub 2:"
+    Print fArray.Sub(2)
 
     Print ""
     Print "First item, last item:"
     Print ""
 
-    ' Print only the first item in the dimension 2
-    Print "Testing Print the first item in the dimension 2:"
-    Print fArray.Dimension(2).FirstValue
+    ' Print only the first item in the Sub 2
+    Print "Testing Print the first item in the Sub 2:"
+    Print fArray.Sub(2).FirstValue
 
-    ' Print only the last item in the dimension 2
-    Print "Testing Print the last item in the dimension 2:"
-    Print fArray.Dimension(2).LastValue
+    ' Print only the last item in the Sub 2
+    Print "Testing Print the last item in the Sub 2:"
+    Print fArray.Sub(2).LastValue
 
     Print ""
-    Print "Current item's positioning tests within the dimensionIterator:"
+    Print "Current item's positioning tests within the SubIterator:"
     Print ""
     
     ' Move to the first item, then print it
-    dimIterator = fArray.Dimension(2)
+    dimIterator = fArray.Sub(2)
     Print "Testing Move to the first item, then print it:"
     dimIterator.First()
     Print dimIterator.Current
@@ -117,75 +117,75 @@ Function FArrayTest()
     Print dimIterator.Current
 
     Print ""
-    Print "Print the item's values from a dimension:"
+    Print "Print the item's values from a Sub:"
     Print ""
 
-    ' Print only the item 0 in the dimension 2
-    Print "Testing Print the item 0 in the dimension 2:"
-    Print fArray.Dimension(2).Item(0)
+    ' Print only the item 0 in the Sub 2
+    Print "Testing Print the item 0 in the Sub 2:"
+    Print fArray.Sub(2).Item(0)
 
-    ' Print only the item 1 in the dimension 2
-    Print "Testing Print the item 1 in the dimension 2:"
-    Print fArray.Dimension(2).Item(1)
+    ' Print only the item 1 in the Sub 2
+    Print "Testing Print the item 1 in the Sub 2:"
+    Print fArray.Sub(2).Item(1)
 
-    ' Print only the item 2 in the dimension 2
-    Print "Testing Print the item 2 in the dimension 2:"
-    Print fArray.Dimension(2).Item(2)
+    ' Print only the item 2 in the Sub 2
+    Print "Testing Print the item 2 in the Sub 2:"
+    Print fArray.Sub(2).Item(2)
 
-    ' Print only the item 3 in the dimension 2
-    Print "Testing Print the item 3 in the dimension 2:"
-    Print fArray.Dimension(2).Item(3)
+    ' Print only the item 3 in the Sub 2
+    Print "Testing Print the item 3 in the Sub 2:"
+    Print fArray.Sub(2).Item(3)
 
-    ' Print only the item 4 in the dimension 2
-    Print "Testing Print the item 4 in the dimension 2:"
-    Print fArray.Dimension(2).Item(4)
+    ' Print only the item 4 in the Sub 2
+    Print "Testing Print the item 4 in the Sub 2:"
+    Print fArray.Sub(2).Item(4)
 
-    ' Print only the current item in the dimension 2
-    Print "Testing Print the current item in the dimension 2:"
-    Print fArray.Dimension(2).Current
+    ' Print only the current item in the Sub 2
+    Print "Testing Print the current item in the Sub 2:"
+    Print fArray.Sub(2).Current
 
     Print ""
-    Print "Print the item's value from the Dimension:"
+    Print "Print the item's value from the Sub:"
     Print ""
 
-    ' Bump the current item in dimension 2 then print only the current item
-    Print "Testing Bump the current item in dimension 2 then print only the current item:"
-    dimIterator = fArray.Dimension(2)
+    ' Bump the current item in Sub 2 then print only the current item
+    Print "Testing Bump the current item in Sub 2 then print only the current item:"
+    dimIterator = fArray.Sub(2)
     dimIterator.Bump() ' Move to second element
     Print dimIterator.Current
 
-    ' Print only last item in the dimension 2
-    'Print "Testing Print out the dimension 2:"
-    ' This line must produces the error: 'Dimension out of range'
-    'Print fArray.Dimension(2).Item(5)
+    ' Print only last item in the Sub 2
+    'Print "Testing Print out the Sub 2:"
+    ' This line must produces the error: 'Sub out of range'
+    'Print fArray.Sub(2).Item(5)
 
     Print ""
-    Print "Operations in the DimensionIterator:"
+    Print "Operations in the SubIterator:"
     Print ""
     
-    ' Test Erase in Dimension Iterator
-    Print "Testing Erase in Dimension Iterator for Dimension 3:"
-    dimIterator = fArray.Dimension(2)
+    ' Test Remove in Sub Iterator
+    Print "Testing Remove in Sub Iterator for Sub 3:"
+    dimIterator = fArray.Sub(2)
     'dimIterator.Bump() ' Move to second element
-    Print "Erase item 4"
-    dimIterator.Erase() 'Erase the first item: 4    
+    Print "Remove item 4"
+    dimIterator.Remove() 'Remove the first item: 4    
     Print fArray
     Print fArray.ToString()
-    Print "Erase item 5"
-    dimIterator.Erase() 'Erase the item: 5
+    Print "Remove item 5"
+    dimIterator.Remove() 'Remove the item: 5
     Print fArray
     Print fArray.ToString()
-    Print "Erase item 20"
-    dimIterator.Erase() 'Erase the item: 20
+    Print "Remove item 20"
+    dimIterator.Remove() 'Remove the item: 20
     Print fArray
     Print fArray.ToString()
-    Print "Erase item 30"
-    dimIterator.Erase() 'Erase the item: 30
+    Print "Remove item 30"
+    dimIterator.Remove() 'Remove the item: 30
     Print fArray
     Print fArray.ToString()
-    Print "There only one item left in the dimension 2:"+fArray.Dimension(2)
-    Print "Erase the last item 40, erasing the dimension 2"
-    dimIterator.Erase() 'Erase the last item: 40
+    Print "There only one item left in the Sub 2:"+fArray.Sub(2)
+    Print "Remove the last item 40, erasing the Sub 2"
+    dimIterator.Remove() 'Remove the last item: 40
     Print fArray
     Print fArray.ToString()    
 End
