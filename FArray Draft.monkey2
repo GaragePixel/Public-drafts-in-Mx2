@@ -130,7 +130,7 @@ Class FArray<T> Implements IContainer<T>
 	    
 	    ' Append an array at the end of a dimension, or before the 1st item.
 	    
-        ' Appends a new dimension
+        ' Appends a new set
         If dim < 1 Or dim > _sizes.Length
             RuntimeError("Dimension out of range")
         End
@@ -141,7 +141,7 @@ Class FArray<T> Implements IContainer<T>
         Local index:Int = 0
         Local newIndex:Int = 0
 
-        ' Copy elements up to the appended dimension
+        ' Copy elements up to the appended set
         For Local i:Int = 0 Until dim - 1
             For Local j:Int = 0 Until _sizes[i]
                 newData[newIndex] = _data[index]
@@ -152,7 +152,7 @@ Class FArray<T> Implements IContainer<T>
 
 		If beforeFirstItem
 
-	        ' Append new dimension elements
+	        ' Append new set elements
 	        For Local i:Int = 0 Until items.Length
 	            newData[newIndex] = items[i]
 	            newIndex += 1
@@ -168,14 +168,14 @@ Class FArray<T> Implements IContainer<T>
 
 		If beforeFirstItem=False
 
-	        ' Append new dimension elements
+	        ' Append new set elements
 	        For Local i:Int = 0 Until items.Length
 	            newData[newIndex] = items[i]
 	            newIndex += 1
 	        End        
         End 
         
-        ' Copy elements after the appended dimension
+        ' Copy elements after the appended set
         For Local i:Int = dim Until _sizes.Length
             For Local j:Int = 0 Until _sizes[i]
                 newData[newIndex] = _data[index]
