@@ -6,7 +6,7 @@ Class FArray<T> Implements IContainer<T>
     ' The FArray class implements a flexible array structure 
     ' that supports multi-dimensional arrays with dynamic sizing,
     ' allowing flexible manipulation and iteration 
-    ' over the multi-dimensional.
+    ' over the multi-dimensional model.
     '
     ' Note:
     '	It's the first time I implement multi-iterators in the
