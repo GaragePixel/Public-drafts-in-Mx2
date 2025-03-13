@@ -20,9 +20,11 @@ Class FArray<T> Implements IContainer<T>
     ' COMPLETED:
     '
     '	2025-03-13: 	
-    '		Added First, Last, Pred, Succ, FirstValue and LastValue
-    '		in the DimensionIterator. Completed the print set and
-    '		updated the test unit.
+    '		- In DimensionIterator:
+    '			- Added First, Last, Pred, Succ, FirstValue and LastValue in the DimensionIterator. 
+    '			- Completed the print set and updated the test unit.
+    '			- List grammar.
+    '			- FiFo grammar.
     '
     '	2025-03-12:	
     '		First public draft of the implementation
@@ -77,7 +79,7 @@ Class FArray<T> Implements IContainer<T>
         Return _sizes
     End
 
-    Method Dimensions:UInt(dim:UInt=Null) ' Pseudo-property
+    Method Dimensions:UInt(dim:UInt = Null) ' Pseudo-property
         ' Returns the number of dimensions,
         ' or the length of a particular dimension.        
         Return dim=Null ? _sizes.Length Else _sizes[dim]
@@ -111,8 +113,7 @@ Class FArray<T> Implements IContainer<T>
                 index += 1
             End
             result += "~n"
-        End
-        
+        End        
         Return result
     End
             
@@ -189,7 +190,7 @@ Class FArray<T> Implements IContainer<T>
         _sizes[dim-1] = newSize
     End
 
-    Method DeleteDim(dim:UInt)
+    Method RemoveDim(dim:UInt)
         ' Delete a dimension
         If dim < 1 Or dim > _sizes.Length
             RuntimeError("Dimension out of range")
@@ -253,10 +254,10 @@ Class FArray<T> Implements IContainer<T>
             _currentIndex += 1
         End
 
-        Method Erase()
+        Method Remove()
 	        
             If AtEnd
-                RuntimeError("Cannot erase element at end")
+                RuntimeError("Cannot remove element at end")
             End
             
             ' Shift elements left and reduce length
@@ -326,9 +327,7 @@ Class FArray<T> Implements IContainer<T>
 	        'Returns a string containing the string casted item
 	        '(the item's datatype must be printable)
 
-        	If item < _upperLim - _lowerLim - 1 - _lowerLim Or item > _upperLim - _lowerLim
-   	        	RuntimeError("Dimension out of range")
-	        End
+			Within(item)
         	Return _flexArray._data[_lowerLim+item]
 	    End 
         
@@ -395,10 +394,10 @@ Class FArray<T> Implements IContainer<T>
             _currentIndex += 1
         End
 
-        Method Erase()
+        Method Remove()
 	        
             If AtEnd
-                RuntimeError("Cannot erase element at end")
+                RuntimeError("Cannot remove element at end")
             End
             
             ' Shift elements left and reduce length
@@ -425,6 +424,31 @@ Class FArray<T> Implements IContainer<T>
                 End
             End
         End
+        
+        Method RemoveLast()
+	        'Semi-Sugar
+	        Last()
+	        Remove()
+	        Last()
+	    End
+
+        Method RemoveFirst()
+	        'Semi-Sugar
+	        First()
+	        Remove()
+	        First()
+	    End
+
+        Method Pop()
+	        'Sugar
+	        RemoveFirst()
+	    End
+
+        Method Push(value:T)
+	        'Sugar
+	        First()
+	        Insert(value)
+	    End
 
         Method Insert(value:T)
 	        
@@ -453,6 +477,22 @@ Class FArray<T> Implements IContainer<T>
                 _flexArray._sizes = newSizes
             End
         End
+        
+        Method InsertAfter(value:T,index:UInt)
+	        'Sugar
+	        Within(index)
+	        _currentIndex=index
+	        Insert(value)
+	    End 
+	    
+	    Method Within(item:UInt)
+		    
+		    'Tests if a index in within the range of the dimension.
+		    
+        	If item < _upperLim - _lowerLim - 1 - _upperLim Or item > _upperLim - _lowerLim
+   	        	RuntimeError("Dimension out of range")
+	        End
+		End    
     End
     
     Private
