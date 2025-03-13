@@ -35,7 +35,7 @@ Class FArray<T> Implements IContainer<T>
     '
     '	2025-03-10: Discovering about the missing implementations
     '				in the built-in of multidimensiontal arrays
-    '				since New Float[,]((1,2,3),(4,5,6)) is unvalid.
+    '				since New Float[,]((1,2,3),(4,5,6)) is invalid.
     '				https://discord.com/channels/796336780302876683/870267572812128298/1348675928867344516
     '
     ' TODO:
