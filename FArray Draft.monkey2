@@ -485,11 +485,11 @@ Class FArray<T> Implements IContainer<T>
 	        Insert(value)
 	End 
 	    
-	Method Within(item:UInt)
+	Method Within(index:UInt)
 		    
 		'Tests if a index in within the range of the dimension.
 		    
-		If item < _upperLim - _lowerLim - 1 - _upperLim Or item > _upperLim - _lowerLim
+		If index < _upperLim - _lowerLim - 1 - _upperLim Or index > _upperLim - _lowerLim
 			RuntimeError("Dimension out of range")
 		End
 	    End    
