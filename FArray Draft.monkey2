@@ -19,24 +19,28 @@ Class FArray<T> Implements IContainer<T>
     '
     ' COMPLETED:
     '
-    '	2025-03-13: Added First, Last, Pred, Succ, FirstValue and LastValue
-    '				in the DimensionIterator. Completed the print set and
-    '				updated the test unit.
+    '	2025-03-13: 	
+    '		Added First, Last, Pred, Succ, FirstValue and LastValue
+    '		in the DimensionIterator. Completed the print set and
+    '		updated the test unit.
     '
-    '	2025-03-12:	First public draft of the implementation
-    '				called FArray, which is a class
+    '	2025-03-12:	
+    '		First public draft of the implementation
+    '		called FArray, which is a class
     '
-    '	2025-03-10:	First draft attempted to fill the missing features
-    '				in a struct called MArray, actually used in a
-    '				implementation of matrices m*n (missing again
-    '				as a basic datatype in Mx2). MArray dummie code at:
-    '				https://discord.com/channels/796336780302876683/870267572812128298/1348692174946041916
-    '				It's not worth breaking three legs of a duck.
+    '	2025-03-10:	
+    '		First draft attempted to fill the missing features
+    '		in a struct called MArray, actually used in a
+    '		implementation of matrices m*n (missing again
+    '		as a basic datatype in Mx2). MArray dummie code at:
+    '		https://discord.com/channels/796336780302876683/870267572812128298/1348692174946041916
+    '		It's not worth breaking three legs of a duck.
     '
-    '	2025-03-10: Discovering about the missing implementations
-    '				in the built-in of multidimensiontal arrays
-    '				since New Float[,]((1,2,3),(4,5,6)) is invalid.
-    '				https://discord.com/channels/796336780302876683/870267572812128298/1348675928867344516
+    '	2025-03-10: 
+    '		Discovering about the missing implementations
+    '		in the built-in of multidimensiontal arrays
+    '		since New Float[,]((1,2,3),(4,5,6)) is invalid.
+    '		https://discord.com/channels/796336780302876683/870267572812128298/1348675928867344516
     '
     ' TODO:
     '		- Make dimension adressing zero-based
