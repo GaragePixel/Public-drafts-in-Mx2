@@ -4,25 +4,27 @@ Class FArray<T> Implements IContainer<T>
     ' 2025-03-12
     '
     ' The FArray class implements a flexible array structure 
-    ' that supports multi-dimensional arrays with dynamic sizing,
+    ' that supports multi-Sub arrays with dynamic sizing,
     ' allowing flexible manipulation and iteration 
-    ' over the multi-dimensional model.
+    ' over the multi-Sub model.
     '
     ' Note:
     '	It's the first time I implement multi-iterators in the
     '	same class and this basic class take me ~20 hours to write.
-    '	It's not really fast but I learn a lot during this project.
+    '	I learn a lot during this project.
     '
     '	It's actually only a draft. I will implement some manipulation
-    '	helpers about the dimensions. The finished class will be
+    '	helpers about the Subs. The finished class will be
     '	in stdlib you will find in my repositiories.
     '
     ' COMPLETED:
     '
     '	2025-03-13: 	
-    '		Added First, Last, Pred, Succ, FirstValue and LastValue
-    '		in the DimensionIterator. Completed the print set and
-    '		updated the test unit.
+    '		- In SubIterator:
+    '			- Added First, Last, Pred, Succ, FirstValue and LastValue in the SubIterator. 
+    '			- Completed the print set and updated the test unit.
+    '			- List grammar.
+    '			- FiFo grammar.
     '
     '	2025-03-12:	
     '		First public draft of the implementation
@@ -38,12 +40,12 @@ Class FArray<T> Implements IContainer<T>
     '
     '	2025-03-10: 
     '		Discovering about the missing implementations
-    '		in the built-in of multidimensiontal arrays
+    '		in the built-in of multisubs arrays
     '		since New Float[,]((1,2,3),(4,5,6)) is invalid.
     '		https://discord.com/channels/796336780302876683/870267572812128298/1348675928867344516
     '
     ' TODO:
-    '		- Make dimension adressing zero-based
+    '		- Make Sub adressing zero-based
     '
     '		- Add helpers for manipulate items within FArray.
     '
@@ -56,7 +58,7 @@ Class FArray<T> Implements IContainer<T>
     '		and using Variant)
     '
     '		- Manage to write the equivalent with the databuffer 
-    '		manipulating multidimensional-arranged built-in data types 
+    '		manipulating multisubs-arranged built-in data types 
     '		in a one-dimensional model. 
     '
     '		- Get some stars in my repository if you find this useful for you
@@ -73,13 +75,13 @@ Class FArray<T> Implements IContainer<T>
         Return _length
     End
         
-    Property Sizes:UInt[]()     ' Property to get the sizes of the dimensions
+    Property Sizes:UInt[]()     ' Property to get the sizes of the Subs
         Return _sizes
     End
 
-    Method Dimensions:UInt(dim:UInt = Null) ' Pseudo-property
-        ' Returns the number of dimensions,
-        ' or the length of a particular dimension.        
+    Method Subs:UInt(dim:UInt = Null) ' Pseudo-property
+        ' Returns the number of Subs,
+        ' or the length of a particular Sub.        
         Return dim=Null ? _sizes.Length Else _sizes[dim]
     End
     
@@ -101,7 +103,7 @@ Class FArray<T> Implements IContainer<T>
         Local sizesLen:=_sizes.Length
         Local sizesdim:UInt
         For Local dim:Int = 0 Until sizesLen
-            result += "Dimension " + (dim + 1) + " contains: "
+            result += "Sub " + (dim + 1) + " contains: "
             sizesdim=_sizes[dim]
             For Local i:Int = 0 Until sizesdim
                 result += _data[index]
@@ -119,19 +121,47 @@ Class FArray<T> Implements IContainer<T>
         ' Returns the linear iterator    
         Return New FArrayLinearIterator<T>(Self)
     End
+
+	Method Contains:Bool(value:T)
+		' Function to check if the FArray contains a value.
+		Local result:Bool=False
+		For Local i:Int = 0 Until _data.Length
+			If _data[i] = value 
+				result=True
+				Exit 
+			End
+		Next
+		Return result
+	End
+ 
+ 	Method GetValue:T(index:UInt)
+		' Function to get the value at specified index in the unidimensional array.
+		If index > _data.Length-1 Or index<0
+			RuntimeError("Index out of range")
+		End
+		Return _data[index]
+	End
+		
+	Method SetValue(index:UInt, value:T)
+		' Function to set the value at specified index in the unidimensional array.
+		If index > _data.Length-1 Or index<0
+			RuntimeError("Index out of range")
+		End
+		_data[index] = value
+	End
     
-    Method Dimension:DimensionIterator<T>(dim:UInt)
-        ' Returns the dimension iterator    
-        Return New DimensionIterator<T>(Self, dim)
+    Method Sub:SubIterator<T>(dim:UInt)
+        ' Returns the Sub iterator    
+        Return New SubIterator<T>(Self, dim)
     End
 
     Method Append(dim:UInt, items:T[], beforeFirstItem:Bool=False)
 	    
-	    ' Append an array at the end of a dimension, or before the 1st item.
+	    ' Append an array at the end of a Sub, or before the 1st item.
 	    
         ' Appends a new set
         If dim < 1 Or dim > _sizes.Length
-            RuntimeError("Dimension out of range")
+            RuntimeError("Sub out of range")
         End
 
         Local newSize:UInt = _sizes[dim-1] + items.Length
@@ -189,9 +219,9 @@ Class FArray<T> Implements IContainer<T>
     End
 
     Method RemoveDim(dim:UInt)
-        ' Delete a dimension
+        ' Delete a Sub
         If dim < 1 Or dim > _sizes.Length
-            RuntimeError("Dimension out of range")
+            RuntimeError("Sub out of range")
         End
         Local start:Int = 0
         For Local i:Int = 0 Until dim - 1
@@ -207,7 +237,7 @@ Class FArray<T> Implements IContainer<T>
             newData[i - (atEnd - start)] = _data[i]
         End
     
-        ' Create new sizes array without the deleted dimension
+        ' Create new sizes array without the deleted Sub
         Local newSizes:UInt[] = New UInt[_sizes.Length - 1]
         For Local i:Int = 0 Until dim - 1
             newSizes[i] = _sizes[i]
@@ -288,9 +318,9 @@ Class FArray<T> Implements IContainer<T>
         End
     End        
     
-    Class DimensionIterator<T> Implements IIterator<T>
+    Class SubIterator<T> Implements IIterator<T>
         
-        ' Dimension Iterator class to iterate over items in a specific dimension
+        ' Sub Iterator class to iterate over items in a specific Sub
         
         Private 
         
@@ -311,9 +341,9 @@ Class FArray<T> Implements IContainer<T>
 
 	    Operator To:String()
 	    
-	    	'Return a string containing the list of the dimension's items
+	    	'Return a string containing the list of the Sub's items
 	    
-	        Local result:String="Dimension("+_dim+")=("
+	        Local result:String="Sub("+_dim+")=("
         	For Local n:=_lowerLim - 1 Until _upperLim-1
         		result+=_flexArray._data[n+1]+","
         	End
@@ -331,7 +361,7 @@ Class FArray<T> Implements IContainer<T>
         
         Method CalculateLimits()
             
-            ' Calculate the lower and upper limits based on the dimension
+            ' Calculate the lower and upper limits based on the Sub
             
             _lowerLim = 0
             _upperLim = 0
@@ -410,7 +440,7 @@ Class FArray<T> Implements IContainer<T>
             If _dim <= _flexArray._sizes.Length
                 _flexArray._sizes[_dim - 1] -= 1
                 If _flexArray._sizes[_dim - 1] = 0                
-                    ' Remove the dimension from _sizes
+                    ' Remove the Sub from _sizes
                     Local newSizes:UInt[] = New UInt[_flexArray._sizes.Length - 1]                    
                     For Local i:Int = 0 Until _dim - 1
                         newSizes[i] = _flexArray._sizes[i]
@@ -484,7 +514,7 @@ Class FArray<T> Implements IContainer<T>
 	    
 	    Method Within(item:UInt,a:UInt,b:UInt)
         	If item < b - a - 1 - _lowerLim Or item > b - a
-   	        	RuntimeError("Dimension out of range")
+   	        	RuntimeError("Sub out of range")
 	        End
 		End    
     End
