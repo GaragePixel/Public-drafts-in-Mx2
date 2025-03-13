@@ -17,9 +17,41 @@ Class FArray<T> Implements IContainer<T>
     '	helpers about the dimensions. The finished class will be
     '	in stdlib you will find in my repositiories.
     '
-    '   You are invited to test it in its extreme values and make a stress test too.
-    '   Please push request if you think you can improve it or fix it.
-    '   This class will be implemented in stdlib so please avoid to make a library with it, thanks^^
+    ' COMPLETED:
+    '
+    '	2025-03-13: Added First, Last, Pred, Succ, FirstValue and LastValue
+    '				in the DimensionIterator. Completed the print set and
+    '				updated the test unit.
+    '
+    '	2025-03-12:	First public draft of the implementation
+    '				called FArray, which is a class
+    '
+    '	2025-03-10:	First draft attempted to fill the missing features
+    '				in a struct called MArray, actually used in a
+    '				implementation of matrices m*n (missing again
+    '				as a basic datatype in Mx2). MArray dummie code at:
+    '				https://discord.com/channels/796336780302876683/870267572812128298/1348692174946041916
+    '				It's not worth breaking three legs of a duck.
+    '
+    '	2025-03-10: Discovering about the missing implementations
+    '				in the built-in of multidimensiontal arrays
+    '				since New Float[,]((1,2,3),(4,5,6)) is unvalid.
+    '				https://discord.com/channels/796336780302876683/870267572812128298/1348675928867344516
+    '
+    ' TODO:
+    '		- Make dimension adressing zero-based
+    '
+    '		- Add helpers for manipulate items within FArray.
+    '
+    '		- Add constructor for setting a FArray from a string
+    '		in the form: New FArray((1,2,3),(4,5,6))
+    '
+    '		- Manage to write the equivalent with the databuffer 
+    '		manipulating multidimensional-arranged built-in data types 
+    '		in a one-dimensional model. 
+    '
+    '		- Get some stars in my repository if you find this useful for you
+    '		or just interesting.
 
     ' Constructor
     Method New(sizes:UInt[], data:T[])
@@ -85,17 +117,17 @@ Class FArray<T> Implements IContainer<T>
         Return New DimensionIterator<T>(Self, dim)
     End
 
-    Method Append(dim:UInt, newDim:T[], beforeFirstItem:Bool=False)
+    Method Append(dim:UInt, items:T[], beforeFirstItem:Bool=False)
 	    
-	    'Append an array at the end of a dimension, or before the 1st item.
+	    ' Append an array at the end of a dimension, or before the 1st item.
 	    
         ' Appends a new dimension
         If dim < 1 Or dim > _sizes.Length
             RuntimeError("Dimension out of range")
         End
 
-        Local newSize:UInt = _sizes[dim-1] + newDim.Length
-        Local newData:T[] = New T[_length + newDim.Length]
+        Local newSize:UInt = _sizes[dim-1] + items.Length
+        Local newData:T[] = New T[_length + items.Length]
         
         Local index:Int = 0
         Local newIndex:Int = 0
@@ -112,11 +144,10 @@ Class FArray<T> Implements IContainer<T>
 		If beforeFirstItem
 
 	        ' Append new dimension elements
-	        For Local i:Int = 0 Until newDim.Length
-	            newData[newIndex] = newDim[i]
+	        For Local i:Int = 0 Until items.Length
+	            newData[newIndex] = items[i]
 	            newIndex += 1
-	        End
-        
+	        End        
         End 
         
         ' Copy remaining elements
@@ -129,11 +160,10 @@ Class FArray<T> Implements IContainer<T>
 		If beforeFirstItem=False
 
 	        ' Append new dimension elements
-	        For Local i:Int = 0 Until newDim.Length
-	            newData[newIndex] = newDim[i]
+	        For Local i:Int = 0 Until items.Length
+	            newData[newIndex] = items[i]
 	            newIndex += 1
-	        End
-        
+	        End        
         End 
         
         ' Copy elements after the appended dimension
@@ -145,7 +175,7 @@ Class FArray<T> Implements IContainer<T>
             End
         End
         
-        _length += newDim.Length
+        _length += items.Length
         _data = newData
         _sizes[dim-1] = newSize
     End
@@ -183,18 +213,16 @@ Class FArray<T> Implements IContainer<T>
         _length -= (atEnd - start)
     End
     
-    Private
-
-    Field _sizes:UInt[]
-    Field _data:T[]
-    Field _length:UInt
-    
     Class FArrayLinearIterator<T> Implements IIterator<T>
         
         ' Linear Iterator class
         
+        Private
+        
         Field _flexArray:FArray<T>
         Field _currentIndex:Int
+        
+        Public
         
         Method New(flexArray:FArray<T>)
             _flexArray = flexArray
@@ -256,11 +284,15 @@ Class FArray<T> Implements IContainer<T>
         
         ' Dimension Iterator class to iterate over items in a specific dimension
         
+        Private 
+        
         Field _flexArray:FArray<T>
         Field _dim:UInt
         Field _currentIndex:UInt
         Field _lowerLim:UInt
         Field _upperLim:UInt
+        
+        Public
         
         Method New(flexArray:FArray<T>, dim:UInt)
             _flexArray = flexArray
@@ -268,6 +300,28 @@ Class FArray<T> Implements IContainer<T>
             CalculateLimits()
             _currentIndex = _lowerLim
         End        
+
+	    Operator To:String()
+	    
+	    	'Return a string containing the list of the dimension's items
+	    
+	        Local result:String="Dimension("+_dim+")=("
+        	For Local n:=_lowerLim - 1 Until _upperLim-1
+        		result+=_flexArray._data[n+1]+","
+        	End
+	        Return result+_flexArray._data[_upperLim]+")"
+	    End
+        
+        Method Item:String(item:UInt) 'Pseudo-property
+	        
+	        'Returns a string containing the string casted item
+	        '(the item's datatype must be printable)
+
+        	If item < _upperLim - _lowerLim - 1 - _lowerLim Or item > _upperLim - _lowerLim
+   	        	RuntimeError("Dimension out of range")
+	        End
+        	Return _flexArray._data[_lowerLim+item]
+	    End 
         
         Method CalculateLimits()
             
@@ -292,6 +346,40 @@ Class FArray<T> Implements IContainer<T>
                 RuntimeError("No more elements")
             End
             Return _flexArray._data[_currentIndex]
+        End
+
+	    Property FirstValue:T()
+		    Return _flexArray._data[_lowerLim]
+		End
+
+	    Property LastValue:T()
+		    Return _flexArray._data[_lowerLim + (_upperLim - _lowerLim)]
+		End
+
+	    Method First()
+		    'Move the _currentIndex to the first item
+		    _currentIndex = _lowerLim
+		End
+
+	    Method Last()
+		    'Move the _currentIndex to the last item
+		    _currentIndex = _lowerLim + (_upperLim - _lowerLim)
+		End
+
+        Method Succ()
+	        'Next iterator's item from _currentIndex
+            _currentIndex += 1
+	        If _currentIndex > _upperLim
+   	        	RuntimeError("Item out of range")
+	        End
+        End
+
+        Method Pred()
+	        'Next predecessor's item from _currentIndex
+            _currentIndex -= 1
+        	If _currentIndex < 0
+   	        	RuntimeError("Item out of range")
+	        End
         End
         
         Method Bump()
@@ -357,79 +445,10 @@ Class FArray<T> Implements IContainer<T>
             End
         End
     End
-End
-
-Function FArrayTest()
     
-    ' Test function for the DimensionIterator
+    Private
 
-    ' Initialize the array sizes and data
-    Local sizes2 := New UInt[](3, 2, 4, 1)
-    Local data2 := New Float[](1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0)
-    Local sArray2:FArray<Float> = New FArray<Float>(sizes2, data2)
-
-    ' Test Dimension Iterator for dimension 3
-    Print "Testing Dimension Iterator for Dimension 3:"
-    For Local item:Float = Eachin sArray2.Dimension(3)
-        Print item
-    Next
-    Print sArray2
-    Print sArray2.ToString()
-
-    ' Test Linear Iterator
-    Print "Testing Linear Iterator:"
-    For Local item:Float = Eachin sArray2
-        Print item
-    Next
-
-    ' Test Erase in Linear Iterator
-    Print "Testing Erase in Linear Iterator:"
-    Local linearIterator := sArray2.All()
-    linearIterator.Bump() ' Move to second element
-    linearIterator.Erase()
-    Print sArray2
-    Print sArray2.ToString()
-
-    ' Test Insert in Linear Iterator
-    Print "Testing Insert in Linear Iterator:"
-    linearIterator = sArray2.All()
-    linearIterator.Bump() ' Move to second element
-    linearIterator.Insert(99.9)
-    Print sArray2
-    Print sArray2.ToString()
-
-    ' Test Erase in Dimension Iterator
-    Print "Testing Erase in Dimension Iterator for Dimension 3:"
-    Local dimIterator := sArray2.Dimension(3)
-    dimIterator.Bump() ' Move to second element
-    dimIterator.Erase()
-    For Local item:Float = Eachin sArray2.Dimension(3)
-        Print item
-    Next
-    Print sArray2
-    Print sArray2.ToString()
-    
-    ' Test Insert in Dimension Iterator
-    Print "Testing Insert in Dimension Iterator for Dimension 3:"
-    dimIterator = sArray2.Dimension(3)
-    dimIterator.Bump() ' Move to second element
-    dimIterator.Insert(88.8)
-    For Local item:Float = Eachin sArray2.Dimension(3)
-        Print item
-    Next
-    Print sArray2
-    Print sArray2.ToString()
-
-    ' Test Append new dimension
-    Local newDim := New Float[](20, 30, 40)
-    sArray2.Append(2, newDim)
-    Print "Testing Append new dimension:"
-    Print sArray2
-    Print sArray2.ToString()
-
-    ' Test Delete dimension
-    sArray2.DeleteDim(3)
-    Print "Testing Delete dimension:"
-    Print sArray2
-    Print sArray2.ToString()
+    Field _sizes:UInt[]
+    Field _data:T[]
+    Field _length:UInt
 End
