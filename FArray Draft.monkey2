@@ -129,7 +129,7 @@ Class FArray<T> Implements IContainer<T>
 
     Method Append(dim:UInt, items:T[], beforeFirstItem:Bool=False)
 	    
-		' Append an array at the end of a dimension, or before the 1st item.
+	' Append an array at the end of a dimension, or before the 1st item.
 	    
         ' Appends a new set
         If dim < 1 Or dim > _sizes.Length
@@ -151,14 +151,14 @@ Class FArray<T> Implements IContainer<T>
             End
         End
 
-		If beforeFirstItem
+	If beforeFirstItem
 
-			' Append new set elements
-			For Local i:Int = 0 Until items.Length
-				newData[newIndex] = items[i]
-				newIndex += 1
-			End        
-		End 
+		' Append new set elements
+		For Local i:Int = 0 Until items.Length
+			newData[newIndex] = items[i]
+			newIndex += 1
+		End        
+	End 
         
         ' Copy remaining elements
         For Local i:Int = 0 Until _sizes[dim - 1]
@@ -167,14 +167,14 @@ Class FArray<T> Implements IContainer<T>
             newIndex += 1
         End
 
-		If beforeFirstItem=False
+	If beforeFirstItem=False
 
-			' Append new set elements
-			For Local i:Int = 0 Until items.Length
-				newData[newIndex] = items[i]
-				newIndex += 1
-			End        
-		End 
+		' Append new set elements
+		For Local i:Int = 0 Until items.Length
+			newData[newIndex] = items[i]
+			newIndex += 1
+		End        
+	End 
         
         ' Copy elements after the appended set
         For Local i:Int = dim Until _sizes.Length
@@ -310,26 +310,26 @@ Class FArray<T> Implements IContainer<T>
             CalculateLimits()
             _currentIndex = _lowerLim
         End        
-
-		Operator To:String()
+		
+	Operator To:String()
 	    
-			'Return a string containing the list of the dimension's items
+		'Return a string containing the list of the dimension's items
 	    
-	        Local result:String="Dimension("+_dim+")=("
-			For Local n:=_lowerLim - 1 Until _upperLim-1
-				result+=_flexArray._data[n+1]+","
-			End
-			Return result+_flexArray._data[_upperLim]+")"
-	    End
+	Local result:String="Dimension("+_dim+")=("
+		For Local n:=_lowerLim - 1 Until _upperLim-1
+			result+=_flexArray._data[n+1]+","
+		End
+		Return result+_flexArray._data[_upperLim]+")"
+	End
         
-		Method Item:String(item:UInt) 'Pseudo-property
+	Method Item:String(item:UInt) 'Pseudo-property
 	        
-	        'Returns a string containing the string casted item
-	        '(the item's datatype must be printable)
+		'Returns a string containing the string casted item
+		'(the item's datatype must be printable)
 
-			Within(item)
+		Within(item)
         	Return _flexArray._data[_lowerLim+item]
-		End 
+	End 
         
         Method CalculateLimits()
             
@@ -356,43 +356,43 @@ Class FArray<T> Implements IContainer<T>
             Return _flexArray._data[_currentIndex]
         End
 
-		Property FirstValue:T()
-			Return _flexArray._data[_lowerLim]
-		End
+	Property FirstValue:T()
+		Return _flexArray._data[_lowerLim]
+	End
 
-		Property LastValue:T()
-			Return _flexArray._data[_lowerLim + (_upperLim - _lowerLim)]
-		End
+	Property LastValue:T()
+		Return _flexArray._data[_lowerLim + (_upperLim - _lowerLim)]
+	End
 
-		Method First()
-			'Move the _currentIndex to the first item
-			_currentIndex = _lowerLim
-		End
+	Method First()
+		'Move the _currentIndex to the first item
+		_currentIndex = _lowerLim
+	End
 
-		Method Last()
-			'Move the _currentIndex to the last item
-			_currentIndex = _lowerLim + (_upperLim - _lowerLim)
-		End
+	Method Last()
+		'Move the _currentIndex to the last item
+		_currentIndex = _lowerLim + (_upperLim - _lowerLim)
+	End
 
-		Method Succ()
-			'Next iterator's item from _currentIndex
-			_currentIndex += 1
-			If _currentIndex > _upperLim
-				RuntimeError("Item out of range")
-			End
+	Method Succ()
+		'Next iterator's item from _currentIndex
+		_currentIndex += 1
+		If _currentIndex > _upperLim
+			RuntimeError("Item out of range")
 		End
+	End
 
-		Method Pred()
-			'Next predecessor's item from _currentIndex
-			_currentIndex -= 1
-			If _currentIndex < 0
-				RuntimeError("Item out of range")
-			End
+	Method Pred()
+		'Next predecessor's item from _currentIndex
+		_currentIndex -= 1
+		If _currentIndex < 0
+			RuntimeError("Item out of range")
 		End
+	End
         
-		Method Bump()
-			_currentIndex += 1
-		End
+	Method Bump()
+		_currentIndex += 1
+	End
 
         Method Remove()
 	        
@@ -426,29 +426,29 @@ Class FArray<T> Implements IContainer<T>
         End
         
         Method RemoveLast()
-	        'Semi-Sugar
-	        Last()
-	        Remove()
-	        Last()
-	    End
+		'Semi-Sugar
+		Last()
+		Remove()
+		Last()
+	End
 
         Method RemoveFirst()
-	        'Semi-Sugar
-	        First()
-	        Remove()
-	        First()
-	    End
+		'Semi-Sugar
+		First()
+		Remove()
+		First()
+	End
 
         Method Pop()
 	        'Sugar
 	        RemoveFirst()
-	    End
+	End
 
         Method Push(value:T)
 	        'Sugar
 	        First()
 	        Insert(value)
-	    End
+	End
 
         Method Insert(value:T)
 	        
@@ -483,21 +483,21 @@ Class FArray<T> Implements IContainer<T>
 	        Within(index)
 	        _currentIndex=index
 	        Insert(value)
-	    End 
+	End 
 	    
-		Method Within(item:UInt)
+	Method Within(item:UInt)
 		    
-			'Tests if a index in within the range of the dimension.
+		'Tests if a index in within the range of the dimension.
 		    
-			If item < _upperLim - _lowerLim - 1 - _upperLim Or item > _upperLim - _lowerLim
-				RuntimeError("Dimension out of range")
-			End
-		End    
+		If item < _upperLim - _lowerLim - 1 - _upperLim Or item > _upperLim - _lowerLim
+			RuntimeError("Dimension out of range")
+		End
+	    End    
 	End
     
-    Private
+    	Private
 
-    Field _sizes:UInt[]
-    Field _data:T[]
-    Field _length:UInt
+    	Field _sizes:UInt[]
+    	Field _data:T[]
+    	Field _length:UInt
 End
