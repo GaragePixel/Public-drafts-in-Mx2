@@ -43,8 +43,13 @@ Class FArray<T> Implements IContainer<T>
     '
     '		- Add helpers for manipulate items within FArray.
     '
+    '		- Add constructor for setting a FArray from a list of lists
+    '		in the form: New FArray(New List((1,2,3),(4,5,6)))
+	'
     '		- Add constructor for setting a FArray from a string
-    '		in the form: New FArray((1,2,3),(4,5,6))
+    '		in the form: New FArray<Variant>("(1,2,3),(4,5,6)")
+    '		(need to write a tokenizer with reflexion capabilities
+    '		and using Variant)
     '
     '		- Manage to write the equivalent with the databuffer 
     '		manipulating multidimensional-arranged built-in data types 
