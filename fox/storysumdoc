@@ -36,6 +36,24 @@ Implements complete information exchange protocols between Hikari and Katsuo. Te
 Helped by Katsuo and Katsuo's vixen sister, Hikari begins a dangerous journey where she gradually embraces her new nature to transcend her identity and find her place in the universe.
 Implements final affinity evaluation determining one of three primary paths: high affinity triggering yokai bridge outcome, medium affinity establishing limited ongoing connection, or low affinity activating Megumi influence sequence. Technical implementation of Megumi branch includes council room intimate encounter with subsequent decision point based on festival connection variable: no connection leads to standard observation outcome (Megumi becomes yakuza figure while Katsuo maintains spiritual integrity); festival connection creates choice between trickster path (indirect intervention preserving spiritual principles) or savior path (direct intervention causing fifth tail splitting and self-destruction). Implementation emphasizes that corruption originates from internal choice rather than external influence, maintaining Buddhist principle integrity. Each ending implementation includes distinct epilogue sequence establishing long-term outcome visualization.
 
+Purpose
+
+In the space between myth and reality, between duty and desire, unfolds a story of impossible connection. Fox Spirit Romance explores the boundaries that separate worlds—yokai and human, spiritual and material—through the evolving relationship between a spiritually sensitive high school student and a kitsune researcher bound by ancient principles.
+Overview
+
+In contemporary Japan, Hikari's chance encounter with a mysterious stranger at a yokai exhibit sets in motion events that challenge her understanding of reality. When the same entity appears as transfer student "Kazuko" at her high school, Hikari's spiritual sensitivity and determination draw her into a world beyond normal perception.
+
+Katsuo, a four-tailed kitsune conducting research on human behavior, finds his scientific detachment compromised by unexpected connection. Governed by Buddhist-influenced principles that forbid direct intervention in human affairs, he navigates growing attachment while fulfilling family expectations and mission parameters.
+
+Their developing bond faces external pressures from Megumi, the ambitious student council president whose political machinations mask deeper hunger for power. Meanwhile, Hikari's friend Akane provides essential human grounding throughout increasingly supernatural experiences.
+
+As boundaries between worlds thin, choices made during a pivotal festival night ripple through multiple potential futures. Will spiritual connection transcend realm boundaries? Can principles survive when compassion demands their violation? What price comes with crossing worlds never meant to intersect?
+Notes on Narrative Architecture
+
+The story employs a sophisticated branching structure where early choices create subtle ripples that manifest as dramatic consequences in later episodes. The narrative maintains a delicate balance between supernatural elements and grounded human concerns—yokai mythology intertwines with school politics, family struggles, and friendship dynamics.
+
+Trust development follows multiple pathways, with patience and respect yielding different outcomes than aggressive investigation or premature confrontation. The affinity system tracks relationship quality through nine episodes of increasingly complex interactions, determining which of multiple ending branches becomes reality.
+
 # FOX SPIRIT ROMANCE: PSYCHOLOGICAL ANALYSIS & NARRATIVE INTEGRATION
 ## Implementation: iDkP from GaragePixel
 ## Date: 2025-04-09 10:57:13
