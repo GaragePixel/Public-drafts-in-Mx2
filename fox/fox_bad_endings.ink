@@ -1321,7 +1321,7 @@ With each touch, fragments of memory surfaced in Megumi's consciousness—summer
 
 Katsuo's transformation accelerated as passion built between them—his form now fully male, school uniform shifting to match, though subtle inhuman features became increasingly apparent: eyes too golden, canines slightly elongated, movements too fluid for human musculature.
 
-* [Move to council table] -> megumi_council_table
+* [Move to council table] -> p5_megumi_council_table
 * [Undressing begins] -> megumi_undressing_sequence
 * [Memory restoration intensifies] -> megumi_memory_through_touch
 
@@ -1680,7 +1680,7 @@ But shadows lurked at the edges of their happiness—the approaching mission dea
 * [Discovery threatens] -> megumi_discovery_threat
 * [Relationship deepens] -> megumi_profound_connection
 
-=== megumi_council_table ===
+=== p5_megumi_council_table ===
 # image: table_intimacy
 # music: passion_intense
 # sfx: table_clearing
@@ -1697,11 +1697,11 @@ Katsuo's reaction was immediate and intense—a sharp intake of breath, eyes bri
 
 ~ megumi_relationship += 2
 
-* [Remove remaining clothing] -> megumi_full_undressing
+* [Remove remaining clothing] -> p5_megumi_full_undressing
 * [Begin memory restoration] -> megumi_memory_through_intimacy
 * [Megumi takes control] -> megumi_dominant_position
 
-=== megumi_full_undressing ===
+=== p5_megumi_full_undressing ===
 # image: full_nudity
 # music: revelation_theme
 # sfx: final_garments
@@ -1717,10 +1717,10 @@ As her fingers traced patterns across his chest and abdomen, Katsuo allowed hims
 His hands moved with reverent appreciation over her body, relearning contours he'd explored during summer encounters now erased from her memory. Each touch elicited responses he remembered—particular sensitive areas, specific preferences—creating an uncanny sensation for Megumi of being known more intimately than should be possible.
 
 * [Megumi questions familiarity] -> megumi_deja_vu
-* [Intimacy escalates] -> megumi_passionate_progression
+* [Intimacy escalates] -> p5_megumi_passionate_progression
 * [Memory restoration deepens] -> megumi_memory_unlocking
 
-=== megumi_passionate_progression ===
+=== p5_megumi_passionate_progression ===
 # image: intimate_positioning
 # music: passion_peak
 # sfx: breathing_synchronized
@@ -1739,11 +1739,11 @@ Her answer was to pull him closer, legs wrapping around his waist in unmistakabl
 
 Katsuo positioned himself at her entrance, pausing only briefly to ensure her readiness. When he finally pushed forward, joining their bodies completely, both gasped at the intensity of the connection—not merely physical but something that transcended ordinary sensation.
 
-* [Begin rhythmic movement] -> megumi_intimate_rhythm
+* [Begin rhythmic movement] -> p5_megumi_intimate_rhythm
 * [Memory restoration accelerates] -> megumi_memory_through_union
 * [Supernatural manifestation increases] -> megumi_supernatural_union
 
-=== megumi_intimate_rhythm ===
+=== p5_megumi_intimate_rhythm ===
 # image: passionate_connection
 # music: rising_passion
 # sfx: rhythmic_movement
@@ -1760,11 +1760,11 @@ Megumi responded by tightening her legs around him, urging him deeper, her body 
 
 ~ megumi_relationship += 1
 
-* [Increase intensity] -> megumi_increasing_intensity
+* [Increase intensity] -> p5_megumi_increasing_intensity
 * [Memory restoration peaks] -> megumi_memory_flood
 * [Megumi takes active role] -> megumi_position_change
 
-=== megumi_increasing_intensity ===
+=== p5_megumi_increasing_intensity ===
 # image: passionate_peak
 # music: climactic_build
 # sfx: passionate_sounds
@@ -1779,11 +1779,11 @@ She pulled him closer, seemingly unafraid of his increasingly supernatural manif
 
 The permission shattered his final restraints. His form shifted more dramatically—fox features becoming unmistakable, multiple tails manifesting partially as translucent energy constructs behind him. The council room filled with tangible supernatural energy that made loose papers swirl and electronics flicker.
 
-* [Approach first climax] -> megumi_first_climax
+* [Approach first climax] -> p5_megumi_first_climax
 * [Memory restoration completes] -> megumi_full_memory_return
 * [Position change] -> megumi_new_position
 
-=== megumi_first_climax ===
+=== p5_megumi_first_climax ===
 # image: first_release
 # music: climax_theme
 # sfx: pleasure_peak
@@ -1802,9 +1802,9 @@ Throughout this overwhelming experience, his connection with Megumi deepened—t
 
 * [Memory restoration accelerates] -> megumi_memory_through_climax
 * [Maintain connection for second peak] -> megumi_continued_intimacy
-* [Megumi's simultaneous climax] -> megumi_synchronized_release
+* [Megumi's simultaneous climax] -> p5_megumi_synchronized_release
 
-=== megumi_synchronized_release ===
+=== p5_megumi_synchronized_release ===
 # image: dual_climax
 # music: transcendence_theme
 # sfx: dual_release
@@ -1821,9 +1821,9 @@ For nearly a full minute, they remained locked in this transcendent state—phys
 
 * [Gradual subsidence] -> megumi_afterglow
 * [Memory integration] -> megumi_memory_integration
-* [Katsuo retains arousal] -> megumi_continued_desire
+* [Katsuo retains arousal] -> p5_megumi_continued_desire
 
-=== megumi_continued_desire ===
+=== p5_megumi_continued_desire ===
 # image: sustained_arousal
 # music: renewal_theme
 # sfx: continuing_intimacy
@@ -1842,11 +1842,11 @@ Katsuo shifted their position with supernatural grace, lifting and turning her w
 
 ~ megumi_relationship += 1
 
-* [Megumi takes control] -> megumi_dominant_role
+* [Megumi takes control] -> p5_megumi_dominant_role
 * [More memories surface] -> megumi_position_memory
 * [Building toward second climax] -> megumi_second_building
 
-=== megumi_dominant_role ===
+=== p5_megumi_dominant_role ===
 # image: megumi_control
 # music: power_theme
 # sfx: rhythm_change
@@ -1861,11 +1861,11 @@ For him, this second approach to pleasure built differently than the first—mor
 
 "Perfect," he gasped when she discovered a rhythm that sent cascades of sensation through his supernatural nervous system. "Just like that."
 
-* [Building intensity] -> megumi_second_building
+* [Building intensity] -> p5_megumi_second_building
 * [More memories return] -> megumi_intimate_memories
 * [Position adjustment] -> megumi_angle_change
 
-=== megumi_second_building ===
+=== p5_megumi_second_building ===
 # image: pleasure_building
 # music: anticipation_theme
 # sfx: quickening_rhythm
@@ -1880,11 +1880,11 @@ This second approach to climax built more deliberately than the first—a slow, 
 
 Meanwhile, Megumi's own pleasure built toward a second peak, her movements becoming more focused, more determined. The power dynamic between them shifted continuously—sometimes she led, sometimes he guided, creating a dance of mutual pleasure that transcended ordinary human experience.
 
-* [Approach second climax] -> megumi_second_climax
+* [Approach second climax] -> p5_megumi_second_climax
 * [Complete memory restoration] -> megumi_final_memories
 * [Katsuo takes active role] -> megumi_katsuo_guidance
 
-=== megumi_second_climax ===
+=== p5_megumi_second_climax ===
 # image: second_release
 # music: climactic_theme_reprise
 # sfx: intensity_peaking
@@ -1905,9 +1905,9 @@ The supernatural release triggered Megumi's own second climax simultaneously—h
 
 * [Afterglow begins] -> megumi_dual_afterglow
 * [Memory completion] -> megumi_memory_completion
-* [Katsuo remains aroused] -> megumi_third_potential
+* [Katsuo remains aroused] -> p5_megumi_third_potential
 
-=== megumi_third_potential ===
+=== p5_megumi_third_potential ===
 # image: continued_arousal
 # music: renewal_theme
 # sfx: breathing_recovery
@@ -1924,11 +1924,11 @@ Without waiting for verbal response, he lifted her with supernatural strength, s
 
 ~ megumi_relationship += 1
 
-* [Gentle completion begins] -> megumi_third_approach
+* [Gentle completion begins] -> p5_megumi_third_approach
 * [Final memory restoration] -> megumi_complete_restoration
 * [Mutual exhaustion] -> megumi_completion_without_third
 
-=== megumi_third_approach ===
+=== p5_megumi_third_approach ===
 # image: final_intimacy
 # music: completion_theme
 # sfx: gentle_rhythm
@@ -1943,11 +1943,11 @@ Megumi's hands traced patterns across his chest and shoulders, exploring the occ
 
 Despite the gentler pace, pleasure built inexorably between them—a slower, deeper wave approaching with gradual certainty. Katsuo's fox-fire aura surrounded them both now, creating an intimate sphere that separated them from ordinary reality.
 
-* [Third climax approaches] -> megumi_final_climax
+* [Third climax approaches] -> p5_megumi_final_climax
 * [Memory cycle completes] -> megumi_memory_cycle_completion
 * [Emotional connection deepens] -> megumi_emotional_peak
 
-=== megumi_final_climax ===
+=== p5_megumi_final_climax ===
 # image: completion_release
 # music: transcendence_final
 # sfx: culmination_sounds
@@ -2008,11 +2008,11 @@ Katsuo nodded, impressed as always by her quick adaptation to complex situations
 
 He didn't finish the sentence. They both understood the implication—his inevitable return to the yokai realm, the arranged marriage awaiting him, the fundamental incompatibility of their worlds.
 
-* [Begin relationship] -> megumi_secret_relationship
+* [Begin relationship] -> p5_megumi_secret_relationship
 * [Consider possibilities] -> megumi_future_considerations
 * [Dress and depart] -> megumi_practical_departure
 
-=== megumi_secret_relationship ===
+=== p5_megumi_secret_relationship ===
 # image: afterschool_council
 # music: conspiracy_theme
 # sfx: empty_hallways
@@ -2029,11 +2029,11 @@ His expression softened with genuine affection. "You are exceptional in many way
 
 The admission revealed the fundamental challenge of their connection—the vast disparity in lifespan and experience that would eventually separate them regardless of present passion.
 
-* [Megumi accepts limitation] -> megumi_acceptance
-* [Megumi proposes alternative] -> megumi_transformation_question
+//* [Megumi accepts limitation] -> megumi_acceptance
+//* [Megumi proposes alternative] -> megumi_transformation_question
 * [Deepen secret relationship] -> megumi_continued_secrecy
 
-=== megumi_continued_secrecy ===
+=== p5_megumi_continued_secrecy ===
 # image: private_council
 # music: forbidden_romance
 # sfx: door_locking
