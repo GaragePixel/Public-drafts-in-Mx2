@@ -138,3 +138,121 @@ Ending paths
                     ├── Partnership path (true perfect ending) → Requires high independence + empathy scores + optimal transformation; game ends
                     ├── Support path (near-perfect ending) → Requires medium scores across categories; game ends
                     └── Caution path (good ending) → Default path with minimum completion requirements; game ends
+
+# FOX SPIRIT ROMANCE: BAD ENDINGS IMPLEMENTATION
+## Implementation: iDkP from GaragePixel
+## Date: 2025-04-09 01:40:23
+## Aida Version: 4.2.1
+
+## Purpose
+This document provides a comprehensive summary of the bad ending paths in Fox Spirit Romance, detailing their triggering conditions, narrative implications, and technical implementation considerations. Bad endings are designed to create meaningful consequences for player choices while maintaining narrative coherence and thematic consistency.
+
+## List of Bad Endings
+
+### 1. Early Revelation Bad Endings
+   * **Direct Confrontation Without Evidence**
+     - Trigger: Revealing knowledge of Katsuo's true nature without sufficient evidence
+     - Outcome: Katsuo dismisses claims, leading to either memory manipulation or abandonment
+     - Final States: SPIRITUAL DEVELOPMENT END or HOSPITAL DEATH END
+
+   * **Sexual Advance Response**
+     - Trigger: Accepting Katsuo's advances when offered
+     - Outcome: Player becomes "consumed girl," abandoned after emotional feeding
+     - Final State: SUICIDE DEATH END
+
+### 2. Mid-Game Confrontation Bad Endings
+   * **Path of Fantasy Engagement**
+     - Trigger: Sexual encounter with Kazuko form
+     - Outcome: Memory spell backfires, causing mental deterioration
+     - Final State: HOSPITAL DEATH END
+
+   * **Stalking Discovery**
+     - Trigger: Being discovered while following Katsuo
+     - Outcomes: Fatal memory erasure (telephone cabin) or non-fatal erasure (continuous following)
+     - Final States: DEATH END or TRAUMATIC END
+
+   * **Gang Confrontation**
+     - Trigger: Directly challenging Megumi's authority
+     - Outcome: Gang violence resulting in physical trauma
+     - Final State: DEATH END
+
+### 3. Ability Development Bad Endings
+   * **Suppressed Perception Breakdown**
+     - Trigger: Attempting to ignore yokai abilities
+     - Outcomes: Public breakdown or private self-harm
+     - Final States: INSTITUTION END or HOSPITAL END
+
+   * **Uncontrolled Development**
+     - Trigger: Power surge during supernatural development
+     - Outcome: Public incident revealing supernatural abilities
+     - Final State: INSTITUTION END
+
+### 4. Akane Confrontation Bad Ending [violentContentEnabled]
+   * **Hallway Approach Attempt**
+     - Trigger: Approaching Akane during avoidance period
+     - Outcome: Violent attack resulting in fatal injuries
+     - Final State: DEATH END
+
+### 5. Transformation Journey Bad Endings
+   * **Kodama Rejection**
+     - Trigger: Rejecting sister essence during consciousness journey
+     - Outcome: Consciousness dissolution, spiritual death
+     - Final State: VOID DEATH END
+
+   * **Albino Girl Pursuit**
+     - Trigger: Following mysterious albino girl
+     - Outcome: Traffic accident during distracted pursuit
+     - Final State: DEATH WHILE FOLLOWING END
+
+## Notes: Implementation Characteristics
+
+### Narrative Integration
+Bad endings are not implemented as mere punishment mechanics but as logical consequences of player choices that maintain narrative coherence. Each bad ending provides closure to the story path while revealing additional aspects of the supernatural world that would otherwise remain hidden.
+
+### Distinctive Visual Language
+Each bad ending category implements a distinctive visual treatment:
+1. Early Revelation endings use desaturated color palettes
+2. Mid-Game Confrontation endings feature unstable frame composition
+3. Ability Development endings implement visual distortion effects
+4. Akane Confrontation utilizes rapid montage techniques
+5. Transformation Journey endings employ ethereal lighting and depth-of-field manipulation
+
+### Content Variable Handling
+Bad endings respect content variable settings while maintaining narrative impact:
+- When [violentContentEnabled=false], violent endings substitute symbolic imagery
+- When [sexualContentEnabled=false], explicit content is replaced with emotional aftermath sequences
+- When [sexualContentSubstitutionSequenceEnabled=true], alternative symbolic sequences replace explicit content
+
+### Recovery Mechanics
+Most bad endings (except DEATH variants) implement subtle recovery paths that can be discovered through persistent play, allowing dedicated players to rescue seemingly failed playthroughs through specific actions or knowledge acquired from previous attempts.
+
+## Technical Advantages
+
+### 1. Narrative Consequence Architecture
+The bad ending implementation creates genuine stakes for player decisions while avoiding the frustration of arbitrary "game over" states. Each ending delivers meaningful narrative closure that enriches understanding of the game world and character motivations.
+
+Key technical features:
+- Variable persistence across playthroughs enables knowledge transfer
+- Subtle visual/textual clues foreshadow potential bad endings without explicit warnings
+- Consistent narrative logic maintains immersion even in failure states
+
+### 2. Content Variable Integration
+The implementation achieves balanced content presentation across different distribution requirements:
+- Core narrative themes remain consistent regardless of content settings
+- Emotional impact maintained through substitute symbolism when explicit content is disabled
+- Alternative sequences preserve thematic intent while meeting distribution requirements
+
+### 3. Recovery Path Integration
+Recovery mechanics transform potential player frustration into discovery-based engagement:
+- Hidden intervention options become visible on subsequent playthroughs
+- Knowledge from bad endings provides strategic advantages in future attempts
+- Meta-narrative framework acknowledges player persistence through subtle dialogue variations
+
+### 4. Death Implementation Philosophy
+Death endings are implemented with specific narrative purpose rather than arbitrary punishment:
+- HOSPITAL DEATH represents consequences of supernatural interference with human physiology
+- SUICIDE DEATH illustrates the psychological impact of yokai emotional manipulation
+- VOID DEATH manifests the spiritual risks of transformation
+- DEATH WHILE FOLLOWING demonstrates the dangers of distraction in the physical world
+
+The bad ending framework successfully balances meaningful consequences with player agency, creating genuine stakes while maintaining narrative coherence and implementing appropriate content adaptability based on variable settings.
