@@ -1,0 +1,378 @@
+MAIN STORYLINE PROGRESSION
+│
+├── EPISODE 1: THE FOX SPIRIT
+│   ├── Museum Direction-Giving
+│   │   ├── Notice Katsuo's true form immediately
+│   │   │   ├── Pretend not to notice → Trust +1
+│   │   │   └── Show subtle recognition → Trust -1
+│   │   └── Offer to guide him to the museum
+│   │       ├── Ask about his interest in yokai → Suspicion +1
+│   │       └── Keep conversation casual → Trust +1
+│   │
+│   └── Summer Search
+│       ├── Research kitsune folklore intensively
+│       │   ├── Learn about weaknesses (water, dogs) → Knowledge +1
+│       │   └── Study historical yokai-human relationships → Understanding +1
+│       │
+│       ├── Visit museum regularly → Meet caretaker
+│       │   ├── Ask about new "employee" → Suspicion from caretaker
+│       │   └── Show interest in artifacts → Glimpse Katsuo in fox form
+│       │
+│       └── Search streets for kitsune boy
+│           ├── Wait at meeting spot → Patience +1
+│           ├── Stake out bus stop overnight → Determination +1
+│           └── Try to forget the encounter → Recurring dreams → Trust -1
+│
+├── EPISODE 2: THE NEW STUDENT
+│   ├── First Day of School
+│   │   ├── Kazuko's Appearance (Katsuo's female form)
+│   │   │   ├── Sense connection to museum stranger → Recognition +2
+│   │   │   └── Notice unusual grace/appearance → Observation +1
+│   │   ├── Megumi's Introduction
+│   │   │   ├── Student council president appearance → Authority +1
+│   │   │   └── Interest in new student → Competition +1
+│   │   └── Classroom Dynamics
+│   │       ├── Teacher's favoritism toward Kazuko → Pattern +1
+│   │       └── Students' fascination with new girl → Social +1
+│   │
+│   ├── Chimera Revelation
+│   │   ├── Biology Class Dissection
+│   │   │   ├── Kazuko's unusual knowledge → Suspicion +2
+│   │   │   └── Technical terminology usage → Knowledge +1
+│   │   ├── Private Conversation Attempt
+│   │   │   ├── Approach about museum connection → Initiative +2
+│   │   │   └── Observe subtle reaction → Perception +1
+│   │   └── Lunch Period Encounter
+│   │       ├── Note avoidance of certain foods → Pattern +1
+│   │       └── Witness brief energy shimmer → Confirmation +2
+│   │
+│   └── Urban Park Exploration
+│       ├── After School Invitation
+│       │   ├── Suggest park walk together → Connection +2
+│       │   └── Discuss school environment → Trust +1
+│       ├── Strange Plant Growth
+│       │   ├── Notice unusual patterns near Kazuko → Sensitivity +1
+│       │   └── Observe revitalization effect → Evidence +1
+│       └── Unexpected Animal Behavior
+│           ├── See animals drawn to Kazuko → Confirmation +1
+│           └── Witness subtle communication → Perception +2
+│
+├── EPISODE 3: THE FESTIVAL NIGHT
+│   ├── Festival Preparation Committee
+│   │   ├── Assignment Selection
+│   │   │   ├── Choose same team as Kazuko → Proximity +2
+│   │   │   └── Accept different assignment → Distance -1
+│   │   ├── Planning Meetings
+│   │   │   ├── Note Kazuko's traditional knowledge → Pattern +1
+│   │   │   └── Observe Megumi's management style → Assessment +1
+│   │   └── Decoration Creation
+│   │       ├── Work alongside Kazuko → Cooperation +2
+│   │       └── Learn traditional techniques → Knowledge +1
+│   │
+│   ├── Festival Day Activities
+│   │   ├── Shrine Visit
+│   │   │   ├── Observe Kazuko's reverence → Spiritual +2
+│   │   │   └── Notice unusual energy response → Sensitivity +1
+│   │   ├── Game Booth Participation
+│   │   │   ├── Challenge Kazuko to contests → Playfulness +1
+│   │   │   └── Witness unusual reflexes → Confirmation +1
+│   │   └── Food Sharing Experience
+│   │       ├── Note Kazuko's preferences → Observation +1
+│   │       └── Share traditional treats → Connection +1
+│   │
+│   └── Moon Viewing [MAJOR INFLECTION POINT]
+│       ├── [+3] Share quiet moment with Hikari
+│       │   └── Spiritual connection strengthens
+│       ├── [-3] Witness Megumi-Katsuo interaction
+│       │   └── Sets foundation for later competition
+│       └── [0] Solitary observation
+│           └── Neutral spiritual outcome
+│
+├── EPISODE 4: THE TWO WORLDS MERGE
+│   ├── Supernatural Awareness Expansion
+│   │   ├── Minor Yokai Sightings
+│   │   │   ├── Glimpse house spirits → Perception +2
+│   │   │   └── Notice shadow anomalies → Sensitivity +1
+│   │   ├── Dream Sequence Development
+│   │   │   ├── Experience fox-guided dreams → Connection +2
+│   │   │   └── Remember dream details → Documentation +1
+│   │   └── Energy Sensitivity Growth
+│   │       ├── Detect Kazuko's aura → Awareness +2
+│   │       └── Sense other supernatural presences → Expansion +1
+│   │
+│   ├── Akane Crisis Event
+│   │   ├── Friend's Supernatural Encounter
+│   │   │   ├── Akane sees something unexplainable → Witness +2
+│   │   │   └── Confusion and fear reaction → Support -1
+│   │   ├── Confidant Dilemma
+│   │   │   ├── Share partial truth with Akane → Trust +1
+│   │   │   └── Attempt to dismiss experience → Friendship -1
+│   │   └── Worlds Merging Challenge
+│   │       ├── Help Akane process experience → Bridge +2
+│   │       └── Maintain separation of worlds → Division -1
+│   │
+│   └── First Clear Transformation Glimpse
+│       ├── Accidental Witness Moment
+│       │   ├── See Kazuko shift partially → Confirmation +3
+│       │   └── Notice fox features clearly → Evidence +2
+│       ├── Reaction Choice
+│       │   ├── [+2] Remain calm and accepting
+│       │   ├── [0] Show surprise without fear
+│       │   └── [-2] React with fear or aggression
+│       └── BAD ENDING PATH: Evidence Collection
+│           └── Attempt to gather physical proof
+│               └── Triggers Katsuo's trauma response
+│                   └── Memory alteration attempt causes damage
+│                       └── OUTCOME: Neural collapse and death
+│
+├── EPISODE 5: THE FEELING OF KATSUO
+│   ├── Emotional Development Sequence
+│   │   ├── Private Rooftop Conversation
+│   │   │   ├── Katsuo reveals inner conflict → Understanding +2
+│   │   │   └── Shares feelings of isolation → Connection +2
+│   │   ├── Duty Versus Desire Discussion
+│   │   │   ├── Explains research mission → Context +1
+│   │   │   └── Admits growing attachment → Intimacy +2
+│   │   └── Identity Crisis Expression
+│   │       ├── Questions purpose of observation → Philosophy +2
+│   │       └── Reveals fear of losing objectivity → Vulnerability +2
+│   │
+│   ├── Fake Suicide Incident
+│   │   ├── Megumi's Manipulation
+│   │   │   ├── Spreads rumors about Kazuko → Conflict +1
+│   │   │   └── Creates social isolation → Pressure +2
+│   │   ├── Rooftop Confrontation
+│   │   │   ├── Kazuko stands on edge → Drama +3
+│   │   │   └── Hikari intervenes → Trust test +2
+│   │   └── Aftermath Discussion
+│   │       ├── Reveals manipulation immunity → Relief +1
+│   │       └── Explains yokai perspective on death → Knowledge +2
+│   │
+│   └── Love Recognition Sequence
+│       ├── BAD ENDING PATH: Early Revelation
+│       │   └── Demand full explanation too soon
+│       │       └── Trust insufficient for disclosure
+│       │           └── Memory alteration attempt
+│       │               └── OUTCOME: Hospital death from neural damage
+│       ├── Emotional Barrier Discussion
+│       │   ├── Acknowledge growing feelings → Honesty +2
+│       │   └── Understand yokai emotional differences → Wisdom +1
+│       └── BAD ENDING PATH: Physical Intimacy
+│           └── Attempt sexual relationship
+│               └── Triggers energy feeding response
+│                   └── Emotional essence depletion
+│                       └── OUTCOME: Spiritual hollowing and suicide
+│
+├── EPISODE 6: REVELATION
+│   ├── Full Truth Disclosure
+│   │   ├── Katsuo's Complete Identity
+│   │   │   ├── Reveals four-tailed status → Knowledge +2
+│   │   │   └── Explains gender fluidity → Understanding +1
+│   │   ├── Research Mission Details
+│   │   │   ├── Describes observation parameters → Context +2
+│   │   │   └── Shares scientific objectives → Partnership +1
+│   │   └── Buddhist Spiritual Framework
+│   │       ├── Explains Noble Eightfold Path influences → Philosophy +3
+│   │       └── Describes bodhisattva principles of non-intervention → Wisdom +2
+│   │
+│   ├── Yokai World Explanation
+│   │   ├── Realm Structure Overview
+│   │   │   ├── Describes boundary mechanics → Knowledge +2
+│   │   │   └── Explains crossing limitations → Safety +1
+│   │   ├── Social Hierarchy Description
+│   │   │   ├── Details tail significance → Context +2
+│   │   │   └── Outlines political structures → Politics +1
+│   │   └── Corruption Mechanics Explanation
+│   │       ├── Clarifies self-determination principle → Philosophy +2
+│   │       └── Explains fifth tail splitting consequences → Warning +2
+│   │
+│   └── Relationship Definition
+│       ├── Spiritual Connection Framework
+│       │   ├── Establishes energy exchange principles → Safety +2
+│       │   └── Creates healthy interaction protocols → Structure +1
+│       ├── Future Timeline Discussion
+│       │   ├── Reveals eventual departure requirement → Honesty +2
+│       │   └── Mentions arranged marriage awaiting return → Context +1
+│       └── Commitment Parameters
+│           ├── Defines ethical boundaries → Respect +2
+│           └── Establishes communication expectations → Clarity +1
+│
+├── EPISODE 7: THE FINAL CHOICE
+│   ├── External Pressure Intensification
+│   │   ├── Megumi's Investigation Escalation
+│   │   │   ├── Discovers surveillance attempts → Security +1
+│   │   │   └── Identifies information gathering → Caution +1
+│   │   ├── Family Crisis Management
+│   │   │   ├── Father's condition deterioration → Stress +2
+│   │   │   └── Home responsibility increase → Burden +1
+│   │   └── Akane Relationship Navigation
+│   │       ├── Balance friendship with secrecy → Management +1
+│   │       └── Provide appropriate support → Connection +1
+│   │
+│   ├── Spiritual Development Acceleration
+│   │   ├── Perception Enhancement
+│   │   │   ├── Develop yokai sight ability → Sensitivity +2
+│   │   │   └── Learn energy reading techniques → Skill +1
+│   │   ├── Protection Method Mastery
+│   │   │   ├── Create personal warding → Defense +2
+│   │   │   └── Establish emergency protocols → Safety +1
+│   │   └── Communication Extension
+│   │       ├── Develop dream connection strength → Bond +2
+│   │       └── Learn distance sensing methods → Awareness +1
+│   │
+│   └── Megumi Confrontation Management
+│       ├── Evidence Challenge Navigation
+│       │   ├── Counter accusations effectively → Defense +2
+│       │   └── Maintain plausible deniability → Strategy +1
+│       ├── Alliance Consideration
+│       │   ├── Evaluate partial disclosure option → Risk +1
+│       │   └── Assess potential cooperation → Politics +2
+│       └── Information Control Implementation
+│           ├── Establish narrative management → Control +2
+│           └── Create contingency responses → Preparation +1
+│
+├── EPISODE 8: TWO PATHS
+│   ├── Departure Preparation
+│   │   ├── Timeline Clarification
+│   │   │   ├── Learn specific return date → Planning +1
+│   │   │   └── Understand ritual requirements → Knowledge +1
+│   │   ├── Memory Management Discussion
+│   │   │   ├── Explore retention possibilities → Hope +2
+│   │   │   └── Understand risks of remembering → Caution +1
+│   │   └── Future Contact Planning
+│   │       ├── Establish communication methods → Connection +2
+│   │       └── Identify potential visit protocols → Possibility +1
+│   │
+│   ├── Final Days Together
+│   │   ├── Meaningful Experience Creation
+│   │   │   ├── Visit significant locations → Memory +2
+│   │   │   └── Create lasting connections → Bond +1
+│   │   ├── Knowledge Transfer Completion
+│   │   │   ├── Learn final protection techniques → Safety +2
+│   │   │   └── Receive spiritual object gifts → Token +1
+│   │   └── Emotional Preparation
+│   │       ├── Process separation feelings → Maturity +2
+│   │       └── Establish coping strategies → Resilience +1
+│   │
+│   └── Megumi Final Resolution
+│       ├── Confrontation Management
+│       │   ├── Address remaining suspicions → Closure +1
+│       │   └── Establish post-departure expectations → Control +1
+│       ├── Information Security Finalization
+│       │   ├── Remove evidence traces → Protection +1
+│       │   └── Create explanation framework → Cover +1
+│       └── Future Trajectory Assessment
+│           ├── Evaluate Megumi's likely path → Foresight +2
+│           └── Consider intervention ethics → Philosophy +2
+│
+└── EPISODE 9: ENDINGS
+    ├── HIKARI AFFINITY EVALUATION
+    │   │
+    │   ├── HIGH AFFINITY PATH (≥15): SPIRITUAL PARTNERSHIP
+    │   │   ├── Complete Trust Establishment
+    │   │   │   ├── Final truth exchange completion
+    │   │   │   ├── Full acceptance demonstration
+    │   │   │   └── Mutual vulnerability sharing
+    │   │   ├── Mission Adjustment Approval
+    │   │   │   ├── Katsuo receives extended assignment
+    │   │   │   ├── Creates regular return schedule
+    │   │   │   └── Obtains special permission status
+    │   │   └── ENDING: Hikari becomes yokai bridge
+    │   │       ├── Develops full spiritual abilities
+    │   │       ├── Establishes human-yokai connection point
+    │   │       └── Creates lasting ethical relationship
+    │   │
+    │   ├── MEDIUM AFFINITY PATH (10-14): MEMORY KEEPER
+    │   │   ├── Partial Connection Maintenance
+    │   │   │   ├── Limited ongoing communication
+    │   │   │   ├── Occasional dream contact
+    │   │   │   └── Rare physical visitation
+    │   │   ├── Memory Preservation Process
+    │   │   │   ├── Core memories protected
+    │   │   │   ├── Spiritual awareness maintained
+    │   │   │   └── Emotional connection preserved
+    │   │   └── ENDING: Hikari lives normal life with awareness
+    │   │       ├── Continues human existence
+    │   │       ├── Maintains yokai perception
+    │   │       └── Experiences meaningful but distant contact
+    │   │
+    │   └── LOW AFFINITY PATH (<10): MEGUMI INFLUENCE DOMINATES
+    │       │
+    │       ├── COUNCIL ROOM INTIMACY SEQUENCE
+    │       │   ├── Private Confrontation
+    │       │   │   ├── Megumi reveals partial knowledge
+    │       │   │   ├── Uses political leverage
+    │       │   │   └── Creates intimate situation
+    │       │   ├── Physical Connection Development
+    │       │   │   ├── First climax with partial transformation
+    │       │   │   ├── Second climax with Megumi dominance
+    │       │   │   └── Third climax with memory restoration
+    │       │   ├── Complete Memory Return
+    │       │   │   ├── Summer encounter recognition
+    │       │   │   ├── Previous interaction awareness
+    │       │   │   └── Full supernatural comprehension
+    │       │   └── Relationship Assessment
+    │       │       ├── Evaluate connection potential
+    │       │       ├── Consider future possibilities
+    │       │       └── Recognize spiritual implications
+    │       │
+    │       └── SPIRITUAL DETERMINATION POINT
+    │           │
+    │           ├── NO FESTIVAL CONNECTION: OBSERVER PATH
+    │           │   ├── Katsuo's Self-Determined Choice
+    │           │   │   ├── Maintains scientific distance
+    │           │   │   ├── Preserves observation protocols
+    │           │   │   └── Upholds non-intervention principle
+    │           │   └── OUTCOME: Megumi's Yakuza Rise
+    │           │       ├── Political skills enable criminal success
+    │           │       ├── Creates destructive influence network
+    │           │       └── Becomes significant societal problem
+    │           │
+    │           └── HAS FESTIVAL CONNECTION: INTERVENTION CHOICE
+    │               │
+    │               ├── TRICKSTER PATH (SPIRITUAL PRESERVATION)
+    │               │   ├── Katsuo's Self-Determined Choice
+    │               │   │   ├── Creates illusory magical object
+    │               │   │   ├── Exploits Megumi's ambition
+    │               │   │   └── Uses indirect method to maintain principle
+    │               │   └── OUTCOME: Megumi's Disintegration
+    │               │       ├── Uses treasure in private
+    │               │       ├── Energy completely consumes body
+    │               │       └── No evidence remains of cause
+    │               │
+    │               └── SAVIOR PATH (SELF-DETERMINED CORRUPTION)
+    │                   ├── Katsuo's Self-Determined Choice
+    │                   │   ├── Consciously violates bodhisattva principles
+    │                   │   ├── Chooses direct intervention in human fate
+    │                   │   └── Accepts spiritual corruption consequences
+    │                   └── OUTCOME: Fifth Tail Split / Hurricane Katsuo
+    │                       ├── Successfully reforms Megumi into positive force
+    │                       ├── Fifth tail splits through principle violation
+    │                       ├── Transforms into destructive Kiko form
+    │                       └── Self-destructs creating devastating hurricane
+    │
+    └── EPILOGUE VARIANTS
+        ├── Shrine Maiden Hikari (high affinity)
+        │   ├── Established role as yokai intermediary
+        │   ├── Developed spiritual abilities
+        │   └── Continuing partnership with Katsuo
+        │
+        ├── College Student Hikari (medium affinity)
+        │   ├── Normal academic progression
+        │   ├── Maintained supernatural awareness
+        │   └── Occasional meaningful yokai contact
+        │
+        ├── Yakuza Leader Megumi (observer path)
+        │   ├── Criminal empire establishment
+        │   ├── Political corruption network
+        │   └── Significant social damage creation
+        │
+        ├── Memorial Shrine (trickster path)
+        │   ├── Unexplained disappearance records
+        │   ├── Mysterious energy phenomena
+        │   └── Occasional Katsuo visitation
+        │
+        └── Hurricane Memorial Center (savior path)
+            ├── Disaster recovery documentation
+            ├── Megumi's humanitarian foundation
+            └── Spiritually charged crater site
