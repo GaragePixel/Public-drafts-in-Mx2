@@ -1,4 +1,4 @@
-// FOX SPIRIT ROMANCE: BAD ENDINGS IMPLEMENTATION
+// FOX SPIRIT ROMANCE: BAD ENDINGS IMPLEMENTATION (PART 1)
 // Implementation: iDkP from GaragePixel
 // Date: 2025-04-09
 // Aida Version: 4.2.1
@@ -46,7 +46,7 @@ VAR megumi_relationship = 0
 # music: tension_theme
 # sfx: heartbeat
 
-{-has_revealed_kitsune_knowledge:
+{not has_revealed_kitsune_knowledge:
     ~ has_revealed_kitsune_knowledge = true
 }
 
@@ -78,6 +78,67 @@ Her dismissal was expertly crafted to make Hikari sound delusional while offerin
 * [Double down with details] -> early_revelation_details
 * [Threaten to tell others] -> early_revelation_threat
 * [Accept the exit] -> early_revelation_retreat
+
+=== early_revelation_backdown ===
+# image: apologetic_stance
+# music: uncertainty_theme
+# sfx: nervous_laugh
+
+"I... I'm sorry," Hikari stammered, heat rushing to her face as she realized the absurdity of her accusation. "I don't know what came over me. I had this weird dream last night, and you reminded me of someone in it."
+
+The explanation was clumsy, transparently false, but Kazuko graciously accepted the retreat with a perfectly calibrated sympathetic smile.
+
+"Dreams can be quite vivid," she agreed, her voice carrying just the right note of understanding without condescension. "I've sometimes confused dream memories with reality myself."
+
+The expert way she provided Hikari an exit path only confirmed what Hikari already knew—this was no ordinary schoolgirl. But having retreated once, she couldn't credibly renew the accusation.
+
+Over the next several weeks, Hikari noticed Kazuko watching her with greater frequency—subtle, assessing glances when she thought no one was looking. Their interactions remained politely distant, yet carried an undercurrent of mutual awareness that hadn't existed before.
+
+* [Maintain distance] -> early_revelation_mutual_avoidance
+* [Try another approach] -> early_revelation_second_attempt
+* [Research kitsune] -> early_revelation_research_response
+
+=== early_revelation_threat ===
+# image: aggressive_stance
+# music: confrontation_theme
+# sfx: tense_silence
+
+"Maybe I should tell others what I know," Hikari suggested, voice low but carrying deliberate threat. "I wonder how Megumi would react if I showed her evidence of what her perfect new friend really is."
+
+The threat was ill-considered—she had no actual evidence beyond her own observations. But the effect on Kazuko was immediate and chilling. The schoolgirl's expression didn't change, but the temperature in the room seemed to drop several degrees.
+
+"That would be unwise," Kazuko replied, voice still perfectly modulated yet carrying unmistakable danger. "Claims without proof reflect poorly on the claimant, not the accused. And some... entities... take unkindly to exposure attempts."
+
+The warning was clear—pushing further would have consequences. Hikari felt a supernatural weight pressing against her, a subtle but unmistakable demonstration of power beyond human capability.
+
+"Think carefully about your next steps, Hasegawa-san," Kazuko continued, gathering her books with deliberate movements. "Some paths, once taken, cannot be reversed."
+
+With that, she left the classroom, her schoolgirl mannerisms perfectly intact despite the threat that had just transpired.
+
+* [Heed the warning] -> early_revelation_warning_heeded
+* [Gather evidence] -> early_revelation_evidence_gathering
+* [Tell Megumi anyway] -> early_revelation_megumi_warning
+
+=== early_revelation_retreat ===
+# image: strategic_withdrawal
+# music: uncertainty_theme
+# sfx: classroom_movement
+
+Hikari recognized the offered exit strategy for what it was—an opportunity to retreat without consequences. Perhaps direct confrontation wasn't the wisest approach with a being whose powers and intentions remained unknown.
+
+"Maybe I have been reading too much folklore," she agreed with a self-deprecating laugh. "Sorry for the strange accusation."
+
+Kazuko's subtle relaxation was noticeable only because Hikari was watching for it—the slightest easing of supernatural tension, a microscopic lowering of defenses.
+
+"No harm done," the kitsune replied, voice perfectly calibrated to sound like an ordinary teenage girl. "We all say unusual things sometimes."
+
+The conversation shifted to homework and upcoming exams—safe, mundane topics that allowed both to pretend the accusation had never happened. Yet beneath the surface pleasantries, a new awareness existed between them.
+
+In the weeks that followed, Hikari noticed subtle changes in Kazuko's behavior—occasional assessing glances, slight adjustments to maintain distance between them in group settings, careful management of interactions to ensure they were never alone together again.
+
+* [Observe from distance] -> early_revelation_careful_observation
+* [Seek alternative approach] -> early_revelation_indirect_strategy
+* [Focus elsewhere] -> early_revelation_strategic_withdrawal
 
 === early_revelation_details ===
 # image: intense_confrontation
@@ -301,12 +362,220 @@ Her father, momentarily shocked into sobriety by her death, would eventually suc
 
 -> END
 
+=== early_revelation_tail_apology ===
+# image: desperate_apology
+# music: fear_theme
+# sfx: quickened_breath
+
+"I'm sorry!" Hikari blurted, immediately recognizing she had crossed a terrible line. The fur in her hand suddenly felt like it was burning her fingers. "I didn't mean—I wasn't thinking—"
+
+But apologies came too late. Kazuko's—Katsuo's—expression had transformed into something ancient and dangerous, eyes now glowing with supernatural light. The air in the classroom grew heavy with unseen energy that made breathing difficult.
+
+"Hunters," he whispered, voice layering with inhuman harmonics. "Always collecting pieces of us. Always hunting."
+
+His hand rose in an unnatural gesture, fingers splaying as the air between them rippled with distortion. "My mother nearly died when hunters took her fur. I will not allow history to repeat itself."
+
+A crushing pressure began building in Hikari's skull, like vise-grips tightening around her brain. Blood trickled from her nose as her natural yokai perception fought against the supernatural intrusion.
+
+"Please," she gasped through the pain. "I'm not a hunter—I just wanted to understand—"
+
+But the trauma she had inadvertently triggered was too profound. The memory manipulation intensified until darkness claimed her consciousness.
+
+-> early_revelation_hospital_aftermath
+
+=== early_revelation_tail_retreat ===
+# image: slow_backing
+# music: tension_escalating
+# sfx: careful_footsteps
+
+Hikari backed away slowly, the silver-white fur still clutched in her trembling fingers. The enormity of her mistake was immediately clear in Kazuko's transformed expression—cold fury mixed with something deeper and more primal: fear.
+
+"I didn't mean to hurt you," Hikari said carefully, continuing her retreat toward the classroom door. "I just needed to be sure."
+
+"Hunters always have justifications," Kazuko replied, voice no longer even attempting to sound human. Her form seemed to flicker between schoolgirl and something else—something ancient and dangerous.
+
+"I'm not a hunter," Hikari protested, back now pressed against the classroom door. "I'm just trying to understand what I saw at the museum."
+
+"Understanding?" A bitter laugh escaped Kazuko's lips. "My mother nearly died when hunters took samples of her fur. 'Understanding' was their excuse too."
+
+The air between them distorted as if heated, and Hikari felt a building pressure behind her eyes—the prelude to memory manipulation. But her natural yokai perception created resistance, triggering a dangerous feedback loop that neither had anticipated.
+
+Blood began trickling from her nose as the pressure intensified. The last thing she saw before consciousness faded was genuine alarm replacing anger in Katsuo's expression—recognition that something had gone catastrophically wrong.
+
+-> early_revelation_hospital_aftermath
+
+=== early_revelation_return_fur ===
+# image: offering_return
+# music: desperation_theme
+# sfx: whispering_voices
+
+"Here—take it back," Hikari said quickly, extending her hand with the silver-white fur. "I didn't understand what I was doing. Please."
+
+For a moment, it seemed the gesture might defuse the situation. Katsuo's expression flickered with momentary uncertainty at her immediate capitulation. But as his fingers reached for the fur, something triggered deeper trauma—memories of hunters who had similarly collected samples of his mother's fur generations ago.
+
+"Too late," he whispered, voice carrying centuries of pain. "The damage is done. You revealed yourself as a threat."
+
+The pressure building behind Hikari's eyes intensified, like ice picks driving into her brain. She collapsed to her knees, blood beginning to trickle from her nose as her natural yokai sensitivity created dangerous resistance to the memory manipulation.
+
+"I'm sorry," she gasped through the pain. "Please believe me."
+
+But the traumatic trigger had activated instinctive defensive protocols that overrode rational assessment. As darkness claimed her consciousness, she glimpsed genuine regret replacing anger in Katsuo's eyes—recognition that his reaction had escalated beyond appropriate response.
+
+-> early_revelation_hospital_aftermath
+
+=== early_revelation_escape_attempt ===
+# image: desperate_flight
+# music: chase_theme
+# sfx: running_footsteps
+
+Hikari turned and bolted for the door, supernatural instinct screaming danger. But she had barely taken two steps when invisible force froze her in place—muscles locking, limbs refusing to obey her desperate commands to flee.
+
+"Running confirms guilt," Katsuo's voice stated flatly, all pretense of humanity abandoned. "Hunters always run when their deceptions fail."
+
+"I'm not a hunter!" she protested, struggling against the invisible restraint. "I just wanted to understand what you are!"
+
+"That's what they told my mother," he replied, voice carrying centuries of distrust. "Before they nearly killed her for study."
+
+The pressure building inside Hikari's skull intensified to unbearable levels—like needles driven through her temples. Blood began trickling from her nose as her natural yokai perception created dangerous resistance to the memory manipulation attempt.
+
+"Please," she gasped as darkness encroached on her vision. "I meant no harm..."
+
+But the trauma trigger had activated defensive protocols that overrode rational judgment. As consciousness faded, she glimpsed conflict in Katsuo's expression—realization that his reaction might be disproportionate coming too late to halt the process already in motion.
+
+-> early_revelation_hospital_aftermath
+
+=== early_revelation_approach_attempt ===
+# image: hesitant_approach
+# music: tension_soft
+# sfx: classroom_ambient
+
+After several days of careful distance, Hikari attempted to approach Kazuko during lunch break. The disguised kitsune was sitting alone for once, apparently absorbed in a book about traditional Japanese art.
+
+"May I join you?" Hikari asked carefully.
+
+Kazuko's expression remained perfectly neutral, but her eyes carried clear warning. "I'm afraid I'm rather focused on my reading, Hasegawa-san."
+
+The dismissal was polite but firm. When Hikari hesitated instead of leaving, Kazuko closed her book with deliberate care.
+
+"Let me be clearer," she said, voice too low for others to overhear. "What you think you know is dangerous—for you more than me. Some barriers exist for good reasons."
+
+"I just want to understand—" Hikari began.
+
+"Understanding requires readiness," Kazuko interrupted gently. "You demonstrated impulsiveness rather than wisdom. That doesn't inspire confidence."
+
+With that, she gathered her belongings and departed, leaving Hikari with the realization that she had failed some essential test. The opportunity for connection had existed briefly but was now firmly closed.
+
+* [Accept the rejection] -> early_revelation_respect_distance
+* [Try written communication] -> early_revelation_written_message
+* [Seek answers elsewhere] -> early_revelation_alternative_sources
+
+=== early_revelation_written_message ===
+# image: folded_note
+# music: contemplative_theme
+# sfx: paper_folding
+
+After several days of careful distance, Hikari decided on a different approach. She composed a carefully worded note, avoiding direct references to supernatural elements that might create problems if intercepted:
+
+"I apologize for my directness earlier. I only sought confirmation of what I glimpsed that summer day, not to cause distress. I respect boundaries and seek only understanding, not exploitation. If conversation is possible sometime, I would be grateful."
+
+She slipped the note into Kazuko's shoe locker early morning, before other students arrived.
+
+That afternoon, she found a response tucked into her own textbook—a small origami fox crafted from pale blue paper, reminiscent of the shirt Katsuo had worn at the museum. Inside was written a single line: "Wisdom begins with patience. Some knowledge requires preparation."
+
+No further communication followed, yet Hikari occasionally noticed Kazuko watching her with speculative interest rather than wariness. The door wasn't open, but neither was it permanently locked.
+
+* [Focus on preparation] -> early_revelation_spiritual_development
+* [Continue normal school life] -> early_revelation_mundane_path
+* [Research yokai independently] -> early_revelation_independent_study
+
+=== early_revelation_last_chance ===
+# image: final_approach
+# music: determination_theme
+# sfx: hallway_ambient
+
+After weeks of respectful distance, Hikari made one final attempt at connection. She caught Kazuko alone in the library's reference section, deliberately choosing neutral territory where neither would feel cornered.
+
+"I know we've established boundaries," she said quietly, "and I've respected them. But before you disappear from my life completely, I wanted to say that meeting you—both versions of you—changed how I see the world. For that, I'm grateful."
+
+Kazuko studied her with ancient eyes that seemed starkly out of place in her teenage face. After a long moment, she responded with careful precision.
+
+"Few humans perceive what you did. Fewer still respond with curiosity rather than fear. That... is noteworthy."
+
+She selected a book from the shelf and placed it in Hikari's hands—an obscure volume on Shinto purification practices.
+
+"Begin here," she said simply. "Some doors require proper preparation before they can be safely opened."
+
+With that cryptic advice, she departed, maintaining the established distance yet leaving Hikari with a faint path forward—not friendship or direct guidance, but acknowledgment of potential.
+
+* [Study the book] -> early_revelation_spiritual_guidance
+* [Take indirect approach] -> early_revelation_tangential_path
+* [Accept the ending] -> early_revelation_bittersweet_conclusion
+
+=== early_revelation_independent_investigation ===
+# image: research_montage
+# music: discovery_theme
+# sfx: pages_turning
+
+Though Katsuo maintained his distance, Hikari couldn't dismiss what she had witnessed. She began researching yokai systematically—visiting shrines, interviewing elderly priests, collecting obscure texts on supernatural manifestations.
+
+Her investigation avoided direct pursuit of Katsuo himself, focusing instead on understanding the broader context of yokai existence. This indirect approach yielded insights that direct confrontation might have prevented.
+
+She learned about different types of kitsune, their social hierarchies, their various powers and limitations. More importantly, she began developing her natural spiritual sensitivity through meditation and ritual practices described in ancient texts.
+
+Occasionally she noticed Kazuko observing her from a distance, a speculative look replacing the earlier wariness. Though they never spoke directly again, she sensed a shift in the kitsune's assessment—from potential threat to something more complex.
+
+When Kazuko disappeared after graduation, leaving no trace in others' memories, Hikari alone remembered and understood the significance of what she had briefly encountered.
+
+* [Continue spiritual path] -> early_revelation_spiritual_development
+* [Seek other yokai] -> early_revelation_broader_exploration
+* [Document discoveries] -> early_revelation_knowledge_preservation
+
+=== early_revelation_demands ===
+# image: confrontational_stance
+# music: tension_high
+# sfx: classroom_echo
+
+"I want explanations," Hikari pressed, emboldened by the kitsune's acknowledgment. "Why are you disguised as a student? What are you doing here? Are there others like you?"
+
+Kazuko's expression hardened at the demanding tone. "You mistake acknowledgment for obligation, Hasegawa-san. I've confirmed your perception was accurate. That doesn't entitle you to my secrets."
+
+The temperature in the room seemed to drop several degrees as she continued, "Consider carefully what you're asking. Knowledge of yokai affairs carries consequences. Most humans who glimpse our world quickly wish they hadn't."
+
+Her eyes flickered briefly with supernatural light—a deliberate demonstration rather than loss of control. "I've lived centuries before your birth and will continue centuries after your death. My purposes are my own."
+
+The message was clear—confirmation was all Hikari would receive. Further demands would meet resistance.
+
+* [Apologize for presumption] -> early_revelation_humble_retreat
+* [Press for minimal information] -> early_revelation_negotiated_knowledge
+* [Make threats] -> early_revelation_dangerous_threats
+
+=== early_revelation_alliance ===
+# image: tentative_offering
+# music: possibility_theme
+# sfx: thoughtful_silence
+
+"Maybe we could help each other," Hikari suggested carefully. "I've always been able to see things others can't. Perhaps that could be useful to you somehow."
+
+Kazuko's expression shifted to something more calculating as she reassessed the human girl before her. "An interesting proposition. What exactly would you expect in return for this... assistance?"
+
+"Just information," Hikari replied. "Understanding of what I can see. Maybe protection if there are dangers I should know about."
+
+The kitsune considered this proposal with ancient eyes that seemed starkly out of place in her teenage face. After a long moment, she responded with measured caution.
+
+"Such arrangements are... uncommon. Humans rarely perceive our world without attempting to exploit it. Your restraint thus far is noteworthy."
+
+She studied Hikari with new intensity. "I will consider your offer. For now, maintain your silence about what you've seen. Indiscretion would terminate any potential agreement between us."
+
+* [Accept her terms] -> early_revelation_potential_agreement
+* [Request immediate protection] -> early_revelation_protection_request
+* [Ask about other yokai] -> early_revelation_yokai_inquiry
+
 === sexual_encounter_path ===
 # image: locker_room_private
 # music: intimate_theme
 # sfx: water_dripping
 
-{-sexualContentEnabled:
+{not sexualContentEnabled:
     Their conversation in the locker room took an unexpected turn as tension of a different sort filled the space between them. What had begun as vulnerability about Hikari's chimera skin had somehow shifted into something more charged, more dangerous.
     
     "You're different from the others," Kazuko said softly, her eyes holding Hikari's with uncomfortable intensity. "You see more than they do."
@@ -379,6 +648,40 @@ In the days that followed, this sensation persisted. Hikari moved through school
 * [Seek out Kazuko] -> consumed_girl_seeking
 * [Research what happened] -> consumed_girl_research
 * [Spiral downward] -> consumed_girl_spiral
+
+=== consumed_girl_seeking ===
+# image: desperate_search
+# music: hollow_pursuit
+# sfx: footsteps_hallway
+
+Despite her diminished state—or perhaps because of it—Hikari sought desperately to find Kazuko again. She searched throughout the school, lingering in places they had previously encountered each other, leaving notes in strategic locations.
+
+But the kitsune had become a ghost, expertly avoiding any possibility of direct contact. In class, Kazuko's eyes passed over Hikari as if she were invisible. Even when proximity was unavoidable, perfect distance was maintained through subtle manipulations of group dynamics.
+
+The one time Hikari managed to corner her target in the library's reference section, Kazuko simply smiled with polite disinterest. "Do I know you?" she asked, her voice carrying exactly the right note of confused politeness. "I'm afraid you have me confused with someone else."
+
+The denial was so perfect, so convincing, that for a moment Hikari questioned her own memory. Had the encounter even happened? The silver-white hair she'd preserved in a small glass vial was her only evidence against mounting self-doubt.
+
+* [Accept abandonment] -> consumed_girl_acceptance
+* [Become obsessive] -> consumed_girl_obsession
+* [Continue deteriorating] -> consumed_girl_spiral
+
+=== consumed_girl_research ===
+# image: library_research
+# music: discovery_theme
+# sfx: pages_turning
+
+Despite her diminished emotional state, Hikari managed to channel her remaining energy into research. Her investigation led her through obscure folklore collections, ancient temple archives, and questionable internet forums dedicated to supernatural phenomena.
+
+Most sources were useless—fantasy or superstition with no connection to truth. But occasionally she found fragments that resonated with her experience: references to emotional feeding, yokai who sustained themselves on human essence, the danger of voluntary surrender to supernatural entities.
+
+One particularly ancient text described kitsune who fed not on physical sustenance but on human emotional energy—leaving their victims hollow, diminished versions of their former selves. Some victims recovered over time if the feeding was moderate; others, completely drained, lost connection to their own existence entirely.
+
+As Hikari's condition continued deteriorating despite her knowledge, she realized an uncomfortable truth: understanding the process didn't reverse its effects. Whatever Kazuko had taken from her was gone permanently.
+
+* [Accept the loss] -> consumed_girl_acceptance
+* [Seek revenge] -> consumed_girl_vengeance
+* [Continue deteriorating] -> consumed_girl_spiral
 
 === consumed_girl_spiral ===
 # image: bedroom_twilight
@@ -539,6 +842,42 @@ Over the next several days, this hollow feeling persisted rather than diminished
 * [Research what happened] -> emotional_feeding_research
 * [Decline continues] -> emotional_decline
 
+=== post_feeding_confrontation ===
+# image: hallway_confrontation
+# music: tension_theme
+# sfx: school_ambience
+
+Hikari cornered Kazuko between classes, determined to understand what had happened to her. "What did you take from me?" she demanded, voice quiet but intense. "Why do I feel... empty?"
+
+Kazuko's expression remained perfectly controlled, yet something in her eyes suggested she had anticipated this confrontation. "I don't know what you mean, Hasegawa-san," she replied, voice carrying precisely calibrated confusion. "Are you feeling unwell?"
+
+"Stop pretending," Hikari insisted. "I know what happened between us was real. I have proof." She pulled the silver-white hair from her pocket, held carefully in a small plastic case.
+
+For an instant, genuine concern flickered across Kazuko's features before perfect composure returned. "You should see the school nurse," she suggested, voice gentle yet dismissive. "Delusions can be symptoms of serious conditions."
+
+Before Hikari could respond, other students entered the hallway, and Kazuko seamlessly used their arrival to extract herself from the conversation.
+
+* [Continue deteriorating] -> emotional_decline
+* [Seek help elsewhere] -> emotional_alternative_help
+* [Plan more concrete evidence] -> emotional_evidence_gathering
+
+=== emotional_feeding_research ===
+# image: ancient_text
+# music: discovery_theme
+# sfx: page_turning
+
+Desperate for answers, Hikari channeled her remaining energy into research. Library archives, folklore texts, even questionable internet forums dedicated to supernatural phenomena—anything that might explain what had happened and how to reverse it.
+
+Most sources proved useless, but occasionally she found fragments of relevant information: references to emotional feeding, yokai who sustained themselves on human essence, the danger of voluntary surrender to supernatural entities.
+
+One particularly ancient text described kitsune who fed not on physical sustenance but on human emotional energy—leaving their victims hollow, diminished versions of their former selves. Some victims recovered gradually if the feeding was moderate; others, completely drained, lost connection to their own existence entirely.
+
+The knowledge provided context but no remedy. Understanding the process didn't reverse its effects. Whatever Kazuko had taken from her appeared to be gone permanently.
+
+* [Seek supernatural help] -> emotional_supernatural_remedy
+* [Confront with knowledge] -> emotional_informed_confrontation
+* [Continue deteriorating] -> emotional_decline
+
 === emotional_decline ===
 # image: fading_girl
 # music: deterioration_theme
@@ -573,106 +912,81 @@ The impact was mercifully instantaneous.
 
 -> SUICIDE_DEATH_END
 
-=== oral_encounter_path ===
-# image: empty_classroom_dusk
-# music: intimate_tension
-# sfx: distant_footsteps
+=== symbolic_retreat ===
+# image: hesitation_moment
+# music: caution_theme
+# sfx: locker_closing
 
-It happened during an unplanned encounter after school hours. Hikari had stayed late to finish an art project, losing track of time in the quiet focus of creative work. The building had largely emptied when she finally packed her supplies and headed toward the exit.
+Something in Kazuko's eyes—an ancient hunger barely concealed beneath the perfect schoolgirl facade—triggered Hikari's survival instinct. She stepped back, creating distance between them despite the magnetic pull urging closer connection.
 
-Passing by the audiovisual room, she noticed light spilling from beneath the door. Curiosity made her pause—most clubs had finished hours ago. Sliding the door open slightly, she was surprised to find Kazuko alone, watching footage of what appeared to be student interviews from the previous year.
+"I should go," she said, hastily rebuttoning her blouse. "It's getting late."
 
-Kazuko turned at the intrusion, momentarily startled before her features settled into their usual perfect composure. "Hasegawa-san. You're here late."
+Disappointment flickered across Kazuko's features, quickly replaced by calculating assessment. "Of course," she agreed smoothly. "Another time, perhaps."
 
-Hikari hesitated in the doorway, torn between polite retreat and the rare opportunity for private interaction. "I lost track of time in the art room."
+The words carried both promise and threat, confirmation that what had almost happened would have irrevocably changed something fundamental between them—though whether for better or worse remained uncertain.
 
-A moment of silence stretched between them, charged with unspoken awareness.
+In the weeks that followed, Hikari noticed subtle changes in Kazuko's behavior—occasional evaluating glances from across classrooms, careful maintenance of physical distance, slight smiles when their eyes accidentally met. The kitsune seemed to be reassessing her, categorizing her not as prey that escaped but as something more interesting: prey that recognized the predator and chose self-preservation.
 
-* [Ask about the footage] -> av_footage_question
-* [Mention the museum] -> av_museum_reference
-* [Step into the room] -> av_enter_room
+* [Maintain distance] -> symbolic_continued_caution
+* [Research kitsune] -> symbolic_knowledge_seeking
+* [Reconsider connection] -> symbolic_cautious_approach
 
-=== av_enter_room ===
-# image: dim_av_room
-# music: tension_low
-# sfx: door_sliding
+=== explicit_retreat ===
+# image: withdrawal_moment
+# music: caution_theme
+# sfx: clothing_adjustment
 
-Hikari stepped fully into the room, sliding the door closed behind her. The space felt smaller with just the two of them, illuminated only by the blue light of the monitor displaying paused footage of student interviews.
+Survival instinct overrode curiosity as Hikari registered the hunger beneath Kazuko's perfect facade. She pulled away, rebuttoning her blouse with trembling fingers.
 
-"Why are you watching these?" she asked, moving closer to see the screen.
+"I should go," she managed, voice unsteady. "Class will be starting soon."
 
-Kazuko regarded her with careful assessment before responding. "Research. Understanding human social dynamics in educational environments."
+Something flashed in Kazuko's eyes—disappointment mixed with respect. "Of course," she agreed smoothly. "Some boundaries should be approached with caution."
 
-The clinical phrasing caught Hikari's attention—another subtle tell that Kazuko wasn't what she appeared to be.
+The statement confirmed what Hikari had sensed—that whatever had been building between them carried consequences beyond ordinary intimacy. Her instinctive retreat had potentially saved her from something she wasn't prepared to understand.
 
-"You say 'human' like you're observing a different species," Hikari noted, heart racing at her own boldness.
+In subsequent days, she noticed subtle changes in Kazuko's behavior—occasional evaluating glances, careful maintenance of distance, slight nods of acknowledgment when they passed in hallways. The kitsune seemed to be reassessing her, categorizing her not as prey that escaped but as something potentially more valuable: a human with sufficient awareness to recognize supernatural danger.
 
-Something flickered in Kazuko's expression—surprise, perhaps respect for Hikari's perception. "An interesting choice of words," she replied, neither confirming nor denying.
+* [Research yokai interaction] -> explicit_research_response
+* [Maintain safe distance] -> explicit_continued_caution
+* [Approach differently] -> explicit_strategic_approach
 
-* [Be more direct] -> av_direct_approach
-* [Demonstrate perception] -> av_perception_demonstration
-* [Physical proximity] -> av_physical_closeness
-
-=== av_direct_approach ===
-# image: confrontation_dim
+=== explicit_question ===
+# image: direct_questioning
 # music: revelation_theme
-# sfx: heartbeat_quickening
+# sfx: held_breath
 
-"I know what you are," Hikari said softly but clearly, maintaining eye contact with Kazuko. "I saw you at the museum this summer. In your male form."
+"You're not human, are you?" Hikari asked directly, voice barely above a whisper. "I saw your reflection at the museum this summer. You were male then. Katsuo, not Kazuko."
 
-The perfect schoolgirl composure faltered momentarily, calculation and assessment visible in Kazuko's eyes. Rather than denying it immediately, she studied Hikari with new intensity.
+Silence filled the locker room as Kazuko went perfectly still—not the stillness of shock but the preternatural immobility of a predator reassessing potential prey.
 
-"And what exactly do you think I am, Hasegawa-san?" she asked, voice neutral but carrying subtle undertones of danger.
+"Perception is an interesting thing," she finally responded, voice deeper than before. "Most humans see only what they expect to see. You... see more."
 
-"Kitsune," Hikari stated simply. "A fox spirit disguised as a human student."
+She studied Hikari with new intensity. "The question is not what I am, but what you intend to do with such unusual perception."
 
-Kazuko's expression remained carefully controlled, but something in her posture shifted—becoming simultaneously more relaxed and more dangerous, like a predator no longer needing to maintain its camouflage.
+The air between them felt charged with potential energy—neither threatening nor seductive but somehow both simultaneously. Hikari understood instinctively that her response would determine what path opened before her.
 
-"How fascinating," she said, voice deepening slightly. "And what do you intend to do with this... theory?"
+* [Express curiosity] -> explicit_curiosity_response
+* [Offer discretion] -> explicit_discretion_offer
+* [Request truth] -> explicit_truth_request
 
-* [Express curiosity] -> av_curiosity_expression
-* [Offer secrecy] -> av_secrecy_offer
-* [Suggest arrangement] -> av_arrangement_suggestion
-
-=== av_arrangement_suggestion ===
-# image: intimate_proposal
-# music: seduction_theme
-# sfx: chair_movement
-
-"I don't intend to expose you," Hikari said, moving closer. "But I would like to know more. To understand what you are, why you're here."
-
-Kazuko's head tilted slightly, assessing Hikari's intentions. "Knowledge has value. What would you offer in exchange for such understanding?"
-
-The question hung between them, laden with implications. Hikari felt herself at a crossroads—aware she was entering dangerous territory yet unable to resist the pull of supernatural mystery.
-
-"What would you want?" she asked, voice barely above a whisper.
-
-Kazuko stood, moving with fluid grace that seemed suddenly less human. She approached Hikari slowly, giving her ample opportunity to retreat. When Hikari remained in place, Kazuko reached out, fingers gently brushing her cheek.
-
-"Energy. Experience. Emotion," she murmured. "These sustain my kind."
-
-* [Offer willingly] -> av_willing_offering
-* [Request clarification] -> av_feeding_clarification
-* [Show hesitation] -> av_hesitation_response
-
-=== av_willing_offering ===
-# image: surrender_moment
-# music: supernatural_intimacy
+=== explicit_confession ===
+# image: vulnerable_admission
+# music: confession_theme
 # sfx: soft_breath
 
-"Take what you need," Hikari whispered, surprised by her own willingness yet unable to suppress the desire for connection—to be seen and accepted fully by someone who understood difference.
+"I see glimpses sometimes," Hikari admitted, voice soft with vulnerability. "Reflections that don't match. Shadows with the wrong shape. Eyes that catch the light... differently."
 
-Kazuko's eyes widened slightly, genuine surprise breaking through her calculated demeanor. "You would offer freely? Without fully understanding what you're giving?"
+She met Kazuko's increasingly intense gaze. "At the museum this summer, you were male. You gave me directions to the yokai exhibit, and when you thought I wasn't looking, your reflection showed fox ears briefly."
 
-"I understand enough," Hikari responded. "You need emotional energy. I have emotions to spare."
+Silence hung between them, heavy with possibility and danger. When Kazuko finally responded, her voice had deepened further, abandoning pretense of teenage femininity.
 
-A smile curved Kazuko's lips—not the perfect schoolgirl expression but something older, more predatory, yet not without appreciation. "Rare indeed to find such willing offering. Most humans require... persuasion."
+"And yet you approach rather than flee," she observed. "Most humans instinctively avoid what they can't explain. You seek closer connection. Why?"
 
-Her hands moved to frame Hikari's face, thumbs gently stroking her cheeks. "This will be... intense. But I promise to take only what you can spare."
+The question wasn't accusatory but genuinely curious—as if Hikari represented a category of human behavior the kitsune hadn't previously encountered.
 
-* [Close eyes in surrender] -> av_emotional_surrender
-* [Maintain eye contact] -> av_conscious_surrender
-* [Initiate physical contact] -> av_physical_initiation
+* [Express fascination] -> explicit_fascination_expression
+* [Share personal isolation] -> explicit_isolation_sharing
+* [Admit attraction] -> explicit_attraction_admission
 
 === av_physical_initiation ===
 # image: first_touch
@@ -692,6 +1006,42 @@ When they finally separated, Kazuko's eyes had changed—pupils elongated into s
 * [Continue kissing] -> av_continued_kissing
 * [Touch revealed features] -> av_feature_exploration
 * [Offer more] -> av_greater_offering
+
+=== av_continued_kissing ===
+# image: passionate_exchange
+# music: rising_tension
+# sfx: quickened_breath
+
+Hikari leaned in again, reconnecting their lips with renewed hunger. This second kiss carried even greater intensity than the first—the initial shock giving way to deliberate exploration as she traced Kazuko's lips with her tongue, noting how they occasionally felt different from human lips.
+
+Kazuko responded with increasing passion, her perfect schoolgirl composure slipping further as her hands moved more possessively through Hikari's hair, occasionally tightening with inhuman strength that bordered on painful without crossing the line.
+
+As the kiss deepened, Hikari became aware of subtle changes in Kazuko's energy—a vibration beneath her skin, fluctuating temperature, occasional shifts in facial structure that she could feel against her own face. The kitsune was struggling to maintain human form under the influence of growing passion.
+
+When they separated again, Kazuko's disguise had slipped further—golden eyes now openly glowing in the dim room, canines visibly elongated when she spoke.
+
+"You should be careful what you start, Hasegawa-san," she warned, voice now firmly masculine despite her female appearance. "Some roads cannot be easily reversed once traveled."
+
+* [Express desire to continue] -> av_explicit_desire
+* [Ask to see true form] -> av_request_true_form
+* [Touch more intimately] -> av_intimate_touch
+
+=== av_feature_exploration ===
+# image: curious_touch
+# music: discovery_theme
+# sfx: soft_touch
+
+With trembling fingers, Hikari reached up to touch the subtle changes in Kazuko's face—the slightly sharper angles that had replaced soft feminine curves, the barely visible fur-like texture appearing at her hairline, the elongated canines visible when she parted her lips.
+
+"Beautiful," Hikari whispered, fascination overcoming fear as she traced these manifestations of Kazuko's true nature.
+
+The kitsune remained perfectly still during this exploration, only the subtle flare of her nostrils and intensifying golden glow in her eyes revealing her reaction to the intimate contact. When Hikari's fingers brushed her slightly pointed ears, a shiver ran through her entire body.
+
+"Few humans would react with admiration rather than fear," Kazuko observed, voice continuing to deepen as her disguise deteriorated further. "Fewer still would dare to touch what they perceive as monstrous."
+
+* [Deny monstrousness] -> av_acceptance_expression
+* [Continue exploration] -> av_continued_exploration
+* [Express desire] -> av_desire_confession
 
 === av_greater_offering ===
 # image: submissive_offering
@@ -776,6 +1126,25 @@ Katsuo watched her with increasing intensity, his breathing changing as she reve
 * [Begin tentatively] -> av_oral_tentative
 * [Show enthusiasm] -> av_oral_eager
 * [Ask for guidance] -> av_oral_guidance
+
+=== av_oral_tentative ===
+# image: hesitant_beginning
+# music: intimate_soft
+# sfx: nervous_breath
+
+Hikari approached the task with nervous hesitation, her movements uncertain as she explored this new territory. Her initial touches were gentle, almost reverent, as she familiarized herself with his form.
+
+Katsuo responded with surprising patience, allowing her to set the pace despite the obvious intensity of his desire. His fingers rested lightly in her hair—not directing, merely maintaining connection as she found her way.
+
+"You needn't be afraid," he murmured, voice strained yet encouraging. "I won't harm you."
+
+Emboldened by his gentleness, Hikari grew more confident, her explorations becoming more deliberate. When she finally took him into her mouth, his sharp intake of breath confirmed she had crossed into territory that affected even supernatural beings profoundly.
+
+His control began slipping—subtle manifestations of his true nature appearing as pleasure mounted. His shadow on the wall occasionally showed pointed ears or multiple tails, his eyes flashed with golden light, and the temperature around them fluctuated with his breathing.
+
+* [Continue gently] -> av_gentle_continuation
+* [Increase intensity] -> av_growing_confidence
+* [Look up at him] -> av_eye_contact_moment
 
 === av_oral_eager ===
 # image: intimate_service
@@ -1054,7 +1423,29 @@ He considered this, fox-fire dancing subtly in his eyes as he thought. "My missi
 * [Begin planning] -> av_strategic_planning
 * [Express concern] -> av_lingering_concern
 
-=== stalking_evidence ===
+=== part4_av_determination_expression ===
+# image: resolute_hikari
+# music: determination_theme
+# sfx: school_bell_distant
+
+"Then I'll face that complexity," Hikari stated with quiet resolve. "I've spent my entire life navigating between worlds—visible and invisible, acceptance and rejection. I'm not afraid of difficult paths."
+
+Katsuo studied her with increasing wonder. "You are extraordinary for a human," he acknowledged. "Perhaps that's why I couldn't maintain proper distance."
+
+"Or perhaps connections form for reasons beyond our control," she suggested. "Even for supernatural beings."
+
+He considered this, fox-fire dancing subtly in his eyes as he thought. "My mission ends in three months. After that, I must return to report my findings and receive new directives."
+
+"Three months," Hikari echoed. "Time enough to find a way forward."
+
+~ trust += 1
+~ danger_level += 1
+
+* [Seal the agreement] -> part4_av_agreement_sealing
+* [Begin planning] -> part4_av_strategic_planning
+* [Express concern] -> part4_av_lingering_concern
+
+=== part4_stalking_evidence ===
 # image: collection_evidence
 # music: suspense_theme
 # sfx: careful_movement
@@ -1067,11 +1458,28 @@ What Hikari couldn't know was how her actions mirrored a traumatic episode from 
 
 This parallel would prove devastatingly significant when Katsuo eventually discovered Hikari's collection.
 
-* [Categorize evidence] -> stalking_organization
-* [Plan confrontation] -> stalking_confrontation_planning
-* [Hide collection] -> stalking_evidence_concealment
+* [Categorize evidence] -> part4_stalking_organization
+* [Plan confrontation] -> part4_stalking_confrontation_planning
+* [Hide collection] -> part4_stalking_evidence_concealment
 
-=== stalking_confrontation_planning ===
+=== part4_stalking_organization ===
+# image: organized_evidence
+# music: investigative_theme
+# sfx: paper_rustling
+
+Hikari carefully categorized her evidence, creating a system that would be compelling even to skeptical observers. The silver-white hairs—central to her collection—were preserved in small glass vials, each labeled with date and location of retrieval. Ordinary fox hairs obtained from a wildlife rehabilitation center provided stark visual contrast, highlighting the supernatural qualities of Katsuo's fur.
+
+Her observation logs filled three notebooks, documenting times, locations, and forms observed. Careful sketches detailed the subtle inconsistencies in Kazuko's female appearance—proportions slightly too perfect, movements occasionally too fluid for human physiology, moments when lighting caught her eyes at angles that revealed vulpine characteristics.
+
+Most compelling was her timeline correlation between Kazuko's activities and Katsuo's appearances—never seen simultaneously, always with suspicious gaps between sightings. She had even documented subtle behavioral patterns common to both personas despite their apparent gender differences.
+
+When complete, the organized evidence created a compelling case that would be difficult to dismiss as coincidence or misperception.
+
+* [Plan presentation] -> part4_stalking_confrontation_planning
+* [Consider implications] -> part4_stalking_ethical_consideration
+* [Add supernatural research] -> part4_stalking_supernatural_context
+
+=== part4_stalking_confrontation_planning ===
 # image: evidence_spread
 # music: strategic_theme
 # sfx: paper_rustling
@@ -1084,11 +1492,11 @@ Her strategy needed to be perfect. A direct confrontation risked denial or worse
 
 What she couldn't anticipate was how deeply her collection method would trigger Katsuo's ancestral trauma once discovered.
 
-* [Approach directly] -> stalking_direct_approach
-* [Indirect questioning] -> stalking_indirect_approach
-* [Reveal to Megumi first] -> stalking_megumi_revelation
+* [Approach directly] -> part4_stalking_direct_approach
+* [Indirect questioning] -> part4_stalking_indirect_approach
+* [Reveal to Megumi first] -> part4_stalking_megumi_revelation
 
-=== stalking_direct_approach ===
+=== part4_stalking_direct_approach ===
 # image: confrontation_classroom
 # music: revelation_theme
 # sfx: classroom_door
@@ -1105,11 +1513,32 @@ As she spoke, Kazuko's expression changed subtly—not just the calculated cauti
 
 ~ katsuo_maternal_trauma = true
 
-* [Continue presenting evidence] -> stalking_evidence_presentation
-* [Notice reaction] -> stalking_reaction_observation
-* [Offer alliance] -> stalking_alliance_offer
+* [Continue presenting evidence] -> part4_stalking_evidence_presentation
+* [Notice reaction] -> part4_stalking_reaction_observation
+* [Offer alliance] -> part4_stalking_alliance_offer
 
-=== stalking_reaction_observation ===
+=== part4_stalking_evidence_presentation ===
+# image: evidence_display
+# music: revelation_building
+# sfx: quickened_breath
+
+"I've documented everything systematically," Hikari continued, withdrawing her observation notebook from her bag. "The timing of your appearances in different forms, your interactions with Megumi, the physical inconsistencies in your reflection."
+
+She spread selected pages on a nearby desk, revealing meticulous notes and careful sketches. The level of detail demonstrated weeks of focused observation—times, locations, behavioral patterns all carefully documented.
+
+"I'm not doing this to threaten you," she explained, misinterpreting the growing tension in Kazuko's posture as simple concern about exposure. "I just want to understand what's happening—why you're here, what your interest in Megumi means."
+
+What Hikari couldn't perceive was the mounting horror behind Kazuko's controlled expression—not fear of exposure but something far more primal. The collection of hair, the documented movements, the methodical tracking... all of it echoed the hunters who had nearly killed his mother centuries earlier.
+
+~ katsuo_maternal_trauma = true
+
+"How long have you been following me?" Kazuko asked, voice deceptively calm despite the storm building within.
+
+* [Answer honestly] -> part4_stalking_honest_answer
+* [Notice distress] -> part4_stalking_reaction_observation
+* [Apologize for methods] -> part4_stalking_method_apology
+
+=== part4_stalking_reaction_observation ===
 # image: trauma_response
 # music: unsettling_theme
 # sfx: quickened_breath
@@ -1127,11 +1556,32 @@ The words seemed disconnected from their immediate situation—as if Kazuko was 
 ~ katsuo_maternal_trauma = true
 ~ danger_level += 3
 
-* [Apologize] -> stalking_hasty_apology
-* [Ask about hunters] -> stalking_hunter_inquiry
-* [Back away] -> stalking_cautious_retreat
+* [Apologize] -> part4_stalking_hasty_apology
+* [Ask about hunters] -> part4_stalking_hunter_inquiry
+* [Back away] -> part4_stalking_cautious_retreat
 
-=== stalking_hasty_apology ===
+=== part4_stalking_hunter_inquiry ===
+# image: cautious_question
+# music: history_theme
+# sfx: distant_thunder
+
+"Hunters?" Hikari repeated cautiously. "I'm not a hunter. I was trying to understand, not harm you."
+
+The question seemed to pull Kazuko partially back from whatever memory had claimed her. She focused on Hikari with eyes that now carried visible supernatural light.
+
+"My mother was hunted once," she said, voice distant as if reciting ancient history. "Humans collected her fur, tracked her movements, documented her patterns... just as you have done with me. They nearly captured her—would have killed her for study if not for intervention."
+
+Her gaze sharpened, returning fully to the present moment. "Do you understand what you've done? How deeply you've triggered memories no kitsune ever forgets?"
+
+The air around them seemed to thicken as Kazuko's control continued slipping, her form occasionally flickering between female student and something more primal, more dangerous.
+
+~ katsuo_maternal_trauma = true
+
+* [Destroy the evidence] -> part4_stalking_evidence_destruction
+* [Express regret] -> part4_stalking_genuine_regret
+* [Defend your actions] -> part4_stalking_defensive_stance
+
+=== part4_stalking_hasty_apology ===
 # image: attempted_retreat
 # music: danger_imminent
 # sfx: racing_heartbeat
@@ -1147,11 +1597,11 @@ The air between them distorted as if heated, and a painful pressure began buildi
 ~ memory_erasure_attempt = true
 ~ katsuo_maternal_trauma = true
 
-* [Try to explain] -> stalking_desperate_explanation
-* [Attempt to flee] -> stalking_panic_flight
-* [Submit willingly] -> stalking_willing_submission
+* [Try to explain] -> part4_stalking_desperate_explanation
+* [Attempt to flee] -> part4_stalking_panic_flight
+* [Submit willingly] -> part4_stalking_willing_submission
 
-=== stalking_desperate_explanation ===
+=== part4_stalking_desperate_explanation ===
 # image: pleading_stance
 # music: desperate_theme
 # sfx: painful_pressure
@@ -1169,11 +1619,11 @@ The memory manipulation intensified, pressure building to unbearable levels behi
 ~ memory_erasure_attempt = true
 ~ katsuo_maternal_trauma = true
 
-* [Continue resisting] -> stalking_resistance
-* [Show empty hands] -> stalking_surrender_gesture
-* [Collapse under pressure] -> stalking_submission
+* [Continue resisting] -> part4_stalking_resistance
+* [Show empty hands] -> part4_stalking_surrender_gesture
+* [Collapse under pressure] -> part4_stalking_submission
 
-=== stalking_resistance ===
+=== part4_stalking_resistance ===
 # image: mental_struggle
 # music: supernatural_battle
 # sfx: mental_strain
@@ -1188,11 +1638,47 @@ The cold spreading through her skull transformed to burning pain. Blood now stre
 
 Through the haze of agony, Hikari glimpsed true fear replacing anger in Katsuo's expression—recognition that something was going catastrophically wrong with the memory alteration process.
 
-* [Final resistance] -> stalking_terminal_resistance
-* [Try to surrender] -> stalking_late_surrender
-* [Lose consciousness] -> stalking_blackout
+* [Final resistance] -> part4_stalking_terminal_resistance
+* [Try to surrender] -> part4_stalking_late_surrender
+* [Lose consciousness] -> part4_stalking_blackout
 
-=== stalking_blackout ===
+=== part4_stalking_terminal_resistance ===
+# image: final_defiance
+# music: tragic_theme
+# sfx: heartbeat_erratic
+
+"I won't... let you... take them," Hikari gasped between waves of excruciating pain. "My memories... are mine!"
+
+Her desperate resistance created a catastrophic feedback loop between supernatural manipulation and natural yokai perception. Blood now poured from her eyes as well as nose and ears, her nervous system overwhelmed by energies it was never designed to withstand.
+
+Katsuo's expression transformed from anger to horror as he realized the damage occurring. He attempted to withdraw the memory alteration, but the process had developed its own momentum—a cascading failure impossible to halt midway.
+
+"Let go!" he pleaded, voice carrying genuine anguish now. "Your mind is tearing itself apart!"
+
+But Hikari couldn't hear him anymore. The pain had become everything, consuming thought and awareness alike. Her body convulsed once before collapsing to the classroom floor, consciousness snuffed out by supernatural backlash.
+
+The last thing Katsuo saw before her eyes closed was not fear or anger, but a flicker of satisfaction—she had protected her memories, even at the ultimate cost.
+
+-> part4_stalking_blackout
+
+=== part4_stalking_late_surrender ===
+# image: desperate_surrender
+# music: tragedy_theme
+# sfx: labored_breathing
+
+"I surrender," Hikari gasped, blood streaming down her face as she realized the futility of resistance. "Take... whatever you need."
+
+But her capitulation came too late. The feedback loop between yokai manipulation and natural resistance had developed its own deadly momentum—a cascading failure that neither could now control.
+
+Katsuo's expression shifted from anger to horror as he recognized what was happening. "No, no—I'm withdrawing! Let go of the memories voluntarily!"
+
+His attempt to halt the process proved futile. The supernatural energies had already caused catastrophic damage to Hikari's neural pathways, creating hemorrhaging throughout her brain that no medical intervention could repair.
+
+Her body crumpled to the classroom floor, consciousness failing as critical systems shut down. The last thing she perceived was Katsuo's anguished expression—the ancient being realizing too late that his fear-driven reaction had triggered a tragedy neither had anticipated.
+
+-> part4_stalking_blackout
+
+=== part4_stalking_blackout ===
 # image: classroom_collapse
 # music: failure_theme
 # sfx: body_falling
@@ -1207,9 +1693,9 @@ Blood now streamed from her nose, ears and eyes as the supernatural backlash ove
 
 As consciousness faded completely, Hikari understood with perfect clarity—she had inadvertently triggered something deeply traumatic in Katsuo, something that had overwhelmed his rational assessment of her intentions. Her collection of physical evidence, meant to confirm her own sanity, had instead awakened ancient fears that now claimed her life as collateral damage.
 
--> HUNTER_DEATH_END
+-> part4_HUNTER_DEATH_END
 
-=== HUNTER_DEATH_END ===
+=== part4_HUNTER_DEATH_END ===
 # image: hospital_final
 # music: tragedy_theme
 # sfx: flatline
@@ -1226,7 +1712,7 @@ In the centuries that followed, Katsuo would carry the burden of Hikari's death�
 
 -> END
 
-=== megumi_intimate_sequence ===
+=== part4_megumi_intimate_sequence ===
 # image: private_council_room
 # music: tension_intimate
 # sfx: door_locking
@@ -1239,11 +1725,51 @@ Kazuko studied her with calculating eyes, assessing options and risks. Something
 
 "What if it were?" he asked carefully. "Would it change how you see me?"
 
-* [Memory restoration begins] -> megumi_memory_beginning
-* [Megumi demands proof] -> megumi_proof_demand
-* [Physical contact initiates] -> megumi_touch_initiation
+* [Memory restoration begins] -> part4_megumi_memory_beginning
+* [Megumi demands proof] -> part4_megumi_proof_demand
+* [Physical contact initiates] -> part4_megumi_touch_initiation
 
-=== megumi_touch_initiation ===
+=== part4_megumi_memory_beginning ===
+# image: memory_flow
+# music: revelation_theme
+# sfx: memory_whispers
+
+"There's something familiar about this conversation," Megumi said slowly, eyes narrowing as fragments of suppressed memory stirred. "We've had it before, haven't we? Not here, but..."
+
+"The shrine," Katsuo supplied gently, still maintaining his female appearance though his voice had deepened slightly. "Last summer, during the Tanabata festival."
+
+The prompt triggered a cascade—behind Megumi's eyes, memories began surfacing like bubbles in water. Fragments at first—moonlight on stone steps, the scent of incense, a male voice explaining yokai hierarchies—then more substantial recollections.
+
+"You were male then," she whispered, confusion and recognition battling across her features. "You called yourself..."
+
+"Katsuo," he supplied, form flickering briefly between female student and his true appearance. "I showed you things few humans ever witness."
+
+As he spoke, his hand reached across the council table, fingertips nearly touching hers. "Would you like to remember everything, Megumi? I can restore what I took from you, but once returned, those memories cannot be forgotten again without consequence."
+
+* [Megumi accepts] -> part4_megumi_acceptance
+* [Megumi hesitates] -> part4_megumi_hesitation
+* [Physical contact accelerates] -> part4_megumi_touch_initiation
+
+=== part4_megumi_proof_demand ===
+# image: demanding_evidence
+# music: confrontation_theme
+# sfx: fist_table
+
+"Prove it," Megumi demanded, arms crossed defensively across her chest. "If you're claiming to be some supernatural creature, I need more than Hasegawa's wild theories and your cryptic non-answers."
+
+Kazuko considered the council president with calculating eyes. Though his mission parameters discouraged unnecessary revelation, something about Megumi had always fascinated him—her natural authority, her emotional intensity that generated energy so potent it drew yokai from across the ward.
+
+"Very well," he said after a moment's consideration. "But understand that some knowledge cannot be unlearned, Megumi. Are you certain you wish to see what lies beneath human perception?"
+
+When she nodded firmly, Kazuko—now noticeably speaking in Katsuo's deeper voice despite maintaining female appearance—raised one hand with deliberate care. The air around his fingers distorted slightly before fox-fire manifested—ethereal blue-white flames that emitted light but no heat, dancing across his palm with controlled precision.
+
+"This is the simplest manifestation," he explained as Megumi stared transfixed. "A minor example of abilities that exist beyond human understanding."
+
+* [Megumi approaches] -> part4_megumi_fascinated_approach
+* [Megumi demands more] -> part4_megumi_greater_proof
+* [Physical contact initiates] -> part4_megumi_touch_initiation
+
+=== part4_megumi_touch_initiation ===
 # image: first_contact
 # music: intimate_beginning
 # sfx: soft_touch
@@ -1258,11 +1784,32 @@ Her expression registered confusion, then determination. "Show me," she demanded
 
 The request aligned perfectly with Katsuo's deepest desires—to reveal himself to this human who had fascinated him since summer. His scientific observation of her had evolved into something more complex, more personal. Though his mission parameters required maintaining distance, in private moments at his apartment, it was always Megumi who occupied his thoughts, his fantasies.
 
-* [Begin transformation] -> megumi_partial_transformation
-* [Initiate memory restoration] -> megumi_memory_beginning
-* [Intimate contact deepens] -> megumi_escalating_touch
+* [Begin transformation] -> part4_megumi_partial_transformation
+* [Initiate memory restoration] -> part4_megumi_memory_beginning
+* [Intimate contact deepens] -> part4_megumi_escalating_touch
 
-=== megumi_escalating_touch ===
+=== part4_megumi_partial_transformation ===
+# image: partial_shift
+# music: transformation_theme
+# sfx: energy_shimmer
+
+Katsuo allowed his perfect control to slip gradually, revealing his true nature in carefully measured stages. The female form of Kazuko began dissolving—facial features shifting subtly, becoming more angular, more masculine. Height increased by several inches, shoulders broadening beneath the female uniform that shimmered with supernatural energy as it adjusted to the changing form beneath.
+
+"This is closer to my true self," he explained, voice now fully masculine though still carrying echoes of Kazuko's inflections. "The form I showed you last summer, before altering your memories."
+
+Megumi watched with fascination rather than fear, her hand still resting against his now-masculine cheek. "Katsuo," she whispered, the name emerging from somewhere beyond conscious memory.
+
+His eyes widened slightly at her recognition. "You remember something."
+
+"Fragments," she admitted. "Like dreams half-remembered upon waking. Your name... the feel of your hand in mine... standing at a shrine overlook, watching the city lights..."
+
+As she spoke, Katsuo's form continued its gradual transformation—student uniform shifting to casual male attire, fox-like characteristics becoming subtly visible: slightly pointed ears, elongated canines when he smiled, eyes with vertical pupils that caught light differently than human eyes.
+
+* [Complete transformation] -> part4_megumi_full_transformation
+* [Memory restoration accelerates] -> part4_megumi_memory_cascade
+* [Physical connection intensifies] -> part4_megumi_escalating_touch
+
+=== part4_megumi_escalating_touch ===
 # image: intimate_escalation
 # music: seduction_theme
 # sfx: quickened_breath
@@ -1279,11 +1826,30 @@ As they drew closer, Katsuo allowed his form to fluctuate slightly—not fully t
 
 "Something ancient," he answered. "Something that has watched humanity for centuries."
 
-* [Kiss initiates] -> megumi_supernatural_kiss
-* [Memory restoration begins] -> megumi_memory_beginning
-* [Megumi touches changing features] -> megumi_exploratory_touch
+* [Kiss initiates] -> part4_megumi_supernatural_kiss
+* [Memory restoration begins] -> part4_megumi_memory_beginning
+* [Megumi touches changing features] -> part4_megumi_exploratory_touch
 
-=== megumi_supernatural_kiss ===
+=== part4_megumi_exploratory_touch ===
+# image: curious_exploration
+# music: discovery_theme
+# sfx: soft_touch
+
+With fascinated curiosity, Megumi's fingers explored the shifting features before her—tracing the contours of a face that fluctuated between feminine and masculine aspects. When her fingertips brushed against Katsuo's slightly pointed ears as they momentarily manifested, she gasped softly at the foreign texture.
+
+"You're becoming more familiar," she murmured. "Like something from a dream I've been trying to remember."
+
+Katsuo's transformation accelerated under her touch, as if her acceptance gave him freedom to reveal more of himself. The feminine aspects of Kazuko receded further, giving way to his natural masculine form—still human-appearing but with subtle vulpine characteristics that no ordinary human could possess.
+
+"Your touch remembers me," he observed, voice now fully masculine. "Your conscious mind may have forgotten, but your body recalls our connection."
+
+As if to demonstrate, his hand covered hers, guiding her fingers to the nape of his neck—a spot he knew from summer encounters was particularly sensitive for her. Megumi's reaction was immediate—a soft intake of breath, pupils dilating as dormant memories stirred beneath conscious thought.
+
+* [Memory fragments surface] -> part4_megumi_memory_fragments
+* [Physical connection deepens] -> part4_megumi_supernatural_kiss
+* [Megumi requests full reveal] -> part4_megumi_revelation_request
+
+=== part4_megumi_supernatural_kiss ===
 # image: first_kiss
 # music: supernatural_intimacy
 # sfx: energy_shimmer
@@ -1302,11 +1868,11 @@ His eyes widened in surprise. "You remember?"
 
 ~ megumi_relationship += 2
 
-* [Offer full memory restoration] -> megumi_memory_offer
-* [Continue physical connection] -> megumi_physical_progression
-* [Explain supernatural nature] -> megumi_supernatural_explanation
+* [Offer full memory restoration] -> part4_megumi_memory_offer
+* [Continue physical connection] -> part4_megumi_physical_progression
+* [Explain supernatural nature] -> part4_megumi_supernatural_explanation
 
-=== megumi_physical_progression ===
+=== part4_megumi_physical_progression ===
 # image: intimate_exploration
 # music: passion_building
 # sfx: clothing_rustling
@@ -1321,11 +1887,11 @@ With each touch, fragments of memory surfaced in Megumi's consciousness—summer
 
 Katsuo's transformation accelerated as passion built between them—his form now fully male, school uniform shifting to match, though subtle inhuman features became increasingly apparent: eyes too golden, canines slightly elongated, movements too fluid for human musculature.
 
-* [Move to council table] -> p5_megumi_council_table
-* [Undressing begins] -> megumi_undressing_sequence
-* [Memory restoration intensifies] -> megumi_memory_through_touch
+* [Move to council table] -> part5_megumi_council_table
+* [Undressing begins] -> part4_megumi_undressing_sequence
+* [Memory restoration intensifies] -> part4_megumi_memory_through_touch
 
-=== megumi_undressing_sequence ===
+=== part4_megumi_undressing_sequence ===
 # image: intimate_undressing
 # music: desire_theme
 # sfx: fabric_rustling
@@ -1344,11 +1910,11 @@ The revelation seemed to intensify Megumi's desire rather than diminish it. Her 
 
 As garments fell away, Katsuo allowed himself fuller transformation—his true form emerging more clearly though still predominantly human. In the council room's dim lighting, his skin sometimes seemed to shimmer with subtle fox-fire, casting ethereal patterns across Megumi's exposed body.
 
-* [Proceed to council table] -> megumi_council_table
-* [Oral intimacy begins] -> megumi_oral_initiation
-* [Memory restoration accelerates] -> megumi_memory_flood
+* [Proceed to council table] -> part5_megumi_council_table
+* [Oral intimacy begins] -> part4_megumi_oral_initiation
+* [Memory restoration accelerates] -> part4_megumi_memory_flood
 
-=== megumi_council_table ===
+=== part5_megumi_council_table ===
 # image: table_intimacy
 # music: passion_intense
 # sfx: table_clearing
@@ -1365,11 +1931,30 @@ Katsuo's reaction was immediate and intense—a sharp intake of breath, eyes bri
 
 ~ megumi_relationship += 2
 
-* [Remove remaining clothing] -> megumi_full_undressing
-* [Begin memory restoration] -> megumi_memory_through_intimacy
-* [Megumi takes control] -> megumi_dominant_position
+* [Remove remaining clothing] -> part5_megumi_full_undressing
+* [Begin memory restoration] -> part5_megumi_memory_through_intimacy
+* [Megumi takes control] -> part5_megumi_dominant_position
 
-=== megumi_full_undressing ===
+=== part5_megumi_memory_through_intimacy ===
+# image: memory_connection
+# music: revelation_theme
+# sfx: memory_whispers
+
+As their physical connection deepened, something extraordinary began happening—memories flowing through the intimate contact like electricity through a conductor. Each touch unlocked fragments of experiences Megumi had been forced to forget: moonlight conversations about yokai society, shared secrets in abandoned shrines, moments of discovery and wonder.
+
+"I'm remembering," she gasped, eyes widening as images flooded her consciousness. "Last summer... the shrine... you showed me fox-fire and explained the hierarchy of your kind."
+
+Katsuo nodded, his fingers tracing patterns across her skin that corresponded to specific memories. "Physical connection accelerates restoration. Your body remembers what your mind was made to forget."
+
+With each new memory that surfaced, Megumi's confidence grew—her natural authority extending into this supernatural territory. The passive recipient of memory became an active explorer, her hands guiding their connection to recover specific moments she sensed at the edges of awareness.
+
+"Show me everything," she demanded, voice carrying the command presence that had made her student council president despite fierce competition.
+
+* [Continue memory restoration] -> part5_megumi_full_memories
+* [Physical passion accelerates] -> part5_megumi_passionate_progression
+* [Katsuo reveals true form] -> part5_megumi_true_form_revelation
+
+=== part5_megumi_full_undressing ===
 # image: full_nudity
 # music: revelation_theme
 # sfx: final_garments
@@ -1384,11 +1969,34 @@ As her fingers traced patterns across his chest and abdomen, Katsuo allowed hims
 
 His hands moved with reverent appreciation over her body, relearning contours he'd explored during summer encounters now erased from her memory. Each touch elicited responses he remembered—particular sensitive areas, specific preferences—creating an uncanny sensation for Megumi of being known more intimately than should be possible.
 
-* [Megumi questions familiarity] -> megumi_deja_vu
-* [Intimacy escalates] -> megumi_passionate_progression
-* [Memory restoration deepens] -> megumi_memory_unlocking
+* [Megumi questions familiarity] -> part5_megumi_deja_vu
+* [Intimacy escalates] -> part5_megumi_passionate_progression
+* [Memory restoration deepens] -> part5_megumi_memory_unlocking
 
-=== megumi_passionate_progression ===
+=== part5_megumi_deja_vu ===
+# image: confused_recognition
+# music: memory_theme
+# sfx: heartbeat_quickening
+
+"How do you know exactly where to touch me?" Megumi asked, voice caught between suspicion and wonder. "It's as if you've mapped my body before."
+
+"I have," Katsuo admitted, fingers finding another spot that made her breath catch. "Last summer, before I altered your memories. We shared moments like this at your home while your parents attended conferences in Osaka."
+
+The revelation should have disturbed her, yet somehow felt like confirmation of something she'd always suspected. As his touch continued, specific memories began crystallizing—snippets of moments she'd previously dismissed as particularly vivid dreams.
+
+"The western-style hotel in Yokohama," she whispered as the memory surfaced. "We watched fireworks from the balcony, then..."
+
+"You remember," he confirmed, expression showing genuine pleasure at her recollection.
+
+Megumi's hands moved more confidently now, guided by fragmentary memories still returning. "And this," she said, fingers tracing a pattern on his lower back that made him inhale sharply, "was particularly sensitive for you."
+
+"Your memory is impressive," he acknowledged, voice strained with pleasure. "Most humans recover only general impressions, not specific details."
+
+* [Continue memory exploration] -> part5_megumi_memory_through_touch
+* [Physical passion intensifies] -> part5_megumi_passionate_progression
+* [Megumi takes initiative] -> part5_megumi_confident_initiative
+
+=== part5_megumi_passionate_progression ===
 # image: intimate_positioning
 # music: passion_peak
 # sfx: breathing_synchronized
@@ -1407,11 +2015,11 @@ Her answer was to pull him closer, legs wrapping around his waist in unmistakabl
 
 Katsuo positioned himself at her entrance, pausing only briefly to ensure her readiness. When he finally pushed forward, joining their bodies completely, both gasped at the intensity of the connection—not merely physical but something that transcended ordinary sensation.
 
-* [Begin rhythmic movement] -> megumi_intimate_rhythm
-* [Memory restoration accelerates] -> megumi_memory_through_union
-* [Supernatural manifestation increases] -> megumi_supernatural_union
+* [Begin rhythmic movement] -> part5_megumi_intimate_rhythm
+* [Memory restoration accelerates] -> part5_megumi_memory_through_union
+* [Supernatural manifestation increases] -> part5_megumi_supernatural_union
 
-=== megumi_intimate_rhythm ===
+=== part5_megumi_intimate_rhythm ===
 # image: passionate_connection
 # music: rising_passion
 # sfx: rhythmic_movement
@@ -1428,11 +2036,11 @@ Megumi responded by tightening her legs around him, urging him deeper, her body 
 
 ~ megumi_relationship += 1
 
-* [Increase intensity] -> megumi_increasing_intensity
-* [Memory restoration peaks] -> megumi_memory_flood
-* [Megumi takes active role] -> megumi_position_change
+* [Increase intensity] -> part5_megumi_increasing_intensity
+* [Memory restoration peaks] -> part5_megumi_memory_flood
+* [Megumi takes active role] -> part5_megumi_position_change
 
-=== megumi_increasing_intensity ===
+=== part5_megumi_increasing_intensity ===
 # image: passionate_peak
 # music: climactic_build
 # sfx: passionate_sounds
@@ -1447,11 +2055,11 @@ She pulled him closer, seemingly unafraid of his increasingly supernatural manif
 
 The permission shattered his final restraints. His form shifted more dramatically—fox features becoming unmistakable, multiple tails manifesting partially as translucent energy constructs behind him. The council room filled with tangible supernatural energy that made loose papers swirl and electronics flicker.
 
-* [Approach first climax] -> megumi_first_climax
-* [Memory restoration completes] -> megumi_full_memory_return
-* [Position change] -> megumi_new_position
+* [Approach first climax] -> part5_megumi_first_climax
+* [Memory restoration completes] -> part5_megumi_full_memory_return
+* [Position change] -> part5_megumi_new_position
 
-=== megumi_first_climax ===
+=== part5_megumi_first_climax ===
 # image: first_release
 # music: climax_theme
 # sfx: pleasure_peak
@@ -1468,11 +2076,11 @@ Unlike human males, kitsune experienced orgasm as a full-body phenomenon—waves
 
 Throughout this overwhelming experience, his connection with Megumi deepened—the intimate contact creating a perfect conduit for memory restoration as his essence mingled with hers.
 
-* [Memory restoration accelerates] -> megumi_memory_through_climax
-* [Maintain connection for second peak] -> megumi_continued_intimacy
-* [Megumi's simultaneous climax] -> megumi_synchronized_release
+* [Memory restoration accelerates] -> part5_megumi_memory_through_climax
+* [Maintain connection for second peak] -> part5_megumi_continued_intimacy
+* [Megumi's simultaneous climax] -> part5_megumi_synchronized_release
 
-=== megumi_synchronized_release ===
+=== part5_megumi_synchronized_release ===
 # image: dual_climax
 # music: transcendence_theme
 # sfx: dual_release
@@ -1487,11 +2095,11 @@ For nearly a full minute, they remained locked in this transcendent state—phys
 
 ~ megumi_relationship += 3
 
-* [Gradual subsidence] -> megumi_afterglow
-* [Memory integration] -> megumi_memory_integration
-* [Katsuo retains arousal] -> megumi_continued_desire
+* [Gradual subsidence] -> part5_megumi_afterglow
+* [Memory integration] -> part5_megumi_memory_integration
+* [Katsuo retains arousal] -> part5_megumi_continued_desire
 
-=== megumi_continued_desire ===
+=== part5_megumi_continued_desire ===
 # image: sustained_arousal
 # music: renewal_theme
 # sfx: continuing_intimacy
@@ -1510,11 +2118,11 @@ Katsuo shifted their position with supernatural grace, lifting and turning her w
 
 ~ megumi_relationship += 1
 
-* [Megumi takes control] -> megumi_dominant_role
-* [More memories surface] -> megumi_position_memory
-* [Building toward second climax] -> megumi_second_building
+* [Megumi takes control] -> part5_megumi_dominant_role
+* [More memories surface] -> part5_megumi_position_memory
+* [Building toward second climax] -> part5_megumi_second_building
 
-=== megumi_dominant_role ===
+=== part5_megumi_dominant_role ===
 # image: megumi_control
 # music: power_theme
 # sfx: rhythm_change
@@ -1529,11 +2137,11 @@ For him, this second approach to pleasure built differently than the first—mor
 
 "Perfect," he gasped when she discovered a rhythm that sent cascades of sensation through his supernatural nervous system. "Just like that."
 
-* [Building intensity] -> megumi_second_building
-* [More memories return] -> megumi_intimate_memories
-* [Position adjustment] -> megumi_angle_change
+* [Building intensity] -> part5_megumi_second_building
+* [More memories return] -> part5_megumi_intimate_memories
+* [Position adjustment] -> part5_megumi_angle_change
 
-=== megumi_second_building ===
+=== part5_megumi_second_building ===
 # image: pleasure_building
 # music: anticipation_theme
 # sfx: quickening_rhythm
@@ -1548,11 +2156,11 @@ This second approach to climax built more deliberately than the first—a slow, 
 
 Meanwhile, Megumi's own pleasure built toward a second peak, her movements becoming more focused, more determined. The power dynamic between them shifted continuously—sometimes she led, sometimes he guided, creating a dance of mutual pleasure that transcended ordinary human experience.
 
-* [Approach second climax] -> megumi_second_climax
-* [Complete memory restoration] -> megumi_final_memories
-* [Katsuo takes active role] -> megumi_katsuo_guidance
+* [Approach second climax] -> part5_megumi_second_climax
+* [Complete memory restoration] -> part5_megumi_final_memories
+* [Katsuo takes active role] -> part5_megumi_katsuo_guidance
 
-=== megumi_second_climax ===
+=== part5_megumi_second_climax ===
 # image: second_release
 # music: climactic_theme_reprise
 # sfx: intensity_peaking
@@ -1571,11 +2179,11 @@ The supernatural release triggered Megumi's own second climax simultaneously—h
 
 ~ megumi_relationship += 2
 
-* [Afterglow begins] -> megumi_dual_afterglow
-* [Memory completion] -> megumi_memory_completion
-* [Katsuo remains aroused] -> megumi_third_potential
+* [Afterglow begins] -> part5_megumi_dual_afterglow
+* [Memory completion] -> part5_megumi_memory_completion
+* [Katsuo remains aroused] -> part5_megumi_third_potential
 
-=== megumi_third_potential ===
+=== part5_megumi_third_potential ===
 # image: continued_arousal
 # music: renewal_theme
 # sfx: breathing_recovery
@@ -1592,11 +2200,11 @@ Without waiting for verbal response, he lifted her with supernatural strength, s
 
 ~ megumi_relationship += 1
 
-* [Gentle completion begins] -> megumi_third_approach
-* [Final memory restoration] -> megumi_complete_restoration
-* [Mutual exhaustion] -> megumi_completion_without_third
+* [Gentle completion begins] -> part5_megumi_third_approach
+* [Final memory restoration] -> part5_megumi_complete_restoration
+* [Mutual exhaustion] -> part5_megumi_completion_without_third
 
-=== megumi_third_approach ===
+=== part5_megumi_third_approach ===
 # image: final_intimacy
 # music: completion_theme
 # sfx: gentle_rhythm
@@ -1611,11 +2219,11 @@ Megumi's hands traced patterns across his chest and shoulders, exploring the occ
 
 Despite the gentler pace, pleasure built inexorably between them—a slower, deeper wave approaching with gradual certainty. Katsuo's fox-fire aura surrounded them both now, creating an intimate sphere that separated them from ordinary reality.
 
-* [Third climax approaches] -> megumi_final_climax
-* [Memory cycle completes] -> megumi_memory_cycle_completion
-* [Emotional connection deepens] -> megumi_emotional_peak
+* [Third climax approaches] -> part5_megumi_final_climax
+* [Memory cycle completes] -> part5_megumi_memory_cycle_completion
+* [Emotional connection deepens] -> part5_megumi_emotional_peak
 
-=== megumi_final_climax ===
+=== part5_megumi_final_climax ===
 # image: completion_release
 # music: transcendence_final
 # sfx: culmination_sounds
@@ -1636,343 +2244,11 @@ Their synchronized culmination lasted longer than physically possible for ordina
 
 ~ megumi_relationship += 3
 
-* [Complete afterglow] -> megumi_final_afterglow
-* [Full memory integration] -> megumi_complete_integration
-* [Reality returns] -> megumi_reality_intrusion
-
-=== megumi_secret_relationship ===
-# image: afterschool_council
-# music: conspiracy_theme
-# sfx: empty_hallways
-
-The private liaison between Katsuo and Megumi continued in secret, their connection deepening beyond physical intimacy. With Megumi's memories fully restored, she now understood the supernatural nature of her companion and the complexity of his mission.
-
-"You've been observing us for centuries," she noted during a private moment in the student council room after hours. "Why maintain such distance? Why not reveal yourselves?"
-
-Katsuo, currently in his male form, considered the question carefully. "Historically, such revelations have ended poorly. Humans fear what they don't understand. And we... we are difficult to understand."
-
-"I understand you," she countered, fingers tracing patterns on his hand.
-
-His expression softened with genuine affection. "You are exceptional in many ways, Megumi. But even you cannot fully comprehend what it means to live for centuries, to watch countless humans live and die while you remain."
-
-The admission revealed the fundamental challenge of their connection—the vast disparity in lifespan and experience that would eventually separate them regardless of present passion.
-
-* [Megumi accepts limitation] -> megumi_acceptance
-* [Megumi proposes alternative] -> megumi_transformation_question
-* [Deepen secret relationship] -> megumi_continued_secrecy
-
-=== megumi_continued_secrecy ===
-# image: private_council
-# music: forbidden_romance
-# sfx: door_locking
-
-Their clandestine meetings continued with increasing frequency—stolen moments in the student council room after hours, weekend encounters at Megumi's home when her parents traveled, occasional risky rendezvous in secluded spots around Tokyo.
-
-For Katsuo, these encounters represented everything he had secretly desired—genuine connection with a human who knew his true nature, physical intimacy uninhibited by deception, emotional exchange unbound by strategic calculation. Though his mission continued, his priorities had subtly shifted—gathering required information while protecting Megumi from discovery by other yokai or his mother's surveillance.
-
-In quiet moments between passionate encounters, he sometimes shared glimpses of kitsune culture—stories of his childhood in hidden realms, fragments of wisdom accumulated over centuries, descriptions of supernatural phenomena invisible to ordinary human perception. Megumi absorbed everything eagerly, her natural intelligence allowing her to grasp concepts typically beyond human comprehension.
-
-But shadows lurked at the edges of their happiness—the approaching mission deadline when Katsuo would be recalled, the arranged marriage awaiting him in the yokai realm, the fundamental incompatibility of their lifespans and existences.
-
-~ megumi_relationship += 2
-
-* [Mission complications] -> megumi_mission_risk
-* [Discovery threatens] -> megumi_discovery_threat
-* [Relationship deepens] -> megumi_profound_connection
-
-=== p5_megumi_council_table ===
-# image: table_intimacy
-# music: passion_intense
-# sfx: table_clearing
-
-With surprising strength, Katsuo lifted Megumi onto the student council table, scattering papers and folders to the floor in uncharacteristic disregard for order. Her legs parted instinctively to accommodate him between them, her arms pulling him closer.
-
-"I've dreamed of this," he confessed, voice rough with desire. "Taking you here, where you rule your little domain. The powerful council president surrendering to what she can't fully comprehend."
-
-Megumi's eyes flashed with characteristic fire. "Is that what this is? Surrender?" Her hand moved boldly between them, finding him through the fabric of his trousers and squeezing with confident pressure.
-
-Katsuo's reaction was immediate and intense—a sharp intake of breath, eyes briefly glowing with supernatural light. Unlike humans, kitsune experienced physical pleasure with heightened sensitivity, each touch sending cascades of sensation through both physical and energetic bodies simultaneously.
-
-"Perhaps mutual conquest," he managed, hips instinctively pressing against her exploring hand.
-
-~ megumi_relationship += 2
-
-* [Remove remaining clothing] -> p5_megumi_full_undressing
-* [Begin memory restoration] -> megumi_memory_through_intimacy
-* [Megumi takes control] -> megumi_dominant_position
-
-=== p5_megumi_full_undressing ===
-# image: full_nudity
-# music: revelation_theme
-# sfx: final_garments
-
-The last barriers between them fell away, revealing their bodies fully to each other. Megumi's confident exterior momentarily faltered as she took in Katsuo's form—perfectly masculine yet subtly inhuman in ways difficult to articulate. Proportions slightly too perfect, musculature suggesting strength beyond human capability, skin occasionally shimmering with barely-visible patterns that shifted like fox-fire in certain angles of light.
-
-"You're beautiful," she whispered, hands exploring with fascination. "I've never seen anyone like you."
-
-"You have," he corrected gently. "You just don't remember."
-
-As her fingers traced patterns across his chest and abdomen, Katsuo allowed himself to fully appreciate Megumi's form. From the first moment he'd identified her as a critical subject for his research, he'd been drawn to her physical appearance. Her confidence, her fierce protectiveness of her followers, her unwavering determination—all qualities valued in kitsune society—were perfectly complemented by a physical beauty that had haunted his private thoughts.
-
-His hands moved with reverent appreciation over her body, relearning contours he'd explored during summer encounters now erased from her memory. Each touch elicited responses he remembered—particular sensitive areas, specific preferences—creating an uncanny sensation for Megumi of being known more intimately than should be possible.
-
-* [Megumi questions familiarity] -> megumi_deja_vu
-* [Intimacy escalates] -> p5_megumi_passionate_progression
-* [Memory restoration deepens] -> megumi_memory_unlocking
-
-=== p5_megumi_passionate_progression ===
-# image: intimate_positioning
-# music: passion_peak
-# sfx: breathing_synchronized
-
-Their exploration gave way to more urgent desire as Katsuo positioned himself between Megumi's legs on the council table. The last vestiges of his perfect control slipped, revealing more overtly supernatural aspects—eyes glowing with golden light, faint patterns of fox-fire occasionally shimmering across his skin, shadow on the wall briefly showing pointed ears and multiple tails.
-
-Megumi noticed these changes but seemed more fascinated than frightened. Her hand reached up to touch his face, thumb tracing the slightly elongated canines now visible when he smiled.
-
-"You really aren't human," she whispered, wonder rather than fear in her voice.
-
-"No," he acknowledged. "Does that frighten you?"
-
-Her answer was to pull him closer, legs wrapping around his waist in unmistakable invitation. "It should," she admitted. "But instead, it feels... right. Like recognizing something I've always known."
-
-~ megumi_relationship += 2
-
-Katsuo positioned himself at her entrance, pausing only briefly to ensure her readiness. When he finally pushed forward, joining their bodies completely, both gasped at the intensity of the connection—not merely physical but something that transcended ordinary sensation.
-
-* [Begin rhythmic movement] -> p5_megumi_intimate_rhythm
-* [Memory restoration accelerates] -> megumi_memory_through_union
-* [Supernatural manifestation increases] -> megumi_supernatural_union
-
-=== p5_megumi_intimate_rhythm ===
-# image: passionate_connection
-# music: rising_passion
-# sfx: rhythmic_movement
-
-They began moving together in perfect synchronization, as if their bodies remembered each other despite Megumi's altered memories. Katsuo set a deliberate pace—slow and deep initially, savoring each sensation with supernatural intensity.
-
-For him, the experience transcended ordinary physical pleasure. Kitsune experienced intimacy on multiple levels simultaneously—physical nerves sending cascades of intense sensation while energy bodies connected on spiritual planes inaccessible to ordinary humans. Each thrust sent waves of pleasure radiating through his entire being, both physical and supernatural.
-
-"You feel..." he gasped, struggling to maintain coherent thought as pleasure built rapidly, "...perfect. Like you were made for me."
-
-Megumi responded by tightening her legs around him, urging him deeper, her body arching to meet each movement. Her hands explored his chest and shoulders, occasionally encountering patches of fur that appeared and disappeared as his control continued slipping.
-
-"I remember this," she whispered, eyes wide with wonder. "Not clearly, but... my body remembers you."
-
-~ megumi_relationship += 1
-
-* [Increase intensity] -> p5_megumi_increasing_intensity
-* [Memory restoration peaks] -> megumi_memory_flood
-* [Megumi takes active role] -> megumi_position_change
-
-=== p5_megumi_increasing_intensity ===
-# image: passionate_peak
-# music: climactic_build
-# sfx: passionate_sounds
-
-Their movements grew more urgent, more intense. Katsuo's carefully maintained control unraveled further with each passing moment—his true nature emerging more clearly as pleasure overwhelmed his conscious restraint. Fox-fire danced visibly across his skin now, casting ethereal blue-white light across Megumi's flushed body beneath him.
-
-For Katsuo, the sensation was overwhelming. His supernatural physiology experienced pleasure with an intensity humans could never comprehend—each nerve ending transmitting sensation at magnified levels, each movement creating cascading waves of pleasure that resonated through both physical and energy bodies simultaneously.
-
-"Megumi," he gasped, voice layering with inhuman harmonics as control slipped further. "I can't... maintain control much longer."
-
-She pulled him closer, seemingly unafraid of his increasingly supernatural manifestation. "Then don't," she urged, voice breathless with her own building pleasure. "Let me see you. The real you."
-
-The permission shattered his final restraints. His form shifted more dramatically—fox features becoming unmistakable, multiple tails manifesting partially as translucent energy constructs behind him. The council room filled with tangible supernatural energy that made loose papers swirl and electronics flicker.
-
-* [Approach first climax] -> p5_megumi_first_climax
-* [Memory restoration completes] -> megumi_full_memory_return
-* [Position change] -> megumi_new_position
-
-=== p5_megumi_first_climax ===
-# image: first_release
-# music: climax_theme
-# sfx: pleasure_peak
-
-The building pleasure reached critical threshold as Katsuo drove into Megumi with increasing urgency. For him, orgasm approached not merely as physical release but as a total-system response that encompassed his entire supernatural being. As the sensation built toward inevitable peak, his rational mind receded completely—strategic considerations, mission parameters, even his mother's strict instructions all temporarily forgotten in the face of overwhelming pleasure.
-
-"I'm close," he warned, voice barely recognizable through supernatural harmonics. "Megumi—"
-
-"Yes," she urged, her own pleasure clearly approaching culmination. "Don't hold back."
-
-The permission destroyed his last vestiges of restraint. With a final thrust, Katsuo reached explosive release—his body shuddering with waves of pleasure that transcended ordinary physical experience. Each pulse of his climax was accompanied by visible waves of fox-fire that radiated outward, causing the room's lighting to flicker erratically.
-
-Unlike human males, kitsune experienced orgasm as a full-body phenomenon—waves of muscular contractions starting at his core and radiating outward through his entire form, accompanied by energetic pulses that temporarily altered local reality. His release continued for nearly twice the duration of typical human experience, each pulse sending fresh waves of pleasure through his hypersensitive supernatural physiology.
-
-Throughout this overwhelming experience, his connection with Megumi deepened—the intimate contact creating a perfect conduit for memory restoration as his essence mingled with hers.
-
-* [Memory restoration accelerates] -> megumi_memory_through_climax
-* [Maintain connection for second peak] -> megumi_continued_intimacy
-* [Megumi's simultaneous climax] -> p5_megumi_synchronized_release
-
-=== p5_megumi_synchronized_release ===
-# image: dual_climax
-# music: transcendence_theme
-# sfx: dual_release
-
-Megumi's body responded to Katsuo's supernatural climax with perfect synchronicity—her own pleasure cresting simultaneously with his. As the kitsune's fox-fire energy washed through her during his release, it triggered cascading waves of sensation beyond ordinary human capability, elevating her experience to supernatural levels.
-
-"Katsuo!" she cried out, using his true name instinctively as memories flooded back during their shared climax. Her body arched beneath him, muscles contracting rhythmically as pleasure overwhelmed her senses.
-
-Their synchronized release created a feedback loop of supernatural energy—his climax intensifying hers, her response heightening his, each feeding the other in escalating cycles. The council room's electronics shorted out completely as fox-fire energy surged beyond containment, plunging them into semidarkness illuminated only by the ethereal glow emanating from Katsuo's partially transformed body.
-
-For nearly a full minute, they remained locked in this transcendent state—physical and supernatural pleasure intertwining with memory restoration in a perfect storm of connection that neither had anticipated nor could fully control.
-
-~ megumi_relationship += 3
-
-* [Gradual subsidence] -> megumi_afterglow
-* [Memory integration] -> megumi_memory_integration
-* [Katsuo retains arousal] -> p5_megumi_continued_desire
-
-=== p5_megumi_continued_desire ===
-# image: sustained_arousal
-# music: renewal_theme
-# sfx: continuing_intimacy
-
-As the initial waves of pleasure gradually subsided, Megumi became aware of something unexpected—Katsuo remained fully aroused within her despite his intense climax. Unlike human males, kitsune physiology allowed for multiple sequential releases without diminishment, particularly during rare occasions of full supernatural manifestation.
-
-"You're still..." she began, eyes widening with realization.
-
-"Kitsune are not limited like humans," he explained, voice still layered with supernatural harmonics though more controlled now. "If you wish to continue..."
-
-Her answer was to pull him down for another kiss, hips shifting experimentally against his continued hardness. "Show me more," she whispered against his lips. "Everything I've forgotten."
-
-Katsuo shifted their position with supernatural grace, lifting and turning her without separating their bodies. Now with Megumi straddling him as he sat on the council chair—her throne of student authority—he surrendered control to her, hands resting on her hips in gentle guidance.
-
-"This was your favorite position," he revealed, fox-fire eyes watching her with intense focus. "You enjoyed the power it gave you."
-
-~ megumi_relationship += 1
-
-* [Megumi takes control] -> p5_megumi_dominant_role
-* [More memories surface] -> megumi_position_memory
-* [Building toward second climax] -> megumi_second_building
-
-=== p5_megumi_dominant_role ===
-# image: megumi_control
-# music: power_theme
-# sfx: rhythm_change
-
-Megumi embraced the position with natural authority, her body remembering rhythms and movements her mind had forgotten. She began moving atop Katsuo with increasing confidence, setting her own pace as she rediscovered what brought them both pleasure.
-
-"I remember this," she murmured, eyes half-closed in concentration. "Not clearly, but my body knows you."
-
-Katsuo surrendered completely to her control, his supernatural nature fully manifest now—fox ears clearly visible, multiple tails shimmering behind him, skin occasionally rippling with fur-like patterns before returning to human appearance. The chair beneath them occasionally creaked in protest at movements too forceful for ordinary humans.
-
-For him, this second approach to pleasure built differently than the first—more controlled, more focused, yet potentially more intense for the deliberate pacing. His hands explored her body with reverent appreciation, occasionally guiding her movements when she found particularly effective angles.
-
-"Perfect," he gasped when she discovered a rhythm that sent cascades of sensation through his supernatural nervous system. "Just like that."
-
-* [Building intensity] -> p5_megumi_second_building
-* [More memories return] -> megumi_intimate_memories
-* [Position adjustment] -> megumi_angle_change
-
-=== p5_megumi_second_building ===
-# image: pleasure_building
-# music: anticipation_theme
-# sfx: quickening_rhythm
-
-The pleasure between them built with deliberate intensity—Megumi finding confidence in her movements as muscle memory guided her body. Katsuo's supernatural responses provided immediate feedback—fox-fire brightening when she found particularly effective motions, his multiple tails becoming more solid when pleasure intensified.
-
-"I can feel what you like," she observed with wonder, experimenting with different angles and rhythms. "It's like your energy shows me."
-
-"Supernatural connection," he managed between waves of building pleasure. "Your natural spiritual sensitivity... amplified by intimacy."
-
-This second approach to climax built more deliberately than the first—a slow, inexorable climb rather than rapid escalation. Katsuo's supernatural control returned partially, allowing him to pace himself while still experiencing extraordinary sensation.
-
-Meanwhile, Megumi's own pleasure built toward a second peak, her movements becoming more focused, more determined. The power dynamic between them shifted continuously—sometimes she led, sometimes he guided, creating a dance of mutual pleasure that transcended ordinary human experience.
-
-* [Approach second climax] -> p5_megumi_second_climax
-* [Complete memory restoration] -> megumi_final_memories
-* [Katsuo takes active role] -> megumi_katsuo_guidance
-
-=== p5_megumi_second_climax ===
-# image: second_release
-# music: climactic_theme_reprise
-# sfx: intensity_peaking
-
-The second approach to climax built with majestic intensity—both participants now familiar with each other's responses, better able to anticipate and enhance mutual pleasure. Megumi moved with increasing urgency atop Katsuo, her body instinctively seeking the perfect rhythm for maximum sensation.
-
-For Katsuo, this second buildup transcended even the first—his supernatural physiology fully awakened now, pleasure receptors hyper-sensitized by the previous climax. Each movement Megumi made sent cascades of sensation through his system, building toward what promised to be an even more intense release.
-
-"I can't hold back much longer," he warned, voice strained with the effort of maintaining even minimal control.
-
-"Then don't," she commanded, the student council president's authority evident even in this intimate moment. "Let me see it again. All of you."
-
-Her permission shattered his restraint. Katsuo's second climax crashed through him with catastrophic intensity—even more powerful than the first. His body arched beneath her as waves of pleasure radiated from his core outward, each pulse accompanied by visible surges of fox-fire that illuminated the darkened council room in pulsing patterns.
-
-The supernatural release triggered Megumi's own second climax simultaneously—her body responding to the waves of yokai energy flowing through her. Together they rode the crest of shared pleasure, bodies locked in perfect synchronicity as reality itself seemed to waver around them.
-
-~ megumi_relationship += 2
-
-* [Afterglow begins] -> megumi_dual_afterglow
-* [Memory completion] -> megumi_memory_completion
-* [Katsuo remains aroused] -> p5_megumi_third_potential
-
-=== p5_megumi_third_potential ===
-# image: continued_arousal
-# music: renewal_theme
-# sfx: breathing_recovery
-
-As their shared climax gradually subsided, Megumi collapsed against Katsuo's chest, breathing heavily from exertion. Yet despite two intense releases, she felt him still firm within her—kitsune stamina and physiology allowing sustained arousal beyond human limitation.
-
-"Again?" she asked incredulously, pulling back to study his face with a mixture of exhaustion and intrigue.
-
-Katsuo smiled, canines slightly elongated in his partly transformed state. "If you wish," he offered. "Though perhaps a different position would be more comfortable."
-
-Without waiting for verbal response, he lifted her with supernatural strength, still joined with her as he laid her carefully on the council table. Papers scattered to the floor as he positioned himself above her, movements slow and deliberate.
-
-"The final memory," he murmured, beginning gentle movements that rekindled pleasure in both their oversensitized bodies. "The night before I altered your memories. We knew it would be our last time together until my mission changed."
-
-~ megumi_relationship += 1
-
-* [Gentle completion begins] -> p5_megumi_third_approach
-* [Final memory restoration] -> megumi_complete_restoration
-* [Mutual exhaustion] -> megumi_completion_without_third
-
-=== p5_megumi_third_approach ===
-# image: final_intimacy
-# music: completion_theme
-# sfx: gentle_rhythm
-
-Their third approach to intimacy carried different qualities than the previous two—gentler, more deliberate, focused on connection rather than mere physical release. Katsuo moved with careful restraint, ensuring Megumi's comfort despite her body's potential sensitivity after two intense climaxes.
-
-"This is how we ended that summer night," he explained between measured thrusts. "Knowing I would have to take your memories away. Trying to make our last moments memorable enough that something might remain despite the erasure."
-
-Megumi's hands traced patterns across his chest and shoulders, exploring the occasional patches of fur that appeared and disappeared as his control fluctuated. "Why did you take them?" she asked, voice soft with complex emotion. "Why make me forget?"
-
-"Mission parameters," he answered with genuine regret. "My mother's directives were absolute. No human could retain knowledge of our true nature."
-
-Despite the gentler pace, pleasure built inexorably between them—a slower, deeper wave approaching with gradual certainty. Katsuo's fox-fire aura surrounded them both now, creating an intimate sphere that separated them from ordinary reality.
-
-* [Third climax approaches] -> p5_megumi_final_climax
-* [Memory cycle completes] -> megumi_memory_cycle_completion
-* [Emotional connection deepens] -> megumi_emotional_peak
-
-=== p5_megumi_final_climax ===
-# image: completion_release
-# music: transcendence_final
-# sfx: culmination_sounds
-
-Their third approach to climax built with exquisite slowness—a gradual, inevitable tide rather than crashing wave. Katsuo maintained deliberate control, ensuring Megumi's pleasure while pacing his own response. Each movement carried purpose and meaning beyond mere physical sensation.
-
-"Together," he murmured as the culmination approached. "One last perfect memory."
-
-The words unlocked something in Megumi—a fragment of emotional memory from that summer night when they'd known separation was imminent. Her arms tightened around him, pulling him closer as her body responded with building urgency.
-
-"I remember," she whispered. "I remember asking you not to make me forget."
-
-The shared emotional memory accelerated their physical response. As they moved together with increasing intensity, the approaching climax took on qualities beyond physical release—a kind of spiritual completion, a closing of cycles begun months earlier.
-
-When the final peak arrived, it manifested differently than the previous two—less explosive but somehow deeper, more profound. Katsuo's release pulsed through him in rolling waves rather than sharp peaks, fox-fire flowing between them in gentle currents rather than dramatic surges.
-
-Their synchronized culmination lasted longer than physically possible for ordinary humans—nearly two minutes of sustained pleasure that gradually subsided into profound contentment. Throughout the extended release, memories flowed freely between them, restoring everything Katsuo had taken from Megumi's consciousness.
-
-~ megumi_relationship += 3
-
-* [Complete afterglow] -> megumi_final_afterglow
-* [Full memory integration] -> megumi_complete_integration
-* [Reality returns] -> megumi_reality_intrusion
-
-=== megumi_final_afterglow ===
+* [Complete afterglow] -> part5_megumi_final_afterglow
+* [Full memory integration] -> part5_megumi_complete_integration
+* [Reality returns] -> part5_megumi_reality_intrusion
+
+=== part5_megumi_final_afterglow ===
 # image: intimate_aftermath
 # music: peaceful_theme
 # sfx: gentle_breathing
@@ -1989,11 +2265,11 @@ She looked up at him, the student council president's authority returning to her
 
 ~ megumi_relationship += 1
 
-* [Promise preservation] -> megumi_memory_promise
-* [Warn of consequences] -> megumi_warning_consequences
-* [Suggest compromise] -> megumi_memory_compromise
+* [Promise preservation] -> part5_megumi_memory_promise
+* [Warn of consequences] -> part5_megumi_warning_consequences
+* [Suggest compromise] -> part5_megumi_memory_compromise
 
-=== megumi_memory_promise ===
+=== part5_megumi_memory_promise ===
 # image: intimate_promise
 # music: commitment_theme
 # sfx: heartbeat_synchronized
@@ -2006,13 +2282,13 @@ The qualification hung between them—acknowledgment that their world contained 
 
 Katsuo nodded, impressed as always by her quick adaptation to complex situations. "Three months remain in my mission," he reminded her. "After that..."
 
-He didn't finish the sentence. They both understood the implication—his inevitable return to the yokai realm, the arranged marriage awaiting him, the fundamental incompatibility of their worlds.
+He didn't finish the sentence. They both understood the implication—his inevitable return to the yokai realm, the arranged marriage awaiting him, the fundamental incompatibility of their lifespans and existences.
 
-* [Begin relationship] -> p5_megumi_secret_relationship
-* [Consider possibilities] -> megumi_future_considerations
-* [Dress and depart] -> megumi_practical_departure
+* [Begin relationship] -> part5_megumi_secret_relationship
+* [Consider possibilities] -> part5_megumi_future_considerations
+* [Dress and depart] -> part5_megumi_practical_departure
 
-=== p5_megumi_secret_relationship ===
+=== part5_megumi_secret_relationship ===
 # image: afterschool_council
 # music: conspiracy_theme
 # sfx: empty_hallways
@@ -2029,11 +2305,11 @@ His expression softened with genuine affection. "You are exceptional in many way
 
 The admission revealed the fundamental challenge of their connection—the vast disparity in lifespan and experience that would eventually separate them regardless of present passion.
 
-//* [Megumi accepts limitation] -> megumi_acceptance
-//* [Megumi proposes alternative] -> megumi_transformation_question
-* [Deepen secret relationship] -> megumi_continued_secrecy
+* [Megumi accepts limitation] -> part5_megumi_acceptance
+* [Megumi proposes alternative] -> part5_megumi_transformation_question
+* [Deepen secret relationship] -> part5_megumi_continued_secrecy
 
-=== p5_megumi_continued_secrecy ===
+=== part5_megumi_continued_secrecy ===
 # image: private_council
 # music: forbidden_romance
 # sfx: door_locking
@@ -2048,11 +2324,11 @@ But shadows lurked at the edges of their happiness—the approaching mission dea
 
 ~ megumi_relationship += 2
 
-* [Mission complications] -> megumi_mission_risk
-* [Discovery threatens] -> megumi_discovery_threat
-* [Relationship deepens] -> megumi_profound_connection
+* [Mission complications] -> part5_megumi_mission_risk
+* [Discovery threatens] -> part5_megumi_discovery_threat
+* [Relationship deepens] -> part5_megumi_profound_connection
 
-=== megumi_mission_risk ===
+=== part5_megumi_mission_risk ===
 # image: midnight_council
 # music: tension_theme
 # sfx: approaching_footsteps
@@ -2071,11 +2347,11 @@ Later that night, in the safety of Megumi's room, Katsuo voiced growing concerns
 
 ~ danger_level += 2
 
-* [Increase caution] -> megumi_enhanced_precautions
-* [Consider separation] -> megumi_temporary_separation
-* [Accelerate relationship] -> megumi_relationship_intensification
+* [Increase caution] -> part5_megumi_enhanced_precautions
+* [Consider separation] -> part5_megumi_temporary_separation
+* [Accelerate relationship] -> part5_megumi_relationship_intensification
 
-=== megumi_relationship_intensification ===
+=== part5_megumi_relationship_intensification ===
 # image: midnight_promise
 # music: passionate_determination
 # sfx: rain_window
@@ -2094,11 +2370,11 @@ When the inevitable summons came—a spectral messenger appearing in his apartme
 
 ~ danger_level += 2
 
-* [Final week begins] -> megumi_final_week
-* [Desperate measures] -> megumi_desperate_options
-* [Acceptance of fate] -> megumi_acceptance_separation
+* [Final week begins] -> part5_megumi_final_week
+* [Desperate measures] -> part5_megumi_desperate_options
+* [Acceptance of fate] -> part5_megumi_acceptance_separation
 
-=== megumi_acceptance_separation ===
+=== part5_megumi_acceptance_separation ===
 # image: tearful_farewell
 # music: separation_theme
 # sfx: distant_thunder
@@ -2119,11 +2395,11 @@ In the pre-dawn hours, Katsuo performed one final service—strengthening Megumi
 
 ~ megumi_relationship += 2
 
-* [Final farewell] -> megumi_final_goodbye
-* [Request memento] -> megumi_parting_gift
-* [Promise future] -> megumi_impossible_promise
+* [Final farewell] -> part5_megumi_final_goodbye
+* [Request memento] -> part5_megumi_parting_gift
+* [Promise future] -> part5_megumi_impossible_promise
 
-=== megumi_final_goodbye ===
+=== part5_megumi_final_goodbye ===
 # image: dawn_parting
 # music: farewell_theme
 # sfx: morning_birds
@@ -2146,11 +2422,11 @@ His hand cupped her cheek one final time, thumb brushing away tears. "The counci
 
 ~ megumi_relationship += 1
 
-* [Last embrace] -> megumi_last_embrace
-* [Watch departure] -> megumi_watching_leave
-* [Turn away] -> megumi_turn_away
+* [Last embrace] -> part5_megumi_last_embrace
+* [Watch departure] -> part5_megumi_watching_leave
+* [Turn away] -> part5_megumi_turn_away
 
-=== megumi_last_embrace ===
+=== part5_megumi_last_embrace ===
 # image: final_embrace
 # music: parting_theme
 # sfx: heartbeats_synchronized
@@ -2169,11 +2445,11 @@ But Megumi refused, eyes open and unflinching. "I want to see you—all of you�
 
 ~ megumi_relationship += 1
 
-* [Transformation completes] -> megumi_true_form_revealed
-* [Final words] -> megumi_parting_words
-* [Supernatural departure] -> megumi_supernatural_exit
+* [Transformation completes] -> part5_megumi_true_form_revealed
+* [Final words] -> part5_megumi_parting_words
+* [Supernatural departure] -> part5_megumi_supernatural_exit
 
-=== megumi_supernatural_exit ===
+=== part5_megumi_supernatural_exit ===
 # image: fox_departure
 # music: transcendence_theme
 # sfx: reality_shifting
@@ -2190,11 +2466,11 @@ With those final words, his form dissolved into brilliant light that streamed th
 
 ~ megumi_relationship += 1
 
-* [Aftermath begins] -> megumi_separation_aftermath
-* [Daily life resumes] -> megumi_life_continues
-* [Secret knowledge remains] -> megumi_secret_keeper
+* [Aftermath begins] -> part5_megumi_separation_aftermath
+* [Daily life resumes] -> part5_megumi_life_continues
+* [Secret knowledge remains] -> part5_megumi_secret_keeper
 
-=== megumi_secret_keeper ===
+=== part5_megumi_secret_keeper ===
 # image: student_council
 # music: bittersweet_theme
 # sfx: school_bell
@@ -2209,11 +2485,11 @@ The silver-white hair found on her pillow after Katsuo's departure remained her 
 
 ~ megumi_relationship += 1
 
-* [Years pass] -> megumi_years_later
-* [Yokai world calls] -> megumi_yokai_research
-* [Love remains] -> megumi_enduring_love
+* [Years pass] -> part5_megumi_years_later
+* [Yokai world calls] -> part5_megumi_yokai_research
+* [Love remains] -> part5_megumi_enduring_love
 
-=== megumi_enduring_love ===
+=== part5_megumi_enduring_love ===
 # image: adult_megumi
 # music: memory_theme
 # sfx: autumn_leaves
@@ -2222,7 +2498,7 @@ Years passed, carrying Megumi from high school through university into adult lif
 
 Throughout her successes, the memory of Katsuo remained—not as active grief but as formative influence. Her brief immersion in the yokai world had permanently expanded her perception of reality, allowing her to see beyond surface appearances and appreciate the hidden aspects of both people and situations.
 
-On autumn evenings, particularly when fox legends were celebrated, she sometimes felt a presence watching from forest edges or shrine boundaries—never approaching, never revealing itself, yet somehow approving. Whether actual surveillance or wishful imagination, she never definitively knew.
+On autumn evenings, particularly when fox legends were celebrated, she sometimes sensed a familiar presence observing from forest edges or shrine boundaries—never approaching, never revealing itself, yet somehow approving. Whether actual surveillance or wishful imagination, she never definitively knew.
 
 In her fortieth year, during a diplomatic mission to Kyoto, she visited an ancient shrine dedicated to Inari. As she placed her offering, an elderly priest approached with unusual deference.
 
@@ -2230,11 +2506,11 @@ In her fortieth year, during a diplomatic mission to Kyoto, she visited an ancie
 
 ~ megumi_relationship += 1
 
-* [Acknowledge connection] -> megumi_acknowledgment
-* [Request information] -> megumi_fox_inquiry
-* [Final glimpse] -> megumi_final_sighting
+* [Acknowledge connection] -> part5_megumi_acknowledgment
+* [Request information] -> part5_megumi_fox_inquiry
+* [Final glimpse] -> part5_megumi_final_sighting
 
-=== megumi_final_sighting ===
+=== part5_megumi_final_sighting ===
 # image: autumn_shrine
 # music: reunion_theme
 # sfx: wind_chimes
@@ -2253,11 +2529,11 @@ Neither approached the other—the boundary between their worlds as real in this
 
 ~ megumi_relationship += 3
 
-* [Silent communication] -> megumi_silent_farewell
-* [Respectful bow] -> megumi_formal_acknowledgment
-* [Smile in recognition] -> megumi_peaceful_recognition
+* [Silent communication] -> part5_megumi_silent_farewell
+* [Respectful bow] -> part5_megumi_formal_acknowledgment
+* [Smile in recognition] -> part5_megumi_peaceful_recognition
 
-=== megumi_peaceful_recognition ===
+=== part5_megumi_peaceful_recognition ===
 # image: sunset_recognition
 # music: completion_theme
 # sfx: distant_bells
@@ -2276,9 +2552,9 @@ In the decades that followed, she occasionally sensed distant vulpine observatio
 
 ~ megumi_relationship += 2
 
-* [Life completes] -> megumi_life_completion
+* [Life completes] -> part5_megumi_life_completion
 
-=== megumi_life_completion ===
+=== part5_megumi_life_completion ===
 # image: elderly_megumi
 # music: life_journey_theme
 # sfx: peaceful_breathing
@@ -2297,11 +2573,11 @@ Through failing vision, she perceived a figure seated beside her bed—sometimes
 
 ~ megumi_relationship += 3
 
-* [Final conversation] -> megumi_final_moments
-* [Peaceful transition] -> megumi_guided_passage
-* [Truth revealed] -> megumi_final_truth
+* [Final conversation] -> part5_megumi_final_moments
+* [Peaceful transition] -> part5_megumi_guided_passage
+* [Truth revealed] -> part5_megumi_final_truth
 
-=== megumi_guided_passage ===
+=== part5_megumi_guided_passage ===
 # image: spirit_transition
 # music: transcendence_final
 # sfx: realm_shifting
