@@ -31,16 +31,16 @@ This document outlines the structural design and narrative arcs for the visual n
 #### **5. White Day Celebrations**
 - Emotional moments during gift exchanges.
 
-#### **6. Crisis Point: The Revelation**
+#### **6. The Revelation**
 - Hikari’s daring fake suicide attempt forces Katsuo to reveal his true form.
 
 #### **7. Transformation Journey**
 - Hikari begins her spiritual and physical transformation.
 
-#### **8. Kodama Transformation**
+#### **8. Kodama & Transformation**
 - Hikari integrates her newfound identity.
 
-#### **9. New Existence**
+#### **9. Existence**
 - Hikari’s journey culminates in full acceptance of her yokai-human bridge role.
 
 ---
