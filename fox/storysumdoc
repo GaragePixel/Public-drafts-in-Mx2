@@ -30,7 +30,6 @@ Implements surveillance detection and countermeasure systems as Hikari manages M
 8. KODAMA & TRANSFORMATION [June 1997]
 Going to the tree where she spoke with the kodama spirit, Hikari begins a spiritual journey through her consciousness, capturing the essence of her unborn sister and transmuting it to become, thanks to Katsuo's tufts of hair, a true female kitsune. The two experience a moment of transfiguration where Hikari replicates her suicide by throwing herself off a cliff, once again being saved by Katsuo.
 Implements complete information exchange protocols between Hikari and Katsuo. Technical implementation includes historical background (hunter trauma, centuries of observation experience), yokai realm structure details, and mission parameters including arranged marriage contingency. Implementation of departure timeline creates urgency context for relationship definition decisions. Megumi situation resolution mechanics provide confrontation management options, alliance configuration possibilities, and information control techniques. Episode concludes with relationship parameter definition, knowledge transfer authorization levels, and contingency planning implementations that establish foundation for final outcome determination.
-Implements complete information exchange protocols between Hikari and Katsuo. Technical implementation includes historical background (hunter trauma, centuries of observation experience), yokai realm structure details, and mission parameters including arranged marriage contingency. Implementation of departure timeline creates urgency context for relationship definition decisions. Megumi situation resolution mechanics provide confrontation management options, alliance configuration possibilities, and information control techniques. Episode concludes with relationship parameter definition, knowledge transfer authorization levels, and contingency planning implementations that establish foundation for final outcome determination.
 
 9. NEW EXISTENCE [July-August 1997]
 Helped by Katsuo and Katsuo's vixen sister, Hikari begins a dangerous journey where she gradually embraces her new nature to transcend her identity and find her place in the universe.
@@ -224,21 +223,6 @@ This document provides a concise summary of Fox Spirit Romance's complete narrat
 ## Notes: Implementation Choices
 The summary distills complex narrative elements into core components while preserving thematic depth. Spiritual mechanics are presented within their philosophical context rather than as isolated plot devices. The implementation emphasizes self-determined corruption as central to the ending branch architecture.
 
-```wonkey
-Function EvaluateNarrativeCore:String(protagonist:String)
-	Select protagonist
-		Case "Hikari"
-			Return "Seeking connection and transcendence"
-		Case "Katsuo"
-			Return "Balancing observation with attachment"
-		Case "Megumi"
-			Return "Pursuing power and control"
-	End
-	
-	Return "Invalid protagonist"
-End
-```
-
 ## Technical Advantages
 1. **Conceptual Compression Efficiency**
    The synopsis achieves high information density without sacrificing thematic depth, creating an effective reference for implementation teams to understand both narrative mechanisms and philosophical foundations.
@@ -313,21 +297,6 @@ This document provides an expanded narrative analysis of Fox Spirit Romance, int
 
 ## Notes: Implementation Choices
 The analysis incorporates Akane's role without disrupting established narrative structure. Her function as Hikari's human anchor provides critical contrast to supernatural elements while creating secondary validation mechanisms for otherwise isolating experiences. Akane serves as narrative ballast, preventing spiritual elements from completely detaching from human reality.
-
-```monkey2
-Function EvaluateAkaneInfluence:Float(hikari_stability:Float)
-	' Akane's friendship provides stability multiplier
-	Local stability_factor:Float = 1.0
-	
-	If hikari_stability < 0.5
-		stability_factor = 1.5  ' Greater impact when Hikari unstable
-	Else
-		stability_factor = 1.2  ' Moderate impact during normal periods
-	EndIf
-	
-	Return hikari_stability * stability_factor
-End
-```
 
 ## Technical Advantages
 1. **Narrative Grounding Architecture**
