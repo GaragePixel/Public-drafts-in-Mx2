@@ -36,22 +36,14 @@ The Akagawa kitsune lineage traces its roots to the Heian period (794-1185), whe
 
 ### Historical Alliances  
 1. **Heian Period (794-1185):**  
-   - The Akagawa family was allied with **Emperor Kanmu**, aiding in the construction of Heian-kyō (modern-day Kyoto) by warding off malevolent spirits during the city’s establishment.  
-   - Katsuo’s great ancestor, a six-tailed kitsune named **Akagawa Tamamo**, was said to have created protective wards around the imperial palace.
+   - The Akagawa family was ennemi with **Emperor Kanmu**  
 
 2. **Kamakura Period (1185-1333):**  
    - During the rise of samurai culture, the Akagawa kitsune formed pacts with the warrior monks (sōhei) of Mount Hiei.  
    - They played a role in defending the Enryaku-ji temple from rival clans, utilizing their illusionary skills to disorient attackers.
 
 3. **Edo Period (1603-1868):**  
-   - The family integrated into urban society under the Tokugawa shogunate, adopting human guises to safeguard yokai artifacts housed in merchant warehouses.  
-   - Katsuo’s ancestor, **Akagawa Rin**, became a legend for saving Edo from a catastrophic fire by summoning fox flames to extinguish it.
-
-### Modern Adaptations  
-1. **Meiji Restoration (1868-1912):**  
-   - With the decline of yokai belief due to Western influences, the Akagawa family retreated to secluded shrines. Katsuo’s mother, a nine-tailed kitsune, established a sanctuary in the mountains of Nara.  
-2. **Post-War Era (1945-Present):**  
-   - Katsuo was tasked with adapting to modernity, balancing traditional duties with urban challenges. His Sony Walkman symbolizes this cultural bridging.
+   - The family found the Springs under the Tokugawa shogunate.  
 
 ---
 
@@ -252,7 +244,7 @@ This document significantly expands on the Katsuo family, focusing on their line
 
 ### Kitsune Hierarchy  
 - **Age and Tails:** Katsuo’s four tails indicate 400 years of life and place him above common kitsune but below legendary nine-tailed foxes.  
-- **Fire Affinity:** His reddish fur and flame manipulation align with traditional fire-element kitsune.  
+- **Fire Affinity (spirit black/blue fire):** His reddish fur and flame manipulation align with traditional black/blue spiritual fire-element kitsune.  
 
 ### Integration into Modern Japan  
 - **Sony Walkman WM-55:** Symbolizes Katsuo’s adaptation to modernity while retaining traditional roots.  
