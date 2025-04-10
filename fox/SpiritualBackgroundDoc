@@ -397,34 +397,6 @@ This technical document integrates newly discovered historical corruption mechan
 ## Notes: Implementation Choices
 The implementation integrates historical corruption mechanics centered around Emperor Shōmu and Monk Rōben's kitsune blood consumption practices, establishing concrete spiritual consequence pathways that persist across centuries. Special attention has been paid to developing the Lycoris radiata (彼岸花) visual hazard system that creates elegant metaphorical parallel to historical corruption through temptation-based player choice architecture.
 
-```wonkey
-Function CalculateCorruptionSusceptibility:Float(character:String)
-	Local susceptibility:Float = 0.0
-	
-	' Base susceptibility by character type
-	Select character
-		Case "Hikari"
-			susceptibility = 0.3  ' Low natural susceptibility
-		Case "Megumi"
-			susceptibility = 0.8  ' High natural susceptibility
-		Case "Katsuo"
-			susceptibility = 0.4  ' Moderate due to half-human contact
-	End
-	
-	' Calculate resistance modifiers
-	Local awareness:Float = GetCharacterAwareness(character)
-	Local protection:Float = GetSpiritualProtection(character)
-	
-	' Apply logarithmic reduction based on awareness
-	susceptibility *= (1.0 - Log(1.0 + awareness) * 0.3)
-	
-	' Apply direct protection reduction
-	susceptibility *= (1.0 - protection)
-	
-	Return Clamp(susceptibility, 0.0, 1.0)
-End
-```
-
 ## Technical Advantages
 1. **Historical-Modern Corruption Parallel Architecture**
    The implementation establishes elegant philosophical framework connecting historical kitsune blood consumption by Emperor Shōmu and Monk Rōben to modern protagonist corruption pathways. By documenting the emperor's transformation from human to "insect-like" entity through corrupted spiritual practices, the system creates concrete precedent for Megumi's potential corruption paths. The specific mechanics of "false enlightenment" through kitsune blood consumption provides perfect historical parallel to the narrative's exploration of corruption through boundary violation versus self-determined spiritual evolution.
