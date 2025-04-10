@@ -189,6 +189,140 @@ The French window implementation creates perfect physical metaphor for psycholog
 
 Most significantly, the 20-kilometer protective barrier maintained by Katsuo's mother creates overarching safety framework that allows vulnerable healing processes without hypervigilance requirement. This implementation recognizes essential relationship between environmental safety and psychological healing capacity—creating sanctuary conditions necessary for defenses relaxation without retraumatization risk.
 
+About Hikari sejour at the spring complex:
+
+# HIKARI'S SPRINGS COMPLEX UNDERSTANDING PROGRESSION
+## Implementation: iDkP from GaragePixel
+## Date: 2025-04-10 05:25:47
+## Aida Version: 4.2.1
+
+## Purpose
+This technical document maps Hikari's progressive understanding of the Springs Complex psychological framework across specific narrative phases. The implementation establishes concrete knowledge acquisition milestones while documenting cognitive integration points that transform external observation into internalized wisdom. This analysis supports Katsuo's mother's eventual heir designation decision regarding diplomatic representation.
+
+## List of Functionality
+1. **Understanding Progression Framework**
+   - Initial discovery observation mechanics
+   - Maternal conversation knowledge acquisition
+   - Personal experience integration architecture
+   - Post-trauma insight development system
+
+2. **Psychological Framework Internalization**
+   - Boundary concept integration mechanics
+   - Trauma recovery principle absorption
+   - Sanctuary function cognitive mapping
+   - Protection ethics understanding development
+
+3. **Heir Qualification Advancement System**
+   - Inter-species diplomatic aptitude measurement
+   - Protection principle internalization metrics
+   - Boundary management skill assessment
+   - Spiritual transformation integration framework
+
+4. **Self-Directed Learning Architecture**
+   - Observation-based knowledge acquisition
+   - Experience-principle correlation mechanics
+   - Intuitive boundary ethics development
+   - Non-instructional wisdom integration system
+
+## Notes: Implementation Choices
+The implementation deliberately avoids direct instructional knowledge transfer, instead creating progressive understanding framework where Hikari's personal experiences trigger intuitive comprehension of complex spiritual principles. This approach validates Katsuo's mother's heir selection by demonstrating Hikari's ability to derive protection ethics from direct observation rather than rote instruction. Special attention has been paid to documenting specific understanding milestones that correspond to narrative progression points.
+
+```wonkey
+Function CalculateUnderstandingProgression:Float(phase:String)
+	Local understanding:Float = 0.0
+	
+	' Base understanding values by phase
+	Select phase
+		Case "InitialDiscovery"
+			understanding = 0.15
+		Case "MaternalConversation"
+			understanding = 0.35
+		Case "PersonalIntegration"
+			understanding = 0.50
+		Case "PostTenguTrauma"
+			understanding = 0.65
+		Case "KatsuoConversation"
+			understanding = 0.80
+		Case "KodamaTransformation"
+			understanding = 0.95
+	End
+	
+	' Apply intuitive learning modifiers
+	If HasDevelopedBoundaryIntuition()
+		understanding *= 1.2
+	EndIf
+	
+	' Process trauma-informed adjustments
+	If HasExperiencedBoundaryViolation()
+		understanding *= 1.3
+	EndIf
+	
+	Return Min(understanding, 1.0)
+End
+```
+
+## Technical Advantages
+1. **Self-Directed Learning Implementation Architecture**
+   The progression framework creates sophisticated knowledge acquisition system where Hikari develops comprehensive understanding through observation and experience rather than direct instruction. This implementation creates ideal diplomatic heir qualification demonstration—proving ability to derive core protection principles independently rather than through rote learning. The milestone-based progression creates clear measurement parameters for understanding development while maintaining narrative integrity through experience-based rather than exposition-based knowledge transfer.
+
+2. **Trauma-Informed Understanding Acceleration**
+   The implementation recognizes tengu attack trauma as critical catalyst for accelerated sanctuary function comprehension. This creates sophisticated learning pathway where boundary violation experience transforms abstract protection concepts into visceral understanding—creating deeper integration than purely intellectual comprehension. The specific progression acceleration following personal violation experience demonstrates crucial qualification for diplomatic representation to potentially hostile entities (ex-fiancé's family).
+
+3. **Maternal Assessment Implementation**
+   Katsuo's mother's observation framework creates sophisticated evaluation system monitoring Hikari's progress through specific understanding milestones. This creates concrete measurement parameters for heir qualification assessment while maintaining maternal character integrity through non-interference principles. The implementation creates elegant parallel between Hikari's observation-based learning and Katsuo's mother's observation-based assessment—reinforcing core narrative themes through structural mirroring.
+
+# HIKARI'S UNDERSTANDING PROGRESSION PHASES
+
+## PHASE 1: INITIAL DISCOVERY
+**Understanding Milestone: Environmental Protection Framework**
+
+During initial Springs Complex discovery, Hikari intuitively comprehends the environmental protection architecture through direct observation. She recognizes the progressive pool system implementation (natural to artificial) without explicit explanation, intuitively understanding the boundary reinforcement principles embedded in physical design. Her initial understanding focuses primarily on tangible elements—the physical separation between wild forest and constructed sanctuary, the strategic positioning of pools, and the controlled threshold spaces created by French windows.
+
+Key cognitive acquisition: Recognition that physical environment actively participates in protection implementation rather than serving as passive setting. This foundational understanding creates basis for subsequent spiritual boundary concept integration.
+
+## PHASE 2: MATERNAL CONVERSATION
+**Understanding Milestone: Historical Protection Response**
+
+Through direct conversation with Katsuo's mother, Hikari develops comprehension of historical persecution context underlying sanctuary creation. She learns specific historical triggers (Temple Construction Deforestation, Emperor Shōmu's kitsune blood consumption) that necessitated protective response implementation. This conversation provides crucial contextual framework connecting modern sanctuary functions to ancestral trauma, particularly regarding the multi-generational protection ethics developed in response to boundary violations.
+
+Key cognitive acquisition: Recognition that current protection systems represent evolved response to historical trauma rather than arbitrary restrictions. This historical context creates foundation for understanding seemingly strict boundary maintenance protocols.
+
+## PHASE 3: SELF-INTEGRATION EXPLANATION
+**Understanding Milestone: Personal Boundary Parallel**
+
+During conversation with Katsuo's mother, Hikari integrates sanctuary protection principles with her own experience of boundary establishment following father's alcoholism. She articulates personal understanding of how protective boundaries function as healing enablers rather than isolation mechanisms. This integration demonstrates critical heir qualification by connecting abstract spiritual principles to concrete personal experience.
+
+Key cognitive acquisition: Recognition of universal boundary protection principles that transcend species divisions, creating foundation for inter-species diplomatic representation capability.
+
+## PHASE 4: POST-TENGU ATTACK
+**Understanding Milestone: Violation Consequence Framework**
+
+Following tengu attack, Hikari develops visceral understanding of boundary violation consequences that transforms abstract concepts into embodied knowledge. She comprehends why sanctuary boundary maintenance requires constant vigilance while experiencing firsthand the regenerative capacity of properly implemented protection systems. This traumatic experience accelerates her understanding of the Springs Complex's psychological recovery architecture.
+
+Key cognitive acquisition: Recognition that boundary systems must balance protection against isolation, preventing violation while enabling controlled connection. This nuanced understanding demonstrates diplomatic aptitude for negotiating complex boundary agreements.
+
+## PHASE 5: POST-KATSUO CONVERSATION
+**Understanding Milestone: Non-Intervention Ethics**
+
+Through conversation with Katsuo following the tengu incident, Hikari develops sophisticated understanding of non-intervention principles governing kitsune behavior. She comprehends how these principles emerged from historical conflicts (particularly Katsuo's father's spiritual wounding during Emperor Shōmu confrontation) and why direct intervention creates mutual damage regardless of immediate outcome. This conversation solidifies her understanding of diplomatic approach requirements when representing sanctuary interests.
+
+Key cognitive acquisition: Recognition that effective protection requires strategic non-intervention in certain contexts, preventing escalation cycles that damage both parties. This sophisticated understanding demonstrates diplomatic conflict resolution aptitude.
+
+## PHASE 6: POST-KODAMA TRANSFORMATION
+**Understanding Milestone: Integration Implementation Architecture**
+
+After acquiring essence from the Kodama spirit, Hikari develops comprehensive understanding of the Springs Complex's essence integration mechanics. She recognizes how spiritual contribution strengthens collective protection systems while creating tangible connection between individual healing and community resilience. This transformation creates embodied understanding of sanctuary sustainability principles through direct participation in essence integration.
+
+Key cognitive acquisition: Recognition that effective protection requires continuous renewal through participating entities rather than static barrier maintenance. This understanding demonstrates sustainability implementation aptitude essential for long-term diplomatic representation.
+
+# HEIR DESIGNATION JUSTIFICATION
+
+Hikari's progressive understanding development creates perfect qualification framework for diplomatic heir designation, particularly regarding negotiations with the ex-fiancé's family. Her demonstrated ability to derive protection principles through observation rather than instruction proves capacity for independent representation without continuous guidance. The specific understanding progression through personal experience—particularly boundary violation trauma and subsequent integration—creates ideal preparation for diplomatic interactions with potentially hostile entities.
+
+Most significantly, Hikari's integration of personal boundary experiences with sanctuary protection principles demonstrates rare capacity for translating yokai concepts into human-comprehensible frameworks. This translation capability provides essential diplomatic bridge function when representing sanctuary interests to external entities, particularly those without direct access to spiritual perception frameworks.
+
+Katsuo's mother's progressive observation of this understanding development creates measurement-based assessment system that validates heir designation through concrete milestone achievement rather than subjective preference. The self-directed nature of Hikari's learning process particularly demonstrates qualification for autonomous diplomatic representation requiring independent judgment application in complex negotiation contexts.
+
 ## INTERGENERATIONAL TRANSMISSION INTERVENTION
 The Springs Complex implements sophisticated intervention against intergenerational trauma transmission through its historical documentation systems. The archive building creates externalized memory repository that prevents trauma narrative distortion over generations—a common factor in maladaptive protective response development.
 
