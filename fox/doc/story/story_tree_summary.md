@@ -8,134 +8,169 @@
 
 ## Purpose  
 
-This document provides a detailed summary of the "PreFused Main Story Tree" for *Fox Spirit Romance*. The summary includes key narrative branches, player choices, and their consequences, with an emphasis on integrating character development, thematic depth, and technical achievements.
+This document provides a structured summary of the "PreFused Main Story Tree" for *Fox Spirit Romance*. The tree is analyzed and condensed into a clear, concise narrative flow. Key story branches, decision points, and their outcomes are detailed for the first 945 lines of the tree, emphasizing player agency, character development, and thematic depth.
+
+---
+
+## Story Overview  
+
+The narrative is divided into distinct arcs, each progressing the relationship between Hikari and Katsuo while exploring themes of trust, identity, and self-discovery. Player decisions impact affinity, trust, and unlocking key paths.
 
 ---
 
 ## Key Story Branches  
 
 ### **1. Prologue: Summer Encounter (July–August 1996)**  
-- **Museum Direction:**  
-    - Notice Katsuo’s true form immediately → Trust -1.  
-    - Pretend not to notice → Trust +1.  
-    - Offer to guide him to the museum → Unlocks dialogue choices.  
+- **Museum Interaction:**  
+	- Notice Katsuo’s true form immediately → Affinity -1.  
+	- Pretend not to notice → Affinity +1.  
+	- Offer to guide him → Unlocks dialogue options about yokai interests.  
 
 - **Summer Search:**  
-    - Research kitsune folklore → Gains Knowledge.  
-    - Visit museum regularly → Increases encounters with Katsuo.  
-    - Search streets for kitsune boy → Unlocks dream sequence (Trust -1).  
+	- Research kitsune folklore → Gains knowledge of yokai weaknesses and relationships.  
+	- Visit museum regularly → Unlocks interactions with curator, glimpses of Katsuo in fox form.  
+	- Search streets for a kitsune → Leads to recurring dreams (Affinity -1).  
 
 ---
 
 ### **2. School Year Begins: Recognition (September 1996)**  
 - **First Day Sequence:**  
-    - Recognize Katsuo in disguise → Suspicion +1.  
-    - Pretend not to notice → Trust +1.  
-    - Observe "Kazuko" in the Revengeful Girls → Unlock memory manipulation realization.  
+	- Recognize Katsuo in disguise → Suspicion +1, triggers memory manipulation realization.  
+	- Pretend not to notice → Affinity +1.  
+	- Observe "Kazuko" in the Revengeful Girls → Unlocks warning from Akane ("Be prepared to lose something").  
 
 - **Revengeful Girls Introduction:**  
-    - Witness punishment scene → Moral stance +1 or Danger +1.  
-    - Analyze gang structure → Gains Social Intelligence.  
+	- Witness punishment scene → Moral stance or danger defined based on reaction.  
+	- Analyze gang structure → Gains insights into social intelligence and hierarchy.  
 
 - **Locker Room Incident:**  
-    - Kazuko discovers Hikari’s chimera skin → Vulnerability revealed.  
-    - Megumi interrupts → Observations on group dynamics.  
+	- Kazuko discovers Hikari’s chimera skin → Vulnerability revealed.  
+	- Hikari shares her bullying history → Affinity +1.  
+
+- **Stalker Arc:**  
+	- Glimpse male Katsuo → Unlocks yokai trail perception and aura recognition.  
+	- Recruit yokai invisibles for surveillance → Gathers intelligence through subtle observation.  
 
 ---
 
 ### **3. School Festival Arc (November 1996)**  
 - **Committee Formation:**  
-    - Kazuko subtly manipulates pairing with Hikari → Preference confirmed.  
-    - Megumi’s territorial response → Tension increases.  
+	- Kazuko manipulates pairing with Hikari → Reveals hidden preference.  
+	- Megumi’s territorial behavior escalates tension.  
 
 - **Performance Day:**  
-    - Martial arts demonstrations highlight Kazuko’s precision and Megumi’s aggression.  
-    - Hikari’s gymnastics showcase → Emotional connection gains.  
+	- Martial arts demos highlight Kazuko’s precision and Megumi’s aggression.  
+	- Hikari’s rhythmic ribbon routine boosts confidence and emotional connection.  
 
 - **Reflection Pool Encounter:**  
-    - Hikari perceives Katsuo’s true form in water → Unlocks critical dialogue.  
+	- Moonlit water reveals Katsuo’s dual form → Unlocks critical dialogue paths.  
 
 ---
 
-### **4. Investigation & Revelation (December 1996–February 1997)**  
-- **Akane Avoidance Period:**  
-    - Failed hallway conversation → Akane attacks → Bad Ending.  
-    - Observe Akane’s isolation → Unlocks emotional residue analysis.  
+### **4. Punishment Incident (Hidden Area Behind Gymnasium)**  
+- **Observation via Yokai:**  
+	- Dust yokai alert Hikari to unusual gatherings.  
+	- Shadow yokai create paths for concealed observation.  
 
+- **Forced Humiliation (Content Flags Enabled):**  
+	- Gang forces public degradation and records evidence.  
+	- Yokai manifestations reveal trauma-born entities around participants.  
+
+---
+
+### **5. Emotional Confrontations and Tensions**  
+- **Kazuko and Hikari:**  
+	- Private conversations reveal Kazuko’s ideological struggles and loyalty to Megumi.  
+	- Hikari challenges Kazuko’s role in perpetuating harm.  
+
+- **Akane’s Emotional Breakdown:**  
+	- Hikari witnesses Akane’s vulnerability, symbolized through mirror reflections.  
+
+---
+
+### **6. Investigation & Revelation (December 1996–February 1997)**  
 - **Spying on Katsuo:**  
-    - Follow "Kazuko" → Gains insight into power dynamics.  
-    - Witness transformation moment → Near discovery triggers tension.  
+	- Hikari gathers evidence of Katsuo’s transformations → Builds suspicion and tension.  
+
+- **Akane Avoidance Period:**  
+	- Failed attempts to reconnect → Leads to Akane’s violent retaliation (Bad Ending).  
+
+- **Winter Break Encounters:**  
+	- Museum visits and shrine rituals provide cultural integration and mystery clues.  
 
 ---
 
-### **5. White Day Celebrations (March 1997)**  
+### **7. White Day Celebrations (March 1997)**  
 - **Chocolate Preparation:**  
-    - Hikari crafts fox-shaped chocolates → Symbolizes acceptance of Katsuo’s dual nature.  
+	- Hikari crafts fox-shaped chocolates → Symbolizes acceptance of Katsuo’s dual nature.  
 
-- **Gift Exchange:**  
-    - Kazuko accepts chocolates with concealed emotion → Trust +1.  
+- **Locker Room Exchange:**  
+	- Kazuko accepts chocolates with concealed emotions → Affinity +1.  
 
-- **Secret Observation:**  
-    - Katsuo reveals genuine feelings while alone → Unlocks hidden affection path.  
-
----
-
-### **6. Crisis Point: The Revelation (April 1997)**  
-- **Fake Suicide Preparation:**  
-    - Hikari’s staged jump forces Katsuo’s true form to emerge → Emotional climax.  
-
-- **The Fall:**  
-    - Katsuo’s confession → Trust & Connection +2.  
-    - Gradual revelation of yokai world → Knowledge transfer.  
+- **Park Observation:**  
+	- Katsuo reveals genuine feelings while alone → Unlocks romantic paths.  
 
 ---
 
-### **7. Transformation Journey (May 1997)**  
+### **8. Crisis Point: The Revelation (April 1997)**  
+- **Fake Suicide Plan:**  
+	- Hikari’s staged jump forces Katsuo’s true form to emerge → Emotional culmination.  
+
+- **Rooftop Confrontation:**  
+	- Katsuo confesses feelings → Trust & Connection +2.  
+
+---
+
+### **9. Transformation Journey (May 1997)**  
 - **Hot Springs Arrival:**  
-    - Katsuo’s mother’s nine-tailed manifestation → Awe and respect paths.  
-    - Interaction with yokai society → Expands world-building.  
+	- Katsuo’s mother (nine-tailed kitsune) tests Hikari’s composure → Gains cultural respect.  
 
 - **Fiancée Conflict:**  
-    - Katsuo defends Hikari → Strengthens their bond.  
+	- Katsuo defends Hikari → Strengthens their bond.  
+
+- **Kodama Journey Preparation:**  
+	- Rituals and guidance unlock spiritual cleansing and transformation paths.  
 
 ---
 
-### **8. Kodama Transformation (June 1997)**  
-- **Forest Journey:**  
-    - Environmental transitions reflect spiritual density increase.  
-    - Encounter with Kodama spirit → Initiates consciousness journey.  
-
+### **10. Kodama Transformation (June 1997)**  
 - **Consciousness Integration:**  
-    - Hikari fuses with sister’s essence if criteria met → Unlocks Perfect Ending path.  
+	- Hikari fuses with her sister’s essence → Unlocks Perfect Ending path if criteria met.  
+
+- **Physical Transformation:**  
+	- Tail manifestation and sensory enhancements reflect spiritual growth.  
 
 ---
 
-### **9. New Existence (July–August 1997)**  
+### **11. New Existence (July–August 1997)**  
 - **Training and Integration:**  
-    - Tail training and yokai energy development → Unlocks enhanced abilities.  
+	- Hikari learns to navigate her new yokai abilities, blending human and spiritual aspects.  
 
 - **Final Confrontation:**  
-    - Fiancée returns, triggering an honor contest → Resolution varies based on choices.  
+	- Fiancée returns, triggering a contest of honor → Resolution varies by choices.  
 
 - **Epilogue Options:**  
-    - Partnership Path → Perfect Ending.  
-    - Support Path → Near-Perfect Ending.  
-    - Caution Path → Good Ending.  
+	- Perfect Path → Harmonious future as a human-yokai bridge.  
+	- Near-Perfect Path → Functional integration and mission acceptance.  
+	- Good Ending → Minimal integration with conventional outcomes.  
 
 ---
 
-## Technical Insights  
+## Technical Advantages  
 
-1. **Narrative Depth:**  
-    - Players experience distinct emotional arcs, rooted in cultural and supernatural themes.  
+1. **Narrative Complexity:**  
+	- The tree integrates emotional depth, cultural themes, and supernatural elements.  
 
-2. **Replayability:**  
-    - Multiple branches and endings encourage exploration.  
+2. **Player Agency:**  
+	- Decisions meaningfully impact Affinity, Trust, and Knowledge systems, influencing outcomes.  
 
-3. **Integrated Gameplay:**  
-    - Player choices influence character relationships and unlock hidden paths.  
+3. **Replayability:**  
+	- Multiple paths and endings encourage exploration of alternate storylines.  
+
+4. **Yokai Integration:**  
+	- Spiritual markers and yokai invisibles add depth to the world-building.  
 
 ---
 
 **Conclusion:**  
-The "PreFused Main Story Tree" provides a rich narrative experience, blending emotional depth, cultural authenticity, and interactive storytelling. By offering diverse paths and outcomes, *Fox Spirit Romance* ensures an engaging experience for players.  
+The updated narrative tree balances emotional storytelling, cultural authenticity, and gameplay depth. By offering diverse paths and consequences, *Fox Spirit Romance* delivers a rich, engaging experience for players.  
