@@ -3,29 +3,29 @@
 1. PROLOGUE: SUMMER ENCOUNTER [July-August 1996]
    ├── Museum Direction-Giving
    │   ├── Notice Katsuo's true form immediately
-   │   │   ├── Pretend not to notice → Trust +1
-   │   │   └── Show subtle recognition → Trust -1
+   │   │   ├── Pretend not to notice → affinity +1
+   │   │   └── Show subtle recognition → affinity -1
    │   └── Offer to guide him to the museum
-   │       ├── Ask about his interest in yokai → Suspicion
-   │       └── Keep conversation casual → Trust +1
+   │       ├── Ask about his interest in yokai → dialog
+   │       └── Keep conversation casual → dialog
    └── Summer Search
        ├── Research kitsune folklore intensively
-       │   ├── Learn about weaknesses (water, dogs) → Knowledge +1
-       │   └── Study historical yokai-human relationships → Understanding +1
+       │   ├── Learn about weaknesses (water, dogs) → affinity +1
+       │   └── Study historical yokai-human relationships → affinity +1
        ├── Visit museum regularly → Meet caretaker
        │   ├── Ask about new "employee" → Suspicion from caretaker
        │   └── Show interest in artifacts → Glimpse Katsuo in fox form
        └── Search streets for kitsune boy
            ├── Wait at meeting spot → Patience +1
-           ├── Stake out bus stop overnight → Determination +1
-           └── Try to forget the encounter → Recurring dreams → Trust -1
+           ├── Stake out bus stop overnight → affinity +1
+           └── Try to forget the encounter → Recurring dreams → affinity -1
 
 2. SCHOOL YEAR BEGINS: RECOGNITION [September 1996]
    ├── First Day Sequence
    │   ├── Recognize Katsuo despite girl disguise
-   │   │   ├── Stare in shock → Suspicion +1
-   │   │   ├── Pretend not to notice → Trust +1
-   │   │   └── Notice waka poetry speech → Cultural +1
+   │   │   ├── Stare in shock → affinity +1
+   │   │   ├── Pretend not to notice → affinity +1
+   │   │   └── Notice waka poetry speech → affinity +1
    │   └── Observe "Kazuko" in the Revengeful Girls
    │       ├── Everyone seems knowing Kazuko since years → Memory manipulation realization
    │       └── Akane's warning about green-glasses girl → "Be prepared to lose something to gain something"
@@ -35,9 +35,9 @@
    │   │   ├── Note Megumi's leadership style → Authority assessment
    │   │   └── Observe Kazuko's advisory role → Strategic insight
    │   ├── Response Options
-   │   │   ├── Show disapproval → Moral stance +1, Danger +1
-   │   │   ├── Remain neutral observer → Information +1
-   │   │   └── Express subtle approval → Infiltration potential +1
+   │   │   ├── Show disapproval → Moral stance +1, affinity +1
+   │   │   ├── Remain neutral observer → affinity +1
+   │   │   └── Express subtle approval → affinity +1
    │   └── Gang Structure Analysis
    │       ├── Hierarchy identification → Social intelligence
    │       ├── Territory recognition → Spatial awareness
@@ -56,10 +56,10 @@
    ├── Swimming Class Locker Room
    │   ├── Kazuko discovers Hikari's chimera skin
    │   │   ├── Hikari shares bullying history → Vulnerability revealed
-   │   │   └── Kazuko shows unexpected kindness → Trust +1
+   │   │   └── Kazuko shows unexpected kindness → affinity +1
    │   ├── Hikari's delayed arrival to avoid exposure
    │   │   ├── Observe Kazuko's avoidance of other girls
-   │   │   └── Brief private conversation → Connection +1
+   │   │   └── Brief private conversation → affinity +1
    │   └── Megumi's interruption → Possessive behavior observed
    │       ├── Notice Megumi's frustration → Understanding of dynamics
    │       └── Observe Kazuko's compliant behavior → Identity insight
@@ -453,14 +453,14 @@
    │       └── True feelings revealed → "That girl is amazing! I love her! She's crazy!"
    └── Emotional Aftermath
        ├── Hidden knowledge → Secret connection
-       │   ├── Awareness of genuine reaction → Trust +2
-       │   └── Confirmation of affection → Relationship +2
+       │   ├── Awareness of genuine reaction → affinity +2
+       │   └── Confirmation of affection → affinity +2
        ├── Social dynamics shift
        │   ├── Subtle change in Kazuko's behavior → More attentive
        │   └── Increased Megumi vigilance → Growing tension
        └── Decision reinforcement
            ├── Confidence in pursuing relationship → Strategy validation
-           └── Commitment to revelation plan → Determination +1
+           └── Commitment to revelation plan → affinity +1
 
 6. CRISIS POINT: THE REVELATION [April 1997]
    ├── Fake Suicide Preparation
@@ -477,18 +477,18 @@
    │   └── Rooftop confrontation
    │       ├── Emotional revelation before jump → Connection
    │       └── Silent jump → Pure shock value
-   ├── The Fall
+   ├── The Jump
    │   └── Katsuo reveals true form to save Hikari
    │       ├── Admit trick immediately → Anger but respect
    │       │   ├── Confession of feelings → "I was born for you"
    │       │   └── Explanation of ability to see yokai → Information exchange
    │       ├── Feign surprise at rescue → Suspicion and distrust
-   │       │   ├── Gradual revelation of knowledge → Trust -1
+   │       │   ├── Gradual revelation of knowledge → affinity -1
    │       │   └── Continue deception → Bad ending path
    │       └── Rooftop confession
    │           ├── Katsuo's amazement at Hikari's perception abilities
    │           ├── Hikari's desire to be with someone who shares her world
-   │           └── Mutual fascination acknowledgment → Connection +2
+   │           └── Mutual fascination acknowledgment → affinity +2
    ├── Rooftop to Rooftop Journey
    │   ├── Katsuo's invitation
    │   │   ├── "Do you feel up to holding onto me?" → Invitation to experience
@@ -535,20 +535,20 @@
    │   ├── Visit to Hikari's Father
    │   │   ├── Katsuo's introduction as worker → New perspective
    │   │   └── Relationship resolution option
-   │   │       ├── Engage with father → Family healing path +1
-   │   │       └── Maintain distance → Independence path +1
+   │   │       ├── Engage with father → affinity +1
+   │   │       └── Maintain distance → affinity +1
    │   ├── Departure Discussion
    │   │   ├── Lifespan concern conversation
-   │   │   │   ├── Express worry → Thoughtful path +1
-   │   │   │   └── Focus on present → Immediate path +1
+   │   │   │   ├── Express worry → affinity +1
+   │   │   │   └── Focus on present → affinity +1
    │   │   └── Practical arrangements
    │   │       ├── Financial considerations → Resource planning
    │   │       └── Timeline establishment → Transition structure
    │   └── Social Disengagement
    │       ├── School departure approach
-   │       │   ├── Create transfer story → Clean break +1
-   │       │   ├── Disappear without explanation → Mystery path +1
-   │       │   └── Partial explanation → Balanced approach +1
+   │       │   ├── Create transfer story → affinity +1
+   │       │   ├── Disappear without explanation → affinity +1
+   │       │   └── Partial explanation → affinity +1
    │       └── Megumi confrontation avoidance
    │           ├── Strategic absence → Conflict prevention
    │           └── Information control → Limited knowledge distribution
@@ -559,14 +559,14 @@
    │   ├── Meeting Katsuo's Mother
    │   │   ├── Nine-tailed manifestation → Power display
    │   │   └── Reaction choice
-   │   │       ├── Maintain composure → Respect earning +1
-   │   │       └── Show appropriate awe → Connection path +1
+   │   │       ├── Maintain composure → affinity +1
+   │   │       └── Show appropriate awe → affinity +1
    │   └── Hot Spring Yokai Encounters
    │       ├── Variety of supernatural beings → World expansion
    │       ├── Integration approach
-   │       │   ├── Focus on customs → Knowledge path +1
-   │       │   ├── Demonstrate perception → Recognition path +1
-   │       │   └── Stay near Katsuo → Safety path +1
+   │       │   ├── Focus on customs → affinity +1
+   │       │   ├── Demonstrate perception → affinity +1
+   │       │   └── Stay near Katsuo → affinity +1
    │       └── Initial social positioning
    │           ├── Curiosity object → Novelty status
    │           └── Potential threat → Skeptical assessment
@@ -577,19 +577,19 @@
    │   ├── Katsuo's Intervention
    │   │   ├── Protection provision → Safety establishment
    │   │   └── Response options
-   │   │       ├── Express independent spirit → Self-reliance +1
-   │   │       ├── Show gratitude → Protection path +1
-   │   │       └── Express empathy for rival → Understanding path +1
+   │   │       ├── Express independent spirit → affinity +1
+   │   │       ├── Show gratitude → affinity +1
+   │   │       └── Express empathy for rival → affinity +1
    │   └── Conflict Assessment
-   │       ├── Relationship focus → Connection strengthening +1
-   │       ├── Cultural analysis → Context understanding +1
-   │       └── Security concerns → Protective planning +1
+   │       ├── Relationship focus → affinity +1
+   │       ├── Cultural analysis → affinity +1
+   │       └── Security concerns → affinity +1
    └── Kodama Journey Preparation
        ├── Forest travel planning
        │   ├── Preparation approach
-       │   │   ├── Research focus → Knowledge path +1
-       │   │   ├── Intuition reliance → Spiritual path +1
-       │   │   └── Guidance request → Support path +1
+       │   │   ├── Research focus → affinity +1
+       │   │   ├── Intuition reliance → affinity +1
+       │   │   └── Guidance request → affinity +1
        │   └── Journey significance
        │       ├── Transformation potential → Identity change
        │       └── Point of no return → Final commitment
@@ -626,8 +626,8 @@
    │   │   └── Memory integration → Collective experience
    │   ├── Sister essence encounter
    │   │   ├── Response options
-   │   │   │   ├── Complete embrace → Ideal transformation +1
-   │   │   │   ├── Analytical distance → Partial integration +1
+   │   │   │   ├── Complete embrace → affinity +1
+   │   │   │   ├── Analytical distance → affinity +1
    │   │   │   └── Resistance → Failed transformation → DEATH END
    │   │   └── Essence integration
    │   │       ├── Memory absorption → Knowledge transfer
@@ -648,8 +648,8 @@
    └── Transformation Aftermath
        ├── Revelation approach
        │   ├── Playful surprise → Joy path +1
-       │   ├── Careful demonstration → Measured path +1
-       │   └── Vulnerable confession → Emotional path +1
+       │   ├── Careful demonstration → affinity +1
+       │   └── Vulnerable confession → affinity +1
        ├── Katsuo's reaction
        │   ├── Overwhelming joy → Deep acceptance
        │   └── Protective response → Future planning
@@ -661,33 +661,33 @@
    ├── Training and Integration
    │   ├── Basic Movement Training
    │   │   ├── Approach selection
-   │   │   │   ├── Gymnastic background application → Adaptation +1
-   │   │   │   ├── Disciplined practice → Persistence +1
-   │   │   │   └── Emotional response → Intervention needed +1
+   │   │   │   ├── Gymnastic background application → affinity +1
+   │   │   │   ├── Disciplined practice → affinity +1
+   │   │   │   └── Emotional response → affinity +1
    │   │   └── Environmental navigation
    │   │       ├── Tree movement → Natural integration
    │   │       └── Dimensional perception → Reality layer navigation
    │   ├── Tail Training
    │   │   ├── Development approach
-   │   │   │   ├── Limitation pushing → Injury risk +1
-   │   │   │   ├── Methodical progression → Steady growth +1
-   │   │   │   └── Specialized instruction → Expert guidance +1
+   │   │   │   ├── Limitation pushing → affinity +1
+   │   │   │   ├── Methodical progression → affinity +1
+   │   │   │   └── Specialized instruction → affinity +1
    │   │   └── Power coefficient understanding
    │   │       ├── Energy channeling → Force manipulation
    │   │       └── Control development → Precision mastery
    │   ├── Injury Recovery [If applicable]
    │   │   ├── Recovery focus
-   │   │   │   ├── Cultural study → Knowledge acquisition +1
-   │   │   │   ├── Emotional connection → Relationship deepening +1
-   │   │   │   └── Frustration expression → Complication risk +1
+   │   │   │   ├── Cultural study → affinity +1
+   │   │   │   ├── Emotional connection → affinity +1
+   │   │   │   └── Frustration expression → affinity +1
    │   │   └── Healing process
    │   │       ├── Natural remedies → Traditional approach
    │   │       └── Energy work → Spiritual healing
    │   └── Social Integration
    │       ├── Relationship building
-   │       │   ├── Nature focus (Sister) → Environmental wisdom +1
-   │       │   ├── Political focus (Mother) → Strategic understanding +1
-   │       │   └── Practical focus (Brother) → Everyday knowledge +1
+   │       │   ├── Nature focus (Sister) → affinity +1
+   │       │   ├── Political focus (Mother) → affinity +1
+   │       │   └── Practical focus (Brother) → affinity +1
    │       └── Community positioning
    │           ├── Role definition → Function establishment
    │           └── Status negotiation → Hierarchy placement
@@ -697,34 +697,34 @@
    │   │   └── Territory claim → Relationship dispute
    │   ├── Combat Approach
    │   │   ├── Strategy selection
-   │   │   │   ├── Power demonstration → Confidence path +1
-   │   │   │   ├── Strategic engagement → Cunning path +1
-   │   │   │   └── Peaceful attempt → Ethical path +1
+   │   │   │   ├── Power demonstration → affinity +1
+   │   │   │   ├── Strategic engagement → affinity +1
+   │   │   │   └── Peaceful attempt → affinity +1
    │   │   └── Ability utilization
    │   │       ├── New power application → Transformation validation
    │   │       └── Human-yokai integration → Unique advantage
    │   └── Resolution Processing
    │       ├── Emotional response
-   │       │   ├── Pride expression → Achievement focus +1
-   │       │   ├── Compassion demonstration → Empathy focus +1
-   │       │   └── Security emphasis → Protection focus +1
+   │       │   ├── Pride expression → affinity +1
+   │       │   ├── Compassion demonstration → affinity +1
+   │       │   └── Security emphasis → affinity +1
    │       └── Status confirmation
    │           ├── Position establishment → Hierarchy clarification
    │           └── Respect earning → Community acceptance
    ├── Future Foundation
    │   ├── Inheritance Discussion
    │   │   ├── Response options
-   │   │   │   ├── Responsibility acceptance → Succession path +1
-   │   │   │   ├── Compromise suggestion → Balance path +1
-   │   │   │   └── Inheritance decline → Independence path +1
+   │   │   │   ├── Responsibility acceptance → affinity +1
+   │   │   │   ├── Compromise suggestion → affinity +1
+   │   │   │   └── Inheritance decline → affinity +1
    │   │   └── Future role definition
    │   │       ├── Duty assignment → Function clarity
    │   │       └── Expectation establishment → Boundary setting
    │   ├── Marriage Ceremony
    │   │   ├── Ceremonial style
-   │   │   │   ├── Traditional yokai → Cultural immersion +1
-   │   │   │   ├── Hybrid elements → Bridge-building +1
-   │   │   │   └── Intimate simplicity → Personal focus +1
+   │   │   │   ├── Traditional yokai → affinity +1
+   │   │   │   ├── Hybrid elements → affinity +1
+   │   │   │   └── Intimate simplicity → affinity +1
    │   │   └── Union symbolism
    │   │       ├── Partnership representation → Equal standing
    │   │       └── Community integration → Social recognition
