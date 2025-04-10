@@ -7,14 +7,14 @@
 ---
 
 ### Purpose
-This document provides a comprehensive analysis of the characters and their roles within the narrative. It integrates mentions and character arcs from the repository (excluding `ep2`), exploring their thematic significance, relationships, and interactions.
+This document provides a comprehensive analysis of the characters and their roles within the narrative. It integrates mentions and character arcs from the repository, exploring their thematic significance, relationships, and interactions.
 
 ---
 
 ### Character Profiles
 
 #### **1. Katsuo**
-- **Dual Identities**: Katsuo assumes both human boy and green-glasses girl forms, leveraging illusions to navigate human society while fulfilling his yokai mission.
+- **Triple Identities**: Katsuo assumes both its natural form as a kitsune, human boy and green-glasses girl forms, leveraging illusions to navigate human society while fulfilling his yokai mission.
 - **Relationships**:
 	- **Hikari**: Establishes deep emotional connections, with Hikari serving as a unique bridge between his human and yokai identities.
 	- **Megumi**: A complex dynamic where Megumi’s possessiveness creates tension.
@@ -76,18 +76,8 @@ This document provides a comprehensive analysis of the characters and their role
 	- Acts as a mediator between human and yokai knowledge.
 - **Albino Girl**:
 	- Represents spiritual transformation, adding depth to the supernatural themes.
-
----
-
-### Notes on Implementation
-- **Excluded Data**:
-	- Information from `ep2` was considered for queries but is not included in this document.
-- **File Exclusions**:
-	- Excluded `ep1.ink` and `epi1diagram.xml` in all searches.
-- **Analysis Scope**:
-	- Focused on character development, thematic roles, and narrative integration.
-
----
+- **Takane**:
+	- As an Akane's ennemi who take her in a fight.
 
 ### Technical Advantages
 1. **Thematic Depth**:
