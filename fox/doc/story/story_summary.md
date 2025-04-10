@@ -92,4 +92,63 @@ This document provides an expanded summary of each episode in *Fox Spirit Romanc
 
 ---
 
-Further episodes can be expanded similarly by weaving in details from the supporting document. Let me know if you'd like me to proceed with the remaining episodes!  
+### **Episode 7: Transformation Journey (May 1997)**  
+
+- **Overview:**  
+    - Hikari embarks on a transformative journey to a hot springs resort owned by Katsuo’s family, hidden deep in the mountains. Katsuo, disguised as a human boy, secures permission under the pretense of a school project, while secretly arranging the trip to expose Hikari to the yokai world.  
+    - The resort serves as a microcosm of larger yokai society, introducing Hikari to new characters, including Katsuo’s mother, a powerful vixen with a commanding presence. Hikari gains insight into Katsuo’s familial pressures, including an arranged marriage that looms over him like a shadow.  
+    - Megumi’s investigation into Hikari and Katsuo’s activities adds tension, as her suspicions threaten to unravel their carefully maintained secrecy. Surveillance mechanics and diplomatic interactions allow players to manage Megumi’s interference, creating a layer of strategy.  
+    - Spiritual themes come to the forefront as Hikari begins to grasp the complexities of yokai customs, their social hierarchies, and Katsuo’s precarious position between duty and personal desire.  
+
+- **Thematic Highlights:**  
+    - **Journey and Growth:** The trip symbolizes Hikari’s transition from innocence to self-awareness, both spiritually and emotionally.  
+    - **Community:** The resort deepens the narrative by showcasing the diversity and intricacies of yokai society.  
+
+---
+
+### **Episode 8: Kodama & Transformation (June 1997)**  
+
+- **Overview:**  
+    - Hikari’s spiritual journey reaches its peak when she encounters a kodama spirit at a sacred tree. Guided by the kodama, she ventures into a metaphysical realm that mirrors her subconscious, forcing her to confront the essence of her absorbed twin sister.  
+    - During this dreamlike experience, Hikari undergoes a chimeric transformation, integrating her human and yokai natures. This process is both physical and emotional, reshaping her identity and sense of self. The kodama’s cryptic wisdom helps Hikari embrace her duality, but the experience is not without its challenges, as she is forced to reconcile her fears and insecurities.  
+    - Katsuo plays a supporting role, offering guidance and emotional support as Hikari navigates this transformative ordeal. His presence reinforces their bond, highlighting their mutual growth and understanding.  
+    - The episode’s visuals and narrative underscore the spiritual evolution taking place, with symbolic motifs such as the tree’s blossoms representing renewal and unity.  
+
+- **Thematic Highlights:**  
+    - **Identity and Acceptance:** Hikari learns to embrace her unique nature, bridging the gap between human and yokai.  
+    - **Spiritual Evolution:** The kodama’s guidance emphasizes the importance of introspection and self-discovery.  
+
+---
+
+### **Episode 9: New Existence (July–August 1997)**  
+
+- **Overview:**  
+    - The final chapter sees Hikari fully embracing her role as a bridge between the human and yokai worlds, a responsibility that comes with both rewards and risks.  
+    - Hikari collaborates with Katsuo and his vixen sister to protect a sacred yokai sanctuary from external threats, including human encroachment and Megumi’s escalating ambitions. The sanctuary becomes a battleground where Hikari’s newfound abilities and understanding are put to the test.  
+    - The narrative culminates in a climactic series of decisions that shape the story’s outcome. Player choices throughout the episodes influence Hikari’s relationships and determine which of the three primary endings is unlocked:  
+        1. **Yokai Bridge:** Hikari becomes a mediator between realms, maintaining a spiritual partnership with Katsuo.  
+        2. **Limited Connection:** Hikari retains her supernatural awareness but chooses a more human-centric life, preserving a respectful distance from Katsuo.  
+        3. **Separation:** Katsuo and Hikari part ways, with Katsuo potentially aligning with Megumi, leading to consequences that ripple across both worlds.  
+    - The episode ties together the narrative’s central themes, offering closure while leaving room for reflection on the journey’s impact on the characters and their worlds.  
+
+- **Thematic Highlights:**  
+    - **Resolution:** The narrative concludes with a focus on connection, sacrifice, and the choices that define identity.  
+    - **Player Agency:** The branching endings reinforce the significance of player decisions, ensuring a personalized conclusion.  
+
+---
+
+## Notes on Implementation  
+
+1. **Narrative Depth:**  
+    - Each episode’s expanded events and character dynamics enhance emotional engagement and thematic richness.  
+
+2. **Cultural and Spiritual Integration:**  
+    - The inclusion of yokai lore and cultural traditions grounds the story in its Japanese setting while adding layers of meaning.  
+
+3. **Replayability:**  
+    - Branching paths and multiple endings invite players to explore different facets of the narrative.  
+
+---
+
+**Conclusion:**  
+The expanded summaries of *Fox Spirit Romance* highlight the game’s intricate storytelling and emotional depth. By weaving together character development, thematic exploration, and player agency, the narrative offers a rich, immersive experience that resonates on multiple levels.  
