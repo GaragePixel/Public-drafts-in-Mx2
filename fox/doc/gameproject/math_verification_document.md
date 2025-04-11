@@ -120,17 +120,6 @@ This document confirms the accuracy of the calculations in the following files a
 
 ---
 
-## Notes
-
-1. **Corrections Confirmed**:
-   - The discrepancy in the visual assets section (sprites and animations) has been corrected in both documents.
-   - Final budget totals are now accurate and consistent.
-
-2. **Future Recommendations**:
-   - Implement a double-check process for budget breakdowns to prevent similar errors in future documentation.
-
----
-
 ## Technical Advantages
 
 1. **Accuracy**: The revised documents reflect precise calculations, ensuring credibility during investor pitches.
