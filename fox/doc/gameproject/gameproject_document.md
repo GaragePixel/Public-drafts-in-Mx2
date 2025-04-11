@@ -11,7 +11,7 @@
 ### 1. Music Production
 - **45 minutes of music**, 12 tracks, including 4 openings.  
 - Estimated cost: **$1,000 per track**.  
-- Total music budget: **$12,000**.
+- Total music budget: **$16,000**.
 
 ### 2. Voice Acting
 - **Fully dubbed dialogs** with 8 hours of gameplay (perfect path).  
@@ -106,4 +106,4 @@
 ---
 
 **Final Deliverables**: A fully functional visual novel with 8 hours of gameplay, high-quality assets, and professional voice acting.  
-Estimated Budget: **$44,100**. Completion Time: **12 months**.
+Estimated Budget: **$48,100**. Completion Time: **12 months**.
