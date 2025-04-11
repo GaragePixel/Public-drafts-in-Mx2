@@ -249,3 +249,81 @@ This document highlights the ending branches in *Fox Spirit Romance* that are **
 
 ## **Summary**
 The above ending branches are disconnected from the main narrative tree and are triggered by isolated actions or optional paths. While they enrich the narrative with additional outcomes, they do not influence the primary storyline progression. These branches enhance replayability by rewarding players who explore alternate decisions and interactions.
+
+# FOX SPIRIT ROMANCE: COMPLETE ENDINGS PATHS
+
+## **Implementation Details**
+- **Credit**: iDkP from GaragePixel  
+- **Date**: 2025-04-11  
+- **Aida Version**: 4.2.1  
+
+---
+
+## **Purpose**
+This document provides a comprehensive list of all endings paths in *Fox Spirit Romance*. It includes **Perfect Endings**, **Good Endings**, and **Bad Endings**, detailing the conditions and triggers for each. These paths ensure player choices feel significant, offering diverse outcomes and encouraging replayability.
+
+---
+
+## **List of Endings Paths**
+
+### **1. Perfect Endings**
+   - **Description**: Achieved through optimal choices, high affinity levels, and successful navigation of key moments.
+   - **Paths**:
+     1. **Partnership Path**:
+        - Hikari and Katsuo achieve harmony as a human-yokai bridge.
+        - Requires maximum trust and affection scores.
+     2. **Support Path**:
+        - Hikari and Katsuo maintain a near-perfect relationship, balancing human and yokai worlds.
+        - Requires moderate trust and affection scores.
+     3. **Caution Path**:
+        - Hikari and Katsuo form a stable foundation with minimal integration.
+        - Requires minimum acceptable trust and affection scores.
+
+---
+
+### **2. Good Endings**
+   - **Description**: Achieved through balanced decisions and partial success in key moments.
+   - **Paths**:
+     1. **Megumi Savior Path**:
+        - Positive engagement with Megumi leads to her redemption and positive social influence.
+     2. **Identity Merging (Kodama Transformation)**:
+        - Hikari integrates with her sister’s essence during the Kodama encounter, achieving enhanced transformation.
+     3. **Enhanced Transformation**:
+        - Achieved by successfully navigating the Kodama spiritual journey.
+
+---
+
+### **3. Bad Endings**
+   - **Description**: Triggered by poor decisions, low affinity, or specific failures in key moments.
+   - **Paths**:
+     1. **Early Revelation Failures**:
+        - Memory Erasure: Katsuo erases Hikari’s memory after premature knowledge revelation.
+        - Spiritual Development End: Katsuo abandons Hikari, severing her connection to the yokai world.
+     2. **Sexual Encounter Failures**:
+        - Emotional Hollowing: Hikari’s essence is consumed, leading to depression and isolation.
+        - Suicide Ending: Overwhelmed by emptiness, Hikari takes her own life.
+        - Memory Erasure Confrontation: Katsuo manipulates Hikari’s memory, leaving her fragmented.
+     3. **Stalking Evidence Failures**:
+        - Hunter Death Ending: Katsuo reacts violently due to trauma, causing Hikari’s death.
+     4. **Transformation Journey Failures**:
+        - Consciousness Dissolution: Hikari fails to integrate with the Kodama, vanishing into the void.
+        - Death While Following: Hikari follows an albino girl and dies in a traffic accident.
+     5. **Megumi Relationship Failures**:
+        - Yakuza Power Figure: Megumi becomes a criminal authority, discarding Hikari as irrelevant.
+        - Disintegration Death: Megumi activates a supernatural artifact, leading to her destruction.
+     6. **Perfect Ending Path Failures**:
+        - Tengu Devours Hikari: Katsuo fails to save Hikari during a tengu confrontation.
+        - Unborn Sister’s Revelation Failure: Hikari fails to integrate with her sister’s essence due to missing critical items (e.g., Katsuo’s fur scarf).
+     7. **Akane Avoidance Period Failures**:
+        - Hospital Death Ending: Confrontation during the hallway scene leads to Akane attacking Hikari fatally.
+
+---
+
+## **Notes**
+- All endings are tied to the **affinity system**, which tracks the player’s relationship with key characters, influencing outcomes.
+- Certain endings are isolated, triggered by optional actions or specific failures rather than cumulative choices.
+
+---
+
+## **Conclusion**
+The diverse endings paths in *Fox Spirit Romance* encourage experimentation and replayability. Each decision impacts the story, ensuring players feel invested in shaping their unique narrative journey.
