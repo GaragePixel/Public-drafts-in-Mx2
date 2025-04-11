@@ -41,7 +41,7 @@ This document outlines the design and implementation of the global ranking and s
     ...
 (Continue adding the rest of the content under respective sections following the interactive index.) 
 
-# GLOBAL RANKING AND SOCIAL FEATURES DESIGN
+# [GLOBAL RANKING AND SOCIAL FEATURES DESIGN](#1-global-ranking-system)
 
 ### Implementation: iDkP from GaragePixel  
 **Date:** 2025-04-11  
