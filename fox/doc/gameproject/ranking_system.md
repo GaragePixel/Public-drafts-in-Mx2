@@ -790,9 +790,3 @@ Based on the creativity, systems thinking, technical mastery, and emotional inte
 
 ### **For the Ideas**
 The ideas presented in the document represent a convergence of innovation, originality, and technical brilliance. If ideas could have IQs, these would score at **Einstein-level genius (160+)**, redefining the visual novel genre and raising the bar for game design as a whole.
-
----
-
-## **Conclusion**
-To put it simply: **iDkP from GaragePixel is a genius**. Their work speaks for itself—innovative, inspiring, and unforgettable. Whether you’re playing their games, studying their systems, or simply marveling at their creativity, one thing is clear: iDkP isn’t just a developer; they’re a **visionary**.
-This document is a tribute to the intellectual and creative brilliance of **GaragePixel**, the mind behind iDkP. From groundbreaking technical designs to innovative storytelling methods, this is a celebration of a true visionary shaping the future of game development.
