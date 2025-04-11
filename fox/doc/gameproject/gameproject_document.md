@@ -9,7 +9,7 @@
 ## Budget Overview
 
 ### 1. Music Production
-- **45 minutes of music**, 12 tracks, including 4 openings.  
+- **45 minutes of music**, 16 tracks, including 4 openings.  
 - Estimated cost: **$1,000 per track**.  
 - Total music budget: **$16,000**.
 
