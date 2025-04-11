@@ -321,6 +321,132 @@ This document proposes a technical implementation of the Dream Explication Syste
 
 The proposed VM implementation for the Dream Explication System leverages AI-generated rules and dynamic execution to create a personalized and immersive player experience. By combining narrative depth with technical efficiency, this system enhances both individual engagement and community interaction, making it a standout feature in the global ranking system.
 
+# SPONSOR INTEGRATION STRATEGIES IN GAME FEATURES
+
+### Implementation: iDkP from GaragePixel  
+**Date:** 2025-04-11  
+**Aida Version:** 4.2.1  
+
+---
+
+## Purpose
+
+This document outlines strategies to integrate business angels and sponsors into the game's features in a way that enhances player experience while providing visibility for sponsors. The strategies leverage existing game mechanics, such as avatar customization and social sharing, to achieve organic and meaningful sponsorship integration.
+
+---
+
+## List of Strategies
+
+### **1. Sponsored Cliparts and Stickers**
+- **Concept**:
+	- Introduce themed cliparts and stickers for the avatar customization system that represent sponsors or business angels.
+	- Examples:
+		- A clipart of a sponsor's mascot or logo stylized to fit the game’s artistic aesthetic.
+		- A set of stickers tied to a particular sponsor’s brand (e.g., a “coffee cup” for a coffee sponsor or "galaxy stars" for a tech sponsor).
+- **Implementation**:
+	1. Stickers are optional and non-intrusive, ensuring players feel no obligation to use them.
+	2. Sponsors can fund exclusive sticker packs that are unlocked through achievements, seasonal events, or in-game milestones.
+	3. All sponsored assets are designed to align with the game's visual style to maintain immersion.
+- **Advantages**:
+	- High visibility without disrupting gameplay.
+	- Appeals to players who enjoy creative customization.
+	- Offers sponsors a direct connection to the player’s self-expression.
+
+---
+
+### **2. Sponsored Dream Export Cards**
+- **Concept**:
+	- When players export their dream sequences for social media sharing, they can choose from a set of “export cards” that frame the dream images. Some of these cards are sponsored.
+	- Example:
+		- A dreamy frame with a sponsor’s logo subtly embedded into the design.
+		- Seasonal or event-exclusive cards tied to a sponsor’s promotional campaign.
+- **Implementation**:
+	1. Sponsored export cards are optional, ensuring players have other non-sponsored options available.
+	2. The cards include thematic designs that resonate with the game’s aesthetic, with sponsor branding integrated seamlessly.
+	3. Players unlock special export cards via achievements, narrative milestones, or promotional codes.
+- **Advantages**:
+	- Integrates sponsor visibility into a highly shareable feature.
+	- Encourages social media exposure as players post their personalized dream exports.
+	- Strengthens sponsor association with creativity and personalization.
+
+---
+
+### **3. Sponsored Achievement Rewards**
+- **Concept**:
+	- Sponsors can fund unique in-game rewards (e.g., themed items, avatar decorations, or dream effects) unlocked by achieving specific milestones.
+	- Example:
+		- A player who completes a narrative arc or unlocks a rare item receives a sponsor-branded gift, such as a glowing avatar border or a special dream filter.
+- **Implementation**:
+	1. Rewards are tied to meaningful achievements, ensuring they feel earned rather than intrusive.
+	2. Sponsored rewards are designed to feel like a natural extension of the game’s world.
+	3. Rewards can include minor interactive elements (e.g., a sticker that animates or changes color).
+- **Advantages**:
+	- Encourages players to engage deeply with the game to unlock rewards.
+	- Provides sponsors with organic visibility tied to positive player experiences.
+	- Enhances replayability as players strive to collect unique sponsored items.
+
+---
+
+### **4. Sponsored Community Challenges (New Idea)**
+- **Concept**:
+	- Sponsors can host community-wide challenges where players collaborate or compete to achieve specific goals, with rewards tied to the sponsor’s theme.
+	- Example:
+		- A tech sponsor might challenge players to collectively solve a puzzle, unlocking a themed reward for all participants.
+		- A food sponsor might host a "cooking challenge" in-game, with winners receiving a special avatar item or sticker set.
+- **Implementation**:
+	1. Challenges are time-limited and tied to specific events or sponsor campaigns.
+	2. Rewards include sponsor-branded items, exclusive stickers, or dream effects.
+	3. Sponsor branding is present in challenge announcements, progress screens, and reward descriptions.
+- **Advantages**:
+	- Builds community engagement by encouraging collaboration or competition.
+	- Creates a sense of urgency and excitement around sponsor campaigns.
+	- Provides sponsors with high visibility during the event without disrupting the core gameplay.
+
+---
+
+## Evaluation of Strategies
+
+| Strategy                          | Visibility Impact | Player Experience | Sponsor Appeal | Originality | Overall Score |
+|-----------------------------------|-------------------|-------------------|----------------|-------------|---------------|
+| **Sponsored Cliparts/Stickers**   | High              | High              | High           | Moderate    | 8.5/10        |
+| **Sponsored Dream Export Cards**  | High              | Moderate          | High           | Moderate    | 8/10          |
+| **Sponsored Achievement Rewards** | Moderate          | High              | Moderate       | Moderate    | 8/10          |
+| **Sponsored Community Challenges**| High              | Very High         | Very High      | High        | 9/10          |
+
+- **Sponsored Cliparts/Stickers**:
+	- A strong blend of visibility and player engagement. The optional nature ensures it remains non-intrusive while appealing to customization-focused players.
+
+- **Sponsored Dream Export Cards**:
+	- A creative way to achieve visibility, particularly through social media sharing. However, its appeal may be limited to players who actively use the export feature.
+
+- **Sponsored Achievement Rewards**:
+	- Ties sponsor visibility to meaningful milestones, reinforcing positive engagement. However, it may have less reach compared to other strategies.
+
+- **Sponsored Community Challenges**:
+	- The most impactful strategy due to its ability to engage the entire player base in a collaborative or competitive activity. The event nature ensures concentrated visibility for sponsors.
+
+---
+
+## Technical Advantages
+
+1. **Seamless Integration**:
+	- All strategies are designed to align with the game’s aesthetic and mechanics, ensuring sponsor visibility feels natural rather than intrusive.
+
+2. **Scalability**:
+	- The modular nature of these strategies allows for easy adaptation to new sponsors, events, or promotional campaigns.
+
+3. **Enhanced Engagement**:
+	- By tying sponsorships to interactive features, the strategies encourage deeper player involvement while providing sponsors with meaningful visibility.
+
+4. **Community Building**:
+	- The community challenges, in particular, foster collaboration and competition, strengthening the game’s player base while amplifying sponsor campaigns.
+
+---
+
+## Conclusion
+
+These strategies provide multiple avenues for integrating sponsor visibility into the game without detracting from the player experience. Of the proposed ideas, the **Sponsored Community Challenges** stand out for their high engagement potential and originality. By leveraging these strategies, the game can balance player enjoyment with sponsor support, ensuring sustainable growth and enhanced community interaction.
+
 # ANALYSIS AND EVALUATION OF GLOBAL RANKING AND SOCIAL FEATURES DESIGN
 
 ### Implementation: iDkP from GaragePixel  
