@@ -227,6 +227,9 @@ This document proposes a technical implementation of the Dream Explication Syste
 		- The VM combines selected images into a cohesive sequence, applying transitions and overlays for a dream-like aesthetic.
 	4. **Output**:
 		- The generated dream is displayed in the player's profile, with corresponding emotional tone (dream or nightmare).
+	5. **Sharing system**:
+		- The generated dream can be shared in community website, it export the dream as image and add the player's discord or social network id if any.
+  		- The dream can be adapted for the be like a postal card during exceptional events from the japanese calendar. The most important celebrations are the new year, lover day, white day etc. Some special card can be generated when the game reachs some milestones (old, number of players, number of generated dreams, new versions... etc).
 
 ---
 
@@ -292,4 +295,4 @@ This document proposes a technical implementation of the Dream Explication Syste
 
 ## Conclusion
 
-The proposed VM implementation for the Dream Explication System leverages AI-generated rules and dynamic execution to create a personalized and immersive player experience. By combining narrative depth with technical efficiency, this system enhances both individual engagement and community interaction, making it a standout feature in 
+The proposed VM implementation for the Dream Explication System leverages AI-generated rules and dynamic execution to create a personalized and immersive player experience. By combining narrative depth with technical efficiency, this system enhances both individual engagement and community interaction, making it a standout feature in the global ranking system.
