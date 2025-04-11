@@ -285,7 +285,7 @@ This document outlines a comprehensive investment strategy for the visual novel 
    - High-quality visuals, animations, and a unique soundtrack.
    - A compelling story combining Japanese folklore with modern themes.
 
-3. **Target Budget**: **$44,100** (see Budget Overview below).
+3. **Target Budget**: **$48,100** (see Budget Overview below).
 4. **Development Timeline**: **12 months** (see Development Timeline below).
 
 ---
@@ -294,14 +294,14 @@ This document outlines a comprehensive investment strategy for the visual novel 
 
 | **Category**               | **Cost**       |
 |-----------------------------|----------------|
-| Music Production (12 tracks)| $12,000       |
+| Music Production (12 tracks)| $16,000       |
 | Voice Acting (8 hours)      | $1,600        |
 | Visual Assets (sprites, backgrounds)| $14,500 |
 | Programming & Engine Dev.   | $6,000        |
 | Writing & Narrative         | $5,000        |
 | Marketing                   | $2,000        |
 | QA Testing                  | $3,000        |
-| **Total**                   | **$44,100**   |
+| **Total**                   | **$48,100**   |
 
 ---
 
@@ -403,5 +403,5 @@ This document outlines a comprehensive investment strategy for the visual novel 
 2. Launch a pre-crowdfunding campaign to build community engagement.
 3. Schedule pitch meetings with targeted investors and sponsors.
 
-**Target Funding Goal**: $44,100.  
+**Target Funding Goal**: $48,100.  
 **Estimated Completion Time**: 12 months.
