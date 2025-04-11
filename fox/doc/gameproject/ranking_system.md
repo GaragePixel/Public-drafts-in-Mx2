@@ -110,7 +110,7 @@ The Dream Explication System is a unique feature designed to deepen player immer
 ### **4. Dream Accessibility**
 - **Player Interaction**:
 	1. Dreams are viewable in the player's profile under the global ranking system.
-	2. Players can revisit past dreams to reflect on their decisions and progression.
+	2. Players cannot revisit past dreams in order to encourage replays.
 - **Community Integration**:
 	- Dreams are shared as part of the player's profile summary, offering a glimpse into their unique journey without revealing spoilers.
 
