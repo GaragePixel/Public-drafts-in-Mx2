@@ -28,7 +28,7 @@
 - 10 characters with limited dialog animations (e.g., blinking, expression changes).
 - Fully animated key scenes for 6 characters.
 - Estimated cost: **$500 per sprite**, **$1,000 per fully animated key scene**.
-- Total: **$10,000**.
+- Total: **$11,000**.
 
 ### 4. Programming & Engine Development
 - **In-house 2D engine**: No external cost.  
