@@ -637,3 +637,57 @@ This document outlines a sponsor integration strategy for the current game proje
 
 ### 3. **Enhanced Engagement**
 - By tying sponsor visibility 
+
+# GLOBAL RANKING AND SOCIAL FEATURES DESIGN
+
+### Implementation: iDkP from GaragePixel  
+**Date:** 2025-04-11  
+**Aida Version:** 4.2.1  
+
+---
+
+## Glossary
+
+### **Visual Novel**
+A **visual novel** is a genre of interactive storytelling that combines visual art, narrative branching, and text-based dialogue. In these games, players typically follow a story with multiple endings influenced by their decisions, creating a unique narrative experience.
+
+### **Lexicon from Analysis Documents**
+
+#### **Memory and Identity**
+- Memory manipulation plays a central role in *Fox Spirit Romance*, influencing gameplay and narrative. Characters' identities often hinge on the manipulation or loss of memories, raising questions about what defines individuality.
+
+#### **Chimeric Condition**
+- Explored through the protagonist Hikari, this refers to a biological and metaphysical state resulting from absorbing a twin in utero. It symbolizes duality and serves as a narrative device to bridge human and supernatural worlds.
+
+#### **Trauma and Recovery**
+- A recurring theme, where characters grapple with past trauma. The game uses narrative and mechanics to explore cycles of harm and attempts at healing.
+
+#### **Cultural and Spiritual Tensions**
+- The narrative integrates Japanese folklore with modern psychological frameworks, highlighting the challenges of cultural assimilation and spiritual boundaries.
+
+#### **Transformation Narratives**
+- Central to the story is the concept of transformation—both physical and psychological—depicted through Hikari's journey and the rare "Perfect Ending" as a complete ontological shift.
+
+#### **Power and Consent**
+- Relationships between yokai and humans inherently feature power imbalances, challenging traditional notions of consent. Players navigate these dynamics as part of the gameplay and moral decision-making.
+
+#### **Symbolism in Dreams**
+- Dreams reflect the player's choices and emotional arcs, using symbolic elements to encapsulate narrative themes. For example, shattered objects might symbolize broken relationships or missed opportunities.
+
+#### **Replayability and Emotional Depth**
+- The game's structure, including memory manipulation mechanics and branching paths, encourages multiple playthroughs to fully explore its narrative complexity.
+
+#### **Intersection of Horror and Romance**
+- *Fox Spirit Romance* blends horror elements with romantic tropes, creating tension and moral ambiguity in relationships. The narrative often subverts conventional romance endings with darker, more complex resolutions.
+
+#### **Ranking System**
+- The ranking system in this game is designed to compare players' choices and narrative progressions, with metrics like proximity to the "Perfect Ending" and mastery of symbolic dream interpretations. It incorporates anonymized comparisons and social features to foster community interaction.
+
+#### **Affinity Metrics**
+- A gameplay feature that tracks relationship dynamics between characters. These metrics influence narrative branching and determine achievable endings, reinforcing the emotional stakes of player decisions.
+
+#### **Telemetry and Privacy**
+- Telemetry refers to the collection of anonymized gameplay data, such as progression metrics and decision patterns. In this game, a dedicated subpage explains the purpose of telemetry to ensure transparency and respect for player privacy.
+
+#### **Community Challenges**
+- Time-limited, collaborative gameplay events where players work together to achieve specific goals. These challenges serve to strengthen community engagement and incentivize replayability.
