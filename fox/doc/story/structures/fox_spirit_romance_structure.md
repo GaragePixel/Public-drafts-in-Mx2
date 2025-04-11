@@ -93,51 +93,159 @@ Main Narrative Tree
 ```
 --- 
 
-Endings Tree Connections
+# FOX SPIRIT ROMANCE: ENDINGS TREE CONNECTIONS
 
-The endings are primarily connected through major narrative branches in the main tree, which influence the outcome based on cumulative choices and affinity levels. Here's how the connections work:
-Key Connection Points
-1. Crisis Point: The Revelation
+## **Implementation Details**
+- **Credit**: iDkP from GaragePixel  
+- **Date**: 2025-04-11  
+- **Aida Version**: 4.2.1  
 
-    The Fake Suicide Preparation and Night of Decision branches in the main tree directly lead to endings.
-    Examples:
-        If the player successfully builds trust with Katsuo, the Rooftop Confession leads to Perfect Ending paths.
-        Failing to gain Katsuo's trust or revealing knowledge too soon can lead to Bad Endings, such as Memory Erasure or Death Path.
+---
 
-2. Transformation Journey
+## **Purpose**
+This document analyzes how the **endings tree** connects to the **main narrative tree** in *Fox Spirit Romance*. The integration ensures that player choices and character affinity dynamically influence the story outcome, enhancing replayability and narrative depth.
 
-    Decisions during the Hot Springs Arrival and Kodama Journey Preparation influence the outcome.
-    Examples:
-        Essence Integration during the Kodama encounter leads to Good Endings, such as Identity Merging and Enhanced Transformation.
-        Resistance to the sister's essence during the Kodama transformation results in a Death Ending.
+---
 
-3. Akane Avoidance Period
+## **Endings Tree Connections**
+The endings are primarily connected through **major narrative branches** in the main tree. These branches influence the outcome based on cumulative choices and affinity levels. Below are the key connection points:
 
-    The choices during this arc determine whether Akane becomes a powerful ally or leads to violent confrontation paths.
-    Examples:
-        Positive engagement with Akane leads to her redemption and more cooperative endings.
-        Confrontation during the hallway scene results in Bad Endings, such as the Hospital Death Ending.
+---
 
-4. Megumi Relationship
+### **Key Connection Points**
 
-    The Revengeful Girls Introduction and subsequent branches in the School Year Begins arc determine Megumi's influence on the story.
-    Examples:
-        High affinity with Megumi during key moments (e.g., School Festival, Reflection Pool) leads to Megumi Relationship Endings (e.g., Savior Path or Yakuza Queen Path).
-        Low affinity results in abandonment or darker outcomes.
+#### **1. Crisis Point: The Revelation**
+   - **Branches**: Fake Suicide Preparation, Night of Decision.
+   - **Outcome Examples**:
+     - Successfully building trust with Katsuo leads to **Perfect Endings** via the **Rooftop Confession**.
+     - Failing to gain trust or revealing knowledge too soon results in **Bad Endings** like **Memory Erasure** or **Death Path**.
 
-5. Bad Ending Branches
+#### **2. Transformation Journey**
+   - **Branches**: Hot Springs Arrival, Kodama Journey Preparation.
+   - **Outcome Examples**:
+     - **Essence Integration** during the Kodama encounter leads to **Good Endings**, such as **Identity Merging** and **Enhanced Transformation**.
+     - Resistance to the sister’s essence results in a **Death Ending**.
 
-    Specific choices during key arcs connect directly to Bad Endings without further branching.
-    Examples:
-        Stalking Katsuo during the Investigation & Revelation arc can lead to the Hunter Death Ending.
-        Sexual interactions during Locker Room Intimacy or the Audio-Visual Room Encounter can result in Suicide or Emotional Hollowing Endings.
+#### **3. Akane Avoidance Period**
+   - **Branches**: Choices during this arc determine Akane's role as a powerful ally or antagonist.
+   - **Outcome Examples**:
+     - Positive engagement with Akane leads to her redemption and cooperative endings.
+     - Confrontation during the hallway scene results in **Bad Endings**, such as the **Hospital Death Ending**.
 
-Connection Summary Table
-Endings Tree	Connected Main Tree Branch	Outcome
-Perfect Ending Paths	Rooftop Confession (Crisis Point)	Harmony with Katsuo and yokai world
-Kodama Transformation	Essence Integration (Transformation Journey)	Enhanced spiritual transformation
-Megumi Savior Path	High Affinity in School Festival	Positive Megumi character arc
-Yakuza Queen Path	Low Affinity in School Year Begins	Megumi becomes a criminal authority
-Hospital Death Ending	Akane Avoidance Period (Hallway Confrontation)	Violent end caused by Akane
-Hunter Death Ending	Stalking Evidence Path (Investigation & Revelation)	Death caused by Katsuo’s trauma
-Memory Erasure/Traumatic Ends	Audio-Visual Room Encounter (White Day)	Emotional or physical breakdown
+#### **4. Megumi Relationship**
+   - **Branches**: Revengeful Girls Introduction, School Year Begins.
+   - **Outcome Examples**:
+     - High affinity during key moments (e.g., School Festival, Reflection Pool) leads to **Megumi Relationship Endings** like the **Savior Path** or **Yakuza Queen Path**.
+     - Low affinity results in abandonment or darker outcomes.
+
+#### **5. Bad Ending Branches**
+   - **Specific Choices**: Certain arcs connect directly to **Bad Endings** without branching further.
+   - **Outcome Examples**:
+     - Stalking Katsuo during the **Investigation & Revelation** arc leads to the **Hunter Death Ending**.
+     - Sexual interactions during **Locker Room Intimacy** or the **Audio-Visual Room Encounter** result in **Suicide** or **Emotional Hollowing**.
+
+---
+
+## **Connection Summary Table**
+
+| **Endings Tree**            | **Connected Main Tree Branch**               | **Outcome**                              |
+|------------------------------|----------------------------------------------|------------------------------------------|
+| **Perfect Ending Paths**     | Rooftop Confession (Crisis Point)            | Harmony with Katsuo and yokai world      |
+| **Kodama Transformation**    | Essence Integration (Transformation Journey) | Enhanced spiritual transformation        |
+| **Megumi Savior Path**       | High Affinity in School Festival             | Positive Megumi character arc            |
+| **Yakuza Queen Path**        | Low Affinity in School Year Begins           | Megumi becomes a criminal authority      |
+| **Hospital Death Ending**    | Akane Avoidance Period (Hallway Confrontation) | Violent end caused by Akane              |
+| **Hunter Death Ending**      | Stalking Evidence Path (Investigation & Revelation) | Death caused by Katsuo’s trauma          |
+| **Memory Erasure/Traumatic Ends** | Audio-Visual Room Encounter (White Day)   | Emotional or physical breakdown          |
+
+---
+
+## **Integration Explanation**
+The **endings tree** is not isolated but branches naturally from **major decision points** in the main tree. The narrative ensures that:
+   - Player choices and character interactions cumulatively determine the ending path.
+   - The design emphasizes replayability by making each decision significant.
+   - Emotional depth is achieved by tying outcomes to affinity levels and trust-building mechanics.
+
+Let me know if further breakdowns or diagrams are needed!
+
+# FOX SPIRIT ROMANCE: NON-CONNECTED ENDINGS BRANCHES
+
+## **Implementation Details**
+- **Credit**: iDkP from GaragePixel  
+- **Date**: 2025-04-11  
+- **Aida Version**: 4.2.1  
+
+---
+
+## **Purpose**
+This document highlights the ending branches in *Fox Spirit Romance* that are **not directly connected to the main narrative tree**. These endings are triggered via optional or isolated actions, functioning as standalone deviations from the primary storyline.  
+
+---
+
+## **List of Non-Connected Ending Branches**
+
+### **1. Early Revelation Failures**
+   - **Description**: Triggered when the player reveals Katsuo's true nature prematurely, before building trust or relationship levels.
+   - **Triggers**:
+     - Confronting Katsuo without evidence.
+     - Revealing knowledge too early.
+   - **Outcomes**:
+     - **Memory Erasure**: Katsuo erases the protagonist's memory, leaving them disoriented.
+     - **Spiritual Development End**: Katsuo abandons the protagonist, severing their connection to the yokai world.
+
+---
+
+### **2. Sexual Encounter Bad Endings**
+   - **Description**: Triggered by optional intimate encounters leading to negative emotional or supernatural effects.
+   - **Triggers**:
+     - **Locker Room Intimacy**
+     - **Audio-Visual Room Encounter**
+   - **Outcomes**:
+     - **Emotional Hollowing**: Hikari’s essence is partially consumed, leading to emotional detachment and depression.
+     - **Suicide Ending**: Overwhelmed by emptiness, Hikari takes her own life.
+     - **Memory Erasure Confrontation**: Katsuo manipulates Hikari’s memory, leaving her fragmented.
+
+---
+
+### **3. Stalking Evidence Path**
+   - **Description**: Triggered by repeated stalking of Katsuo to gather evidence of his yokai nature.
+   - **Triggers**:
+     - Persistent spying without engaging main objectives.
+   - **Outcomes**:
+     - **Hunter Death Ending**: Katsuo, triggered by trauma from his mother's hunters, reacts violently, leading to Hikari's death.
+
+---
+
+### **4. Transformation Journey Failures**
+   - **Description**: Specific failures during the Kodama spiritual journey, unrelated to prior narrative progressions.
+   - **Triggers**:
+     - Rejecting transformation during Kodama encounters.
+     - Missing critical conditions for the spiritual journey.
+   - **Outcomes**:
+     - **Consciousness Dissolution**: Hikari fails to integrate with the Kodama, vanishing into the void.
+     - **Death While Following**: Hikari follows an albino girl and dies in a traffic accident.
+
+---
+
+### **5. Megumi Relationship Bad Endings**
+   - **Description**: Standalone endings based on isolated interactions with Megumi that go awry.
+   - **Triggers**:
+     - Specific choices during Megumi-focused scenes (e.g., School Festival or Council Room sequences).
+   - **Outcomes**:
+     - **Yakuza Power Figure**: Megumi becomes a criminal authority, discarding Hikari as irrelevant.
+     - **Disintegration Death**: Megumi accepts a “powerful treasure” from Katsuo, which consumes her in a supernatural explosion.
+
+---
+
+### **6. Perfect Ending Path Failures**
+   - **Description**: Failures tied to isolated actions during the Perfect Ending Path, not connected to the main storyline.
+   - **Triggers**:
+     - Specific choices during the spiritual journey or tengu confrontation.
+   - **Outcomes**:
+     - **Tengu Devours Hikari**: Katsuo fails to save Hikari during a tengu battle, leading to her death.
+     - **Unborn Sister’s Revelation Failure**: Hikari fails to integrate with her unborn sister’s essence due to missing critical items (e.g., Katsuo’s fur scarf).
+
+---
+
+## **Summary**
+The above ending branches are disconnected from the main narrative tree and are triggered by isolated actions or optional paths. While they enrich the narrative with additional outcomes, they do not influence the primary storyline progression. These branches enhance replayability by rewarding players who explore alternate decisions and interactions.
