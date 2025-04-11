@@ -23,7 +23,7 @@
        │   ├── Ask about new "employee" → Suspicion from caretaker
        │   └── Show interest in artifacts → Glimpse Katsuo in fox form
        └── Search streets for kitsune boy
-           ├── Wait at meeting spot → Patience +1
+           ├── Wait at meeting spot → affinity +1
            ├── Stake out bus stop overnight → affinity +1
            └── Try to forget the encounter → Recurring dreams → affinity -1
 
