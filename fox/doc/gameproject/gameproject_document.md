@@ -42,7 +42,7 @@
 - Marketing: **$2,000**.
 - QA Testing: **$3,000**.
 
-#### Total Budget: **$44,100**
+#### Total Budget: **$48,100**
 
 ---
 
