@@ -1,6 +1,8 @@
 # FOX SPIRIT ROMANCE: COMPLETE NARRATIVE TREE
 
-1. PROLOGUE: SUMMER ENCOUNTER [July-August 1996]
+Horizontal Layout:
+
+1. PROLOGUE: SUMMER ENCOUNTER [July-August 1996] 
    ├── Museum Direction-Giving
    │   ├── Notice Katsuo's true form immediately
    │   │   ├── Pretend not to notice → affinity +1
@@ -42,66 +44,109 @@
 	│       ├── Hierarchy identification → Social intelligence
 	│       ├── Territory recognition → Spatial awareness
 	│       └── Rule system understanding → System knowledge
-	└── Stalker Arc
-	    ├── Initial Discovery Phase
-	    │   ├── Accidental glimpse of male Katsuo
-	    │   │   ├── From school window → Brief observation only
-	    │   │   └── In downtown area → Follow immediately → Lose trail
-	    │   ├── Overhear conversation about "that guy"
-	    │   │   ├── Between Megumi and lieutenant → Possession concern
-	    │   │   └── Between regular students → Mysterious reputation
-	    │   └── Perceive yokai trail from Kazuko
-	    │       ├── Notice distinctive aura pattern → Connection realization
-	    │       └── Follow trail partially → Lose at crossroads
-	    ├── Surveillance Planning
-	    │   ├── Recruit yokai invisibles
-	    │   │   ├── Dust yokai → Offer candy as payment
-	    │   │   ├── Shadow yokai → Agree to carry message
-	    │   │   └── Wind yokai → Promise to visit shrine
-	    │   ├── Establish surveillance points
-	    │   │   ├── Near school exit → Limited information
-	    │   │   ├── Downtown junction → Pattern recognition
-	    │   │   └── Near suspected residence → High risk of detection
-	    │   └── Develop disguise strategy
-	    │       ├── Different uniform → Limited effectiveness
-	    │       └── Casual clothes → Moderate concealment
-	    ├── Active Stalking Phase
-	    │   ├── Weekday pursuit
-	    │   │   ├── After school → Observe museum visits
-	    │   │   │   └── Interaction with curator → Knowledge gathering
-	    │   │   └── Early evening → Observe meeting with contacts
-	    │   │       ├── Business people → Information exchange
-	    │   │       └── Telephone cabin call to mother → Mission reporting
-	    │   ├── Weekend pursuit
-	    │   │   ├── Morning activities → Shopping for unusual items
-	    │   │   │   └── Ancient bookstore → Obscure texts
-	    │   │   └── Evening activities → Entertainment district
-	    │   │       ├── Multiple bars → Information gathering
-	    │   │       └── Heading toward love hotel district → Critical discovery
-	    │   └── Yokai invisibles reports
-	    │       ├── Confirm multiple identities → Triple form verification
-	    │       ├── Observe telephone cabin call → Mission communication
-	    │       └── Warning about dangerous aura spikes → Feeding activity
-	    └── Love Hotel Discovery [sexualContentEnabled]
-	        ├── Observation approach
-	        │   ├── Watch from distance → Limited information
-	        │   │   ├── See entering with woman → Relationship assumption
-	        │   │   └── Wait for exit → Extended disappearance
-	        │   └── Close surveillance → Detailed information
-	        │       ├── Recognize woman as previous victim → Pattern recognition
-	        │       └── Detect memory manipulation aura → Predatory behavior
-	        ├── Infiltration approach
-	        │   ├── Follow inside → High risk
-	        │   │   ├── Lobby surveillance → Staff suspicion
-	        │   │   └── Corridor eavesdropping → Partial conversation
-	        │   └── Room adjacent booking → Maximum information
-	        │       └── Hear conversation → Memory extraction purpose
-	        └── Yokai invisibles assistance
-	            ├── Send dust yokai under door → Visual report
-	            │   └── Witness memory extraction → Confirm predation
-	            └── Shadow yokai surveillance → Energy pattern report
-	                ├── Detect regular feeding pattern → Serial predation
-	                └── Recognize specific targeting → Victim selection criteria
+   	├── Classroom Dynamics
+ 	│   ├── Sequence #1: Interaction with "Kazuko"
+   	│   │   ├── Laboratory partnership → Proximity test
+   	│   │   └── Casual conversation → False identity maintenance
+   	│   ├── Sequence #2: Observation of Akane
+   	│   │   ├── Hikari interior monologue about past admiration of Akane
+   	│   │   ├── Recall of hallway encounter from previous year
+   	│   │   └── Notice yokai of loneliness surrounding her
+   	│   ├── Sequence #3: Dealing with Megumi's group
+   	│   │   ├── Keep distance → Safety but isolation
+   	│   │   └── Careful observation → Learn group dynamics
+   	│   └── Locked Sequence #4: Accusation about being a kitsune
+   	│       ├── Has the hair tufle → Leads to STALKING EVIDENCE PATH
+   	│       └── Hasn't the hair tufle → Leads to SAVIOR PATH: REDEMPTIVE SACRIFICE
+   	├── Swimming Class Locker Room
+   	│   ├── Hikari's delayed arrival to avoid exposure
+   	│   │   └── Observe Kazuko's avoidance of other girls → affinity +1
+   	│   ├── Hikari private conversation with Kazuko 
+        │   │   ├── Kazuko discovers Hikari's chimera skin (Hikari show him/her)
+   	│   │   │   └── Hikari shares bullying history → Kazuko shows unexpected kindness, affinity +1
+        │   │   └── Hikari don't speak about Hikari's chimera skin → Open a new classroom dynamic sequence 
+        │   │       ├── The three sequences aren't each completed → Open access to a new random sequence (but sequence #4)
+	│   │       └── The three sequences are each completed
+	│   │           └── Stalker Arc completed → Open access to the class room denonciation sequence (locked sequence #4)
+	│   │           └── Stalker Arc not done → Kizako peeps and discovers the Hikari's chimerism
+	│   └── Hikari precipited revelations leads to Megumi different paths
+	│       ├── Good Ending: Megumi Savior Path
+	│       └── Bad Ending: Yakuza Power Figure	
+	├── Stalker Arc
+	│   ├── Initial Discovery Phase
+	│   │   ├── Accidental glimpse of male Katsuo
+	│   │   │   ├── From school window → Brief observation only
+	│   │   │   └── In downtown area → Follow immediately → Lose trail
+	│   │   ├── Overhear conversation about "that guy"
+	│   │   │   ├── Between Megumi and lieutenant → Possession concern
+	│   │   │   └── Between regular students → Mysterious reputation
+	│   │   └── Perceive yokai trail from Kazuko
+	│   │       ├── Notice distinctive aura pattern → Connection realization
+	│   │       └── Follow trail partially → Lose at crossroads
+	│   ├── Surveillance Planning
+	│   │   ├── Recruit yokai invisibles
+	│   │   │   ├── Dust yokai → Offer candy as payment
+	│   │   │   ├── Shadow yokai → Agree to carry message
+	│   │   │   └── Wind yokai → Promise to visit shrine
+	│   │   ├── Establish surveillance points
+	│   │   │   ├── Near school exit → Limited information
+	│   │   │   ├── Downtown junction → Pattern recognition
+	│   │   │   └── Near suspected residence → High risk of detection
+	│   │   └── Develop disguise strategy
+	│   │       ├── Different uniform → Limited effectiveness
+	│   │       └── Casual clothes → Moderate concealment
+	│   ├── Active Stalking Phase
+	│   │   ├── Weekday pursuit
+	│   │   │   ├── After school → Observe museum visits
+	│   │   │   │   └── Interaction with curator → Knowledge gathering
+	│   │   │   └── Early evening → Observe meeting with contacts
+	│   │   │       ├── Business people → Information exchange
+	│   │   │       └── Telephone cabin call to mother → Mission reporting
+	│   │   ├── Weekend pursuit
+	│   │   │   ├── Morning activities → Shopping for unusual items
+	│   │   │   │   └── Ancient bookstore → Obscure texts
+	│   │   │   └── Evening activities → Entertainment district
+	│   │   │       ├── Multiple bars → Information gathering
+	│   │   │       └── Heading toward love hotel district → Critical discovery
+	│   │   └── Yokai invisibles reports
+	│   │       ├── Confirm multiple identities → Triple form verification
+	│   │       ├── Observe telephone cabin call → Mission communication
+	│   │       └── Warning about dangerous aura spikes → Feeding activity
+	│   └── Love Hotel Discovery [sexualContentEnabled]
+	│       ├── Observation approach
+	│       │   ├── Watch from distance → Limited information
+	│       │   │   ├── See entering with woman → Relationship assumption
+	│       │   │   └── Wait for exit → Extended disappearance
+	│       │   └── Close surveillance → Detailed information
+	│       │       ├── Recognize woman as previous victim → Pattern recognition
+	│       │       └── Detect memory manipulation aura → Predatory behavior
+	│       ├── Infiltration approach
+	│       │   ├── Follow inside → High risk
+	│       │   │   ├── Lobby surveillance → Staff suspicion
+	│       │   │   └── Corridor eavesdropping → Partial conversation
+	│       │   └── Room adjacent booking → Maximum information
+	│       │       └── Hear conversation → Memory extraction purpose
+	│       │── Yokai invisibles assistance
+	│       │   ├── Send dust yokai under door → Visual report
+	│       │   │   └── Witness memory extraction → Confirm predation
+	│       │   ├── Shadow yokai surveillance → Energy pattern report
+	│       │   │   ├── Detect regular feeding pattern → Serial predation
+	│       │   │   └── Recognize specific targeting → Victim selection criteria
+	│       │   └── Player can find and take the tufle hairs
+	│       └── Hikari precipited revelations leads to Megumi different paths
+	│           ├── Bad Ending: Megumi Disintegration Death
+	│           └── Bad Ending: Megumi Redemption Path
+   	└── New day in the Locker Room
+	    ├── Hikari has already show her chimerism at Kazuko
+	    │   └── Hikari hasn't already completed the Stalker Arc
+	    │       ├── Hikari precipited revelations leads to Megumi different paths
+	    │	    │   ├── Bad Ending: Megumi Disintegration Death
+	    │	    │   └── Bad Ending: Megumi Redemption Path
+	    │       └── Hikari has already completed the Stalker Arc
+	    │	        └── Hikari precipited revelations because she wants to be like the other lucky girls → leads to Megumi different paths
+	    │               ├── Good Ending: Megumi Savior Path
+	    │               └── Bad Ending: Yakuza Power Figure
+	    └── Hikari hasn't already show her chimerism at Kazuko → Swimming Class Locker Room 1st day tree replay
 
 3. SCHOOL FESTIVAL ARC [Culture Day - November 3, 1996]
 	├── Committee Formation
@@ -216,6 +261,9 @@
 	│   │       └── Hikari's admiration
 	│   │           ├── Genuine respect for authentic skill → Friendship foundation
 	│   │           └── Comparing Akane's earned mastery vs. Kazuko's unnatural perfection
+	│   ├── Hikari precipited revelations leads to Megumi different paths
+	│   │   ├── Good Ending: Megumi Savior Path
+	│   │   └── Bad Ending: Yakuza Power Figure	
 	│   └── Evening Activities
 	│       ├── Festival closing events
 	│       │   ├── Ceremonial conclusion → Traditional elements
@@ -265,17 +313,21 @@
 	│   │   ├── Hallway approach blocked → Physical avoidance [DANGER PATH]
 	│   │   │   └── If selected: Akane attacks → Severe injury → Death in hospital → BAD END
 	│   │   └── Class project pairing rejected → Social barrier [SAFE PATH]
-	│   └── Distance observation
-	│       ├── Akane's increasing isolation → Social withdrawal
-	│       └── Shifting yokai patterns → Sadness to determination transition
+	│   ├── Distance observation
+	│   │   ├── Akane's increasing isolation → Social withdrawal
+	│   │   └── Shifting yokai patterns → Sadness to determination transition
+	│   └── Bad Ending: Hospital Death Ending
 	├── Spying on Katsuo's Activities  
 	│   ├── Enlist help from invisible yokai
 	│   │   ├── Establish yokai communication network → Intelligence gathering
 	│   │   └── Witness love hotel encounters → Complex feelings
-	│   └── Follow "Kazuko" after school
-	│       ├── Observe interaction with Megumi → Power dynamics
-	│       ├── Observe telephone cabin call → Solitary mission confirmation
-	│       └── Glimpse transformation moment → Near discovery
+	│   ├── Follow "Kazuko" after school
+	│   │   ├── Observe interaction with Megumi → Power dynamics
+	│   │   ├── Observe telephone cabin call → Solitary mission confirmation
+	│   │   └── Glimpse transformation moment → Near discovery
+	│   └── Stalking Evidence Path
+	│       ├── Bad Ending: Hunter Death Ending
+	│       └── Bad Ending: Memory Erasure
 	├── Winter Break Encounters [December 25-January]
 	│   ├── Museum visit during holidays
 	│   │   ├── "Accidental" meeting → Katsuo's suspicion
@@ -299,8 +351,8 @@
 	    │   ├── Strategic isolation attempts → Separating Kazuko from others
 	    │   └── Performance of perfection → Desperate approval seeking
 	    └── "Kazuko's" protective intervention
-	        ├── Secret defense of Hikari → Trust +2
-	        └── Public defense → Gang conflict → Trust +1, Danger +2
+	        ├── Secret defense of Hikari → Affinity +2
+	        └── Public defense → Gang conflict → Affinity +1
 
 5. WHITE DAY CELEBRATIONS [March 1997]
 	├── Chocolate Preparation [March 14]
@@ -345,8 +397,11 @@
 	│   │   ├── School rooftop → Accessible but risky
 	│   │   └── Abandoned building → Private but dangerous
 	│   └── Plan execution
-	│       ├── Letter placement → Creating evidence trail
-	│       └── Timing selection → Maximum impact calculation
+	│       ├── Make Katsuo misinterpret Hikari about she's bad about her chimerism → Creating evidence trail, Affinity +1
+	│       └── Make Katsuo misinterpret Hikari about she's bad because Megami → Depends of player's path
+	│	    ├── Perfect Ending: Partnership Path
+	│	    ├── Perfect Ending: Support Path
+	│	    └── Perfect Ending: Caution Path
 	├── Night of Decision
 	│   ├── Leading Katsuo through city streets
 	│   │   ├── Notice transformation disguises → Lamppost, trash can
@@ -366,6 +421,9 @@
 	        ├── Katsuo's amazement at Hikari's perception abilities
 	        ├── Hikari's desire to be with someone who shares her world
 	        └── Mutual fascination acknowledgment → Affinity +2
+		    ├── Bad Ending: Memory Erasure
+		    ├── Good Ending: Identity Merging
+		    └── Bad Ending: Death Path
 
 7. TRANSFORMATION JOURNEY [May 1997]
 	├── Pre-Hot Springs Phase
@@ -399,14 +457,10 @@
 	    │       ├── Maintain composure → Affinity +1
 	    │       └── Show appropriate awe → Affinity +1
 	    └── Hot Spring Yokai Encounters
-	        ├── Variety of supernatural beings → World expansion
-	        ├── Integration approach
-	        │   ├── Focus on customs → Affinity +1
-	        │   ├── Demonstrate perception → Affinity +1
-	        │   └── Stay near Katsuo → Affinity +1
-	        └── Initial social positioning
-	            ├── Curiosity object → Novelty status
-	            └── Potential threat → Skeptical assessment
+	        └── Variety of supernatural beings → World expansion
+	            └── Tengu Confrontation
+                        ├── Bad Ending: Tengu Devours Hikari
+                        └── Perfect Ending: Failure to Save Hikari, Hikari save herself
 
 8. KODAMA TRANSFORMATION [June 1997]
 	├── Forest Journey
@@ -437,10 +491,12 @@
 	    │   │   └── Resistance → Failed transformation → DEATH END
 	    │   └── Essence integration
 	    │       ├── Memory absorption → Knowledge transfer
-	    │       └── Identity merging → Being expansion
+            │       ├── Bad Ending: Missing Katsuo's Fur Scarf
+            │       │   └── Bad Ending: Consciousness Dissolution
+            │       └── Identity merging → Being expansion
+            │           └── Perfect Ending: Sister Essence Fusion
 	    └── Consciousness return
-	        ├── Reality reorientation → Dimensional shift
-	        └── New perception activation → Enhanced awareness
+	        └── Hikaro bacomes a Kitsune → Continue the journey
 
 9. NEW EXISTENCE [July-August 1997]
 	├── Training and Integration
@@ -484,6 +540,8 @@
 	        └── Status confirmation
 	            ├── Position establishment → Hierarchy clarification
 	            └── Respect earning → Community acceptance
+
+Vertical Layout 
 
 BAD ENDING BRANCHES
 │
@@ -542,7 +600,7 @@ BAD ENDING BRANCHES
 │
 ├── ORAL ENCOUNTER PATH
 │   │
-│   ├── AUDIOVISUAL ROOM ENCOUNTER
+│   ├── SECOND LOCKED ROOM INTIMACY
 │   │   ├── Private after-hours meeting
 │   │   ├── Growing physical tension
 │   │   └── Intimate oral contact initiation
