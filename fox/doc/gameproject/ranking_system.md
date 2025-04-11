@@ -24,6 +24,7 @@
 4. [Notes on Implementation Choices](#notes-on-implementation-choices)
 5. [Technical Advantages](#technical-advantages)
 6. [Conclusion](#conclusion)
+7. [Glossary](#Glossary)
 
 ---
 
