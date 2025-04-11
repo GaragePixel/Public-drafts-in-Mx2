@@ -92,3 +92,52 @@ Main Narrative Tree
     └── Bad Endings
 ```
 --- 
+
+Endings Tree Connections
+
+The endings are primarily connected through major narrative branches in the main tree, which influence the outcome based on cumulative choices and affinity levels. Here's how the connections work:
+Key Connection Points
+1. Crisis Point: The Revelation
+
+    The Fake Suicide Preparation and Night of Decision branches in the main tree directly lead to endings.
+    Examples:
+        If the player successfully builds trust with Katsuo, the Rooftop Confession leads to Perfect Ending paths.
+        Failing to gain Katsuo's trust or revealing knowledge too soon can lead to Bad Endings, such as Memory Erasure or Death Path.
+
+2. Transformation Journey
+
+    Decisions during the Hot Springs Arrival and Kodama Journey Preparation influence the outcome.
+    Examples:
+        Essence Integration during the Kodama encounter leads to Good Endings, such as Identity Merging and Enhanced Transformation.
+        Resistance to the sister's essence during the Kodama transformation results in a Death Ending.
+
+3. Akane Avoidance Period
+
+    The choices during this arc determine whether Akane becomes a powerful ally or leads to violent confrontation paths.
+    Examples:
+        Positive engagement with Akane leads to her redemption and more cooperative endings.
+        Confrontation during the hallway scene results in Bad Endings, such as the Hospital Death Ending.
+
+4. Megumi Relationship
+
+    The Revengeful Girls Introduction and subsequent branches in the School Year Begins arc determine Megumi's influence on the story.
+    Examples:
+        High affinity with Megumi during key moments (e.g., School Festival, Reflection Pool) leads to Megumi Relationship Endings (e.g., Savior Path or Yakuza Queen Path).
+        Low affinity results in abandonment or darker outcomes.
+
+5. Bad Ending Branches
+
+    Specific choices during key arcs connect directly to Bad Endings without further branching.
+    Examples:
+        Stalking Katsuo during the Investigation & Revelation arc can lead to the Hunter Death Ending.
+        Sexual interactions during Locker Room Intimacy or the Audio-Visual Room Encounter can result in Suicide or Emotional Hollowing Endings.
+
+Connection Summary Table
+Endings Tree	Connected Main Tree Branch	Outcome
+Perfect Ending Paths	Rooftop Confession (Crisis Point)	Harmony with Katsuo and yokai world
+Kodama Transformation	Essence Integration (Transformation Journey)	Enhanced spiritual transformation
+Megumi Savior Path	High Affinity in School Festival	Positive Megumi character arc
+Yakuza Queen Path	Low Affinity in School Year Begins	Megumi becomes a criminal authority
+Hospital Death Ending	Akane Avoidance Period (Hallway Confrontation)	Violent end caused by Akane
+Hunter Death Ending	Stalking Evidence Path (Investigation & Revelation)	Death caused by Katsuo’s trauma
+Memory Erasure/Traumatic Ends	Audio-Visual Room Encounter (White Day)	Emotional or physical breakdown
