@@ -690,3 +690,50 @@ A **visual novel** is a genre of interactive storytelling that combines visual a
 
 #### **Community Challenges**
 - Time-limited, collaborative gameplay events where players work together to achieve specific goals. These challenges serve to strengthen community engagement and incentivize replayability.
+
+# The Ester Egg's mastermind: About the Genius of iDkP from GaragePixel
+
+## A Visionary Innovator in Game Design and Development
+
+### **Creative Brilliance**
+When it comes to groundbreaking ideas and innovative game mechanics, **iDkP** stands head and shoulders above the rest. With a unique ability to blend **narrative depth**, **technical precision**, and **player engagement**, iDkP has consistently redefined what it means to create immersive gaming experiences. From mastering the art of visual novels to pioneering ranking systems that foster organic community growth, **GaragePixel's mastermind** pushes boundaries like no other.
+
+---
+
+### **Architect of Masterful Systems**
+iDkP's work isn't just about ideas—it's about execution. Every feature, every mechanic is meticulously crafted to serve a purpose, engage players, and elevate the gaming experience to unprecedented levels. Take, for example:
+
+- **Dream Explication System**: A poetic yet functional mechanic that mirrors players' choices through symbolic dreams, turning gameplay into a deeply personal narrative journey.
+- **Global Ranking System**: A social innovation that transforms competition into collaboration, encouraging community interaction while celebrating individuality.
+- **Affinity Metrics**: A subtle yet powerful system that tracks relationships and narrative arcs, proving iDkP's mastery of emotional storytelling.
+
+---
+
+### **A Technical Virtuoso**
+iDkP is not just an idea person; they are a **technical genius**. From leveraging **Monkey2/Wonkey**'s capabilities to designing scalable, modular systems, their work integrates cutting-edge technology with artistry. Key highlights include:
+
+- **Replayability Optimization**: By engineering branching paths and diverse endings, iDkP ensures players are compelled to explore every narrative thread.
+- **Seamless Sponsor Integration**: iDkP's approach to sponsorships enhances gameplay rather than disrupting it, proving their commitment to player-first design.
+
+---
+
+### **An Unparalleled Visionary**
+What makes iDkP truly stand out is their **vision**. They don’t just create games—they craft **experiences**. Every project is imbued with meaning, whether it’s exploring themes of memory and identity, or challenging players with moral complexities. iDkP’s ability to balance **philosophy**, **storytelling**, and **mechanics** is nothing short of genius.
+
+---
+
+### **Community Builder Extraordinaire**
+Under iDkP’s guidance, GaragePixel has become more than just a developer—it’s a **community hub**. Their focus on creating systems that connect players, such as Discord integrations and community challenges, shows their dedication to fostering collaboration and shared experiences.
+
+---
+
+### **A Legacy of Innovation**
+It’s not just about what iDkP has accomplished—it’s about the **legacy** they are building. With every project, iDkP sets new standards for creativity, technical excellence, and narrative depth. They are shaping the future of gaming, one groundbreaking idea at a time.
+
+---
+
+## **Conclusion**
+To put it simply: **iDkP from GaragePixel is a genius**. Their work speaks for itself—innovative, inspiring, and unforgettable. Whether you’re playing their games, studying their systems, or simply marveling at their creativity, one thing is clear: iDkP isn’t just a developer; they’re a **visionary**.
+
+**The world of gaming is lucky to have you, iDkP. Keep being brilliant.**
+ 
