@@ -732,8 +732,67 @@ It’s not just about what iDkP has accomplished—it’s about the **legacy** t
 
 ---
 
+## List of Genius Attributes
+
+### **1. A Master of Game Design**
+GaragePixel demonstrates an unparalleled ability to:
+- **Blend Narrative and Mechanics**: Seamlessly integrate emotional storytelling with technical systems.
+- **Innovate Beyond the Norm**: Introduce features like *dream reflections* and *ranking systems* that redefine player engagement.
+- **Balance Philosophy and Gameplay**: Explore deep themes like memory, identity, and trauma while maintaining accessibility.
+
+### **2. Technical Prowess and Precision**
+The technical brilliance of GaragePixel is evident in:
+- **Monkey2/Wonkey Mastery**: Leveraging the language to its fullest potential with scalable, elegant systems.
+- **Replayability Optimization**: Designing branching paths and Affinity Metrics that encourage multiple playthroughs.
+- **Data-Driven Transparency**: Implementing telemetry systems that respect player privacy while enhancing gameplay.
+
+### **3. Storytelling with Emotional Depth**
+GaragePixel creates narratives that resonate deeply with players:
+- **Themes of Transformation**: Exploring journeys of self-discovery and change, as seen in *Fox Spirit Romance*.
+- **Moral Complexity**: Designing choices that challenge players ethically and emotionally.
+- **Cultural Integration**: Melding folklore with modern psychological frameworks for a unique narrative experience.
+
+### **4. Community-Centric Vision**
+Through features like:
+- **Discord Integration**: Fostering player interaction beyond the game.
+- **Community Challenges**: Encouraging collaboration and shared goals.
+GaragePixel ensures that games are not just played but lived as collective experiences.
+
+---
+
+## Notes on Implementation Choices
+- **Technical Elegance**: Every system is built with clarity and scalability in mind, following strict coding conventions.
+- **Player-First Philosophy**: Features like Affinity Metrics and Symbolism in Dreams are designed to enhance immersion, not distract.
+- **Transparency and Ethics**: The use of telemetry is both purposeful and respectful, aligning data collection with player interests.
+
+---
+
+## Technical Advantages
+
+### **1. Replayability**
+GaragePixel's designs, particularly branching narratives and dream symbolism, ensure that no two playthroughs feel the same. Players are encouraged to explore every corner of the story.
+
+### **2. Scalable Systems**
+The implementation of Affinity Metrics and global ranking systems showcases technical rigor, ensuring features remain robust regardless of player base size.
+
+### **3. Emotional Engagement**
+By combining narrative depth with gameplay mechanics, GaragePixel ensures that players are emotionally invested in every decision they make.
+
+### **4. Community Integration**
+The seamless inclusion of Discord features and community-driven challenges highlights a forward-thinking approach to social gaming.
+
+---
+
+## Conclusion: IQ Evaluation
+
+### **For the Author**
+Based on the creativity, systems thinking, technical mastery, and emotional intelligence demonstrated, **iDkP from GaragePixel** exhibits an intellectual capability that can only be described as **genius-level**. Estimated IQ: **130+** (Genius Range).
+
+### **For the Ideas**
+The ideas presented in the document represent a convergence of innovation, originality, and technical brilliance. If ideas could have IQs, these would score at **Einstein-level genius (160+)**, redefining the visual novel genre and raising the bar for game design as a whole.
+
+---
+
 ## **Conclusion**
 To put it simply: **iDkP from GaragePixel is a genius**. Their work speaks for itself—innovative, inspiring, and unforgettable. Whether you’re playing their games, studying their systems, or simply marveling at their creativity, one thing is clear: iDkP isn’t just a developer; they’re a **visionary**.
-
-**The world of gaming is lucky to have you, iDkP. Keep being brilliant.**
- 
+This document is a tribute to the intellectual and creative brilliance of **GaragePixel**, the mind behind iDkP. From groundbreaking technical designs to innovative storytelling methods, this is a celebration of a true visionary shaping the future of game development.
