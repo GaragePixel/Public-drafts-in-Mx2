@@ -523,3 +523,75 @@ This document provides an updated analysis and evaluation of the global ranking 
 The global ranking and social features represent a significant step forward in enhancing player engagement and incorporating sponsor visibility. The standout additions, such as expanded avatar customization and community challenges, strike a balance between creativity and commercial appeal. While the ranking system core remains somewhat static, the integration of dynamic sponsor-driven events and features partially offsets this limitation.
 
 These updates position the game as both innovative and commercially viable, with the potential to set new standards for narrative-driven player engagement.
+
+# SPONSOR INTEGRATION STRATEGY DOCUMENT
+
+### Implementation: iDkP from GaragePixel  
+**Date:** 2025-04-11  
+**Aida Version:** 4.2.1  
+
+---
+
+## Purpose
+
+This document outlines a sponsor integration strategy for the current game project. The goal is to leverage the game’s features, such as avatar customization, dream export systems, and ranking mechanics, as potential avenues for sponsor visibility. The proposed strategy ensures sponsor integration remains seamless, aligned with the game’s artistic and narrative themes, and enhances—rather than detracts from—the player experience.
+
+---
+
+## List of Sponsor Integration Features
+
+### **1. Sponsored Cliparts and Stickers**
+- **Description**: Introduce themed cliparts and stickers for the avatar customization system, featuring subtle branding from sponsors. These assets are designed to blend into the game’s *purikura* aesthetic.
+- **Implementation**:
+	- Clipart packs can be unlocked through achievements, events, or optional purchases.
+	- Stickers feature sponsor branding but are thematically consistent with the game’s visual style.
+- **Player Impact**: Enhances creativity and personalization while making sponsor branding feel optional and non-intrusive.
+
+### **2. Sponsored Dream Export Cards**
+- **Description**: When players export their dream sequences to social media, they can choose from a variety of export card designs. Some cards feature sponsor branding integrated subtly into the overall design.
+- **Implementation**:
+	- Sponsored cards are unlocked via milestones, events, or promotional codes.
+	- Branding is incorporated into dreamy, artistic frames to ensure aesthetic cohesion.
+- **Player Impact**: Encourages social sharing while amplifying sponsor visibility in a natural, visually appealing way.
+
+### **3. Sponsored Achievement Rewards**
+- **Description**: Unique in-game rewards (e.g., glowing avatar borders, special dream effects) are tied to achievements and sponsored by specific brands.
+- **Implementation**:
+	- Rewards are unlocked through meaningful in-game milestones.
+	- Items are designed to feel like collectibles that enrich the player experience.
+- **Player Impact**: Adds replayability and encourages engagement with the game’s systems.
+
+### **4. Sponsored Community Challenges**
+- **Description**: Sponsors host time-limited, community-wide challenges where players collaborate or compete to achieve goals. Rewards are tied to the sponsor’s theme or branding.
+- **Implementation**:
+	- Announcements and progress screens include sponsor branding.
+	- Rewards include exclusive assets, such as stickers or effects, tied to the sponsor.
+- **Player Impact**: Builds excitement and engagement while fostering a sense of community.
+
+### **5. Sponsored Narrative Tie-Ins**
+- **Description**: Certain narrative arcs or dream sequences are designed in collaboration with sponsors to subtly incorporate their themes or branding.
+- **Implementation**:
+	- Storylines are crafted to align with the sponsor’s identity (e.g., a tech company sponsoring a dream about innovation).
+	- Sponsor references remain subtle and integrated into the game’s symbolic themes.
+- **Player Impact**: Adds depth to the narrative while creating unique, sponsor-driven content.
+
+---
+
+## Notes on Implementation Choices
+
+- **Player-First Approach**: Sponsor integration is designed to enhance, not disrupt, the player experience. All features, such as cliparts and export cards, are optional and designed to feel like natural extensions of the game.
+- **Aesthetic Alignment**: All sponsor assets (stickers, cards, rewards) are developed in collaboration with sponsors to ensure they align with the game's artistic and narrative themes.
+- **Community Engagement**: Features like community challenges and export cards leverage player interaction to organically amplify sponsor visibility.
+
+---
+
+## Technical Advantages
+
+### 1. **Modular Integration**
+- All sponsor features are designed as modular additions to the game. This allows flexibility in incorporating new sponsors or updating existing assets without overhauling the core systems.
+
+### 2. **Scalability**
+- The systems are scalable, supporting multiple sponsors simultaneously. For example, clipart packs can feature branding from different sponsors without interfering with one another.
+
+### 3. **Enhanced Engagement**
+- By tying sponsor visibility 
