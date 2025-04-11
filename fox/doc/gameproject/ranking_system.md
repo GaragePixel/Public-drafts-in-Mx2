@@ -254,6 +254,30 @@ This document proposes a technical implementation of the Dream Explication Syste
 
 ---
 
+### **6. Enhanced Avatar Customization**
+- **Clipart Placement**:
+	- Players can further personalize their *purikura*-style avatars by manually placing themed cliparts on character drawings.
+	- This feature adds a creative layer, allowing players to express individuality and ownership over their profiles.
+- **Thematic Consistency**:
+	- All cliparts are carefully designed to align with the game's visual and narrative aesthetic.
+- **Intuitive Interface**:
+	- The customization interface is designed to be user-friendly, encouraging creativity without overwhelming players.
+
+---
+
+### **7. Easter Egg Mechanics with Unlockable Hints**
+- **Hidden Features**:
+	- Certain mechanics, such as avatar marks and buzz effects, remain undisclosed to preserve mystery and encourage discovery.
+- **Unlockable Hints**:
+	- Players can unlock subtle hints ("astuces") about these hidden mechanics by achieving specific milestones or exploring certain narrative paths.
+	- Example: A hint might suggest using a particular word to trigger a buzz effect.
+- **Player Engagement**:
+	- These hints serve as rewards for exploration, maintaining the balance between mystery and structured progression.
+- **Organic Discovery**:
+	- The system ensures players feel rewarded for curiosity and effort rather than being obligated to follow explicit instructions.
+
+---
+
 ## Notes on Implementation Choices
 
 1. **Pre-Compilation of Rules**:
@@ -321,9 +345,9 @@ This document provides an analysis and evaluation of the global ranking and soci
 	4. **Telemetry Subpage**: Including a transparent explanation of telemetry data collection is a thoughtful touch, addressing potential player concerns about privacy.
 
 - **Weaknesses**:
-	1. **Avatar Customization**: The use of *purikura*-style avatars and unlockable elements is charming but not particularly innovative. Many games already offer similar features.
+	1. **Avatar Customization**: The use of *purikura*-style avatars and unlockable elements is charming but not particularly innovative. Many games already offer similar features. However, adding a mechanic that allows players to customize their avatars further by placing cliparts manually on character drawings introduces a more personal and creative layer. It aligns well with the purikura theme, giving players a sense of ownership and individuality over their profiles. While not entirely groundbreaking, this feature could appeal to players who enjoy self-expression and creativity. The challenge would be ensuring the interface is intuitive and the cliparts are thematically consistent with the game’s overall aesthetic.
 	2. **Ranking System Core**: While functional, the ranking system's focus on proximity to the Perfect Ending and anonymized comparisons is less compelling compared to more dynamic or competitive leaderboards in other genres.
-	3. **Easter Egg Mechanics**: The hidden nature of certain mechanics (e.g., buzz effects, avatar marks) might alienate players who prefer transparency or structured progression.
+	3. **Easter Egg Mechanics**: The hidden nature of certain mechanics (e.g., buzz effects, avatar marks) might alienate players who prefer transparency or structured progression. However, introducing a mechanic where hints or "astuces" (e.g., "use this word and look how it will...") are unlocked through specific in-game paths could mitigate this concern. By tying these hints to achievements or narrative milestones, the system would maintain its mystery while rewarding exploration and engagement. This approach strikes a balance between preserving the allure of hidden mechanics and providing players with guidance to discover them organically. The challenge lies in ensuring that these hints feel like meaningful rewards rather than obligatory instructions, keeping the focus on player agency and curiosity.
 
 ---
 
