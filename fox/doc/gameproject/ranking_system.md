@@ -652,8 +652,6 @@ This document outlines a sponsor integration strategy for the current game proje
 ### **Visual Novel**
 A **visual novel** is a genre of interactive storytelling that combines visual art, narrative branching, and text-based dialogue. In these games, players typically follow a story with multiple endings influenced by their decisions, creating a unique narrative experience.
 
-### **Lexicon from Analysis Documents**
-
 #### **Memory and Identity**
 - Memory manipulation plays a central role in *Fox Spirit Romance*, influencing gameplay and narrative. Characters' identities often hinge on the manipulation or loss of memories, raising questions about what defines individuality.
 
