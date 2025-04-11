@@ -1,3 +1,45 @@
+# GLOBAL RANKING AND SOCIAL FEATURES DESIGN WITH DREAM SYSTEM INTEGRATION
+
+### Implementation: iDkP from GaragePixel  
+**Date:** 2025-04-11  
+**Aida Version:** 4.2.1  
+
+---
+
+## Interactive Index
+
+1. [Purpose](#purpose)
+2. [List of Functionality](#list-of-functionality)
+   - [1. Global Ranking System](#1-global-ranking-system)
+   - [2. Discord Server Integration](#2-discord-server-integration)
+   - [3. Telemetry and Privacy](#3-telemetry-and-privacy)
+   - [4. Social Profile Features](#4-social-profile-features)
+   - [5. Profile Customization and Progression](#5-profile-customization-and-progression)
+3. [Dream Explication System Design](#dream-explication-system-design)
+   - [1. Dream Generation](#1-dream-generation)
+   - [2. Dream Representation](#2-dream-representation)
+   - [3. Symbolism and Meaning](#3-symbolism-and-meaning)
+   - [4. Dream Accessibility](#4-dream-accessibility)
+   - [5. Nightmare System](#5-nightmare-system)
+4. [Notes on Implementation Choices](#notes-on-implementation-choices)
+5. [Technical Advantages](#technical-advantages)
+6. [Conclusion](#conclusion)
+
+---
+
+## Purpose
+This document outlines the design and implementation of the global ranking and social features for a visual novel. These features aim to enhance player engagement, encourage organic promotion of the game, and foster community interaction through unique mechanics such as dream reflections, achievements, and community challenges.
+
+---
+
+## [List of Functionality](#list-of-functionality)
+### **1. Global Ranking System**
+- **Functionality**:
+	1. Players can view their ranking on a global leaderboard.
+	2. Rankings reflect proximity to the Perfect Ending and other metrics.
+    ...
+(Continue adding the rest of the content under respective sections following the interactive index.) 
+
 # GLOBAL RANKING AND SOCIAL FEATURES DESIGN
 
 ### Implementation: iDkP from GaragePixel  
