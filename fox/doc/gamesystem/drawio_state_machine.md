@@ -13,7 +13,7 @@
 https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg
 
 
-![Alt text]([image-url](https://raw.githubusercontent.com/GaragePixel/Public-drafts-in-Mx2/refs/heads/main/fox/doc/img/2021-03-18-HIK-from-2020-07-13---02-BIG-01.gif) "Optional Title")
+![Alt text]([https://raw.githubusercontent.com/GaragePixel/Public-drafts-in-Mx2/refs/heads/main/fox/doc/img/2021-03-18-HIK-from-2020-07-13---02-BIG-01.gif] "Optional Title")
 
 https://raw.githubusercontent.com/GaragePixel/Public-drafts-in-Mx2/refs/heads/main/fox/doc/img/2021-03-18-HIK-from-2020-07-13---02-BIG-01.gif
 
