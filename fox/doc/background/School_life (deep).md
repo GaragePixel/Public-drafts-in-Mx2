@@ -1,5 +1,5 @@
 # School Obligations and Impact Analysis: Hikari, Akane, Katsuo, and Megumi (1996-1997)
-# iDkP from GaragePixel - 2025-04-12 - Aida v1.2
+# iDkP from GaragePixel - 2025-04-12 - Aida 4
 
 ## Purpose
 This technical document provides a comprehensive analysis of educational obligations, environmental impacts, and institutional pressures affecting the four primary subject entities within the Japanese educational framework during the 1996-1997 academic year. The structural specifications and implementation guidelines enable accurate representation of both mandated educational requirements and character-specific constraint vectors that collectively shape behavioral patterns, decision matrices, and developmental trajectories within the simulation environment.
