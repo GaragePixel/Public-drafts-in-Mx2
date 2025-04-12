@@ -7,14 +7,8 @@
   
 ---
 
-<div class="fb-post" data-href="https://www.facebook.com/GaragePixelOfficial/posts/pfbid02erzbVsH8ATsHjC837GZYN4S3sVrEvWt73CFuC2TVs4TRWbuEN3y58XiCZR3Rgx8tl" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/GaragePixelOfficial/posts/687312470117538" class="fb-xfbml-parse-ignore"><p>2021-03-29 2nd Version from the comment section of the original post:...</p>Publiée par <a href="https://www.facebook.com/GaragePixelOfficial">Garage Pixelart</a> sur&nbsp;<a href="https://www.facebook.com/GaragePixelOfficial/posts/687312470117538">Mercredi 13 septembre 2023</a></blockquote></div>
-
-<img src="[([https://s3.amazonaws.com/github-production-user-asset-6210df.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg](https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg))](https://raw.githubusercontent.com/GaragePixel/Public-drafts-in-Mx2/refs/heads/main/fox/doc/img/2021-03-18-HIK-from-2020-07-13---02-BIG-01.gif)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
-https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg
-
 <img src="[https://github-production-user-asset-6210df.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg](https://raw.githubusercontent.com/GaragePixel/Public-drafts-in-Mx2/refs/heads/main/fox/doc/img/2021-03-18-HIK-from-2020-07-13---02-BIG-01.gif)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
-
-
+![Fox Spirit Logo](https://raw.githubusercontent.com/GaragePixel/Public-drafts-in-Mx2/refs/heads/main/fox/doc/img/2021-03-18-HIK-from-2020-07-13---02-BIG-01.gif "Fox Spirit Logo")
 
 ## **Purpose**
 This document explains how to implement and test a **mini tree as a state machine** using **Draw.io's (diagrams.net)** interactive capabilities. It leverages the platform’s ability to handle **real-time state changes** and integrate with the **Arrange → Explore** feature for testing transitions and variable states.
