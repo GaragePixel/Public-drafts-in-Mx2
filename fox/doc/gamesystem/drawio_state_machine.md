@@ -5,9 +5,9 @@
 - **Date**: 2025-04-12  
 - **Aida Version**: 4.2.1  
 
-[https://example.com/images/fox-spirit-logo.png](https://github.com/user-attachments/assets/8b6e74a8-3d59-4528-89c6-43a17fbe198d "Hikari")
+[https://example.com/images/fox-spirit-logo.png](https://github.com/user-attachments/assets/8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg "Hikari")
 
-<img src="[https://example.com/images/fox-spirit-logo.png](https://github.com/user-attachments/assets/8b6e74a8-3d59-4528-89c6-43a17fbe198d)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
+<img src="[https://example.com/images/fox-spirit-logo.png](https://github.com/user-attachments/assets/8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
 
 ---
 
