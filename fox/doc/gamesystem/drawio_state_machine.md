@@ -446,3 +446,153 @@ This document explains how to configure the **"School Year Begins: Recognition"*
 
 ## **Conclusion**
 By following this guide, the **"School Year Begins: Recognition"** tree can be implemented as a fully interactive state machine in **Draw.io**. This setup allows for dynamic testing of transitions, variable updates, and narrative logic.
+
+Here’s a **step-by-step guide** for creating a **state machine diagram** in **Draw.io** for the **1. PROLOGUE: SUMMER ENCOUNTER [July-August 1996]** from the `final_structure` file:
+
+---
+
+### **Step 1: Open Draw.io**
+1. Go to [Draw.io](https://app.diagrams.net/) or open the desktop application.
+2. Start a new blank diagram.
+
+---
+
+### **Step 2: Select UML State Diagram Shapes**
+1. From the left-hand panel, click on **+More Shapes** (if UML shapes are not already visible).
+2. Enable **UML** shapes:
+   - Scroll down to **UML**.
+   - Check the box next to it.
+   - Click **Apply**.
+3. You’ll now see **UML State Diagram** shapes in the left-hand toolbar.
+
+---
+
+### **Step 3: Create the Major States**
+1. Drag and drop **State** shapes for each **major state** in the prologue:
+   - `Summer Festival`
+   - `Shrine Encounter`
+   - `Yokai Interaction`
+   - `End of Prologue`
+2. Arrange them horizontally or vertically for clarity.
+
+---
+
+### **Step 4: Add Substates**
+1. For each major state, create **nested substates** to represent specific events. For example:
+   - **Summer Festival**:
+     - `Arrive at Festival Grounds`
+     - `Firework Display`
+     - `Mysterious Figure Appears`
+   - **Shrine Encounter**:
+     - `Discover Shrine`
+     - `Meet Yokai`
+   - **Yokai Interaction**:
+     - `Build Trust`
+     - `Gain Insight`
+2. Drag and drop smaller **State** shapes inside the major states to represent these substates.
+
+---
+
+### **Step 5: Connect States with Transitions**
+1. Use the **Connector** tool (or drag arrows) to link the states and substates.
+   - Example:
+     - From `Summer Festival` to `Shrine Encounter`, draw an arrow.
+     - From `Shrine Encounter` to `Yokai Interaction`, draw another arrow.
+2. Label the transitions:
+   - Add text to the arrows to define **conditions** or **actions** required for the transition.
+   - Example Labels:
+     - `Curiosity > 2 → Follow the figure`
+     - `Trust > 0 → Proceed confidently`
+
+---
+
+### **Step 6: Define Transition Logic**
+1. For key transitions, define the **conditions** that determine the path. Use labels like:
+   - `Follow the figure → Leads to Shrine Encounter`
+   - `Respond with curiosity → Trust +1`
+   - `Respond with fear → Trust -1`
+2. Use **diamonds** (decision nodes) for branching logic:
+   - Example: After `Meet Yokai`:
+     - `Trust > 2 → Positive Ending`
+     - `Trust = 1 → Neutral Ending`
+     - `Trust = 0 → Negative Ending`
+
+---
+
+### **Step 7: Add Variables**
+1. **Attach Metadata**:
+   - Right-click a state and select **Edit Data**.
+   - Add variables as JSON. Example for `Summer Festival`:
+     ```json
+     {
+       "Trust": 0,
+       "Curiosity": 0,
+       "EncounterOutcome": "Neutral"
+     }
+     ```
+   - This allows you to track variable states dynamically.
+2. **Set Initial Values**:
+   - Define default values for variables in the starting state (`Summer Festival`).
+
+---
+
+### **Step 8: Add Waypoints for Complex Logic**
+1. Use **waypoint shapes** to organize complex transitions.
+   - Example: After `Mysterious Figure Appears`, branch to:
+     - `Shrine Encounter` (if `Curiosity > 2`)
+     - `End of Prologue` (if `Curiosity <= 2`)
+2. Simplify the diagram by consolidating multiple conditions at a single waypoint.
+
+---
+
+### **Step 9: Test the Diagram**
+1. Use **Arrange → Explore** in the Draw.io toolbar.
+2. Simulate transitions by tracing paths between states and evaluating conditions.
+3. Verify variable updates and transition logic.
+
+---
+
+### **Step 10: Save and Export**
+1. Save your diagram as a `.drawio` file for future edits.
+2. Export the diagram to **PNG** or **SVG** for sharing or embedding in documentation.
+
+---
+
+### **Example Diagram Layout**
+Here’s an example layout for the **Prologue**:
+
+1. **Summer Festival**:
+   - Substates:
+     - `Arrive at Festival Grounds`
+     - `Firework Display`
+     - `Mysterious Figure Appears`
+   - Transitions:
+     - `Firework Display → Mysterious Figure Appears`: `Curiosity += 1`
+     - `Mysterious Figure Appears → Shrine Encounter`: `Curiosity > 2`
+
+2. **Shrine Encounter**:
+   - Substates:
+     - `Discover Shrine`
+     - `Meet Yokai`
+   - Transitions:
+     - `Discover Shrine → Meet Yokai`: No condition.
+     - `Meet Yokai → Yokai Interaction`: `Trust += 1`
+
+3. **Yokai Interaction**:
+   - Substates:
+     - `Build Trust`
+     - `Gain Insight`
+   - Transitions:
+     - `Build Trust → Gain Insight`: No condition.
+     - `Gain Insight → End of Prologue`: Variable-based outcomes.
+
+4. **End of Prologue**:
+   - Outcomes based on variables:
+     - `Trust > 2 && Curiosity > 2 → Positive Outcome`
+     - `Trust = 1 || Curiosity = 1 → Neutral Outcome`
+     - `Trust < 1 || Curiosity < 1 → Negative Outcome`
+
+---
+
+### **Conclusion**
+By following these steps, you can create an interactive state machine diagram for the **1. PROLOGUE: SUMMER ENCOUNTER [July-August 1996]**. This structure allows for testing transitions, logic, and variable updates. Let me know if you'd like more detailed examples!
