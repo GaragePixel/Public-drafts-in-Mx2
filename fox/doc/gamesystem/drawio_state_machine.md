@@ -292,3 +292,154 @@ This document provides step-by-step instructions to build the **"School Year Beg
 
 ## **Conclusion**
 By leveraging **Draw.io’s interactive state diagrams**, the **School Year Begins: Recognition** tree can be implemented as a functional state machine. This setup ensures clarity, replayability, and dynamic interactivity for players.
+
+# IMPLEMENTING SCHOOL YEAR BEGINS: RECOGNITION AS A STATE MACHINE IN DRAW.IO
+
+## **Implementation Details**
+- **Credit**: iDkP from GaragePixel  
+- **Date**: 2025-04-12  
+- **Aida Version**: 4.2.1  
+
+---
+
+## **Purpose**
+This document explains how to configure the **"School Year Begins: Recognition"** tree from the narrative file `final_structure` as a functional **state machine** in **Draw.io**. The goal is to enable interactivity for testing transitions, variable updates, and conditions.
+
+---
+
+## **List of Functionality**
+1. **State Representation**:
+	- Each major section (e.g., `First Day Sequence`, `Revengeful Girls Introduction`, `Classroom Dynamics`) is represented as a **state**.
+	- Subsections (e.g., `Recognize Katsuo`, `Hallway Incident Observation`) are represented as **nested states** or **waypoints**.
+
+2. **Transitions**:
+	- Directed arrows represent **state transitions**.
+	- Conditions like `Affinity > 5` or `Trust = True` are defined on transitions.
+
+3. **Variable Management**:
+	- Variables (`Affinity`, `Trust`, etc.) are attached to states as **custom properties**.
+	- These variables are dynamically updated during transitions.
+
+4. **Testing**:
+	- Use **Arrange → Explore** in Draw.io to simulate transitions and test the tree logic.
+
+---
+
+## **Steps to Implement**
+
+### **1. Create the State Diagram**
+1. **Open Draw.io**:
+	- Use the desktop or web version of Draw.io.
+2. **Add Major States**:
+	- Use **UML State Diagram Shapes** to add states for:
+		- `First Day Sequence`
+		- `Revengeful Girls Introduction`
+		- `Classroom Dynamics`
+		- `Swimming Class Locker Room`
+		- `Stalker Arc`
+3. **Add Substates**:
+	- Nest substates within their parent states. For example:
+		- Inside `First Day Sequence`:
+			- `Recognize Katsuo despite girl disguise`
+			- `Observe "Kazuko" in the Revengeful Girls`
+		- Inside `Revengeful Girls Introduction`:
+			- `Hallway Incident Observation`
+			- `Response Options`
+			- `Gang Structure Analysis`
+
+---
+
+### **2. Add Variables**
+1. **Attach Metadata**:
+	- Right-click a state and select **Edit Data**.
+	- Add variables as JSON. For example:
+		```json
+		{
+			"Affinity": 0,
+			"Trust": false,
+			"sexualContentEnabled": false,
+			"violentContentEnabled": false
+		}
+		```
+2. **Define Initial States**:
+	- Set default values for variables in the starting state (`First Day Sequence`).
+
+---
+
+### **3. Configure Transitions**
+1. **Label Transitions**:
+	- Connect states with arrows.
+	- Add labels to arrows to define conditions or actions. For example:
+		- `Pretend not to notice → Affinity +1`
+		- `Affinity > 5 → Proceed`
+		- `Trust = True → Unlock Sequence #4`
+2. **Dynamic Updates**:
+	- Indicate variable changes on transitions. For example:
+		- `Affinity += 1`
+		- `Trust = True`
+
+---
+
+### **4. Use Waypoints for Complex Logic**
+1. **Add Waypoints**:
+	- Insert **waypoint shapes** for branches with multiple conditions.
+		- Example: A waypoint after `Recognize Katsuo despite girl disguise` could branch to:
+			- `Pretend not to notice → Affinity +1`
+			- `Stare in shock → No change`
+2. **Simplify Complex Branches**:
+	- Use waypoints to consolidate conditions for readability.
+
+---
+
+### **5. Test with Arrange → Explore**
+1. **Enable Explore Mode**:
+	- Go to **Arrange → Explore** in Draw.io.
+2. **Simulate Transitions**:
+	- Click states and transitions to test dynamic behavior.
+	- Observe how variables update and conditions are evaluated.
+
+---
+
+## **Example for "First Day Sequence"**
+1. **State Setup**:
+	- Parent State: `First Day Sequence`
+	- Substates:
+		- `Recognize Katsuo despite girl disguise`
+		- `Observe "Kazuko" in the Revengeful Girls`
+2. **Variable Setup**:
+	- `Affinity = 0`
+	- `Trust = false`
+3. **Transitions**:
+	- `Pretend not to notice → Affinity +1`
+	- `Stare in shock → No change`
+	- `Notice waka poetry speech → Unlock Revengeful Girls Introduction`
+
+---
+
+## **Notes**
+1. **Implementation Choices**:
+	- **UML State Diagrams** are ideal for representing the branching narrative structure.
+	- Variables stored as **custom properties** allow for dynamic updates.
+
+2. **Technical Advantages**:
+	- The **Arrange → Explore** feature in Draw.io provides real-time testing of transitions and conditions.
+	- Interactive diagrams help visualize narrative flow and debug logic.
+
+3. **Potential Challenges**:
+	- Complex trees with numerous variables may become difficult to manage without documentation.
+	- Dependency on Draw.io's interactive capabilities limits extensibility for advanced simulations.
+
+---
+
+## **Recommendations**
+1. **Start Small**:
+	- Begin with a simple section (e.g., `First Day Sequence`) to validate the setup.
+2. **Document Variables**:
+	- Maintain a reference list of all variables, their possible values, and transitions.
+3. **Iterative Testing**:
+	- Regularly test the diagram as you add states and transitions.
+
+---
+
+## **Conclusion**
+By following this guide, the **"School Year Begins: Recognition"** tree can be implemented as a fully interactive state machine in **Draw.io**. This setup allows for dynamic testing of transitions, variable updates, and narrative logic.
