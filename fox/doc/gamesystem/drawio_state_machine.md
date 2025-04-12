@@ -7,10 +7,6 @@
   
 ---
 
-<img src="[https://github-production-user-asset-6210df.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg](https://raw.githubusercontent.com/GaragePixel/Public-drafts-in-Mx2/refs/heads/main/fox/doc/img/2021-03-18-HIK-from-2020-07-13---02-BIG-01.gif)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
-![Fox Spirit Logo](https://raw.githubusercontent.com/GaragePixel/Public-drafts-in-Mx2/refs/heads/main/fox/doc/img/2021-03-18-HIK-from-2020-07-13---02-BIG-01.gif "Fox Spirit Logo")
-
-
 ![Fox Spirit Logo](https://raw.githubusercontent.com/GaragePixel/Public-drafts-in-Mx2/refs/heads/main/fox/doc/img/2021-03-18-HIK-from-2020-07-13---02-BIG-01.gif "Fox Spirit Logo")
 
 
