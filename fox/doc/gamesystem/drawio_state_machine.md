@@ -9,10 +9,8 @@
 
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
 
-<img src="[https://github-production-user-asset-6210df.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d](https://s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
-https://mybucket.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg
+<img src="[](https://s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
 
-https://s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg
 
 ## **Purpose**
 This document explains how to implement and test a **mini tree as a state machine** using **Draw.io's (diagrams.net)** interactive capabilities. It leverages the platform’s ability to handle **real-time state changes** and integrate with the **Arrange → Explore** feature for testing transitions and variable states.
