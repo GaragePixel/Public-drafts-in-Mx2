@@ -7,7 +7,7 @@
   
 ---
 
-<img src="[](https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
+<img src="[]([https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg](https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=f727a1&_nc_ohc=HqIYsn18pV4Q7kNvwGAKxE-&_nc_oc=AdmxsBZfI6F2_t0rlZJN9NuHboT_mOsJadtbs3SfQowuZTKvqVRaZjcobjY3oQMt7PI&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=xNEsOBeOO5u3-j8_CdVyQw&oh=00_AfHeWCD_Z-SvhKhd40GTzGDiz6VPREeHEyIJN2R-TVI3bg&oe=6800052D))" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
 
 <img src="([https://s3.amazonaws.com/github-production-user-asset-6210df.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg](https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg))" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
 https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg
