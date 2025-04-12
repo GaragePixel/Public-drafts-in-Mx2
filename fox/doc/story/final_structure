@@ -55,139 +55,138 @@ Horizontal Layout:
 	│   │   │   ├── Hikari keeps distance → Safety but isolation
    	│   │   │   └── Hikari Careful observation → Learn group dynamics
    	│   │   └── Ears conversation of normal girls in the classroom telling the urban story about "The Girl Who Asked Where The Boy Was"
-   	│   ├── Locked Sequence #4: Accusation about being a kitsune
-   	│   │   ├── Normal day, cooking lesson, player has some choices 
-	│   │	│   ├── Hikari choose to accuse Kazuko to be a Kitsune
-   	│   │   │   │	├── Has the hair tufle → Leads to STALKING EVIDENCE PATH
-   	│   │   │   │	└── Hasn't the hair tufle → Leads to SAVIOR PATH: REDEMPTIVE SACRIFICE
-	│   │	│   └── Hikari do not choose to accuse Kazuko to be a Kitsune → Akane Akane complains about not being able to cook, and everyone laughs at her, but she burns herself and screams. She's furious and throws her utensils across the room before leaving. Hikari wants to join her in the hallway to take her to the infirmary, but she's too afraid of Akane and stays → Evening
-   	│   │   │    	└── Hikari thinks back to Akane, having qualms about the fact that, despite her fear, she should have joined Akane to accompany her to the infirmary. Hikari go back to the class room late in the everning, She finds it by chance Akane sleeping on her desk. She about to leave, but, being anyway scared by Akane, see some yokai invisible related to dreaming. Dependly the player's choice:
-   	│   │   │    	    ├── Come near to Akane and wake her up → Player's choice
-   	│   │   │    	    │	├── Depends player's choice:
-   	│   │   │    	    │	│   ├── Look on her desk, see a drawing showing 
-   	│   │   │    	    │	│   └── Look at the sleeping Akane, see something strange about the yokai invisibles, Dream lights don't come and go like that when people dream. Akane is basically human, but she's weird. She might have been under some kind of spell → Unlock [The spell on Akane]
-   	│   │   │    	    │	└── Akane, once woken up, expresses a dark look, Hikari, after hesitating, then trying, finally manages to ask Akane how her burned hand is. Akane remains silent, still with a dark look, then leaves the room. Around her, Hikari sees yokai invisible to those who are touched. Hikari smiles: "I think she doesn't hate me after all."
-   	│   │   │    	    └── Hikari ignore and quit the class room
-   	│   │   └── Hikari interroge herself about real goal of Kazuko/Katsuo and want to know more
-   	│   └── Locked Sequence #5: Public bath
-   	│       └── Hikari braves her fear and try to go in public bath
-   	├── Swimming Class Locker Room
-   	│   ├── Hikari's delayed arrival to avoid exposure
-   	│   │   └── Observe Kazuko's avoidance of other girls
-   	│   ├── Hikari private conversation with Kazuko 
-        │   │   ├── [Chimerism Secret Condition] Hikari speaks about her chimerism to Kazuko (Hikari show him/her skin under her swimsuit, her skin is partially red like her left hand)
-   	│   │   │   └── Hikari shares bullying history → Kazuko shows unexpected kindness, affinity +1
+   	│   └── Locked Sequence #4: Accusation about being a kitsunen before cooking lesson, player has some choices 
+	│    	├── Hikari choose to accuse Kazuko to be a Kitsune
+   	│       │   ├── Has the hair tufle → Leads to...
+   	│       │   │   ├── [-sexualContentEnabled] 
+   	│       │   │   │   ├── [violentContentEnabled] → Because Megumi is pissed off that her friend is being insulted, she comes to beat up Hikari. The sequel, where Tatsuo erases everyone's memories, is told in pictures → End's game
+   	│       │   │   │   └── [-violentContentEnabled] → The sequel, where Tatsuo erases everyone's memories, is told in pictures → End's game
+   	│       │   │   └── [sexualContentEnabled] → Leads to STALKING EVIDENCE PATH
+   	│       │   └── Hasn't the hair tufle → Leads to...
+   	│       │       ├── [-sexualContentEnabled] 
+   	│       │       │   ├── [violentContentEnabled] → Because Megumi is pissed off that her friend is being insulted, she comes to beat up Hikari. The sequel, where Tatsuo erases everyone's memories, is told in pictures → End's game
+   	│       │       │   └── [-violentContentEnabled] → The sequel, where Tatsuo erases everyone's memories, is told in pictures → End's game
+   	│       │       └── [sexualContentEnabled] → Leads to SAVIOR PATH: REDEMPTIVE SACRIFICE
+	│    	└── Hikari do not choose to accuse Kazuko to be a Kitsune → Hikari interroge herself about the real goal of Kazuko/Katsuo and want to know more [Trust=true]
+	│    	    ├── Cooking class: Akane complains about not being able to cook, and everyone laughs at her, but she burns herself and screams. She's furious and throws her utensils across the room before leaving. Hikari wants to join her in the hallway to take her to the infirmary, but she's too afraid of Akane and stays → Evening
+   	│           └── Evening: Hikari thinks back to Akane, having qualms about the fact that, despite her fear, she should have joined Akane to accompany her to the infirmary. Hikari go back to the class room late in the everning, She finds it by chance Akane sleeping on her desk. She about to leave, but, being anyway scared by Akane, see some yokai invisible related to dreaming. Dependly the player's choice:
+   	│               ├── Come near to Akane and wake her up → Player's choice
+   	│               │	├── Depends player's choice:
+   	│               │	│   ├── Look on her desk, see a drawing showing 
+   	│               │	│   └── Look at the sleeping Akane, see something strange about the yokai invisibles, Dream lights don't come and go like that when people dream. Akane is basically human, but she's weird. She might have been under some kind of spell → Unlock [The spell on Akane]
+   	│               │	└── Akane, once woken up, expresses a dark look, Hikari, after hesitating, then trying, finally manages to ask Akane how her burned hand is. Akane remains silent, still with a dark look, then leaves the room. Around her, Hikari sees yokai invisible to those who are touched. Hikari smiles: "I think she doesn't hate me after all."
+   	│               └── Hikari ignore and quit the class room
+   	├── Swimming Class Locker Room, Hikari's delayed arrival to avoid exposure
+        │   ├── It's the 1st day in swimming class locked room → They are very shy
+   	│   │   ├── Observe Kazuko's avoidance of other girls
+     	│   │   ├── Hikari speak about Hikari's chimera skin
+        │   │   │   └── [Chimerism Secret Condition] Hikari speaks about her chimerism to Kazuko (Hikari show him/her skin under her swimsuit, her skin is partially red like her left hand)
+   	│   │   │       └── Hikari shares bullying history → Kazuko shows unexpected kindness, affinity +1, open [Stalker Arc]
         │   │   └── Hikari don't speak about Hikari's chimera skin
-        │   │       ├── It's the 1st day in swimming class locked room → They are very shy
-        │   │       │   ├── The three sequences aren't each completed → Open access to a new day sequence choosen randomly (but sequence #4 and #5)
-	│   │       │	└── The three sequences are each completed
-	│   │       │       ├── Stalker Arc completed → Open access to the class room denonciation sequence (locked sequence #4)
-	│   │       │       └── Stalker Arc not done → Kizako peeps and discovers the Hikari's chimerism
-        │   │       └── Isn't the 1st day in swimming class locked room → smalltalk dependly of the day sequence already played
-        │   │           ├── The three sequences aren't each completed → They are polite, but don't speak → Open access to a new random sequence (but sequence #4 and #5)
-	│   │       	├── Some of the three sequences are completed
-	│   │		│   ├── [Interaction with "Kazuko"] was completed → Hikari interroge subtily Kazuko sonding his Katsuo true persona through Kizuko's interactions
-	│   │		│   ├── [Observation of Akane] was completed → Hikari interroge Kazuko about if Kazuko is dangerous even for girl, depits the Gang's mission to protect the girl gender
-	│   │		│   ├── [Dealing with Megumi's group] was completed → Hikari interroge Kazuko about why Kazuko found "her" place withing the Gang 
-	│   │		│   └── Open access to a new day sequence choosen randomly (but sequence #4 and #5)
-	│   │       	└── The three sequences are each completed
-	│   │               ├── Stalker Arc completed → Depend of the player's choice
-	│   │		    │	├── The player make Hikari dislike Kizako and she very shy, distant from Kizako, Affinity -1
-	│   │		    │	├── The player make Hikari like Kizako → She want discover his mission and the link with his "nocturnal activities"
-	│   │		    │	└── Anyway, open access to the class room denonciation sequence (locked sequence #4)
-	│   │               └── Stalker Arc not done → Kizako peeps and discovers the Hikari's chimerism → [Chimerism Secret Condition]
-	│   └── Hikari precipited revelations leads to → MEGUMI RELATIONSHIP ENDINGS
-	├── Stalker Arc
-	│   ├── Initial Discovery Phase
-	│   │   ├── Accidental glimpse of male Katsuo
-	│   │   │   ├── From school window → Brief observation only
-	│   │   │   └── In downtown area → Follow immediately → Lose trail
-	│   │   ├── Overhear conversation about "that guy"
-	│   │   │   ├── Between Megumi and lieutenant → Possession concern
-	│   │   │   └── Between regular students → Mysterious reputation
-	│   │   └── Perceive yokai trail from Kazuko
-	│   │       ├── Notice distinctive aura pattern → Connection realization
-	│   │       └── Follow trail partially → Lose at crossroads
-	│   ├── Surveillance Planning
-	│   │   ├── Recruit yokai invisibles, affinity +1
-	│   │   │   ├── Dust yokai → Offer candy as payment
-	│   │   │   ├── Shadow yokai → Agree to carry message
-	│   │   │   └── Wind yokai → Promise to visit shrine
-	│   │   ├── Establish surveillance points
-	│   │   │   ├── Near school exit → Limited information
-	│   │   │   ├── Downtown junction → Pattern recognition
-	│   │   │   └── Near suspected residence → High risk of detection
-	│   │   └── Develop disguise strategy
-	│   │       ├── Different uniform → Limited effectiveness
-	│   │       └── Casual clothes → Moderate concealment
-	│   ├── Active Stalking Phase
-	│   │   ├── Weekday pursuit
-	│   │   │   ├── After school → Visit museum
-	│   │   │   │   └── Interaction with curator → Knowledge gathering
-	│   │   │   └── Early evening → Observe meeting with contacts
-	│   │   │       ├── Business people → Information exchange
-	│   │   │       └── Telephone cabin call to mother → Mission reporting
-	│   │   ├── Weekend pursuit
-	│   │   │   ├── Morning activities → Shopping for unusual items
-	│   │   │   │   └── Ancient bookstore → Obscure texts
-	│   │   │   └── Evening activities → Entertainment district
-	│   │   │       ├── Multiple bars → Information gathering
-	│   │   │       └── Heading toward love hotel district → Critical discovery
-	│   │   └── Yokai invisibles reports
-	│   │       ├── Confirm multiple identities → Triple form verification
-	│   │       ├── Observe telephone cabin call → Mission communication
-	│   │       └── Warning about dangerous aura spikes → Feeding activity
-	│   └── Love Hotel Discovery [sexualContentEnabled]
-	│       ├── Observation approach
-	│       │   ├── Watch from distance → Limited information
-	│       │   │   ├── See entering with woman → Relationship assumption
-	│       │   │   └── Wait for exit → Extended disappearance
-	│       │   └── Close surveillance → Detailed information
-	│       │       ├── Recognize woman as previous victim → Pattern recognition
-	│       │       └── Detect memory manipulation aura → Predatory behavior
-	│       ├── Infiltration approach
-	│       │   ├── Follow inside → High risk
-	│       │   │   ├── Lobby surveillance → Staff suspicion
-	│       │   │   └── Corridor eavesdropping → Partial conversation
-	│       │   └── Room adjacent booking → Maximum information
-	│       │       └── Hear conversation → Memory extraction purpose
-	│       │── Yokai invisibles assistance
-	│       │   ├── Send dust yokai under door → Visual report
-	│       │   │   └── Witness memory extraction → Confirm predation
-	│       │   ├── Shadow yokai surveillance → Energy pattern report
-	│       │   │   ├── Detect regular feeding pattern → Serial predation
-	│       │   │   └── Recognize specific targeting → Victim selection criteria
-	│       │   └── Player can find and take the tufle hairs
-	│       └── Hikari precipited revelations → [Hikari: Path of the Dreams]
-   	└── New day in the Locker Room
-	    ├── Hikari has already show her chimerism at Kazuko
-	    │   ├── Hikari hasn't completed the Stalker Arc yet
-	    │   │   └── [Innocent Conversation] → Subtle conversation about Megumi-Katsuko relation → Hikari observe Katsuo true form behind its illusion, watching his reflection while they changing, and she notices his erection 
-	    │   │       ├── Hikari precipited revelations leads to Megumi different paths → MEGUMI RELASIONSHIP ENDINGS
-	    │   │       │   ├── Good Ending: Megumi Savior Path
-	    │   │       │   └── Bad Ending: Yakuza Power Figure
-	    │   │       └── Hikari continue to speak with Kizuko
-	    │   │           ├── Hikari says to Kazuko that she think Kazuko protects Megumi → Locked day #5 access opened (obligatory next step)
-	    │   │           └── Hikari says to Kazuko that she think Kazuko love Megumi → Affinity -1 → Locked day #5 access opened (obligatory next step)
-	    │   └── Hikari has completed the Stalker Arc
-	    │       └── Gently conversation between Katuko and Hikari → Depend of the player last route
-	    │		├── Player has visited [Innocent Conversation]
-	    │		│   └── Hikari notices his erection → Subtle conversation about Megumi-Katsuko relation → Hikari try to know if Katsuo found Megumi pretty → Yes she is
-	    │     	│	├── Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
-	    │           │	└── Hikari show more of her chimerism, she shows her chest to Kazuko
-	    │	        │    	    └── Hikari allows Kakuko to touch her, Kizuko/Katsuo touches her chimerism marks, then Katsuo abuse his illusion skill then touch her nipples, he admire her beauty
-	    │		│		├── Hikari don't say nothing, while she knows secretly that Kazuko touch her as Katsuo behind its illusion
-	    │		│		│   └── She let him touch her nipples and has a good feeling → Allows to ends the current episode
-	    │		│		└── Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
-	    │		└── Player hasn't visited [Innocent Conversation]
-	    │		    └── Hikari notices his disconfort (shyness) → Hikari try to know if Katsuo found Megumi pretty → Yes she is
-	    │     	 	├── Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
-	    │            	└── But Kazuko tell he/she will protect Hikari about her chimerism → Affinity +1
-	    │	             	    └── Allows to ends the current episode
-	    ├── Hikari hasn't already show her chimerism at Kazuko → Mark [Trust Path] → Swimming Class Locker Room 1st day tree replay
-	    └── [Hikari: Path of the Dreams] Hikari follow her fantasm to engage Kitsuko/Katsuo in oral sex → leads to Megumi different endings paths dependly the current affinity score
-	        ├── Very low Affinity Score → Bad Ending: Megumi Redemption Path
-	        └── Else → Bad Ending: Megumi Disintegration Death
+        │   │       └── Open access to a new day sequence choosen randomly (but sequence #4 and #5)
+	│   └── Isn't the 1st day in swimming class locked room → smalltalk dependly of the day sequence already played
+	│       ├── Some of the three sequences are completed
+	│       │   ├── [Interaction with "Kazuko"] was completed → Hikari interroge subtily Kazuko sonding his Katsuo true persona through Kizuko's interactions
+	│       │   ├── [Observation of Akane] was completed → Hikari interroge Kazuko about if Kazuko is dangerous even for girl, depits the Gang's mission to protect the girl gender
+	│       │   ├── [Dealing with Megumi's group] was completed → Hikari interroge Kazuko about why Kazuko found "her" place withing the Gang 
+	│       │   └── Open access to a new day sequence choosen randomly (but sequence #4 and #5)
+	│       └── The three sequences are each completed
+	│           ├── Stalker Arc not done
+	│           │   ├── Hikari hasn't already show her chimerism at Kazuko → Kizako peeps and discovers the Hikari's chimerism → Goto [Chimerism Secret Condition]
+	│   	    │   └── Hikari has already show her chimerism at Kazuko
+	│   	    │       ├── [sexualContentEnabled] [Innocent Conversation] → Subtle conversation about Megumi-Katsuko relation → Hikari observe Katsuo true form behind its illusion, watching his reflection while they changing, and she notices his erection 
+	│   	    │       │   ├── Hikari precipited revelations leads to Megumi different paths → MEGUMI RELASIONSHIP ENDINGS
+	│   	    │       │   │   ├── Good Ending: Megumi Savior Path
+	│   	    │       │   │   └── Bad Ending: Yakuza Power Figure
+	│   	    │       │   └── Hikari continue to speak with Kizuko
+	│   	    │       │       ├── Hikari says to Kazuko that she think Kazuko protects Megumi → Locked day #5 access opened (obligatory next step)
+	│   	    │       │       └── Hikari says to Kazuko that she think Kazuko love Megumi → Affinity -1 → Locked day #5 access opened (obligatory next step)
+	│   	    │       └── [-sexualContentEnabled] [Innocent Conversation B] → Subtle conversation about Megumi-Katsuko relation
+	│   	    │           └── Megumi wonders why Kazuko is taking so long to come out of the locker room and bursts in, cutting the conversation short
+	│           ├── Stalker Arc completed → Depend of the player's choice and [Trust=null]
+	│   	    │   ├── The player make Hikari dislike Kizako and she very shy, distant from Kizako, Affinity -1
+	│   	    │   └── The player make Hikari like Kizako → She want discover his mission and the link with his "nocturnal activities"
+	│   	    │       └── Open access to the class room denonciation sequence (locked sequence #4)
+	│   	    └── Hikari has completed the Stalker Arc and [Trust=true]
+	│   	        ├── Gently conversation between Katuko and Hikari → Depend of the player last route
+	│   	        │   ├── Player has visited [Innocent Conversation]
+	│   	        │   │   └── Subtle conversation about Megumi-Katsuko relation → Hikari try to know if Katsuo found Megumi pretty → Yes she is
+	│   	        │   │       ├── [sexualContentEnabled] Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
+	│   	        │   │       └── Hikari show more of her chimerism, she shows her chest to Kazuko, she allows Kakuko to touch her, Kizuko/Katsuo touches her chimerism marks
+	│   	        │   │           ├── [-sexualContentEnabled] She let him touch her nipples and has has good feeling, allows to ends the current episode
+	│   	        │   │	        └── [sexualContentEnabled], dependly the player's choice: 
+	│   		│   │	            ├── Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
+	│   		│   │	            └── Then Katsuo abuse his illusion skill then touch her nipples, he admire her beauty, Hikari don't say nothing, while she knows secretly that Kazuko touch her as Katsuo behind its illusion, she feel an autonomous sensory meridian response (ASMR), allowing to ends the current episode
+	│   		│   └── Player hasn't visited [Innocent Conversation]
+	│   		│       └── Hikari notices his disconfort (shyness) → Hikari try to know if Katsuo found Megumi pretty → Yes she is
+	│   		│	    ├── [sexualContentEnabled] Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
+	│   		│           └── But Kazuko tell he/she will protect Hikari about her chimerism → Affinity +1
+	│   		│  	            └── Allows to ends the current episode
+	│   		└── [Hikari: Path of the Dreams] If [sexualContentEnabled] Hikari follow her fantasm to engage Kitsuko/Katsuo in oral sex → leads to Megumi different endings paths dependly the current affinity score
+	│   		    ├── Very low Affinity Score → Bad Ending: Megumi Redemption Path
+	│    		    └── Else → Bad Ending: Megumi Disintegration Death
+	└── Stalker Arc
+	    ├── Initial Discovery Phase
+	    │   ├── Accidental glimpse of male Katsuo
+	    │   │   ├── From school window → Brief observation only
+	    │   │   └── In downtown area → Follow immediately → Lose trail
+	    │   ├── Overhear conversation about "that guy"
+	    │   │   ├── Between Megumi and lieutenant → Possession concern
+	    │   │   └── Between regular students → Mysterious reputation
+	    │   └── Perceive yokai trail from Kazuko
+	    │       ├── Notice distinctive aura pattern → Connection realization
+	    │       └── Follow trail partially → Lose at crossroads
+	    ├── Surveillance Planning
+	    │   ├── Recruit yokai invisibles, affinity +1
+	    │   │   ├── Dust yokai → Offer candy as payment
+	    │   │   ├── Shadow yokai → Agree to carry message
+	    │   │   └── Wind yokai → Promise to visit shrine
+	    │   ├── Establish surveillance points
+	    │   │   ├── Near school exit → Limited information
+	    │   │   ├── Downtown junction → Pattern recognition
+	    │   │   └── Near suspected residence → High risk of detection
+	    │   └── Develop disguise strategy
+	    │       ├── Different uniform → Limited effectiveness
+	    │       └── Casual clothes → Moderate concealment
+	    ├── Active Stalking Phase
+	    │   ├── Weekday pursuit
+	    │   │   ├── After school → Visit museum
+	    │   │   │   └── Interaction with curator → Knowledge gathering
+	    │   │   └── Early evening → Observe meeting with contacts
+	    │   │       ├── Business people → Information exchange
+	    │   │       └── Telephone cabin call to mother → Mission reporting
+	    │   ├── Weekend pursuit
+	    │   │   ├── Morning activities → Shopping for unusual items
+	    │   │   │   └── Ancient bookstore → Obscure texts
+	    │   │   └── Evening activities → Entertainment district
+	    │   │       ├── Multiple bars → Information gathering
+	    │   │       └── Heading toward love hotel district → Critical discovery
+	    │   └── Yokai invisibles reports
+	    │       ├── Confirm multiple identities → Triple form verification
+	    │       ├── Observe telephone cabin call → Mission communication
+	    │       └── Warning about dangerous aura spikes → Feeding activity
+	    └── Love Hotel Discovery [sexualContentEnabled]
+	        ├── Observation approach
+	        │   ├── Watch from distance → Limited information
+	        │   │   ├── See entering with woman → Relationship assumption
+	        │   │   └── Wait for exit → Extended disappearance
+	        │   └── Close surveillance → Detailed information
+	        │       ├── Recognize woman as previous victim → Pattern recognition
+	        │       └── Detect memory manipulation aura → Predatory behavior
+	        ├── Infiltration approach
+	        │   ├── Follow inside → High risk
+	        │   │   ├── Lobby surveillance → Staff suspicion
+	        │   │   └── Corridor eavesdropping → Partial conversation
+	        │   └── Room adjacent booking → Maximum information
+	        │       └── Hear conversation → Memory extraction purpose
+	        │── Yokai invisibles assistance
+	        │   ├── Send dust yokai under door → Visual report
+	        │   │   └── Witness memory extraction → Confirm predation
+	        │   ├── Shadow yokai surveillance → Energy pattern report
+	        │   │   ├── Detect regular feeding pattern → Serial predation
+	        │   │   └── Recognize specific targeting → Victim selection criteria
+	        │   └── Player can find and take the tufle hairs
+	        └── [sexualContentEnabled] Hikari precipited revelations → [Hikari: Path of the Dreams]
 
 3. SCHOOL FESTIVAL ARC [Culture Day - November 3, 1996]
 	├── Committee Formation
@@ -396,6 +395,8 @@ Horizontal Layout:
 	        └── Public defense → Gang conflict → Affinity +1
 
 5. WHITE DAY CELEBRATIONS [March 1997]
+   	│   └── Locked Sequence #5: Public bath
+   	│       └── Hikari braves her fear and try to go in public bath
 	├── Chocolate Preparation [March 14]
 	│   ├── Fox-shaped chocolate making
 	│   │   ├── Mold selection → Various fox designs
