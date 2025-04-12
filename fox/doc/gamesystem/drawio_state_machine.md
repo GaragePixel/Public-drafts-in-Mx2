@@ -9,7 +9,7 @@
 
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
 
-<img src="[](https://s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
+<img src="[](https://s3.amazonaws.com/github-production-user-asset-6210df.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
 
 
 ## **Purpose**
