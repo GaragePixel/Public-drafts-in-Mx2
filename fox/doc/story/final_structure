@@ -43,19 +43,19 @@ Horizontal Layout:
 	│       ├── Territory recognition → Spatial awareness
 	│       └── Rule system understanding → System knowledge
    	├── Classroom Dynamics
- 	│   ├── Sequence #1: [Interaction with "Kazuko"]
+ 	│   ├── [Sequence #1 - Interaction with "Kazuko"]:
    	│   │   ├── Laboratory partnership → Proximity test
    	│   │   └── Casual conversation → False identity maintenance
-   	│   ├── Sequence #2: [Observation of Akane]
+   	│   ├── [Sequence #2 - Observation of Akane]:
    	│   │   ├── Hikari interior monologue about past admiration of Akane
    	│   │   ├── Recall of hallway encounter from previous year
    	│   │   └── Notice yokai of loneliness surrounding her
-   	│   ├── Sequence #3: [Dealing with Megumi's group]
+   	│   ├── [Sequence #3 - Dealing with Megumi's group]:
    	│   │   ├── The Gang is in little commitee in the classroom
 	│   │   │   ├── Hikari keeps distance → Safety but isolation
    	│   │   │   └── Hikari Careful observation → Learn group dynamics
    	│   │   └── Ears conversation of normal girls in the classroom telling the urban story about "The Girl Who Asked Where The Boy Was"
-   	│   └── Locked Sequence #4: Accusation about being a kitsunen before cooking lesson, player has some choices 
+   	│   └── [Locked Sequence #4 - Accusation]: Accusation about being a kitsune before cooking lesson, player has some choices 
 	│    	├── Hikari choose to accuse Kazuko to be a Kitsune
    	│       │   ├── Has the hair tufle → Leads to...
    	│       │   │   ├── [-sexualContentEnabled] 
@@ -86,15 +86,15 @@ Horizontal Layout:
         │   │       └── Open access to a new day sequence choosen randomly (but sequence #4)
 	│   └── Isn't the 1st day in swimming class locked room → smalltalk dependly of the day sequence already played
 	│       ├── Some of the three sequences are completed
-	│       │   ├── [Interaction with "Kazuko"] was completed → Hikari interroge subtily Kazuko sonding his Katsuo true persona through Kizuko's interactions
-	│       │   ├── [Observation of Akane] was completed → Hikari interroge Kazuko about if Kazuko is dangerous even for girl, depits the Gang's mission to protect the girl gender
-	│       │   ├── [Dealing with Megumi's group] was completed → Hikari interroge Kazuko about why Kazuko found "her" place withing the Gang 
+	│       │   ├── Was completed [Interaction with "Kazuko"] → Hikari interroge subtily Kazuko sonding his Katsuo true persona through Kizuko's interactions
+	│       │   ├── Was completed [Observation of Akane] → Hikari interroge Kazuko about if Kazuko is dangerous even for girl, depits the Gang's mission to protect the girl gender
+	│       │   ├── Was completed [Dealing with Megumi's group] → Hikari interroge Kazuko about why Kazuko found "her" place withing the Gang 
 	│       │   └── Open access to a new day sequence choosen randomly (but sequence #4)
 	│       └── The three sequences are each completed
 	│           ├── Stalker Arc not done
 	│           │   ├── Hikari hasn't already show her chimerism at Kazuko → Kizako peeps and discovers the Hikari's chimerism → Goto [Chimerism Secret Condition]
 	│   	    │   └── Hikari has already show her chimerism at Kazuko
-	│   	    │       ├── [sexualContentEnabled] [Innocent Conversation] → Subtle conversation about Megumi-Katsuko relation → Hikari observe Katsuo true form behind its illusion, watching his reflection while they changing, and she notices his erection 
+	│   	    │       ├── [Innocent Conversation] [sexualContentEnabled] → Subtle conversation about Megumi-Katsuko relation → Hikari observe Katsuo true form behind its illusion, watching his reflection while they changing, and she notices his erection 
 	│   	    │       │   ├── Hikari precipited revelations leads to Megumi different paths → MEGUMI RELASIONSHIP ENDINGS
 	│   	    │       │   │   ├── Good Ending: Megumi Savior Path
 	│   	    │       │   │   └── Bad Ending: Yakuza Power Figure
@@ -103,7 +103,7 @@ Horizontal Layout:
 	│   	    │       │       └── Hikari says to Kazuko that she think Kazuko love Megumi → Affinity -1 → Locked day #5 access opened (obligatory next step)
 	│   	    │       └── [-sexualContentEnabled] [Innocent Conversation B] → Subtle conversation about Megumi-Katsuko relation
 	│   	    │           └── Megumi wonders why Kazuko is taking so long to come out of the locker room and bursts in, cutting the conversation short
-	│           ├── Stalker Arc completed → Depend of the player's choice and [Trust=null]
+	│           ├── Stalker Arc completed → Depend of the player's choice → [Trust=null]
 	│   	    │   ├── The player make Hikari dislike Kizako and she very shy, distant from Kizako, Affinity -1
 	│   	    │   └── The player make Hikari like Kizako → She want discover his mission and the link with his "nocturnal activities"
 	│   	    │       └── Open access to the class room denonciation sequence (unlocks sequence #4)
@@ -113,16 +113,16 @@ Horizontal Layout:
 	│   	        │   │   └── Subtle conversation about Megumi-Katsuko relation → Hikari try to know if Katsuo found Megumi pretty → Yes she is
 	│   	        │   │       ├── [sexualContentEnabled] Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
 	│   	        │   │       └── Hikari show more of her chimerism, she shows her chest to Kazuko, she allows Kakuko to touch her, Kizuko/Katsuo touches her chimerism marks
-	│   	        │   │           ├── [-sexualContentEnabled] She let him touch her nipples and has has good feeling, allows to ends the current episode
-	│   	        │   │	        └── [sexualContentEnabled], dependly the player's choice: 
+	│   	        │   │           ├── She let him touch her nipples and has has good feeling, allows to ends the current episode [-sexualContentEnabled]
+	│   	        │   │	        └── Dependly the player's choice [sexualContentEnabled]: 
 	│   		│   │	            ├── Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
 	│   		│   │	            └── Then Katsuo abuse his illusion skill then touch her nipples, he admire her beauty, Hikari don't say nothing, while she knows secretly that Kazuko touch her as Katsuo behind its illusion, she feel an autonomous sensory meridian response (ASMR), allowing to ends the current episode
 	│   		│   └── Player hasn't visited [Innocent Conversation]
 	│   		│       └── Hikari notices his disconfort (shyness) → Hikari try to know if Katsuo found Megumi pretty → Yes she is
-	│   		│	    ├── [sexualContentEnabled] Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
+	│   		│	    ├── Hikari precipited revelations because she wants to be like the other lucky girls [sexualContentEnabled] → [Hikari: Path of the Dreams]
 	│   		│           └── But Kazuko tell he/she will protect Hikari about her chimerism → Affinity +1
 	│   		│  	        └── Allows to ends the current episode
-	│   		└── [Hikari: Path of the Dreams] If [sexualContentEnabled] Hikari follow her fantasm to engage Kitsuko/Katsuo in oral sex → leads to Megumi different endings paths dependly the current affinity score
+	│   		└── [Hikari: Path of the Dreams] Hikari follow her fantasm to engage Kitsuko/Katsuo in oral sex [sexualContentEnabled] → leads to Megumi different endings paths dependly the current affinity score
 	│   		    ├── Very low Affinity Score → Bad Ending: Megumi Redemption Path
 	│    		    └── Else → Bad Ending: Megumi Disintegration Death
 	└── Stalker Arc
@@ -186,7 +186,7 @@ Horizontal Layout:
 	        │   │   ├── Detect regular feeding pattern → Serial predation
 	        │   │   └── Recognize specific targeting → Victim selection criteria
 	        │   └── Player can find and take the tufle hairs
-	        └── [sexualContentEnabled] Hikari precipited revelations → [Hikari: Path of the Dreams]
+	        └── Hikari precipited revelations [sexualContentEnabled] → [Hikari: Path of the Dreams]
 
 3. SCHOOL FESTIVAL ARC [Culture Day - November 3, 1996]
 	├── Committee Formation
