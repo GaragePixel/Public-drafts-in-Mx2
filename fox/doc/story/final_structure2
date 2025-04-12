@@ -1,0 +1,737 @@
+# FOX SPIRIT ROMANCE: COMPLETE NARRATIVE TREE
+
+Horizontal Layout:
+
+1. PROLOGUE: SUMMER ENCOUNTER [July-August 1996] 
+   ├── Museum Direction-Giving
+   │   ├── Notice Katsuo's true form immediately
+   │   │   ├── Pretend not to notice → affinity +1
+   │   │   └── Show subtle recognition
+   │   └── Offer to guide him to the museum, affinity +1
+   │       ├── Ask about his interest in yokai → dialog
+   │       └── Keep conversation casual → dialog
+   └── Summer Search
+       ├── Research kitsune folklore intensively
+       │   ├── Learn about weaknesses (water, dogs)
+       │   └── Study historical yokai-human relationships
+       ├── Visit museum regularly → Meet caretaker
+       │   ├── Ask about new "employee" → Suspicion from caretaker
+       │   └── Show interest in artifacts → Glimpse Katsuo in fox form
+       └── Search streets for kitsune boy
+           └── Try to forget the encounter → Recurring dreams
+
+2. SCHOOL YEAR BEGINS: RECOGNITION [September 1996]
+	├── First Day Sequence
+	│   ├── Recognize Katsuo despite girl disguise
+	│   │   ├── Stare in shock
+	│   │   ├── Pretend not to notice → Affinity +1
+	│   │   └── Notice waka poetry speech
+	│   └── Observe "Kazuko" in the Revengeful Girls
+	│       ├── Everyone seems to know Kazuko for years → Memory manipulation realization
+	│       └── Akane warns about green-glasses girl → "Be prepared to lose something to gain something."
+	├── Revengeful Girls Introduction
+	│   ├── Hallway Incident Observation
+	│   │   ├── Witness punishment scene → Justice perspective
+	│   │   ├── Note Megumi's leadership style → Authority assessment
+	│   │   └── Observe Kazuko's advisory role → Strategic insight
+	│   ├── Response Options
+	│   │   ├── Show disapproval → Affinity +1
+	│   │   ├── Remain neutral observer
+	│   │   └── Express subtle approval
+	│   └── Gang Structure Analysis
+	│       ├── Hierarchy identification → Social intelligence
+	│       ├── Territory recognition → Spatial awareness
+	│       └── Rule system understanding → System knowledge
+   	├── Classroom Dynamics
+ 	│   ├── Sequence #1: [Interaction with "Kazuko"]
+   	│   │   ├── Laboratory partnership → Proximity test
+   	│   │   └── Casual conversation → False identity maintenance
+   	│   ├── Sequence #2: [Observation of Akane]
+   	│   │   ├── Hikari interior monologue about past admiration of Akane
+   	│   │   ├── Recall of hallway encounter from previous year
+   	│   │   └── Notice yokai of loneliness surrounding her
+   	│   ├── Sequence #3: [Dealing with Megumi's group]
+   	│   │   ├── The Gang is in little commitee in the classroom
+	│   │   │   ├── Hikari keeps distance → Safety but isolation
+   	│   │   │   └── Hikari Careful observation → Learn group dynamics
+   	│   │   └── Ears conversation of normal girls in the classroom telling the urban story about "The Girl Who Asked Where The Boy Was"
+   	│   ├── Locked Sequence #4: Accusation about being a kitsune
+   	│   │   ├── Normal day, cooking lesson, player has some choices 
+	│   │	│   ├── Hikari choose to accuse Kazuko to be a Kitsune
+   	│   │   │   │	├── Has the hair tufle → Leads to STALKING EVIDENCE PATH
+   	│   │   │   │	└── Hasn't the hair tufle → Leads to SAVIOR PATH: REDEMPTIVE SACRIFICE
+	│   │	│   └── Hikari do not choose to accuse Kazuko to be a Kitsune → Akane Akane complains about not being able to cook, and everyone laughs at her, but she burns herself and screams. She's furious and throws her utensils across the room before leaving. Hikari wants to join her in the hallway to take her to the infirmary, but she's too afraid of Akane and stays → Evening
+   	│   │   │    	└── Hikari thinks back to Akane, having qualms about the fact that, despite her fear, she should have joined Akane to accompany her to the infirmary. Hikari go back to the class room late in the everning, She finds it by chance Akane sleeping on her desk. She about to leave, but, being anyway scared by Akane, see some yokai invisible related to dreaming. Dependly the player's choice:
+   	│   │   │    	    ├── Come near to Akane and wake her up → Player's choice
+   	│   │   │    	    │	├── Depends player's choice:
+   	│   │   │    	    │	│   ├── Look on her desk, see a drawing showing 
+   	│   │   │    	    │	│   └── Look at the sleeping Akane, see something strange about the yokai invisibles, Dream lights don't come and go like that when people dream. Akane is basically human, but she's weird. She might have been under some kind of spell → Unlock [The spell on Akane]
+   	│   │   │    	    │	└── Akane, once woken up, expresses a dark look, Hikari, after hesitating, then trying, finally manages to ask Akane how her burned hand is. Akane remains silent, still with a dark look, then leaves the room. Around her, Hikari sees yokai invisible to those who are touched. Hikari smiles: "I think she doesn't hate me after all."
+   	│   │   │    	    └── Hikari ignore and quit the class room
+   	│   │   └── Hikari interroge herself about real goal of Kazuko/Katsuo and want to know more
+   	│   └── Locked Sequence #5: Public bath
+   	│       └── Hikari braves her fear and try to go in public bath
+   	├── Swimming Class Locker Room
+   	│   ├── Hikari's delayed arrival to avoid exposure
+   	│   │   └── Observe Kazuko's avoidance of other girls
+   	│   ├── Hikari private conversation with Kazuko 
+        │   │   ├── [Chimerism Secret Condition] Hikari speaks about her chimerism to Kazuko (Hikari show him/her skin under her swimsuit, her skin is partially red like her left hand)
+   	│   │   │   └── Hikari shares bullying history → Kazuko shows unexpected kindness, affinity +1
+        │   │   └── Hikari don't speak about Hikari's chimera skin
+        │   │       ├── It's the 1st day in swimming class locked room → They are very shy
+        │   │       │   ├── The three sequences aren't each completed → Open access to a new day sequence choosen randomly (but sequence #4 and #5)
+	│   │       │	└── The three sequences are each completed
+	│   │       │       ├── Stalker Arc completed → Open access to the class room denonciation sequence (locked sequence #4)
+	│   │       │       └── Stalker Arc not done → Kizako peeps and discovers the Hikari's chimerism
+        │   │       └── Isn't the 1st day in swimming class locked room → smalltalk dependly of the day sequence already played
+        │   │           ├── The three sequences aren't each completed → They are polite, but don't speak → Open access to a new random sequence (but sequence #4 and #5)
+	│   │       	├── Some of the three sequences are completed
+	│   │		│   ├── [Interaction with "Kazuko"] was completed → Hikari interroge subtily Kazuko sonding his Katsuo true persona through Kizuko's interactions
+	│   │		│   ├── [Observation of Akane] was completed → Hikari interroge Kazuko about if Kazuko is dangerous even for girl, depits the Gang's mission to protect the girl gender
+	│   │		│   ├── [Dealing with Megumi's group] was completed → Hikari interroge Kazuko about why Kazuko found "her" place withing the Gang 
+	│   │		│   └── Open access to a new day sequence choosen randomly (but sequence #4 and #5)
+	│   │       	└── The three sequences are each completed
+	│   │               ├── Stalker Arc completed → Depend of the player's choice
+	│   │		    │	├── The player make Hikari dislike Kizako and she very shy, distant from Kizako, Affinity -1
+	│   │		    │	├── The player make Hikari like Kizako → She want discover his mission and the link with his "nocturnal activities"
+	│   │		    │	└── Anyway, open access to the class room denonciation sequence (locked sequence #4)
+	│   │               └── Stalker Arc not done → Kizako peeps and discovers the Hikari's chimerism → [Chimerism Secret Condition]
+	│   └── Hikari precipited revelations leads to → MEGUMI RELATIONSHIP ENDINGS
+	├── Stalker Arc
+	│   ├── Initial Discovery Phase
+	│   │   ├── Accidental glimpse of male Katsuo
+	│   │   │   ├── From school window → Brief observation only
+	│   │   │   └── In downtown area → Follow immediately → Lose trail
+	│   │   ├── Overhear conversation about "that guy"
+	│   │   │   ├── Between Megumi and lieutenant → Possession concern
+	│   │   │   └── Between regular students → Mysterious reputation
+	│   │   └── Perceive yokai trail from Kazuko
+	│   │       ├── Notice distinctive aura pattern → Connection realization
+	│   │       └── Follow trail partially → Lose at crossroads
+	│   ├── Surveillance Planning
+	│   │   ├── Recruit yokai invisibles, affinity +1
+	│   │   │   ├── Dust yokai → Offer candy as payment
+	│   │   │   ├── Shadow yokai → Agree to carry message
+	│   │   │   └── Wind yokai → Promise to visit shrine
+	│   │   ├── Establish surveillance points
+	│   │   │   ├── Near school exit → Limited information
+	│   │   │   ├── Downtown junction → Pattern recognition
+	│   │   │   └── Near suspected residence → High risk of detection
+	│   │   └── Develop disguise strategy
+	│   │       ├── Different uniform → Limited effectiveness
+	│   │       └── Casual clothes → Moderate concealment
+	│   ├── Active Stalking Phase
+	│   │   ├── Weekday pursuit
+	│   │   │   ├── After school → Visit museum
+	│   │   │   │   └── Interaction with curator → Knowledge gathering
+	│   │   │   └── Early evening → Observe meeting with contacts
+	│   │   │       ├── Business people → Information exchange
+	│   │   │       └── Telephone cabin call to mother → Mission reporting
+	│   │   ├── Weekend pursuit
+	│   │   │   ├── Morning activities → Shopping for unusual items
+	│   │   │   │   └── Ancient bookstore → Obscure texts
+	│   │   │   └── Evening activities → Entertainment district
+	│   │   │       ├── Multiple bars → Information gathering
+	│   │   │       └── Heading toward love hotel district → Critical discovery
+	│   │   └── Yokai invisibles reports
+	│   │       ├── Confirm multiple identities → Triple form verification
+	│   │       ├── Observe telephone cabin call → Mission communication
+	│   │       └── Warning about dangerous aura spikes → Feeding activity
+	│   └── Love Hotel Discovery [sexualContentEnabled]
+	│       ├── Observation approach
+	│       │   ├── Watch from distance → Limited information
+	│       │   │   ├── See entering with woman → Relationship assumption
+	│       │   │   └── Wait for exit → Extended disappearance
+	│       │   └── Close surveillance → Detailed information
+	│       │       ├── Recognize woman as previous victim → Pattern recognition
+	│       │       └── Detect memory manipulation aura → Predatory behavior
+	│       ├── Infiltration approach
+	│       │   ├── Follow inside → High risk
+	│       │   │   ├── Lobby surveillance → Staff suspicion
+	│       │   │   └── Corridor eavesdropping → Partial conversation
+	│       │   └── Room adjacent booking → Maximum information
+	│       │       └── Hear conversation → Memory extraction purpose
+	│       │── Yokai invisibles assistance
+	│       │   ├── Send dust yokai under door → Visual report
+	│       │   │   └── Witness memory extraction → Confirm predation
+	│       │   ├── Shadow yokai surveillance → Energy pattern report
+	│       │   │   ├── Detect regular feeding pattern → Serial predation
+	│       │   │   └── Recognize specific targeting → Victim selection criteria
+	│       │   └── Player can find and take the tufle hairs
+	│       └── Hikari precipited revelations → [Hikari: Path of the Dreams]
+   	└── New day in the Locker Room
+	    ├── Hikari has already show her chimerism at Kazuko
+	    │   ├── Hikari hasn't completed the Stalker Arc yet
+	    │   │   └── [Innocent Conversation] → Subtle conversation about Megumi-Katsuko relation → Hikari observe Katsuo true form behind its illusion, watching his reflection while they changing, and she notices his erection 
+	    │   │       ├── Hikari precipited revelations leads to Megumi different paths → MEGUMI RELASIONSHIP ENDINGS
+	    │   │       │   ├── Good Ending: Megumi Savior Path
+	    │   │       │   └── Bad Ending: Yakuza Power Figure
+	    │   │       └── Hikari continue to speak with Kizuko
+	    │   │           ├── Hikari says to Kazuko that she think Kazuko protects Megumi → Locked day #5 access opened (obligatory next step)
+	    │   │           └── Hikari says to Kazuko that she think Kazuko love Megumi → Affinity -1 → Locked day #5 access opened (obligatory next step)
+	    │   └── Hikari has completed the Stalker Arc
+	    │       └── Gently conversation between Katuko and Hikari → Depend of the player last route
+	    │		├── Player has visited [Innocent Conversation]
+	    │		│   └── Hikari notices his erection → Subtle conversation about Megumi-Katsuko relation → Hikari try to know if Katsuo found Megumi pretty → Yes she is
+	    │     	│	├── Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
+	    │           │	└── Hikari show more of her chimerism, she shows her chest to Kazuko
+	    │	        │    	    └── Hikari allows Kakuko to touch her, Kizuko/Katsuo touches her chimerism marks, then Katsuo abuse his illusion skill then touch her nipples, he admire her beauty
+	    │		│		├── Hikari don't say nothing, while she knows secretly that Kazuko touch her as Katsuo behind its illusion
+	    │		│		│   └── She let him touch her nipples and has a good feeling → Allows to ends the current episode
+	    │		│		└── Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
+	    │		└── Player hasn't visited [Innocent Conversation]
+	    │		    └── Hikari notices his disconfort (shyness) → Hikari try to know if Katsuo found Megumi pretty → Yes she is
+	    │     	 	├── Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
+	    │            	└── But Kazuko tell he/she will protect Hikari about her chimerism → Affinity +1
+	    │	             	    └── Allows to ends the current episode
+	    ├── Hikari hasn't already show her chimerism at Kazuko → Mark [Trust Path] → Swimming Class Locker Room 1st day tree replay
+	    └── [Hikari: Path of the Dreams] Hikari follow her fantasm to engage Kitsuko/Katsuo in oral sex → leads to Megumi different endings paths dependly the current affinity score
+	        ├── Very low Affinity Score → Bad Ending: Megumi Redemption Path
+	        └── Else → Bad Ending: Megumi Disintegration Death
+
+3. SCHOOL FESTIVAL ARC [Culture Day - November 3, 1996]
+	├── Committee Formation
+	│   ├── Leadership announcement
+	│   │   ├── Megumi revealed as class representative again → Authority position
+	│   │   └── "Revengeful Girls" assigned tacitly to security → Control establishment
+	│   ├── Working with Kazuko
+	│   │   ├── Traditional theme development
+	│   │   │   ├── Yokai folklore suggestion → Subtle tension in Kazuko, Hikari excited
+	│   │   │   └── Classical literature compromise → Shared interest discovered
+	│   │   └── Partnership "random" drawing 
+	│   │       ├── Kitsune manipulation detected → Yokai particles observed by Hikari
+	│   │       │   ├── Hikari notices yokai activity during drawing → Secret knowledge
+	│   │       │   └── Realizes Katsuo influenced outcome → Preference confirmation
+	│   │       ├── Intentional pairing revealed → Katsuo's preference for Hikari confirmed
+	│   │       └── Megumi's territorial response
+	│   │           ├── Direct warning → "She'll eat you once we see the moon, watch out, my bunny"
+	│   │           ├── Hikari's nervous reply → "You'll watch over me, won't you!?"
+	│   │           └── Kazuko's ambiguous response → "I won't take advantage of this situation too much!"
+	│   └── Authority demonstration
+	│       ├── Teacher deference to Megumi → Fear-based respect
+	│       ├── Resource allocation control → Power display
+	│       └── Kazuko as mediator → Perfect lieutenant performance
+	├── Rehearsal Period
+	│   ├── Practice Sessions
+	│   │   ├── Hikari's gymnastics rehearsal
+	│   │   │   ├── Rhythmic ribbon technique struggles → Coordination challenges
+	│   │   │   └── Improvement through persistence → Confidence building
+	│   │   ├── Martial arts practice observation
+	│   │   │   ├── Kazuko's flawless kata → Inhuman precision
+	│   │   │   └── Megumi's powerful strikes → Intimidation display
+	│   │   └── Akane's solitary kendo practice
+	│   │       ├── Masterful cutting technique → Authentic discipline
+	│   │       └── Respectful traditional forms → Contrast to gang's aggression
+	│   ├── Gang Surveillance Activities
+	│   │   ├── "Revengeful Girls" patrolling corridors → Territory marking
+	│   │   ├── Information gathering about relationships → Target identification
+	│   │   └── Megumi's constant monitoring of Kazuko → Possessive behavior
+	│   └── Evening Conflict
+	│       ├── Staying late with Kazuko → Rare private time
+	│       ├── Megumi's sudden appearance → Tension spike
+	│       │   ├── "Need you for special assignment" → Separation tactic
+	│       │   └── Uncomfortable exchange of glances → Hikari's suspicion
+	│       └── Forced separation → Unfinished conversation
+	├── Punishment Incident [Hidden Area Behind Gymnasium] [violentContentEnabled] [sexualContentEnabled]
+	│   ├── Yokai-Assisted Observation
+	│   │   ├── Dust yokai alert Hikari → Unusual gathering detected
+	│   │   ├── Shadow yokai create viewing path → Concealment assistance
+	│   │   └── Wind yokai carry sounds → Eavesdropping enablement
+	│   ├── Target Couple Confrontation
+	│   │   ├── Gang surrounding frightened students → Power imbalance
+	│   │   │   ├── Boy accused of cheating → Relationship betrayal
+	│   │   │   └── Girl accused of complicity → Targeted as accomplice
+	│   │   ├── Megumi's judgment announcement → Mock trial atmosphere
+	│   │   │   ├── Victim's suffering detailed → Hospital admission referenced
+	│   │   │   └── "Justice must be witnessed" declaration → Public humiliation intent
+	│   │   └── Resistance attempt → Quickly suppressed
+	│   │       ├── Boy's defiance → Physical restraint applied
+	│   │       └── Girl's pleading → Emotional manipulation
+	│   ├── Forced Sexual Humiliation
+	│   │   ├── Clothing removal compelled → Public degradation
+	│   │   ├── Sexual act forced → Power demonstration
+	│   │   │   ├── Toxicodendron radicans threat → Poison ivy coercion
+	│   │   │   └── Oral sex performance → Complete domination
+	│   │   └── Kazuko filming with Sony CCD-TRV67 → Evidence creation
+	│   │       ├── Professional camera operation → Detached execution
+	│   │       └── Private facial expression → Hidden disgust
+	│   └── Yokai Manifestation Observation
+	│       ├── Around Megumi → Dense dark emanations
+	│       │   ├── Vengeful yokai spiraling → Trauma-born entities
+	│       │   └── Sorrow yokai clinging → Hidden pain indicators
+	│       ├── Around gang members → Varied negative manifestations
+	│       └── Around Kazuko → Different energy signature
+	│           ├── Nature yokai presence → Connection to natural world
+	│           └── Sadness yokai concentration → Internal conflict indicator
+	├── Performance Day
+	│   ├── Morning Preparations
+	│   │   ├── Final arrangements
+	│   │   │   ├── Kazuko helping Hikari with costume → Proximity moment
+	│   │   │   └── Megumi's watchful observation → Growing frustration
+	│   │   ├── Opening ceremony
+	│   │   │   ├── Megumi's authoritative speech → Class representative role
+	│   │   │   └── Kazuko's perfect supporting presence → Lieutenant positioning
+	│   │   └── Security arrangements
+	│   │       ├── "Revengeful Girls" stationed at key points → Control display
+	│   │       └── Intimidating presence affecting crowd → Subdued atmosphere
+	│   ├── Performance Sequence
+	│   │   ├── Martial arts demonstrations
+	│   │   │   ├── Kazuko's karate exhibition
+	│   │   │   │   ├── Flawless technical execution → Beyond human precision
+	│   │   │   │   └── Perfect control demonstration → Supernatural hint
+	│   │   │   ├── Megumi's aggressive showcase
+	│   │   │   │   ├── Raw power emphasis → Intimidation focus
+	│   │   │   │   └── Destructive technique display → Breaking demonstration
+	│   │   │   └── Performance contrast
+	│   │   │       ├── Kazuko's precise control vs. Megumi's destructive power
+	│   │   │       └── Audience reaction difference → Admiration vs. fear
+	│   │   ├── Hikari's gymnastics performance
+	│   │   │   ├── Rhythmic ribbon routine → Graceful execution
+	│   │   │   │   ├── Successful performance → Confidence milestone
+	│   │   │   │   └── Artistic expression → Emotional connection
+	│   │   │   └── Audience observations
+	│   │   │       ├── Kazuko watching intently → Genuine admiration
+	│   │   │       └── Megumi monitoring Kazuko's reaction → Possessiveness indicators
+	│   │   └── Akane's kendo demonstration
+	│   │       ├── Precision cutting showcase
+	│   │       │   ├── Swift, clean strike technique → Technical mastery
+	│   │       │   └── Traditional kata execution → Cultural authenticity
+	│   │       ├── Exhibition match
+	│   │       │   ├── Dominant performance → Skill superiority
+	│   │       │   └── Respectful victory → Character depth
+	│   │       └── Hikari's admiration
+	│   │           ├── Genuine respect for authentic skill → Friendship foundation
+	│   │           └── Comparing Akane's earned mastery vs. Kazuko's unnatural perfection
+	│   ├── Hikari precipited revelations leads to Megumi different paths
+	│   │   ├── Good Ending: Megumi Savior Path
+	│   │   └── Bad Ending: Yakuza Power Figure	
+	│   └── Evening Activities
+	│       ├── Festival closing events
+	│       │   ├── Ceremonial conclusion → Traditional elements
+	│       │   └── Committee recognition → Public acknowledgments
+	│       ├── Gang celebration gathering
+	│       │   ├── Private party atmosphere → Exclusive inner circle
+	│       │   └── Megumi's possessive behavior → Keeping Kazuko close
+	│       └── Punishment video review
+	│           ├── Gang members watching footage → Reinforcing power
+	│           └── Kazuko's subtle discomfort → Hidden reluctance
+	└── Reflection Pool Encounter
+	    ├── Setting elements
+	    │   ├── School entrance chōzu-bachi (water basin) → Traditional feature
+	    │   ├── Moonlight illumination → Mystical atmosphere
+	    │   └── Private location → Rare moment without surveillance
+	    ├── Kazuko's temporary escape
+	    │   ├── Bathroom excuse to leave gang → Brief freedom
+	    │   └── Moment of reflection → Decompression after trauma
+	    ├── Reflection revelation
+	    │   ├── Katsuo's true form visible in water → Moonlight magic effect
+	    │   │   ├── Male silhouette behind female image → Dual identity visible
+	    │   │   └── Hikari's unique perception → Connection to supernatural
+	    │   └── Hikari's arrival and observation → Quiet approach
+	    └── Critical conversation
+	        ├── Initial confrontation
+	        │   ├── Hikari's direct question → "You don't really like what you're doing?"
+	        │   └── Kazuko's defensive response → "Serving justice! The victim is in hospital."
+	        ├── Ideology exchange
+	        │   ├── Hikari's challenge → "There are other ways to push someone to suicide."
+	        │   ├── Kazuko's justification → "I'm helping Megumi. She's suffering."
+	        │   ├── Hikari's insight → "You're not really her right-hand man."
+	        │   └── Kazuko's philosophy → "Humanity is shit. You're not part of the shit."
+	        ├── Love question climax
+	        │   ├── Hikari's final question → "Are you in love with Megumi?"
+	        │   ├── Kazuko's surprised reaction → Defensive deflection
+	        │   └── "Haha, yeah, that must be it! They say love makes you blind!"
+	        └── Unspoken revelation
+	            ├── No love yokai detected → Truth confirmation through supernatural perception
+	            └── Hikari's hidden satisfaction → Knowledge advantage gained
+
+4. INVESTIGATION & REVELATION [December 1996 - February 1997]
+	├── Akane Avoidance Period
+	│   ├── Post-breakdown tension
+	│   │   ├── Akane actively avoiding Hikari → Eye contact evasion
+	│   │   └── Sadness yokai cloud following Akane → Emotional residue
+	│   ├── Failed conversation attempts
+	│   │   ├── Hallway approach blocked → Physical avoidance [DANGER PATH]
+	│   │   │   └── If selected: Akane attacks → Severe injury → Death in hospital → BAD END
+	│   │   └── Class project pairing rejected → Social barrier [SAFE PATH]
+	│   ├── Distance observation
+	│   │   ├── Akane's increasing isolation → Social withdrawal
+	│   │   └── Shifting yokai patterns → Sadness to determination transition
+	│   └── Bad Ending: Hospital Death Ending
+	├── Spying on Katsuo's Activities  
+	│   ├── Enlist help from invisible yokai
+	│   │   ├── Establish yokai communication network → Intelligence gathering
+	│   │   └── Witness love hotel encounters → Complex feelings
+	│   ├── Follow "Kazuko" after school
+	│   │   ├── Observe interaction with Megumi → Power dynamics
+	│   │   ├── Observe telephone cabin call → Solitary mission confirmation
+	│   │   └── Glimpse transformation moment → Near discovery
+	│   └── Stalking Evidence Path
+	│       ├── Bad Ending: Hunter Death Ending
+	│       └── Bad Ending: Memory Erasure
+	├── Winter Break Encounters [December 25-January]
+	│   ├── Museum visit during holidays
+	│   │   ├── "Accidental" meeting → Katsuo's suspicion
+	│   │   └── Learn about specific artifact → Mystery clue
+	│   └── New Year's shrine visit [January 1, 1997]
+	│       ├── Traditional observance
+	│       │   ├── Ritual participation → Cultural integration
+	│       │   ├── Prayer content → Personal expression
+	│       │   └── Offering presentation → Symbolic action
+	│       ├── Katsuo spotting
+	│       │   ├── Form identification → Human male identity
+	│       │   ├── Distance assessment → Approach planning
+	│       │   └── Following decision → Surveillance initiation
+	│       └── Yokai gathering observation
+	│           ├── Perception challenge → Ability testing
+	│           ├── Entity identification → Knowledge application
+	│           └── Significance interpretation → Seasonal power surge
+	└── Growing Tensions with Revengeful Girls
+	    ├── Megumi's fear of losing Kazuko
+	    │   ├── Increased monitoring → Constant surveillance
+	    │   ├── Strategic isolation attempts → Separating Kazuko from others
+	    │   └── Performance of perfection → Desperate approval seeking
+	    └── "Kazuko's" protective intervention
+	        ├── Secret defense of Hikari → Affinity +2
+	        └── Public defense → Gang conflict → Affinity +1
+
+5. WHITE DAY CELEBRATIONS [March 1997]
+	├── Chocolate Preparation [March 14]
+	│   ├── Fox-shaped chocolate making
+	│   │   ├── Mold selection → Various fox designs
+	│   │   │   ├── Fox body shapes → Traditional representation
+	│   │   │   ├── Fox head designs → Direct symbolism
+	│   │   │   └── Fox-themed software logo → Modern reference
+	│   │   └── Creation process → Emotional investment
+	│   │       ├── Material selection → Quality consideration
+	│   │       └── Design execution → Artistic expression
+	│   └── Gift presentation planning
+	│       ├── Location consideration → Privacy requirement
+	│       ├── Timing selection → Strategic opportunity
+	│       └── Presentation approach → Emotional preparation
+	├── Locker Room Gift Exchange
+	│   ├── Privacy moment achieved
+	│   │   ├── Timing selection → Between classes
+	│   │   └── Location security → Brief isolation window
+	│   ├── Gift presentation
+	│   │   ├── Hikari's offering → "These are just Giri Choco..."
+	│   │   └── Kazuko's surprised acceptance → "I'll take it with honor"
+	│   └── Emotional reactions
+	│       ├── Kazuko's concealment → "I'll just hide them in my bag"
+	│       ├── Significance acknowledgment → "It means a lot to me"
+	│       └── Hikari's quiet delight → Connection reinforcement
+	└── Secret Observation
+	    ├── Yokai assistance request
+	    │   ├── Noise concealment appeal → Supernatural stealth
+	    │   └── Tracking assistance → Following Kazuko
+	    ├── Park observation
+	    │   ├── Kazuko's separation from group → Moment of privacy
+	    │   ├── Chocolate examination → Discovery of fox shapes
+	    │   └── Yokai reactions → Amusement and irony
+	    └── Katsuo's genuine reaction
+	        ├── Unguarded emotional response → Laughter
+	        └── True feelings revealed → "That girl is amazing! I love her! She's crazy!"
+
+6. CRISIS POINT: THE REVELATION [April 1997]
+	├── Fake Suicide Preparation
+	│   ├── Location scouting
+	│   │   ├── School rooftop → Accessible but risky
+	│   │   └── Abandoned building → Private but dangerous
+	│   └── Plan execution
+	│       ├── Make Katsuo misinterpret Hikari about she's bad about her chimerism → Creating evidence trail, Affinity +1
+	│       └── Make Katsuo misinterpret Hikari about she's bad because Megami → Depends of player's path
+	│	    ├── Perfect Ending: Partnership Path
+	│	    ├── Perfect Ending: Support Path
+	│	    └── Perfect Ending: Caution Path
+	├── Night of Decision
+	│   ├── Leading Katsuo through city streets
+	│   │   ├── Notice transformation disguises → Lamppost, trash can
+	│   │   └── Confirm being followed → Point of no return
+	│   └── Rooftop confrontation
+	│       ├── Emotional revelation before jump → Connection
+	│       └── Silent jump → Pure shock value
+	└── The Jump
+	    ├── Katsuo reveals true form to save Hikari
+	    │   ├── Admit trick immediately → Anger but respect
+	    │   │   ├── Confession of feelings → "I was born for you"
+	    │   │   └── Explanation of ability to see yokai → Information exchange
+	    │   └── Feign surprise at rescue → Suspicion and distrust
+	    │       ├── Gradual revelation of knowledge → Affinity -1
+	    │       └── Continue deception → Bad ending path
+	    └── Rooftop confession
+	        ├── Katsuo's amazement at Hikari's perception abilities
+	        ├── Hikari's desire to be with someone who shares her world
+	        └── Mutual fascination acknowledgment → Affinity +2
+		    ├── Bad Ending: Memory Erasure
+		    ├── Good Ending: Identity Merging
+		    └── Bad Ending: Death Path
+
+7. TRANSFORMATION JOURNEY [May 1997]
+	├── Pre-Hot Springs Phase
+	│   ├── Visit to Hikari's Father
+	│   │   ├── Katsuo's introduction as worker → New perspective
+	│   │   └── Relationship resolution option
+	│   │       ├── Engage with father → Affinity +1
+	│   │       └── Maintain distance → Affinity +1
+	│   ├── Departure Discussion
+	│   │   ├── Lifespan concern conversation
+	│   │   │   ├── Express worry → Affinity +1
+	│   │   │   └── Focus on present → Affinity +1
+	│   │   └── Practical arrangements
+	│   │       ├── Financial considerations → Resource planning
+	│   │       └── Timeline establishment → Transition structure
+	│   └── Social Disengagement
+	│       ├── School departure approach
+	│       │   ├── Create transfer story → Affinity +1
+	│       │   ├── Disappear without explanation → Affinity +1
+	│       │   └── Partial explanation → Affinity +1
+	│       └── Megumi confrontation avoidance
+	│           ├── Strategic absence → Conflict prevention
+	│           └── Information control → Limited knowledge distribution
+	└── Hot Springs Arrival
+	    ├── Protective Barrier Encounter
+	    │   ├── Barrier sensation → Supernatural boundary recognition
+	    │   └── Passage facilitation → Katsuo's guidance
+	    ├── Meeting Katsuo's Mother
+	    │   ├── Nine-tailed manifestation → Power display
+	    │   └── Reaction choice
+	    │       ├── Maintain composure → Affinity +1
+	    │       └── Show appropriate awe → Affinity +1
+	    └── Hot Spring Yokai Encounters
+	        └── Variety of supernatural beings → World expansion
+	            └── Tengu Confrontation
+                        ├── Bad Ending: Tengu Devours Hikari
+                        └── Perfect Ending: Failure to Save Hikari, Hikari save herself
+
+8. KODAMA TRANSFORMATION [June 1997]
+	├── Forest Journey
+	│   ├── Path navigation
+	│   │   ├── Physical challenge → Human limitations
+	│   │   └── Spiritual markers → Yokai guidance
+	│   └── Environmental transition
+	│       ├── Boundary crossing → Reality shift indication
+	│       └── Atmosphere change → Magical density increase
+	├── Kodama Encounter
+	│   ├── Ancient tree manifestation
+	│   │   ├── Physical appearance → Ageless presence
+	│   │   └── Spiritual presence → Overwhelming aura
+	│   ├── Communication establishment
+	│   │   ├── Language barrier → Understanding challenge
+	│   │   └── Perception bridge → Hikari's unique ability
+	│   └── Sister connection revelation
+	│       ├── Past link disclosure → Hidden history
+	│       └── Transformation potential → Identity integration
+	└── Consciousness Journey
+	    ├── Self-boundary dissolution
+	    │   ├── Identity challenge → Ego transcendence
+	    │   └── Memory integration → Collective experience
+	    ├── Sister essence encounter
+	    │   ├── Response options
+	    │   │   ├── Complete embrace → Affinity +1
+	    │   │   ├── Analytical distance → Affinity +1
+	    │   │   └── Resistance → Failed transformation → DEATH END
+	    │   └── Essence integration
+	    │       ├── Memory absorption → Knowledge transfer
+            │       ├── Bad Ending: Missing Katsuo's Fur Scarf
+            │       │   └── Bad Ending: Consciousness Dissolution
+            │       └── Identity merging → Being expansion
+            │           └── Perfect Ending: Sister Essence Fusion
+	    └── Consciousness return
+	        └── Hikaro bacomes a Kitsune → Continue the journey
+
+9. NEW EXISTENCE [July-August 1997]
+	├── Training and Integration
+	│   ├── Basic Movement Training
+	│   │   ├── Gymnastic background application → Affinity +1
+	│   │   ├── Disciplined practice → Affinity +1
+	│   │   └── Emotional response → Affinity +1
+	│   ├── Tail Training
+	│   │   ├── Development approach
+	│   │   │   ├── Limitation pushing → Affinity +1
+	│   │   │   ├── Methodical progression → Affinity +1
+	│   │   │   └── Specialized instruction → Affinity +1
+	│   │   └── Power coefficient understanding
+	│   │       ├── Energy channeling → Force manipulation
+	│   │       └── Control development → Precision mastery
+	│   └── Social Integration
+	│       ├── Relationship building
+	│       │   ├── Nature focus (Sister) → Affinity +1
+	│       │   ├── Political focus (Mother) → Affinity +1
+	│       │   └── Practical focus (Brother) → Affinity +1
+	│       └── Community positioning
+	│           ├── Role definition → Function establishment
+	│           └── Status negotiation → Hierarchy placement
+	└── Final Confrontation
+	    ├── Fiancée Return
+	    │   ├── Challenge issuance → Honor contest
+	    │   └── Territory claim → Relationship dispute
+	    ├── Combat Approach
+	    │   ├── Strategy selection
+	    │   │   ├── Power demonstration → Affinity +1
+	    │   │   ├── Strategic engagement → Affinity +1
+	    │   │   └── Peaceful attempt → Affinity +1
+	    │   └── Ability utilization
+	    │       ├── New power application → Transformation validation
+	    │       └── Human-yokai integration → Unique advantage
+	    └── Resolution Processing
+	        ├── Emotional response
+	        │   ├── Pride expression → Affinity +1
+	        │   ├── Compassion demonstration → Affinity +1
+	        │   └── Security emphasis → Affinity +1
+	        └── Status confirmation
+	            ├── Position establishment → Hierarchy clarification
+	            └── Respect earning → Community acceptance
+
+Vertical Layout 
+
+BAD ENDING BRANCHES
+│
+├── PERFECT ENDING PATH
+│   ├── Confrontation with the tengu
+│   │   ├── Trust Katsuo who try to save Hikari, fighting the tengu → The tengu success to take Hikari and devors the girl, death, game's ends
+│   │   └── Wait for the tengu seeing something unusual within Hikari: Hikari asks Katsuo do not fight the tengu, as the tengu is pure volontee seeing the type of invisible yokai who surround him, he doesn't want eat her chair, he want devors her essence because she a "bad person" → The tengu observes more deeper Hikari and see something unusual within her, incident closed, soon after the resident yokai comes and everyone observe Hikari with admiration, Katsuo gently grabbed her shoulder and smiled proudly at her, Hikari observe unusual invisible yokai manifestation, dancing in the hallway between everyone
+│   │
+│   ├── On the road to the Kodama spirit
+│   │   ├── Follow the strange movements glimpsed among the Red Spider Lilie's invisible yokai → Death, game's ends
+│   │   └── Ignore the subtle presence and continue on direct path → Escape death, continue the journey 
+│   │
+│   └── During the spiritual journey, from automatic metric resulting of precedent player's choices through the whole game
+│       ├── Hikari unborn sister's revelation, not enough score, conscious vanishing → Death, game's ends
+│       └── Hikari unborn sister's revelation, has the perfect score → Fuse with the unborn sister's essence
+│           ├── Hikari do not has the Katsuo's tuft of hair embroidered into a scarf with her, conscious vanishing → Death, game's ends
+│           └── Hikari has the Katsuo's tuft of hair embroidered into a scarf with her → Hikari visualize in her mind the scarf, becomes one with her sister's essence, color the essence, becomes a female kitsune, game continue
+│
+├── EARLY REVELATION PATH
+│   ├── Hikari reveals knowledge too soon
+│   │   ├── Katsuo feels threatened by exposure
+│   │   └── Trust not yet established for safe revelation
+│   │
+│   ├── REACTION BRANCH POINT
+│   │   ├── Katsuo triggered by hunter comparison
+│   │   │   └── Maternal trauma activated
+│   │   └── Memory alteration attempt
+│   │       ├── Hikari's natural resistance creates feedback
+│   │       └── Supernatural damage to neural pathways
+│   │
+│   └── OUTCOME: HOSPITAL DEATH ENDING
+│       ├── Hikari's perception permanently damaged
+│       ├── Reality barriers broken in her mind
+│       ├── Medical science unable to treat supernatural injury
+│       └── Death followed by Katsuo's genuine regret
+│           └── Small fox figurine left at memorial
+│
+├── SEXUAL ENCOUNTER PATH
+│   │
+│   ├── LOCKER ROOM INTIMACY
+│   │   ├── Katsuo's control slips during passion
+│   │   ├── Partial supernatural revelation
+│   │   └── Emotional feeding during intimate connection
+│   │
+│   ├── AFTERMATH BRANCH POINT
+│   │   ├── Hikari experiences emotional hollowing
+│   │   ├── Colors fade, emotions diminish
+│   │   └── Vital essence partially consumed
+│   │
+│   └── OUTCOME: SUICIDE ENDING
+│       ├── Progressive emotional emptiness
+│       ├── Medical intervention ineffective
+│       ├── Complete disconnection from life
+│       └── Rooftop jump while Katsuo avoids connection
+│           └── Death becomes learning experience for Katsuo
+│
+├── ORAL ENCOUNTER PATH
+│   │
+│   ├── SECOND LOCKED ROOM INTIMACY
+│   │   ├── Private after-hours meeting
+│   │   ├── Growing physical tension
+│   │   └── Intimate oral contact initiation
+│   │
+│   └── OUTCOME: MEMORY ERASURE CONFRONTATION
+│       ├── Post-intimacy vulnerability
+│       ├── Knowledge reveals risk to Katsuo
+│       └── Memory manipulation attempt
+│           └── Decision to accept or resist creates further branches
+│
+├── STALKING EVIDENCE PATH
+│   │
+│   ├── EVIDENCE COLLECTION
+│   │   ├── Hikari gathers physical proof (fur samples)
+│   │   ├── Documents Katsuo's transformations
+│   │   └── Confronts with collected evidence
+│   │
+│   ├── HUNTER TRAUMA TRIGGER
+│   │   ├── Evidence collection reminds Katsuo of mother's hunters
+│   │   ├── Rational assessment overridden by trauma
+│   │   └── Memory erasure attempt turns violent
+│   │
+│   └── OUTCOME: HUNTER DEATH ENDING
+│       ├── Erasure attempt creates catastrophic feedback
+│       ├── Neural damage beyond recovery
+│       ├── Medical science baffled by condition
+│       └── Death followed by Katsuo's complete disappearance
+│
+└── MEGUMI RELATIONSHIP ENDINGS
+    │
+    ├── INTIMATE COUNCIL ROOM SEQUENCE
+    │   ├── Multiple climax experience
+    │   │   ├── First climax: Physical revelation
+    │   │   ├── Second climax: Memory restoration
+    │   │   └── Third climax: Emotional connection
+    │   └── Post-intimacy decision point
+    │
+    ├── HIKARI AFFINITY DETERMINATION
+    │   │
+    │   ├── HIGH AFFINITY (≥15): SPIRITUAL INTEGRITY
+    │   │   ├── Katsuo resists Megumi's influence
+    │   │   ├── Maintains bodhisattva discipline
+    │   │   └── OUTCOME: Megumi returns to positive path
+    │   │       ├── Memory preservation without corruption
+    │   │       ├── Balanced success in human society
+    │   │       └── Occasional spiritual awareness moments
+    │   │
+    │   ├── MEDIUM AFFINITY (10-14): MOMENTARY WEAKNESS
+    │   │   ├── Brief attachment but recovers discipline
+    │   │   ├── Partial memory management
+    │   │   └── OUTCOME: Megumi becomes ambitious but controlled
+    │   │       ├── Rises through legitimate power structures
+    │   │       ├── Morally ambiguous but not destructive
+    │   │       └── Occasional dreams of supernatural encounter
+    │   │
+    │   └── LOW AFFINITY (<10): CORRUPTION VULNERABILITY FROM FESTIVAL
+    │       │
+    │       ├── NO CONNECTION: ABANDONMENT PATH
+    │       │   ├── Katsuo treats Megumi as disposable study subject
+    │       │   ├── Cold departure after intimacy
+    │       │   └── OUTCOME: YAKUZA POWER FIGURE
+    │       │       ├── Detailed: Megumi's emptiness drives power hunger
+    │       │       ├── Uses student council skills for criminal hierarchy
+    │       │       ├── Creates destructive social influence networks
+    │       │       └── Becomes major criminal authority figure
+    │       │
+    │       └── HAS CONNECTION: ETHICAL CHOICE
+    │           │
+    │           ├── TRICKSTER PATH: DECEPTIVE GIFT
+    │           │   ├── Katsuo offers "powerful treasure"
+    │           │   ├── Ball contains deadly enchantment
+    │           │   └── OUTCOME: DISINTEGRATION DEATH
+    │           │       ├── Detailed: Megumi activates ball alone
+    │           │       ├── Supernatural energy consumes physical form
+    │           │       ├── No evidence remains of her existence
+    │           │       └── Katsuo maintains spiritual path through trickery
+    │           │
+    │           └── SAVIOR PATH: REDEMPTIVE SACRIFICE
+    │               ├── Katsuo uses spiritual energy to heal Megumi's nature
+    │               ├── Violates bodhisattva non-interference principles
+    │               └── OUTCOME: FIFTH TAIL SPLIT / HURRICANE
+    │                   ├── Detailed: Megumi becomes positive social force
+    │                   ├── Katsuo's fox form manifests corrupted fifth tail
+    │                   ├── Transformation into Kiko form
+    │                   ├── Unable to return to family or mission
+    │                   └── Self-destruction creates massive disaster
+    │                       ├── Hurricane Katsuo devastates region
+    │                       ├── Crater becomes spiritual anomaly site
+    │                       └── Megumi occasionally visits memorial shrine
+    │
+    └── EPILOGUE VARIATIONS
+        ├── Megumi as yakuza queen with distant memories
+        └── Hurricane devastation news
