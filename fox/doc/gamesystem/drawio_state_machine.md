@@ -7,7 +7,7 @@
   
 ---
 
-<img src="[https://github-production-user-asset-6210df.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg](https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
+<img src="[](https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg)" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
 
 <img src="([https://s3.amazonaws.com/github-production-user-asset-6210df.s3.amazonaws.com/146053189/433035431-8b6e74a8-3d59-4528-89c6-43a17fbe198d.jpg](https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg))" alt="Fox Spirit Logo" title="Fox Spirit Logo" width="400" />
 https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/482027663_1017995607049221_6274251029135830697_n.jpg
