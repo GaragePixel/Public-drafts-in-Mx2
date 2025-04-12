@@ -67,7 +67,7 @@ Horizontal Layout:
    	│       │       │   ├── [violentContentEnabled] → Because Megumi is pissed off that her friend is being insulted, she comes to beat up Hikari. The sequel, where Tatsuo erases everyone's memories, is told in pictures → End's game
    	│       │       │   └── [-violentContentEnabled] → The sequel, where Tatsuo erases everyone's memories, is told in pictures → End's game
    	│       │       └── [sexualContentEnabled] → Leads to SAVIOR PATH: REDEMPTIVE SACRIFICE
-	│    	└── Hikari do not choose to accuse Kazuko to be a Kitsune → Hikari interroge herself about the real goal of Kazuko/Katsuo and want to know more [Trust=true]
+	│    	└── Hikari do not choose to accuse Kazuko to be a Kitsune → Hikari interroge herself about the real goal of Kazuko/Katsuo and want to know more → [Trust=true]
 	│    	    ├── Cooking class: Akane complains about not being able to cook, and everyone laughs at her, but she burns herself and screams. She's furious and throws her utensils across the room before leaving. Hikari wants to join her in the hallway to take her to the infirmary, but she's too afraid of Akane and stays → Evening
    	│           └── Evening: Hikari thinks back to Akane, having qualms about the fact that, despite her fear, she should have joined Akane to accompany her to the infirmary. Hikari go back to the class room late in the everning, She finds it by chance Akane sleeping on her desk. She about to leave, but, being anyway scared by Akane, see some yokai invisible related to dreaming. Dependly the player's choice:
    	│               ├── Come near to Akane and wake her up → Player's choice
@@ -83,13 +83,13 @@ Horizontal Layout:
         │   │   │   └── [Chimerism Secret Condition] Hikari speaks about her chimerism to Kazuko (Hikari show him/her skin under her swimsuit, her skin is partially red like her left hand)
    	│   │   │       └── Hikari shares bullying history → Kazuko shows unexpected kindness, affinity +1, open [Stalker Arc]
         │   │   └── Hikari don't speak about Hikari's chimera skin
-        │   │       └── Open access to a new day sequence choosen randomly (but sequence #4 and #5)
+        │   │       └── Open access to a new day sequence choosen randomly (but sequence #4)
 	│   └── Isn't the 1st day in swimming class locked room → smalltalk dependly of the day sequence already played
 	│       ├── Some of the three sequences are completed
 	│       │   ├── [Interaction with "Kazuko"] was completed → Hikari interroge subtily Kazuko sonding his Katsuo true persona through Kizuko's interactions
 	│       │   ├── [Observation of Akane] was completed → Hikari interroge Kazuko about if Kazuko is dangerous even for girl, depits the Gang's mission to protect the girl gender
 	│       │   ├── [Dealing with Megumi's group] was completed → Hikari interroge Kazuko about why Kazuko found "her" place withing the Gang 
-	│       │   └── Open access to a new day sequence choosen randomly (but sequence #4 and #5)
+	│       │   └── Open access to a new day sequence choosen randomly (but sequence #4)
 	│       └── The three sequences are each completed
 	│           ├── Stalker Arc not done
 	│           │   ├── Hikari hasn't already show her chimerism at Kazuko → Kizako peeps and discovers the Hikari's chimerism → Goto [Chimerism Secret Condition]
@@ -106,7 +106,7 @@ Horizontal Layout:
 	│           ├── Stalker Arc completed → Depend of the player's choice and [Trust=null]
 	│   	    │   ├── The player make Hikari dislike Kizako and she very shy, distant from Kizako, Affinity -1
 	│   	    │   └── The player make Hikari like Kizako → She want discover his mission and the link with his "nocturnal activities"
-	│   	    │       └── Open access to the class room denonciation sequence (locked sequence #4)
+	│   	    │       └── Open access to the class room denonciation sequence (unlocks sequence #4)
 	│   	    └── Hikari has completed the Stalker Arc and [Trust=true]
 	│   	        ├── Gently conversation between Katuko and Hikari → Depend of the player last route
 	│   	        │   ├── Player has visited [Innocent Conversation]
@@ -121,7 +121,7 @@ Horizontal Layout:
 	│   		│       └── Hikari notices his disconfort (shyness) → Hikari try to know if Katsuo found Megumi pretty → Yes she is
 	│   		│	    ├── [sexualContentEnabled] Hikari precipited revelations because she wants to be like the other lucky girls → [Hikari: Path of the Dreams]
 	│   		│           └── But Kazuko tell he/she will protect Hikari about her chimerism → Affinity +1
-	│   		│  	            └── Allows to ends the current episode
+	│   		│  	        └── Allows to ends the current episode
 	│   		└── [Hikari: Path of the Dreams] If [sexualContentEnabled] Hikari follow her fantasm to engage Kitsuko/Katsuo in oral sex → leads to Megumi different endings paths dependly the current affinity score
 	│   		    ├── Very low Affinity Score → Bad Ending: Megumi Redemption Path
 	│    		    └── Else → Bad Ending: Megumi Disintegration Death
