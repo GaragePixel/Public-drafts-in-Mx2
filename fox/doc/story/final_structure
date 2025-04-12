@@ -2,25 +2,43 @@
 
 Horizontal Layout:
 
-1. PROLOGUE: SUMMER ENCOUNTER [July-August 1996] 
-   ├── Museum Direction-Giving
-   │   ├── Notice Katsuo's true form immediately
-   │   │   ├── Pretend not to notice → affinity +1
-   │   │   └── Show subtle recognition
-   │   └── Offer to guide him to the museum, affinity +1
-   │       ├── Ask about his interest in yokai → dialog
-   │       └── Keep conversation casual → dialog
-   └── Summer Search
-       ├── Research kitsune folklore intensively
-       │   ├── Learn about weaknesses (water, dogs)
-       │   └── Study historical yokai-human relationships
-       ├── Visit museum regularly → Meet caretaker
-       │   ├── Ask about new "employee" → Suspicion from caretaker
-       │   └── Show interest in artifacts → Glimpse Katsuo in fox form
-       └── Search streets for kitsune boy
-           └── Try to forget the encounter → Recurring dreams
+1. PROLOGUE: SUMMER ENCOUNTER
+├── Museum Direction-Giving
+│   └── Notice Katsuo's true form
+│       ├── Pretend not to notice → affinity +1
+│       │   └── Give the direction
+│       │       └── Goto [Summer Search]
+│       └── Show subtle recognition
+│           ├── Offer to guide him to the museum → affinity +1
+│           │   ├── Ask about his interest in yokai → dialog
+│           │   │   └── Goto [Summer Search]
+│           │   └── Keep conversation casual → dialog
+│           │       └── Goto [Summer Search]
+│           └── Give the direction
+│               └── Goto [Summer Search]
+│
+└── Summer Search (Show credit) - Wait at your meeting spot (Show credit)
+    ├── Research kitsune folklore branch already visited?
+    │   ├── true → [Back to Wait at meeting spot]
+    │   └── false → Research kitsune folklore intensively in libraries (Show credit)
+    ├── Learn about weaknesses (water, dogs)
+    │       │   └── [Loops back to Wait at meeting spot]
+    │       └── Study historical yokai-human relationships
+    │           └── [Loops back to Wait at meeting spot]
+    ├── Visit museum regularly branch already visited?
+    │   ├── true → [Back to Wait at meeting spot]
+    │   └── false → Visit museum regularly → Meet caretaker (Show credit)
+    │       ├── Ask about new "employee" → Suspicion from caretaker
+    │       │   └── [Loops back to Wait at meeting spot]
+    │       └── Show interest in artifacts → Feel Katsuo's presence
+    │           └── [Loops back to Wait at meeting spot]
+    └── Unlocked if research branch visited/unlocked if museum branch visited
+        ├── Try to forget the encounter → dream → [Dream "The boy"] unlocked 
+        │   └── [Next episode]
+        └── Continue my Journey
+            └── [Next episode]
 
-2. SCHOOL YEAR BEGINS: RECOGNITION [September 1996]
+2. SCHOOL YEAR AFTER SUMMER BREAK: RECOGNITION [September 1996 Week 1]
 	├── First Day Sequence
 	│   ├── Recognize Katsuo despite girl disguise
 	│   │   ├── Stare in shock
@@ -188,7 +206,7 @@ Horizontal Layout:
 	        │   └── Player can find and take the tufle hairs
 	        └── Hikari precipited revelations [sexualContentEnabled] → [Hikari: Path of the Dreams]
 
-3. SCHOOL FESTIVAL ARC [Culture Day - November 3, 1996]
+3. SCHOOL FESTIVAL ARC [Culture Day - Septembre 3, 1996 Week 2]
 	├── Committee Formation
 	│   ├── Leadership announcement
 	│   │   ├── Megumi revealed as class representative again → Authority position
@@ -344,7 +362,7 @@ Horizontal Layout:
 	            ├── No love yokai detected → Truth confirmation through supernatural perception
 	            └── Hikari's hidden satisfaction → Knowledge advantage gained
 
-4. INVESTIGATION & REVELATION [December 1996 - February 1997]
+4. INVESTIGATION & REVELATION [December 1996 - October 1997]
 	├── Akane Avoidance Period
 	│   ├── Post-breakdown tension
 	│   │   ├── Akane actively avoiding Hikari → Eye contact evasion
@@ -394,7 +412,7 @@ Horizontal Layout:
 	        ├── Secret defense of Hikari → Affinity +2
 	        └── Public defense → Gang conflict → Affinity +1
 
-5. WHITE DAY CELEBRATIONS [March 1997]
+5. WHITE DAY CELEBRATIONS [March 1997 Week 1]
    	│   └── Locked Sequence #5: Public bath
    	│       └── Hikari braves her fear and try to go in public bath
 	├── Chocolate Preparation [March 14]
@@ -433,7 +451,7 @@ Horizontal Layout:
 	        ├── Unguarded emotional response → Laughter
 	        └── True feelings revealed → "That girl is amazing! I love her! She's crazy!"
 
-6. CRISIS POINT: THE REVELATION [April 1997]
+6. CRISIS POINT: THE REVELATION [March 1997 Day 18]
 	├── Fake Suicide Preparation
 	│   ├── Location scouting
 	│   │   ├── School rooftop → Accessible but risky
@@ -467,7 +485,7 @@ Horizontal Layout:
 		    ├── Good Ending: Identity Merging
 		    └── Bad Ending: Death Path
 
-7. TRANSFORMATION JOURNEY [May 1997]
+7. TRANSFORMATION JOURNEY [March 1997 Week 3]
 	├── Pre-Hot Springs Phase
 	│   ├── Visit to Hikari's Father
 	│   │   ├── Katsuo's introduction as worker → New perspective
@@ -504,7 +522,7 @@ Horizontal Layout:
                         ├── Bad Ending: Tengu Devours Hikari
                         └── Perfect Ending: Failure to Save Hikari, Hikari save herself
 
-8. KODAMA TRANSFORMATION [June 1997]
+8. KODAMA TRANSFORMATION [March 1997 Week 3]
 	├── Forest Journey
 	│   ├── Path navigation
 	│   │   ├── Physical challenge → Human limitations
@@ -540,7 +558,7 @@ Horizontal Layout:
 	    └── Consciousness return
 	        └── Hikaro bacomes a Kitsune → Continue the journey
 
-9. NEW EXISTENCE [July-August 1997]
+9. NEW EXISTENCE [March 1997 Week 3]
 	├── Training and Integration
 	│   ├── Basic Movement Training
 	│   │   ├── Gymnastic background application → Affinity +1
