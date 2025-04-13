@@ -1,5 +1,5 @@
 # Character Dream Sequences
-*Implementation by iDkP from GaragePixel - 2025-04-13 - Aida v1.2*
+*Implementation by iDkP from GaragePixel - 2025-04-13 - Aida v4*
 
 ## Purpose
 This document presents a comprehensive collection of character dreams for Hikari, Katsuo, and Megumi, aligned with the Fox narrative's progression. These dreams provide insight into the characters' unconscious psychological processing of story events, revealing their fears, desires, transformations, and relationships through symbolic imagery.
