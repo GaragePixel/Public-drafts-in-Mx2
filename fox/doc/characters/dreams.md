@@ -1,5 +1,5 @@
 # Character Dreams Analysis Document
-*Implementation by iDkP from GaragePixel - 2025-04-13 - Aida v1.2*
+*Implementation by iDkP from GaragePixel - 2025-04-13 - Aida v4*
 
 ## Purpose
 This document presents a comprehensive dream analysis for the main characters of the Fox narrative, exploring their subconscious responses to story events. These dreams reveal inner conflicts, desires, fears, and symbolic representations that align with both Freudian and Jungian psychological frameworks.
