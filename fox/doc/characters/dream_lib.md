@@ -2120,3 +2120,261 @@ End
 This evolution creates a dream narrative arc that parallels and reinforces the main story progression.
 
 The dream symbol library and dreamer profile generator system provides a powerful framework for procedurally generating psychologically authentic dreams that align with character development and narrative progression. By combining structured symbolic elements with character-specific interpretation rules, the system creates meaningful dream experiences that enhance the storytelling experience.
+
+# Dream Image Combination Engine
+*Implementation by iDkP from GaragePixel - 2025-04-13 - Aida v1.2*
+
+## Purpose
+This document clarifies the core functionality of the Dream Image Combination Engine, which can operate independently of its interpretation module. The system's primary function is to combine dream image assets with metadata according to coherence rules, creating visually meaningful dream sequences that maintain psychological consistency without requiring explicit textual interpretation.
+
+## Functionality
+- Combine dream images based on symbol compatibility rules
+- Calculate coherence scores for image combinations
+- Apply character-specific visual affinities
+- Generate emergent visual symbolism through combinations
+- Support both narrative-aligned and free-form dream creation
+- Maintain psychological consistency with character profiles
+- Operate without requiring explicit textual interpretation
+
+## Implementation Notes
+
+The Dream Image Combination Engine can function independently from the interpretation system. The core functionality centers around the coherence calculation and image selection/combination:
+
+```monkey2
+' Core dream image combination without interpretation
+Function CombineDreamImages:DreamImageSet(character:String, imageAssets:DreamImageAsset[])
+	Local registry:DreamSymbolRegistry = GetRegistry()
+	Local dreamer:DreamerProfile = registry.GetDreamer(character)
+	
+	If dreamer = Null
+		Print("Error: Unknown dreamer profile '" + character + "'")
+		Return Null
+	Endif
+	
+	' Create result container
+	Local dreamSet:DreamImageSet = New DreamImageSet
+	dreamSet.images = imageAssets
+	dreamSet.dreamerID = character
+	
+	' Calculate core coherence metrics
+	dreamSet.coherenceScore = CalculateCoherence(imageAssets, dreamer)
+	dreamSet.compatibilityMatrix = CalculateCompatibilityMatrix(imageAssets)
+	dreamSet.emergentPatterns = IdentifyEmergentPatterns(imageAssets, dreamer)
+	
+	' Optional: Generate interpretation (can be skipped)
+	' dreamSet.interpretation = GenerateInterpretation(imageAssets, dreamer)
+	
+	Return dreamSet
+End
+
+' Calculate coherence between images for a character
+Function CalculateCoherence:Float(images:DreamImageAsset[], dreamer:DreamerProfile)
+	Local affinityScore:Float = 0.0
+	Local compatibilityScore:Float = 0.0
+	Local emotionalScore:Float = 0.0
+	
+	' Calculate character affinity (50% weight)
+	For Local i:Int = 0 Until images.Length
+		If images[i].metadata.characterAffinity.Contains(dreamer.id)
+			affinityScore += images[i].metadata.characterAffinity.Get(dreamer.id)
+		Endif
+	Next
+	affinityScore /= images.Length
+	
+	' Calculate symbol compatibility (30% weight)
+	Local registry:DreamSymbolRegistry = GetRegistry()
+	Local pairCount:Int = 0
+	
+	For Local i:Int = 0 Until images.Length
+		For Local j:Int = i + 1 Until images.Length
+			compatibilityScore += registry.GetCompatibility(
+				images[i].metadata.category,
+				images[j].metadata.category
+			)
+			pairCount += 1
+		Next
+	Next
+	
+	If pairCount > 0
+		compatibilityScore /= pairCount
+	Endif
+	
+	' Calculate emotional consistency (20% weight)
+	Local emotionCount:StringMap<Int> = New StringMap<Int>
+	Local totalEmotions:Int = 0
+	
+	For Local i:Int = 0 Until images.Length
+		Local emotion:String = images[i].metadata.emotionalTone
+		totalEmotions += 1
+		
+		If emotionCount.Contains(emotion)
+			emotionCount.Set(emotion, emotionCount.Get(emotion) + 1)
+		Else
+			emotionCount.Set(emotion, 1)
+		Endif
+	Next
+	
+	Local dominantCount:Int = 0
+	For Local count:Int = EachIn emotionCount.Values()
+		If count > dominantCount
+			dominantCount = count
+		Endif
+	Next
+	
+	If totalEmotions > 0
+		emotionalScore = Float(dominantCount) / totalEmotions
+	Endif
+	
+	' Calculate weighted total
+	Return (affinityScore * 0.5) + (compatibilityScore * 0.3) + (emotionalScore * 0.2)
+End
+```
+
+The key insight is that the image metadata itself contains the interpretative information. By carefully tagging each dream image with:
+
+1. Symbol category and subcategory
+2. Emotional tone
+3. Character affinities
+4. Psychological associations
+5. Visual traits
+
+...you effectively "pre-interpret" the images. The combination engine then ensures these pre-interpreted elements come together in psychologically coherent ways.
+
+## Technical Advantages
+
+### Pre-Interpreted Visual Language
+
+The system leverages pre-interpreted visual elements rather than generating explicit textual interpretations:
+
+```monkey2
+' Creating a pre-interpreted dream image asset
+Function CreatePreInterpretedImage:DreamImageAsset(id:String, path:String, category:String, name:String)
+	Local metadata:SymbolMetadata = New SymbolMetadata()
+	
+	' Basic metadata including implicit meaning
+	metadata.id = id
+	metadata.category = category
+	metadata.name = name
+	
+	' Character affinities determine relevance to each character
+	metadata.characterAffinity = New StringMap<Float>
+	metadata.characterAffinity.Set("hikari", 0.9)  ' Highly relevant to Hikari
+	metadata.characterAffinity.Set("katsuo", 0.6)  ' Moderately relevant to Katsuo
+	metadata.characterAffinity.Set("megumi", 0.4)  ' Less relevant to Megumi
+	
+	Return New DreamImageAsset(path, metadata)
+End
+```
+
+By setting appropriate metadata, the image itself carries its symbolic meaning. The combination engine ensures compatibility between these meanings without requiring explicit interpretation text.
+
+### Visual Emergence Through Combination
+
+The engine's real power comes from emergent visual symbolism that arises when compatible images are combined:
+
+```monkey2
+' Identify emergent visual patterns from image combinations
+Function IdentifyEmergentPatterns:EmergentPatterns(images:DreamImageAsset[], dreamer:DreamerProfile)
+	Local patterns:EmergentPatterns = New EmergentPatterns()
+	Local categories:StringSet = New StringSet()
+	
+	' Collect categories
+	For Local image:DreamImageAsset = EachIn images
+		categories.Insert(image.metadata.category)
+		If image.metadata.subcategory <> ""
+			categories.Insert(image.metadata.subcategory)
+		Endif
+	Next
+	
+	' Check for known emergent combinations
+	If categories.Contains("shadow") And categories.Contains("transformation")
+		patterns.AddPattern("shadow_transformation", "Identity emergence", 0.8)
+	Endif
+	
+	If categories.Contains("reflection") And categories.Contains("temporal")
+		patterns.AddPattern("temporal_reflection", "Self across time", 0.7)
+	Endif
+	
+	If categories.Contains("architectural") And categories.Contains("natural")
+		patterns.AddPattern("nature_structure", "Order vs. chaos", 0.7)
+	Endif
+	
+	Return patterns
+End
+```
+
+This means that when certain images are combined, new visual meanings emerge that weren't present in any individual image—creating a "dream narrative" through visual language alone.
+
+### Character-Authentic Visuality
+
+The system ensures that dream image combinations feel authentic to specific characters:
+
+```monkey2
+' Select character-authentic images
+Function SelectImagesForCharacter:DreamImageAsset[](character:String, availableImages:DreamImageAsset[], count:Int = 3)
+	Local dreamer:DreamerProfile = GetRegistry().GetDreamer(character)
+	If dreamer = Null Return Null
+	
+	' Sort available images by character affinity
+	Local sortedImages:List<DreamImageAsset> = New List<DreamImageAsset>
+	For Local image:DreamImageAsset = EachIn availableImages
+		sortedImages.AddLast(image)
+	Next
+	
+	sortedImages.Sort(Lambda:Int(a:DreamImageAsset, b:DreamImageAsset)
+		Local affinityA:Float = a.metadata.characterAffinity.Get(character, 0.1)
+		Local affinityB:Float = b.metadata.characterAffinity.Get(character, 0.1)
+		If affinityA > affinityB Return -1
+		If affinityA < affinityB Return 1
+		Return 0
+	End)
+	
+	' Select top N images with category diversity
+	Local selectedImages:DreamImageAsset[] = New DreamImageAsset[count]
+	Local usedCategories:StringSet = New StringSet()
+	Local index:Int = 0
+	
+	For Local image:DreamImageAsset = EachIn sortedImages
+		' Prefer category diversity
+		If Not usedCategories.Contains(image.metadata.category) Or usedCategories.Count() >= count
+			selectedImages[index] = image
+			usedCategories.Insert(image.metadata.category)
+			index += 1
+			
+			If index >= count Exit
+		Endif
+	Next
+	
+	Return selectedImages
+End
+```
+
+This approach ensures that even without explicit textual interpretation, the visual dream sequence will feel authentic to the character experiencing it.
+
+### Open-Ended Visual Experience
+
+By focusing on image combination without explicit interpretation, the system allows viewers to form their own conclusions:
+
+```monkey2
+' Display combined dream without interpretation
+Function PresentDreamSequence:Void(dreamSet:DreamImageSet)
+	Print("Dream sequence for " + dreamSet.dreamerID)
+	Print("Coherence score: " + dreamSet.coherenceScore)
+	Print("Images:")
+	
+	For Local i:Int = 0 Until dreamSet.images.Length
+		Print("  " + (i+1) + ". " + dreamSet.images[i].metadata.name)
+	Next
+	
+	Print("Emergent patterns:")
+	For Local pattern:String = EachIn dreamSet.emergentPatterns.patterns.Keys()
+		Print("  - " + pattern + ": " + dreamSet.emergentPatterns.patterns.Get(pattern))
+	Next
+	
+	' No explicit interpretation provided - viewer interprets visuals
+End
+```
+
+This approach makes the dream experience more interactive, allowing viewers to apply their own understanding to the pre-interpreted visual elements.
+
+In summary, yes - you can absolutely use the dream engine to combine images based on their metadata without generating explicit interpretations. The system is designed to create visually coherent dream sequences that maintain character authenticity through the image combinations themselves. The metadata and combination rules effectively "pre-interpret" the content, allowing viewers to experience the dream's meaning visually without requiring explanatory text.
