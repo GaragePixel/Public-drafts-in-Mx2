@@ -1,5 +1,5 @@
 # PC-98 Internet Capabilities
-*Implementation by iDkP from GaragePixel - 2025-04-13 - Aida v1.2*
+*Implementation by iDkP from GaragePixel - 2025-04-13 - Aida v4*
 
 ## Purpose
 This document provides technical context on the NEC PC-9800 series computers' internet capabilities, limitations, and considerations for historical accuracy in retro-styled visual novel implementations.
