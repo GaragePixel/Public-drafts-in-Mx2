@@ -24,7 +24,7 @@ Horizontal Layout:
     ├── Learn about weaknesses (water, dogs)
     │       │   └── [Loops back to Wait at meeting spot]
     │       └── Study historical yokai-human relationships
-    │           └── [Loops back to Wait at meeting spot]
+    │           └── [Loops back to Wait at meeting spot] 
     ├── Visit museum regularly branch already visited?
     │   ├── true → [Back to Wait at meeting spot]
     │   └── false → Visit museum regularly → Meet caretaker (Show credit)
