@@ -1,5 +1,5 @@
 # Dream Sequence Visualization Reference
-*Implementation by iDkP from GaragePixel - 2025-04-13 - Aida v1.2*
+*Implementation by iDkP from GaragePixel - 2025-04-13 - Aida v4*
 
 ## Purpose
 This document provides visualization guidance for key moments within character dream sequences, capturing symbolic imagery, emotional states, and metaphysical concepts in visual form. These image descriptions serve as reference points for artists developing illustrations for the narrative.
@@ -352,4 +352,7 @@ Dreams contain visual elements that subtly prefigure later narrative development
 - Early dreams contain glimpses of forms characters will later fully manifest
 - Color transitions mirror character arc progressions
 - Spatial relationships between characters in dreams reflect evolving relationships
+- Environmental transformations suggest world-level changes to come
+
+
 - Environmental transformations suggest world-level changes to come
