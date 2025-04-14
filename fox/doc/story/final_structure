@@ -469,21 +469,61 @@ Horizontal Layout:
 	│   └── Rooftop confrontation
 	│       ├── Emotional revelation before jump → Connection
 	│       └── Silent jump → Pure shock value
-	└── The Jump
-	    ├── Katsuo reveals true form to save Hikari
-	    │   ├── Admit trick immediately → Anger but respect
-	    │   │   ├── Confession of feelings → "I was born for you"
-	    │   │   └── Explanation of ability to see yokai → Information exchange
-	    │   └── Feign surprise at rescue → Suspicion and distrust
-	    │       ├── Gradual revelation of knowledge → Affinity -1
-	    │       └── Continue deception → Bad ending path
-	    └── Rooftop confession
-	        ├── Katsuo's amazement at Hikari's perception abilities
-	        ├── Hikari's desire to be with someone who shares her world
-	        └── Mutual fascination acknowledgment → Affinity +2
-		    ├── Bad Ending: Memory Erasure
-		    ├── Good Ending: Identity Merging
-		    └── Bad Ending: Death Path
+	├── The Jump
+	│   ├── Katsuo reveals true form to save Hikari
+	│   │   ├── Admit trick immediately → Anger but respect
+	│   │   │   ├── Confession of feelings → "I was born for you"
+	│   │   │   └── Explanation of ability to see yokai → Information exchange
+	│   │   └── Feign surprise at rescue → Suspicion and distrust
+	│   │       ├── Gradual revelation of knowledge → Affinity -1
+	│   │       └── Continue deception → Bad ending path
+	│   └── Rooftop confession
+	│       ├── Katsuo's amazement at Hikari's perception abilities
+	│       ├── Hikari's desire to be with someone who shares her world
+	│       └── Mutual fascination acknowledgment → Affinity +2
+	│	    ├── Bad Ending: Memory Erasure
+	│	    ├── Good Ending: Identity Merging
+	│	    └── Bad Ending: Death Path
+   	├── Rooftop to Rooftop Journey
+   	│   ├── Katsuo's invitation
+   	│   │   ├── "Do you feel up to holding onto me?" → Invitation to experience
+   	│   │   └── "I'll hold you so tightly with my tails" → Safety assurance
+   	│   ├── Travel experience
+   	│   │   ├── Initial fear → Overwhelming sensation
+   	│   │   ├── Eyes opening moment → Wonder discovery
+   	│   │   └── Shared perspective → "Feeling like a kitsune herself"
+   	│   └── Arrival at Katsuo's home
+   	│       ├── Environmental shift → From urban to private
+   	│       ├── Sanctuary revelation → Kitsune's true dwelling
+   	│       └── Boundary crossing → Human entering yokai space
+   	└── Night of Intimacy [sexualContentEnabled] [sexualContentSubstitutionSequenceEnabled]
+       	    ├── Fur Scarf Discussion
+       	    │   ├── Hikari's discovery of fur tufts → Curiosity
+       	    │   ├── Request to keep fur → Symbolic significance
+       	    │   │   ├── Katsuo's embarrassment → Cultural meaning revealed
+       	    │   │   └── Hikari's intention → "Keep it as a treasure"
+       	    │   └── Protective enchantment
+       	    │       ├── Emotional investment → Power source
+       	    │       └── Protective spell creation → Genuine amulet formation
+       	    ├── Physical Intimacy
+       	    │   ├── Initial hesitation
+       	    │   │   ├── Hikari's vulnerability → "I've already taken a pill"
+       	    │   │   └── Katsuo's unusual shyness → Experience/innocence contrast
+       	    │   ├── Form discussion
+	    │   │   ├── Katsuo's offer → "What appearance do you want me to use?"
+       	    │   │   └── Hikari's insistence → "I want you, Katsuo"
+       	    │   ├── True form connection
+       	    │   │   ├── "I see your illusions" → Perception confirmation
+       	    │   │   └── "I will look you in the eyes" → Acceptance of true nature
+       	    │   └── Intimate encounter
+       	    │       ├── Emotional breakthrough → "It feels like the first time"
+       	    │       ├── ASMR sensation shared → Deep neurological connection
+       	    │       └── Yokai manifestation → Red light formations
+       	    └── Relationship Declaration
+           	├── Katsuo's confession → "I want you as my companion"
+           	├── Acceptance exchange → "You're making my dream come true"
+           	├── Katsuo's vulnerability → "I think I'm done being a fool"
+           	└── Commitment sealing → "New plane of existence" promise
 
 7. TRANSFORMATION JOURNEY [March 1997 Week 3]
 	├── Pre-Hot Springs Phase
@@ -508,22 +548,53 @@ Horizontal Layout:
 	│           ├── Strategic absence → Conflict prevention
 	│           └── Information control → Limited knowledge distribution
 	└── Hot Springs Arrival
-	    ├── Protective Barrier Encounter
-	    │   ├── Barrier sensation → Supernatural boundary recognition
-	    │   └── Passage facilitation → Katsuo's guidance
-	    ├── Meeting Katsuo's Mother
-	    │   ├── Nine-tailed manifestation → Power display
-	    │   └── Reaction choice
-	    │       ├── Maintain composure → Affinity +1
-	    │       └── Show appropriate awe → Affinity +1
-	    └── Hot Spring Yokai Encounters
-	        └── Variety of supernatural beings → World expansion
-	            └── Tengu Confrontation
-                        ├── Bad Ending: Tengu Devours Hikari
-                        └── Perfect Ending: Failure to Save Hikari, Hikari save herself
+	│   ├── Protective Barrier Encounter
+	│   │   ├── Barrier sensation → Supernatural boundary recognition
+	│   │   └── Passage facilitation → Katsuo's guidance
+	│   ├── Meeting Katsuo's Mother
+	│   │   ├── Nine-tailed manifestation → Power display
+	│   │   └── Reaction choice
+	│   │       ├── Maintain composure → Affinity +1
+	│   │       └── Show appropriate awe → Affinity +1
+	│   └── Hot Spring Yokai Encounters
+	│       └── Variety of supernatural beings → World expansion
+	│           └── Tengu Confrontation
+        │               ├── Bad Ending: Tengu Devours Hikari
+        │               └── Perfect Ending: Failure to Save Hikari, Hikari save herself
+        ├── Fiancée Conflict
+        │   ├── Initial Confrontation
+        │   │   ├── Surprise attack → Territorial challenge
+        │   │   └── Power disparity → Three-tail versus human
+        │   ├── Katsuo's Intervention
+        │   │   ├── Protection provision → Safety establishment
+        │   │   └── Response options
+        │   │       ├── Express independent spirit → Self-reliance +1
+        │   │       ├── Show gratitude → Protection path +1
+        │   │       └── Express empathy for rival → Understanding path +1
+        │   └── Conflict Assessment
+        │       ├── Relationship focus → Connection strengthening +1
+        │       ├── Cultural analysis → Context understanding +1
+        │       └── Security concerns → Protective planning +1
+   	└── Kodama Journey Preparation
+       	    ├── Forest travel planning
+       	    │   ├── Preparation approach
+       	    │   │   ├── Research focus → Knowledge path +1
+       	    │   │   ├── Intuition reliance → Spiritual path +1
+       	    │   │   └── Guidance request → Support path +1
+       	    │   └── Journey significance
+       	    │       ├── Transformation potential → Identity change
+       	    │       └── Point of no return → Final commitment
+       	    ├── Ritual preparation
+       	    │   ├── Mental preparation → Psychological readiness
+       	    │   └── Physical preparation → Endurance building
+            └── Ready for the journey (goto episode 8)
 
 8. KODAMA TRANSFORMATION [March 1997 Week 3]
 	├── Forest Journey
+       	│   ├── Depart (that way, allows to finish the last episode without passing variables)
+       	│   │   ├── Hikari is accompagned by Katsuo and his sister → Cultural integration
+	│   │   ├── Hikari is accompagned by Katsuo → Relationship affirmation
+	│   │   └── Hikari go in solo → Individual expression
 	│   ├── Path navigation
 	│   │   ├── Physical challenge → Human limitations
 	│   │   └── Spiritual markers → Yokai guidance
@@ -541,29 +612,44 @@ Horizontal Layout:
 	│       ├── Past link disclosure → Hidden history
 	│       └── Transformation potential → Identity integration
 	└── Consciousness Journey
-	    ├── Self-boundary dissolution
-	    │   ├── Identity challenge → Ego transcendence
-	    │   └── Memory integration → Collective experience
-	    ├── Sister essence encounter
-	    │   ├── Response options
-	    │   │   ├── Complete embrace → Affinity +1
-	    │   │   ├── Analytical distance → Affinity +1
-	    │   │   └── Resistance → Failed transformation → DEATH END
-	    │   └── Essence integration
-	    │       ├── Memory absorption → Knowledge transfer
-            │       ├── Bad Ending: Missing Katsuo's Fur Scarf
-            │       │   └── Bad Ending: Consciousness Dissolution
-            │       └── Identity merging → Being expansion
-            │           └── Perfect Ending: Sister Essence Fusion
-	    └── Consciousness return
-	        └── Hikaro bacomes a Kitsune → Continue the journey
+	│   ├── Self-boundary dissolution
+	│   │   ├── Identity challenge → Ego transcendence
+	│   │   └── Memory integration → Collective experience
+	│   ├── Sister essence encounter
+	│   │   ├── Response options
+	│   │   │   ├── Complete embrace → Affinity +1
+	│   │   │   ├── Analytical distance → Affinity +1
+	│   │   │   └── Resistance → Failed transformation → DEATH END
+	│   │   └── Essence integration
+	│   │       ├── Memory absorption → Knowledge transfer
+        │   │       ├── Bad Ending: Missing Katsuo's Fur Scarf
+        │   │       │   └── Bad Ending: Consciousness Dissolution
+        │   │       └── Identity merging → Being expansion
+        │   │           └── Perfect Ending: Sister Essence Fusion
+	│   └── Consciousness return
+	│       └── Hikaro bacomes a Kitsune → Continue the journey
+   	└── Transformation Aftermath
+	    ├── Revelation approach
+	    │   ├── Playful surprise → Joy path +1
+	    │   ├── Careful demonstration → Measured path +1
+	    │   └── Vulnerable confession → Emotional path +1
+	    ├── Katsuo's reaction
+	    │   ├── Overwhelming joy → Deep acceptance
+	    │   └── Protective response → Future planning
+	    └── Identity integration
+	        ├── Human aspect preservation → Memory maintenance
+	        └── Yokai aspect activation → Power awakening
 
 9. NEW EXISTENCE [March 1997 Week 3]
 	├── Training and Integration
 	│   ├── Basic Movement Training
-	│   │   ├── Gymnastic background application → Affinity +1
-	│   │   ├── Disciplined practice → Affinity +1
-	│   │   └── Emotional response → Affinity +1
+	│   │   ├── Approach selection
+	│   │   │   ├── Gymnastic background application → Adaptation +1
+	│   │   │   ├── Disciplined practice → Persistence +1
+	│   │   │   └── Emotional response → Intervention needed +1
+	│   │   └── Environmental navigation
+	│   │       ├── Tree movement → Natural integration
+	│   │       └── Dimensional perception → Reality layer navigation
 	│   ├── Tail Training
 	│   │   ├── Development approach
 	│   │   │   ├── Limitation pushing → Affinity +1
@@ -582,24 +668,53 @@ Horizontal Layout:
 	│           └── Status negotiation → Hierarchy placement
 	└── Final Confrontation
 	    ├── Fiancée Return
-	    │   ├── Challenge issuance → Honor contest
-	    │   └── Territory claim → Relationship dispute
-	    ├── Combat Approach
-	    │   ├── Strategy selection
-	    │   │   ├── Power demonstration → Affinity +1
-	    │   │   ├── Strategic engagement → Affinity +1
-	    │   │   └── Peaceful attempt → Affinity +1
-	    │   └── Ability utilization
-	    │       ├── New power application → Transformation validation
-	    │       └── Human-yokai integration → Unique advantage
-	    └── Resolution Processing
-	        ├── Emotional response
-	        │   ├── Pride expression → Affinity +1
-	        │   ├── Compassion demonstration → Affinity +1
-	        │   └── Security emphasis → Affinity +1
-	        └── Status confirmation
-	            ├── Position establishment → Hierarchy clarification
-	            └── Respect earning → Community acceptance
+	    │   ├── Combat challenge
+	    │   │   ├── Challenge issuance → Honor contest
+	    │   │   └── Territory claim → Relationship dispute
+	    │	└── Resolution Processing
+	    │	    │   ├── Emotional response
+	    │	    │   ├── Pride expression → Affinity +1
+	    │	    │   ├── Compassion demonstration → Affinity +1
+	    │	    │   └── Security emphasis → Affinity +1
+	    │	    └── Status confirmation
+	    │	        ├── Position establishment → Hierarchy clarification
+	    │	        └── Respect earning → Community acceptance
+	    ├── Future Foundation
+	    │   ├── Inheritance Discussion
+	    │   │   ├── Response options
+	    │   │   │   ├── Responsibility acceptance → Succession path +1
+	    │   │   │   ├── Compromise suggestion → Balance path +1
+	    │   │   │   └── Inheritance decline → Independence path +1
+	    │   │   └── Future role definition
+	    │   │       ├── Duty assignment → Function clarity
+	    │   │       └── Expectation establishment → Boundary setting
+	    │   ├── Matting Ceremony
+	    │   │   ├── Ceremonial style
+	    │   │   │   ├── Traditional yokai → Affinity +1
+	    │   │   │   ├── Hybrid elements
+	    │   │   │   └── Intimate simplicity
+	    │   │   └── Union symbolism
+	    │   │       ├── Partnership representation → Affinity +1
+	    │   │       └── Community integration
+	    │   └── Mission Revelation
+	    │       ├── True purpose disclosure → Katsuo's secret assignment hints
+	    │       └── Path determination based on cumulative choices
+	    │           ├── Partnership Path → Perfect ending (highest scores)
+	    │           ├── Support Path → Near-perfect ending (medium scores)
+	    │           └── Caution Path → Good ending (minimum requirements)
+	    └── Epilogue Options
+	        ├── Partnership Path (True Perfect Ending)
+	        │   ├── Complete integration → Human-yokai bridge
+	        │   ├── Mission transformation → Purpose evolution
+	        │   └── New balance creation → Harmonious future
+	        ├── Support Path (Near-Perfect Ending)
+	        │   ├── Successful adaptation → Functional integration
+	        │   ├── Mission acceptance → Purpose continuation
+	        │   └── Stable foundation → Sustainable future
+	        └── Caution Path (Good Ending)
+	            ├── Minimal integration → Identity maintenance
+	            ├── Mission assistance → Supporting role
+	            └── Traditional structure → Conventional future
 
 Vertical Layout 
 
