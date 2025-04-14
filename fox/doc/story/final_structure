@@ -206,7 +206,13 @@ Ep1
 	        │   │   ├── Detect regular feeding pattern → Serial predation
 	        │   │   └── Recognize specific targeting → Victim selection criteria
 	        │   └── Player can find and take the tufle hairs
-	        └── Hikari precipited revelations [sexualContentEnabled] → [Hikari: Path of the Dreams]
+           	└── Emotional processing
+               	    ├── Jealousy response → Relationship questioning
+               	    │   ├── Focus on romantic betrayal → Miss predatory nature → Vulnerability increase
+                    │   └── Interpret as necessary feeding → Rationalization → Ethical compromise
+                    └── Fear response → Self-protective focus
+                       ├── Distance from Katsuo/Kazuko → Safety but isolation → Branch to bad ending
+                       └── Cautious continued engagement → Strategic information gathering → Branch to revelation arc
 
 Ep2
 
@@ -337,34 +343,50 @@ Ep2
 	│           ├── Gang members watching footage → Reinforcing power
 	│           └── Kazuko's subtle discomfort → Hidden reluctance
 	└── Reflection Pool Encounter
-	    ├── Setting elements
-	    │   ├── School entrance chōzu-bachi (water basin) → Traditional feature
-	    │   ├── Moonlight illumination → Mystical atmosphere
-	    │   └── Private location → Rare moment without surveillance
-	    ├── Kazuko's temporary escape
-	    │   ├── Bathroom excuse to leave gang → Brief freedom
-	    │   └── Moment of reflection → Decompression after trauma
-	    ├── Reflection revelation
-	    │   ├── Katsuo's true form visible in water → Moonlight magic effect
-	    │   │   ├── Male silhouette behind female image → Dual identity visible
-	    │   │   └── Hikari's unique perception → Connection to supernatural
-	    │   └── Hikari's arrival and observation → Quiet approach
-	    └── Critical conversation
-	        ├── Initial confrontation
-	        │   ├── Hikari's direct question → "You don't really like what you're doing?"
-	        │   └── Kazuko's defensive response → "Serving justice! The victim is in hospital."
-	        ├── Ideology exchange
-	        │   ├── Hikari's challenge → "There are other ways to push someone to suicide."
-	        │   ├── Kazuko's justification → "I'm helping Megumi. She's suffering."
-	        │   ├── Hikari's insight → "You're not really her right-hand man."
-	        │   └── Kazuko's philosophy → "Humanity is shit. You're not part of the shit."
-	        ├── Love question climax
-	        │   ├── Hikari's final question → "Are you in love with Megumi?"
-	        │   ├── Kazuko's surprised reaction → Defensive deflection
-	        │   └── "Haha, yeah, that must be it! They say love makes you blind!"
-	        └── Unspoken revelation
-	            ├── No love yokai detected → Truth confirmation through supernatural perception
-	            └── Hikari's hidden satisfaction → Knowledge advantage gained
+	│   ├── Setting elements
+	│   │   ├── School entrance chōzu-bachi (water basin) → Traditional feature
+	│   │   ├── Moonlight illumination → Mystical atmosphere
+	│   │   └── Private location → Rare moment without surveillance
+	│   ├── Kazuko's temporary escape
+	│   │   ├── Bathroom excuse to leave gang → Brief freedom
+	│   │   └── Moment of reflection → Decompression after trauma
+	│   ├── Reflection revelation
+	│   │   ├── Katsuo's true form visible in water → Moonlight magic effect
+	│   │   │   ├── Male silhouette behind female image → Dual identity visible
+	│   │   │   └── Hikari's unique perception → Connection to supernatural
+	│   │   └── Hikari's arrival and observation → Quiet approach
+	│   └── Critical conversation
+	│       ├── Initial confrontation
+	│       │   ├── Hikari's direct question → "You don't really like what you're doing?"
+	│       │   └── Kazuko's defensive response → "Serving justice! The victim is in hospital."
+	│       ├── Ideology exchange
+	│       │   ├── Hikari's challenge → "There are other ways to push someone to suicide."
+	│       │   ├── Kazuko's justification → "I'm helping Megumi. She's suffering."
+	│       │   ├── Hikari's insight → "You're not really her right-hand man."
+	│       │   └── Kazuko's philosophy → "Humanity is shit. You're not part of the shit."
+	│       ├── Love question climax
+	│       │   ├── Hikari's final question → "Are you in love with Megumi?"
+	│       │   ├── Kazuko's surprised reaction → Defensive deflection
+	│       │   └── "Haha, yeah, that must be it! They say love makes you blind!"
+	│       └── Unspoken revelation
+	│           ├── No love yokai detected → Truth confirmation through supernatural perception
+	│           └── Hikari's hidden satisfaction → Knowledge advantage gained
+	└── Akane's Secret Breakdown
+	    ├── Festival aftermath walkthrough
+	    │   ├── Students dismantling installations → Post-celebration melancholy
+	    │   └── Yokai observation → Familiar deep sadness patterns detected
+	    ├── Tracking sad yokai trail
+	    │   ├── Increasing concentration → Following emotional beacon
+	    │   ├── Recognition of specific yokai type → Same as Hikari's past bullying experience
+	    │   └── Path leading to hidden room → Under staircase hermitage
+	    ├── Akane's vulnerability discovered
+	    │   ├── Powerful emotional scene → Akane sobbing at service sink
+	    │   ├── Self-reflection moment → Mirror symbolism
+	    │   └── Hidden pain revealed → Contrast to public strength
+	    └── Confrontation aftermath
+	        ├── Akane's discovery of witness → Surprise turning to rage
+	        ├── Transformation of vulnerability to hatred → Defensive mechanism
+	        └── Hikari's fearful retreat → Relationship fracture point
 
 Ep3
 
@@ -387,8 +409,7 @@ Ep3
 	│   │   └── Witness love hotel encounters → Complex feelings
 	│   ├── Follow "Kazuko" after school
 	│   │   ├── Observe interaction with Megumi → Power dynamics
-	│   │   ├── Observe telephone cabin call → Solitary mission confirmation
-	│   │   └── Glimpse transformation moment → Near discovery
+	│   │   └── Observe telephone cabin call → Solitary mission confirmation
 	│   └── Stalking Evidence Path
 	│       ├── Bad Ending: Hunter Death Ending
 	│       └── Bad Ending: Memory Erasure
@@ -409,18 +430,62 @@ Ep3
 	│           ├── Perception challenge → Ability testing
 	│           ├── Entity identification → Knowledge application
 	│           └── Significance interpretation → Seasonal power surge
-	└── Growing Tensions with Revengeful Girls
-	    ├── Megumi's fear of losing Kazuko
-	    │   ├── Increased monitoring → Constant surveillance
-	    │   ├── Strategic isolation attempts → Separating Kazuko from others
-	    │   └── Performance of perfection → Desperate approval seeking
-	    └── "Kazuko's" protective intervention
-	        ├── Secret defense of Hikari → Affinity +2
-	        └── Public defense → Gang conflict → Affinity +1
+	├── Growing Tensions with Revengeful Girls
+	│   ├── Megumi's fear of losing Kazuko
+	│   │   ├── Increased monitoring → Constant surveillance
+	│   │   ├── Strategic isolation attempts → Separating Kazuko from others
+	│   │   └── Performance of perfection → Desperate approval seeking
+	│   └── "Kazuko's" protective intervention
+	│       ├── Secret defense of Hikari → Affinity +2
+	│        └── Public defense → Gang conflict → Affinity +1
+   	├── Akane Reconciliation Scene
+   	│   ├── Chores duty encounter
+   	│   │   ├── Empty classroom setting → Rare private opportunity
+   	│   │   └── Trapped together → Forced interaction
+   	│   ├── Critical conversation
+   	│   │   ├── Akane's acknowledgment → "I don't care what you think of me, but you're not like them."
+   	│   │   ├── Yokai observation → Mixture of unhappiness and determination
+   	│   │   └── Silent understanding → Mutual recognition of outsider status
+   	│   └── Emotional resolution
+   	│       ├── Proximity tension → Bodies close, eyes averted
+   	│       ├── Shy smile exchange → Subtle connection formed
+   	│       └── Hikari's relief → Emotional burden lifted
+   	├── The Violent Confrontation
+   	│   ├── Supernatural phenomenon onset
+   	│   │   ├── Powerful flash and thunderclap → Material/yokai world overlap
+   	│   │   ├── Hikari's confusion → Questioning perception boundaries
+   	│   │   └── Thick rain of yokai → Environmental disturbance
+   	│   ├── School yard conflict
+   	│   │   ├── Student commotion → "Fight of the century"
+   	│   │   ├── Akane versus Tanaka (karate club member) → Physical power imbalance
+   	│   │   └── Initial struggle → Male physical advantage
+   	│   ├── Supernatural manifestation
+   	│   │   ├── Akane's rage unleashed → Unprecedented energy surge
+   	│   │   ├── Lightning discharges of blue electric yokai → Visible to Hikari only
+   	│   │   ├── Deep thunderous vibrations → Physical manifestation of spiritual power
+   	│   │   └── Light streams of millions of yokai → Akane's hidden potential revealed
+   	│   └── Audience reactions
+   	│       ├── Revengeful Girls observation → Strategic interest
+   	│       ├── Megumi's celebration → Black glow surrounded by morbid yokai
+   	│       ├── Kazuko's sociopathic observation → Yokai-free bubble surrounding
+   	│       └── Hikari's shocked recognition → "What's really going on?"
+   	└── Akane's Arrest and Disappearance
+   	    ├── Authority intervention
+   	    │   ├── Police arrival → Forceful restraint
+   	    │   ├── Paramedics treating Tanaka → Severity acknowledgment
+   	    │   └── Akane's resistance → Futile struggle
+   	    └── Megumi's ominous celebration
+   	        ├── Disturbing dance and laughter → "I found her, Kazuko!"
+   	        ├── "War against guardian sons of the sun" reference → Larger conspiracy hint
+   	        └── Kazuko's controlled observation → Hidden agenda suggestion
 
 5. WHITE DAY CELEBRATIONS [March 1997 Week 1]
-   	│   └── Locked Sequence #5: Public bath
-   	│       └── Hikari braves her fear and try to go in public bath
+   	├── Akane's absence
+   	│   ├── Rumors circulating → Various speculations
+   	│   ├── Megumi's increased confidence → Power shift
+   	│   └── Hikari's growing concern → Connection solidified
+   	├── Locked Sequence #5: Public bath
+   	│   └── Hikari braves her fear and try to go in public bath
 	├── Chocolate Preparation [March 14]
 	│   ├── Fox-shaped chocolate making
 	│   │   ├── Mold selection → Various fox designs
@@ -453,9 +518,12 @@ Ep3
 	    │   ├── Kazuko's separation from group → Moment of privacy
 	    │   ├── Chocolate examination → Discovery of fox shapes
 	    │   └── Yokai reactions → Amusement and irony
-	    └── Katsuo's genuine reaction
-	        ├── Unguarded emotional response → Laughter
-	        └── True feelings revealed → "That girl is amazing! I love her! She's crazy!"
+	    ├── Katsuo's genuine reaction
+	    │   ├── Unguarded emotional response → Laughter
+	    │   └── True feelings revealed → "That girl is amazing! I love her! She's crazy!"
+       	    └── Decision reinforcement
+		├── Confidence in pursuing relationship → Strategy validation
+           	└── Commitment to revelation plan → Determination +1
 
 Ep4
 
@@ -623,7 +691,7 @@ Ep6
 	│   └── Sister connection revelation
 	│       ├── Past link disclosure → Hidden history
 	│       └── Transformation potential → Identity integration
-	└── Consciousness Journey
+	├── Consciousness Journey
 	│   ├── Self-boundary dissolution
 	│   │   ├── Identity challenge → Ego transcendence
 	│   │   └── Memory integration → Collective experience
