@@ -1,0 +1,1324 @@
+<mxGraphModel dx="3340" dy="3213" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="start" value="2. SCHOOL YEAR BEGINS: RECOGNITION AFTER SUMMER BREAK [September 1996]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9EAD3;strokeColor=#6AA84F;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-502.5" y="-1320" width="440" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="first_day" value="First Day Sequence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#E69138;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-381.5" y="-1160" width="200" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#6AA84F;strokeWidth=2;endArrow=block;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="first_day">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points" />
+        <mxPoint x="-282.5" y="-1360" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="revengeful_girls" value="Revengeful Girls Introduction" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#E69138;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="300" y="-440" width="200" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#6AA84F;strokeWidth=2;endArrow=block;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.568;exitY=0.769;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="YTxgUdecIhsh6MSupuD--15" target="revengeful_girls">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="120" y="-410" />
+        </Array>
+        <mxPoint x="-129.99820800781248" y="120" as="sourcePoint" />
+        <mxPoint x="127.29000000000002" y="-380" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-17" target="classroom">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="classroom" value="Classroom Dynamics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;gradientColor=#b3b3b3;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="960" y="1450" width="280" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="recognize_katsuo" value="Recognize Katsuo despite girl disguise" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-421.5" y="-1060" width="280" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;" edge="1" parent="1" source="first_day" target="recognize_katsuo">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="stare_shock" target="oThcQPZ6gyME7MHl_bQJ-146">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="-390" y="-900" />
+          <mxPoint x="-454" y="-900" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="stare_shock" target="oThcQPZ6gyME7MHl_bQJ-145">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="-390" y="-900" />
+          <mxPoint x="-327" y="-900" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="stare_shock" value="Stare in shock" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-459.5" y="-960" width="140" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BF9000;strokeWidth=2;endArrow=block;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="recognize_katsuo" target="stare_shock">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="-282" y="-990" />
+          <mxPoint x="-389" y="-990" />
+          <mxPoint x="-389" y="-960" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="YTxgUdecIhsh6MSupuD--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-131" target="oThcQPZ6gyME7MHl_bQJ-188">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-272" y="-560" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="-179" y="-620" />
+          <mxPoint x="-270" y="-620" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="pretend_not_notice" value="Pretend not to notice" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="-279.5" y="-960" width="200" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BF9000;strokeWidth=2;endArrow=block;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="recognize_katsuo" target="pretend_not_notice">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-262" y="-990" as="sourcePoint" />
+        <mxPoint x="-169.96666666666647" y="-930" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="hallway_incident" value="Hallway Incident Observation" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="300" y="-350" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="revengeful_girls" target="hallway_incident">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="edge13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.735;exitY=0.473;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-6" target="swimming_class">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="640" y="20" />
+          <mxPoint x="640" y="-410" />
+        </Array>
+        <mxPoint x="560" y="20" as="sourcePoint" />
+        <mxPoint x="680" y="-20" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="swimming_class" value="Swimming Class Locker Room" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1040" y="-440" width="200" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="stalker_arc" value="Stalker Route" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#E69138;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="710" y="1450" width="200" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="seq1" target="-lI9Aj5_EctjhPI-f3sV-13">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="seq1" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;[Sequence #1 - Interaction with &quot;Kazuko&quot;]&lt;/font&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1840" y="-380" width="280" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;" edge="1" parent="1" source="classroom" target="seq1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1640" y="1480" />
+          <mxPoint x="1640" y="-340" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="seq2" target="-lI9Aj5_EctjhPI-f3sV-13">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="seq2" value="[Sequence #2 - Observation of Akane]&lt;div&gt;Unlock Akane Cyan&lt;/div&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1840" y="560" width="280" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;" edge="1" parent="1" source="classroom" target="seq2">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1640" y="1480" />
+          <mxPoint x="1640" y="600" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="YTxgUdecIhsh6MSupuD--22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-13" target="swimming_class">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1780" y="-410" />
+          <mxPoint x="1780" y="-410" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="seq3" value="[Sequence #3 - Dealing with Megumi&#39;s group]" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1840" y="40" width="280" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;" edge="1" parent="1" source="classroom" target="seq3">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1640" y="1480" />
+          <mxPoint x="1640" y="80" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="seq4" value="[Locked Sequence #5 - Accusation]" style="ellipse;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;strokeWidth=2;fontColor=#ffffff;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="1840" y="2400" width="280" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;dashed=1;" edge="1" parent="1" source="classroom" target="-lI9Aj5_EctjhPI-f3sV-10">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1640" y="1480" />
+        </Array>
+        <mxPoint x="1640" y="2230" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="initial_discovery" value="Initial Discovery Phase" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="360" y="1720" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;" edge="1" parent="1" source="stalker_arc" target="initial_discovery">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="810" y="1660" />
+          <mxPoint x="440" y="1660" />
+        </Array>
+        <mxPoint x="590" y="1750.0000000000005" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="surveillance" value="Surveillance Planning" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="580" y="1720" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge21" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="initial_discovery" target="surveillance">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points" />
+        <mxPoint x="660" y="1720" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="active_stalking" target="-lI9Aj5_EctjhPI-f3sV-67">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="active_stalking" value="Active Stalking Phase" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="790" y="1720" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="surveillance" target="active_stalking">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="770" y="1760" />
+          <mxPoint x="770" y="1760" />
+        </Array>
+        <mxPoint x="870" y="1720" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="YTxgUdecIhsh6MSupuD--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="first_day_swim" target="YTxgUdecIhsh6MSupuD--5">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="first_day_swim" value="It&#39;s the 1st day in swimming class locker room" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1340" y="-360" width="240" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;" edge="1" parent="1" source="swimming_class" target="first_day_swim">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1140" y="-320" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="not_first_day" value="Isn&#39;t the 1st day in swimming class locker room" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="700" y="-360" width="240" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge25" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;" edge="1" parent="1" source="swimming_class" target="not_first_day">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1140" y="-320" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="accuse" value="Hikari choose to accuse Kazuko to be a Kitsune" style="ellipse;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="2315" y="2320" width="280" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="edge26" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#B20000;strokeWidth=2;endArrow=block;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="seq4" target="accuse">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="2200" y="2440" />
+          <mxPoint x="2200" y="2365" />
+        </Array>
+        <mxPoint x="2070.0000000000005" y="2411.4" as="sourcePoint" />
+        <mxPoint x="2330" y="2410" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="Ace5xR1LHSnT-7cjZg9--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="no_accuse" target="Ace5xR1LHSnT-7cjZg9--4">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="2310" y="2720" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="no_accuse" value="Hikari do not choose to accuse Kazuko to be a Kitsune → [Trust=true]" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="2320" y="2480" width="270" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2D7600;strokeWidth=2;endArrow=block;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="seq4" target="no_accuse">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="2200" y="2440" />
+          <mxPoint x="2200" y="2520" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="dreams_path" value="[Hikari: Path of the Dreams] [sexualContentEnabled]" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="585" y="810" width="190" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="edge29" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#006EAF;strokeWidth=2;endArrow=block;fontColor=#000000;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="fRe2bDUgUzZN3rVpKoHY-3" target="dreams_path">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="680" y="560" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="end_game" value="End Game" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e51400;strokeColor=#B20000;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="2550" y="2680" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#B20000;strokeWidth=2;endArrow=block;fontColor=#000000;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="accuse" target="end_game">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="2750" y="2365" />
+          <mxPoint x="2750" y="2720" />
+        </Array>
+        <mxPoint x="2610" y="2410" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="endings" value="Megumi Different Endings" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="580" y="890" width="200" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="edge31" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#001DBC;strokeWidth=2;endArrow=block;fontColor=#000000;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dreams_path" target="endings">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="800" y="730" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="witness_punishment" value="Witness punishment scene → Justice perspective" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="300" y="-240" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge32" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BF9000;strokeWidth=2;endArrow=block;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hallway_incident" target="witness_punishment">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="note_leadership" value="Note Megumi&#39;s leadership style → Authority assessment" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="300" y="-130" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge33" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BF9000;strokeWidth=2;endArrow=block;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="witness_punishment" target="note_leadership">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="observe_advisory" target="oThcQPZ6gyME7MHl_bQJ-88">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="observe_advisory" value="Observe Kazuko&#39;s advisory role → Strategic insight" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="300" y="-20" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="edge34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BF9000;strokeWidth=2;endArrow=block;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="note_leadership" target="observe_advisory">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="YTxgUdecIhsh6MSupuD--1" value="Open access to a new day sequence choosen randomly (but sequence #4)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="980" y="1280" width="240" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="YTxgUdecIhsh6MSupuD--7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YTxgUdecIhsh6MSupuD--5" target="oThcQPZ6gyME7MHl_bQJ-46">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="YTxgUdecIhsh6MSupuD--5" value="Hikari keep her special condition secret from Kazuko" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1360" y="-50" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="YTxgUdecIhsh6MSupuD--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-8" target="stalker_arc">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="YTxgUdecIhsh6MSupuD--8" value="Open access to the stalker route" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="690" y="1280" width="240" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="YTxgUdecIhsh6MSupuD--15" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
+      <mxGeometry x="110.00179199218752" y="110" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="Ace5xR1LHSnT-7cjZg9--1" value="" style="ellipse;" vertex="1" parent="1">
+      <mxGeometry x="-297.5" y="-1420" width="30" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="Ace5xR1LHSnT-7cjZg9--2" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;html=1;backgroundOutline=1;" vertex="1" parent="1">
+      <mxGeometry x="1890" y="2625" width="30" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="Ace5xR1LHSnT-7cjZg9--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ace5xR1LHSnT-7cjZg9--1" target="start">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="Ace5xR1LHSnT-7cjZg9--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ace5xR1LHSnT-7cjZg9--4" target="Ace5xR1LHSnT-7cjZg9--2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="Ace5xR1LHSnT-7cjZg9--4" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;TO EPISODE 2&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;gradientColor=#97d077;" vertex="1" parent="1">
+      <mxGeometry x="2030" y="2600" width="280" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="SpOcRDME1MZ-pJPI3-6a-2" value="End of the revelations&amp;nbsp;&lt;div&gt;from the stalker route&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="500" y="2230" width="200" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-2" target="YTxgUdecIhsh6MSupuD--8">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="820" y="910" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-60" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-lI9Aj5_EctjhPI-f3sV-4">
+      <mxGeometry x="-0.4145" y="-3" relative="1" as="geometry">
+        <mxPoint x="3" y="-7" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-2" value="Kazuko knows about Hikari&#39;s chimera" style="rectangle;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="710" y="1120" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2D7600;strokeWidth=2;endArrow=block;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="-lI9Aj5_EctjhPI-f3sV-63" source="-lI9Aj5_EctjhPI-f3sV-54">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="870" y="380" as="sourcePoint" />
+        <Array as="points">
+          <mxPoint x="950" />
+          <mxPoint x="810" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-58" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-lI9Aj5_EctjhPI-f3sV-3">
+      <mxGeometry x="-0.6919" y="-4" relative="1" as="geometry">
+        <mxPoint x="-40" y="4" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-6" value="First day of swimming pool class &#xa;since the summer break" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
+      <mxGeometry x="630" y="10" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.354;entryY=0.579;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-89" target="-lI9Aj5_EctjhPI-f3sV-6">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="400" y="400" />
+          <mxPoint x="640" y="400" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YTxgUdecIhsh6MSupuD--8" target="-lI9Aj5_EctjhPI-f3sV-8">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="810" y="1280" as="sourcePoint" />
+        <mxPoint x="810" y="1530" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-8" value="Some day after..." style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+      <mxGeometry x="800" y="1390" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SpOcRDME1MZ-pJPI3-6a-2" target="-lI9Aj5_EctjhPI-f3sV-10">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="600" y="2380" as="sourcePoint" />
+        <mxPoint x="1790" y="2440" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="600" y="2440" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-10" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
+      <mxGeometry x="1630" y="2430" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.049;exitY=0.769;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-10" target="seq4">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="seq3" target="-lI9Aj5_EctjhPI-f3sV-13">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="2080" y="1110" as="sourcePoint" />
+        <mxPoint x="1240" y="-170" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="2320" y="80" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-13" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
+      <mxGeometry x="2310" y="-420" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YTxgUdecIhsh6MSupuD--1" target="-lI9Aj5_EctjhPI-f3sV-17">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1450" y="890" as="sourcePoint" />
+        <mxPoint x="1250" y="1340" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-21" target="-lI9Aj5_EctjhPI-f3sV-30">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-21" value="[Sequence #4 - Akane Cyan]" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#E69138;strokeWidth=2;fontColor=#000000;rounded=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1840" y="1440" width="280" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;entryX=0.389;entryY=1.232;entryPerimeter=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-49" target="-lI9Aj5_EctjhPI-f3sV-13">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="2080" y="1950" as="sourcePoint" />
+        <mxPoint x="2320" y="670" as="targetPoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E69138;strokeWidth=2;endArrow=block;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="classroom" target="-lI9Aj5_EctjhPI-f3sV-21">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1420" y="1480" />
+          <mxPoint x="1420" y="1480" />
+        </Array>
+        <mxPoint x="1490" y="1520" as="sourcePoint" />
+        <mxPoint x="1810" y="1250" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-17" value="The next day..." style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+      <mxGeometry x="1090" y="1390" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-29" target="-lI9Aj5_EctjhPI-f3sV-38">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-29" value="Akane hears something on her during the run&lt;div&gt;Hikari ears too&lt;/div&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1700" y="1840" width="280" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-30" target="-lI9Aj5_EctjhPI-f3sV-31">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-30" target="-lI9Aj5_EctjhPI-f3sV-32">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-30" value="Sport education run" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1840" y="1560" width="280" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-31" target="-lI9Aj5_EctjhPI-f3sV-29">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-31" value="Choose to run in Akane&#39;s group" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1760" y="1720" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-32" target="-lI9Aj5_EctjhPI-f3sV-36">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-32" value="Choose to run in Megumi&#39;s group" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="2040" y="1720" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-36" target="-lI9Aj5_EctjhPI-f3sV-49">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-36" value="Hikari oberve the dynamic between Kazuko and Megumi" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="2040" y="1840" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-37" target="-lI9Aj5_EctjhPI-f3sV-45">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-37" value="Hikari tells Akane to defend herself with her strength" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1680" y="2080" width="140" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-38" target="-lI9Aj5_EctjhPI-f3sV-37">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-38" target="-lI9Aj5_EctjhPI-f3sV-39">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-38" value="In the class, after everyone is gone, Akane is here." style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1700" y="1960" width="280" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-39" value="Hikari ignore and go" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1860" y="2080" width="140" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-45" target="-lI9Aj5_EctjhPI-f3sV-80">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1860" y="2240" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-45" value="Akane provocation&amp;nbsp;→ Reconize Hikari strength" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1680" y="2200" width="140" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-80" target="-lI9Aj5_EctjhPI-f3sV-49">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-49" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
+      <mxGeometry x="2310" y="1870" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.373;entryY=0.798;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-39" target="-lI9Aj5_EctjhPI-f3sV-49">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-81" target="-lI9Aj5_EctjhPI-f3sV-54">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-54" value="Is [Sequence #3 - Dealing with Megumi&#39;s group] completed?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="850" y="-120" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-63" target="fRe2bDUgUzZN3rVpKoHY-1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-63" value="[Chimerism Secret Condition]&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;div&gt;Hikari would want speak&amp;nbsp; to Kazuko about her chimerism.&lt;/div&gt;&lt;/div&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="735" y="190" width="150" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-64" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2D7600;strokeWidth=2;endArrow=block;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fRe2bDUgUzZN3rVpKoHY-3" target="-lI9Aj5_EctjhPI-f3sV-2">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="820" y="790" as="sourcePoint" />
+        <mxPoint x="655" y="920" as="targetPoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-66" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-lI9Aj5_EctjhPI-f3sV-64">
+      <mxGeometry x="-0.8177" y="-1" relative="1" as="geometry">
+        <mxPoint x="1" y="674" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-67" target="-lI9Aj5_EctjhPI-f3sV-70">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-67" target="-lI9Aj5_EctjhPI-f3sV-71">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-67" target="-lI9Aj5_EctjhPI-f3sV-69">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-67" value="Love Hotel Discovery&lt;div&gt;Hikari chooses strategy&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1010" y="1720" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-69" target="-lI9Aj5_EctjhPI-f3sV-72">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-69" value="Yokai invisibles assistance" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1250" y="1940" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-70" target="SpOcRDME1MZ-pJPI3-6a-2">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1520" y="1760" />
+          <mxPoint x="1520" y="2400" />
+          <mxPoint x="1000" y="2400" />
+          <mxPoint x="1000" y="2260" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-70" value="Observation approach" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1250" y="1720" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-71" target="SpOcRDME1MZ-pJPI3-6a-2">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1520" y="1870" />
+          <mxPoint x="1520" y="2400" />
+          <mxPoint x="1000" y="2400" />
+          <mxPoint x="1000" y="2260" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-71" value="Infiltration approach" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1250" y="1830" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-72" target="-lI9Aj5_EctjhPI-f3sV-73">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1350" y="2230" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-86" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-lI9Aj5_EctjhPI-f3sV-85">
+      <mxGeometry x="-0.422" y="-2" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-91" value="Look around" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-lI9Aj5_EctjhPI-f3sV-85">
+      <mxGeometry x="-0.3291" y="1" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-72" target="SpOcRDME1MZ-pJPI3-6a-2">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1000" y="2120" />
+          <mxPoint x="1000" y="2260" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-88" value="Get out of there as fast as possible!" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-lI9Aj5_EctjhPI-f3sV-87">
+      <mxGeometry x="-0.8632" y="4" relative="1" as="geometry">
+        <mxPoint x="-62" y="-4" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-72" value="What to do?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1270" y="2080" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-73" target="-lI9Aj5_EctjhPI-f3sV-79">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-82" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-lI9Aj5_EctjhPI-f3sV-81">
+      <mxGeometry x="-0.2257" y="-1" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-73" target="SpOcRDME1MZ-pJPI3-6a-2">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1350" y="2400" />
+          <mxPoint x="1000" y="2400" />
+          <mxPoint x="1000" y="2260" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-93" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-lI9Aj5_EctjhPI-f3sV-92">
+      <mxGeometry x="-0.9204" y="-4" relative="1" as="geometry">
+        <mxPoint x="4" y="-5" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-73" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Find tufle hairs&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Take tufle hairs?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1270" y="2220" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-79" target="SpOcRDME1MZ-pJPI3-6a-2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-79" value="Get the Tufle Hairs" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1040" y="2220" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="-lI9Aj5_EctjhPI-f3sV-80" value="&lt;span&gt;&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Unlock Akane&#39;s Dream&lt;/font&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;gradientColor=#7ea6e0;" vertex="1" parent="1">
+      <mxGeometry x="1850" y="2200" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-1" target="oThcQPZ6gyME7MHl_bQJ-2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-4" value="speak to her" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-3">
+      <mxGeometry x="-0.2639" y="-2" relative="1" as="geometry">
+        <mxPoint x="-12" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-1" target="oThcQPZ6gyME7MHl_bQJ-5">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-8" value="ignore her" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-7">
+      <mxGeometry x="-0.5982" y="1" relative="1" as="geometry">
+        <mxPoint x="48" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-1" value="Hikari see Akane during lunch time" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-390" y="120" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-2" target="fRe2bDUgUzZN3rVpKoHY-12">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-2" value="Akane warns about green-glasses girl → &quot;Be prepared to lose something to gain something.&quot;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="-605" y="280" width="320" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-5" value="The teacher speaks about exceptional weaver condition in the region and, despit the natation sport is stopped in the other regions, it will be extended here. Hikari is&amp;nbsp;&lt;span lang=&quot;en&quot; class=&quot;HwtZe&quot;&gt;disappointed.&lt;/span&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="-240" y="280" width="320" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.531;entryY=0.738;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-5" target="YTxgUdecIhsh6MSupuD--15">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-10" target="oThcQPZ6gyME7MHl_bQJ-16">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-35" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-21">
+      <mxGeometry x="-0.7295" y="-2" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-10" target="oThcQPZ6gyME7MHl_bQJ-18">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-30" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-29">
+      <mxGeometry x="-0.4074" y="-2" relative="1" as="geometry">
+        <mxPoint x="1" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-10" value="&lt;font style=&quot;color: rgb(255, 255, 255);&quot;&gt;Is&amp;nbsp;&lt;span&gt;[Sequence #1 - Interaction with &quot;Kazuko&quot;]&amp;nbsp;&lt;/span&gt;completed?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="40" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-lI9Aj5_EctjhPI-f3sV-54" target="oThcQPZ6gyME7MHl_bQJ-10">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="970" y="-40" as="sourcePoint" />
+        <mxPoint x="1140" y="44.11018371582031" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="950" />
+          <mxPoint x="1100" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-14" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-13">
+      <mxGeometry x="-0.8166" y="-3" relative="1" as="geometry">
+        <mxPoint x="33" y="15" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-16" target="oThcQPZ6gyME7MHl_bQJ-17">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-33" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-22">
+      <mxGeometry x="-0.8058" y="1" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-16" target="oThcQPZ6gyME7MHl_bQJ-37">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1240" y="320" as="targetPoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-31" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-28">
+      <mxGeometry x="-0.2199" relative="1" as="geometry">
+        <mxPoint x="1" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-16" value="Is [Sequence #2 - Observation of Akane]&amp;nbsp;completed?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="280" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-25" target="YTxgUdecIhsh6MSupuD--1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1140" y="1280" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-17" target="oThcQPZ6gyME7MHl_bQJ-95">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1240" y="590" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-32" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-27">
+      <mxGeometry x="-0.4699" y="4" relative="1" as="geometry">
+        <mxPoint x="1" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-17" value="Is [Sequence #4 - Akane Cyan]&amp;nbsp;completed?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="550" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-18" target="oThcQPZ6gyME7MHl_bQJ-46">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-18" value="Hikari and Kazuko speaks about this day" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1240" y="40" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-17" target="oThcQPZ6gyME7MHl_bQJ-25">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1140" y="1280" as="targetPoint" />
+        <mxPoint x="1100" y="760" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-34" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-26">
+      <mxGeometry x="-0.8309" y="-2" relative="1" as="geometry">
+        <mxPoint x="10" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-25" value="End of possible conversations" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+      <mxGeometry x="1090" y="1030" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-37" target="oThcQPZ6gyME7MHl_bQJ-38">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-92" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-40">
+      <mxGeometry x="-0.1841" y="2" relative="1" as="geometry">
+        <mxPoint x="-4" y="2" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-37" target="oThcQPZ6gyME7MHl_bQJ-95">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1320" y="380" />
+          <mxPoint x="1120" y="380" />
+          <mxPoint x="1120" y="530" />
+          <mxPoint x="1320" y="530" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-104" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-103">
+      <mxGeometry x="-0.8586" y="-1" relative="1" as="geometry">
+        <mxPoint x="-1" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-37" value="Is [Sequence #4 - Akane Cyan]&amp;nbsp;completed?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1240" y="280" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.296;entryY=0.329;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-38" target="oThcQPZ6gyME7MHl_bQJ-46">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1370" y="540" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="1290" y="480" />
+          <mxPoint x="1460" y="480" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-38" value="Hikari and Kazuko speaks about Akane&lt;div&gt;Hikari don&#39;t know yet what it will happens next&lt;/div&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1140" y="400" width="300" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-54" target="oThcQPZ6gyME7MHl_bQJ-25">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1335" y="840" as="targetPoint" />
+        <mxPoint x="1370" y="810" as="sourcePoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-107" target="oThcQPZ6gyME7MHl_bQJ-46">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1140" y="1040" as="targetPoint" />
+        <mxPoint x="1400" y="630" as="sourcePoint" />
+        <Array as="points">
+          <mxPoint x="1370" y="990" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-46" value="End of casual conversation" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;verticalAlign=top;spacingTop=9;" vertex="1" parent="1">
+      <mxGeometry x="1450" y="980" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-46" target="oThcQPZ6gyME7MHl_bQJ-54">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1100" y="1040" as="targetPoint" />
+        <mxPoint x="1460" y="990" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-54" value="[Secret Conversation} +1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1360" y="1015" width="200" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-66" target="oThcQPZ6gyME7MHl_bQJ-56">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-56" target="oThcQPZ6gyME7MHl_bQJ-61">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-56" value="[Secret Conversation} = 1?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="880" y="-250" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-66" target="oThcQPZ6gyME7MHl_bQJ-57">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-57" target="oThcQPZ6gyME7MHl_bQJ-62">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-57" value="[Secret Conversation} = 2?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="880" y="-230" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-66" target="oThcQPZ6gyME7MHl_bQJ-58">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-58" target="oThcQPZ6gyME7MHl_bQJ-63">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-58" value="[Secret Conversation} = 3?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="880" y="-210" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-59" target="oThcQPZ6gyME7MHl_bQJ-64">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-59" value="[Secret Conversation} = 4?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="880" y="-190" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-60" target="oThcQPZ6gyME7MHl_bQJ-65">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-60" value="[Secret Conversation} = 5?" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="880" y="-170" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-61" target="oThcQPZ6gyME7MHl_bQJ-81">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-61" value="Locker room entrance sequence 1" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="-250" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-62" target="oThcQPZ6gyME7MHl_bQJ-81">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1380" y="-200" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-62" value="Locker room entrance sequence&amp;nbsp;2" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="-230" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-63" value="Locker room entrance sequence&amp;nbsp;3" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="-210" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-64" target="oThcQPZ6gyME7MHl_bQJ-81">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1380" y="-200" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-64" value="Locker room entrance sequence&amp;nbsp;4" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="-190" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.342;entryY=0.656;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-65" target="oThcQPZ6gyME7MHl_bQJ-81">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1380" y="-200" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-65" value="Locker room entrance sequence&amp;nbsp;5" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="-170" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.425;entryY=0.131;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="not_first_day" target="oThcQPZ6gyME7MHl_bQJ-66">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="820" y="-280" as="sourcePoint" />
+        <mxPoint x="820" y="-200" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-66" value="Locker room entrances" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;verticalAlign=top;fontSize=12;spacingTop=4;" vertex="1" parent="1">
+      <mxGeometry x="750" y="-210" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-66" target="oThcQPZ6gyME7MHl_bQJ-66">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.213;exitY=0.602;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-66" target="oThcQPZ6gyME7MHl_bQJ-59">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.796;exitY=0.866;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-66" target="oThcQPZ6gyME7MHl_bQJ-60">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-81" value="End of entrance sequences" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;verticalAlign=top;spacingTop=4;" vertex="1" parent="1">
+      <mxGeometry x="1370" y="-90" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.36;entryY=0.574;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-63" target="oThcQPZ6gyME7MHl_bQJ-81">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-88" target="oThcQPZ6gyME7MHl_bQJ-89">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-88" value="Club sequence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#E69138;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="300" y="120" width="200" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-89" value="Hikari dances" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="300" y="210" width="200" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-95" target="oThcQPZ6gyME7MHl_bQJ-110">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1330" y="630" as="sourcePoint" />
+        <mxPoint x="1205" y="680" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="1320" y="650" />
+          <mxPoint x="1200" y="650" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-99" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-97">
+      <mxGeometry x="-0.3195" y="2" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-95" target="oThcQPZ6gyME7MHl_bQJ-96">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1330" y="630" as="sourcePoint" />
+        <Array as="points">
+          <mxPoint x="1320" y="650" />
+          <mxPoint x="1380" y="650" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-100" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-98">
+      <mxGeometry x="-0.0689" y="-2" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-95" value="Is [Sequence #2 - Observation of Akane]&amp;nbsp;completed?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1240" y="550" width="160" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-96" target="oThcQPZ6gyME7MHl_bQJ-125">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-96" value="Hikari comments Akane&#39;s rage but don&#39;t know what is happened" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1320" y="710" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-101" value="Seq #2 (observation) completed before Seq #4 (Cyan)" style="rectangle;whiteSpace=wrap;html=1;fillColor=#a0522d;strokeColor=#6D1F00;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1120" y="250" width="320" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-102" value="Seq #4 (Cyan) completed before Seq #2 (observation)" style="rectangle;whiteSpace=wrap;html=1;fillColor=#a0522d;strokeColor=#6D1F00;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1140" y="500" width="300" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1370" y="460" as="targetPoint" />
+        <mxPoint x="1370" y="460" as="sourcePoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-107" value="Akane bullyed==1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1320" y="850" width="120" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-110" target="oThcQPZ6gyME7MHl_bQJ-111">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1200" y="700" />
+          <mxPoint x="1165" y="700" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-123" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-112">
+      <mxGeometry x="0.0109" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-110" target="oThcQPZ6gyME7MHl_bQJ-113">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1200" y="700" />
+          <mxPoint x="1265" y="700" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-124" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-114">
+      <mxGeometry x="-0.4943" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-110" value="If Akane bullyed==1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#0050ef;strokeColor=#001DBC;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1140" y="660" width="120" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-111" target="oThcQPZ6gyME7MHl_bQJ-117">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1460" y="880" as="targetPoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-111" value="Hikari and Kazuko speaks about Akane, Hikari tell Kazuko to not involve Hikari in gang affairs." style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1120" y="710" width="90" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-113" target="oThcQPZ6gyME7MHl_bQJ-119">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1255" y="990" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-113" value="Hikari and Kazuko speaks about Akane, Hikari try to know if Akane has a hidden connection with the reason of Katsuo presence in the town." style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="1220" y="710" width="90" height="160" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-117" value="&lt;span&gt;&lt;font style=&quot;color: rgb(255, 247, 213);&quot;&gt;Unlock Akane&#39;s Dream&lt;/font&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;gradientColor=#7ea6e0;fontColor=#E6E6E6;textShadow=0;" vertex="1" parent="1">
+      <mxGeometry x="1120" y="850" width="90" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-120" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-117" target="oThcQPZ6gyME7MHl_bQJ-119">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="1155" y="970" as="sourcePoint" />
+        <mxPoint x="1460" y="990" as="targetPoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-119" target="oThcQPZ6gyME7MHl_bQJ-46">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-119" value="Affinity +1" style="rectangle;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1280" y="980" width="70" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-125" target="oThcQPZ6gyME7MHl_bQJ-107">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-125" value="&lt;span&gt;&lt;font style=&quot;color: rgb(255, 247, 213);&quot;&gt;Unlock Akane&#39;s Dream&lt;/font&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;gradientColor=#7ea6e0;fontColor=#E6E6E6;textShadow=0;" vertex="1" parent="1">
+      <mxGeometry x="1335" y="790" width="90" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-132" value="&lt;span&gt;&lt;font style=&quot;color: rgb(255, 247, 213);&quot;&gt;Unlock Gender Nighmare&lt;/font&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#76608a;strokeColor=#432D57;strokeWidth=2;fontColor=#ffffff;textShadow=0;" vertex="1" parent="1">
+      <mxGeometry x="-444.5" y="-690" width="110" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-161" target="oThcQPZ6gyME7MHl_bQJ-188">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-272" y="-560" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="-270" y="-620" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-134" value="&lt;span&gt;&lt;font style=&quot;color: rgb(255, 247, 213);&quot;&gt;Unlock&amp;nbsp;&lt;/font&gt;&lt;/span&gt;classroom objects grow/shrink&amp;nbsp; Nightmare" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#76608a;strokeColor=#432D57;strokeWidth=2;fontColor=#ffffff;textShadow=0;" vertex="1" parent="1">
+      <mxGeometry x="-522" y="-780" width="135" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-141" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pretend_not_notice" target="oThcQPZ6gyME7MHl_bQJ-142">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-179.5" y="-700" as="targetPoint" />
+        <mxPoint x="-179.5" y="-900" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-131" value="&lt;span&gt;&lt;font style=&quot;color: rgb(255, 247, 213);&quot;&gt;Unlock Flower Path Dream&lt;/font&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;gradientColor=#7ea6e0;fontColor=#E6E6E6;textShadow=0;" vertex="1" parent="1">
+      <mxGeometry x="-239.5" y="-800" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-142" target="oThcQPZ6gyME7MHl_bQJ-131">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-142" value="Affinity +3" style="rectangle;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="-209.75" y="-860" width="60" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-144" target="oThcQPZ6gyME7MHl_bQJ-132">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="-326.75" y="-720" />
+          <mxPoint x="-389.75" y="-720" />
+          <mxPoint x="-389.75" y="-690" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-153" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-152">
+      <mxGeometry x="0.2214" y="1" relative="1" as="geometry">
+        <mxPoint x="-10" y="9" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-154" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1.013;entryY=0.423;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="oThcQPZ6gyME7MHl_bQJ-166">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-327" y="-750" as="sourcePoint" />
+        <mxPoint x="-179.75" y="-600" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="-326.75" y="-720" />
+          <mxPoint x="-199.75" y="-720" />
+          <mxPoint x="-199.75" y="-642" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-158" value="...but why?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-154">
+      <mxGeometry x="-0.0965" y="1" relative="1" as="geometry">
+        <mxPoint x="23" y="21" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-144" value="She ask herself why Katsuo chooses to make a illusion of himself female&lt;div&gt;Is it nice?&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-387" y="-830" width="120" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-145" target="oThcQPZ6gyME7MHl_bQJ-144">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-145" value="Have a deep reflection..." style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-379.5" y="-880" width="105" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-146" target="oThcQPZ6gyME7MHl_bQJ-134">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-146" value="Don&#39;t say nothing and make herself little..." style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-519.5" y="-880" width="130" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.625;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-144" target="oThcQPZ6gyME7MHl_bQJ-164">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-329.75" y="-730" as="sourcePoint" />
+        <mxPoint x="-179.75" y="-580" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="-326.75" y="-720" />
+          <mxPoint x="-254.75" y="-720" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-160" value="cool!" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-156">
+      <mxGeometry x="-0.6718" relative="1" as="geometry">
+        <mxPoint x="69" y="10" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.375;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-144" target="oThcQPZ6gyME7MHl_bQJ-164">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-316.75" y="-720" as="sourcePoint" />
+        <mxPoint x="-169.75" y="-570" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="-326.75" y="-720" />
+          <mxPoint x="-284.75" y="-720" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-159" value="strange..." style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-157">
+      <mxGeometry x="-0.2413" relative="1" as="geometry">
+        <mxPoint x="6" y="10" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-162" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-134" target="oThcQPZ6gyME7MHl_bQJ-161">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-454.75" y="-720" as="sourcePoint" />
+        <mxPoint x="-179.75" y="-580" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="-454.75" y="-710" />
+          <mxPoint x="-454.75" y="-620" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-161" value="Affinity +1" style="rectangle;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="-369.75" y="-630" width="60" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-163" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-132" target="oThcQPZ6gyME7MHl_bQJ-161">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="-389.75" y="-620" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-166" target="oThcQPZ6gyME7MHl_bQJ-188">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-269.75" y="-630" as="sourcePoint" />
+        <mxPoint x="-266" y="-560" as="targetPoint" />
+        <Array as="points">
+          <mxPoint x="-270" y="-590" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-164" value="&lt;span&gt;&lt;font style=&quot;color: rgb(255, 247, 213);&quot;&gt;Unlock Girl love Dream&lt;/font&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;gradientColor=#7ea6e0;fontColor=#E6E6E6;textShadow=0;" vertex="1" parent="1">
+      <mxGeometry x="-329.75" y="-690" width="120" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-167" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-164" target="oThcQPZ6gyME7MHl_bQJ-166">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-269.75" y="-650" as="sourcePoint" />
+        <mxPoint x="-179.75" y="-580" as="targetPoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-166" value="Affinity +2" style="rectangle;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="-299.75" y="-650" width="60" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-174" value="Notice waka poetry speech" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-349.5" y="-540" width="160" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-175" value="&lt;span&gt;&lt;font style=&quot;color: rgb(255, 247, 213);&quot;&gt;Unlock Waka nightmare&lt;/font&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#76608a;strokeColor=#432D57;strokeWidth=2;fontColor=#ffffff;textShadow=0;" vertex="1" parent="1">
+      <mxGeometry x="-259.5" y="-380" width="110" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fRe2bDUgUzZN3rVpKoHY-10" target="oThcQPZ6gyME7MHl_bQJ-186">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-478" y="-10" as="targetPoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-177" value="&lt;span&gt;&lt;font style=&quot;color: rgb(255, 247, 213);&quot;&gt;Unlock Waka poetry&lt;/font&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;gradientColor=#7ea6e0;fontColor=#E6E6E6;textShadow=0;" vertex="1" parent="1">
+      <mxGeometry x="-379.5" y="-380" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-178" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-174" target="oThcQPZ6gyME7MHl_bQJ-181">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-489.5" y="-280" as="targetPoint" />
+        <mxPoint x="-269.5" y="-480" as="sourcePoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-179" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-181" target="oThcQPZ6gyME7MHl_bQJ-175">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-9" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-179">
+      <mxGeometry x="-0.2124" y="1" relative="1" as="geometry">
+        <mxPoint x="8" y="1" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-181" target="oThcQPZ6gyME7MHl_bQJ-177">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-8" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="oThcQPZ6gyME7MHl_bQJ-180">
+      <mxGeometry x="-0.0381" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-181" value="She like?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFEB9C;strokeColor=#B45F06;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-319.5" y="-460" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-182" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-177" target="fRe2bDUgUzZN3rVpKoHY-10">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-329.75" y="-340" as="sourcePoint" />
+        <mxPoint x="-270" y="-230" as="targetPoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-184" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-175" target="fRe2bDUgUzZN3rVpKoHY-10">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-204.5" y="-310" as="targetPoint" />
+        <mxPoint x="-204.75" y="-340" as="sourcePoint" />
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-186" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Observe &quot;Kazuko&quot; interactions with Megumi&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Hikari&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;is surprised that everyone seems to know Kazuko.&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="-410" y="-160" width="280" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-187" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BF9000;strokeWidth=2;endArrow=block;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-186" target="oThcQPZ6gyME7MHl_bQJ-1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-479.5" y="-50" as="sourcePoint" />
+        <mxPoint x="-478.5" y="150" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-188" value="Observe discreetly Kazuko" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;verticalAlign=top;spacingTop=14;" vertex="1" parent="1">
+      <mxGeometry x="-280" y="-590" width="20" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="oThcQPZ6gyME7MHl_bQJ-189" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.382;exitY=0.698;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="oThcQPZ6gyME7MHl_bQJ-188" target="oThcQPZ6gyME7MHl_bQJ-174">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fRe2bDUgUzZN3rVpKoHY-1" target="fRe2bDUgUzZN3rVpKoHY-3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-5" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="fRe2bDUgUzZN3rVpKoHY-4">
+      <mxGeometry x="-0.1727" y="-3" relative="1" as="geometry">
+        <mxPoint as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-1" value="Speak to him/she?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="735" y="390" width="150" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-3" value="Conversation about chimerism" style="rectangle;whiteSpace=wrap;html=1;fillColor=#FFD966;strokeColor=#BF9000;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="735" y="500" width="150" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.846;entryY=0.547;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fRe2bDUgUzZN3rVpKoHY-1" target="oThcQPZ6gyME7MHl_bQJ-25">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="960" y="415" />
+          <mxPoint x="960" y="1040" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-7" value="no" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="fRe2bDUgUzZN3rVpKoHY-6">
+      <mxGeometry x="-0.9511" y="-3" relative="1" as="geometry">
+        <mxPoint x="1" as="offset" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-10" value="Affinity +1" style="rectangle;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;strokeWidth=2;fontColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="-300" y="-270" width="60" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="fRe2bDUgUzZN3rVpKoHY-12" target="oThcQPZ6gyME7MHl_bQJ-5">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="fRe2bDUgUzZN3rVpKoHY-12" value="&lt;span&gt;&lt;font style=&quot;color: rgb(255, 247, 213);&quot;&gt;Unlock Akane Dream&lt;/font&gt;&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;gradientColor=#7ea6e0;fontColor=#E6E6E6;textShadow=0;" vertex="1" parent="1">
+      <mxGeometry x="-490" y="400" width="90" height="40" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
