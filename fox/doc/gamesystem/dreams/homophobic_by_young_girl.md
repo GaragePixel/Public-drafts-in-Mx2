@@ -3,7 +3,7 @@
 
 ## Dream Analysis Methodology Clarification
 
-"Case Study 43-B" analysis, which was not based on a real documented case but was constructed as a theoretical example based on the given parameters. The document addresses the fictional nature of the case reference and explains the analytical approach used in creating the hypothetical dream sequence.
+"Case Study 43-B" analysis, isn't based on a real documented case but was constructed as a theoretical example based on the given parameters. The document addresses the fictional nature of the case reference and explains the analytical approach used in creating the hypothetical dream sequence.
 
 ## Purpose
 This document analyzes a specific dream sequence implementation within Subject 43-B (female, age 15) demonstrating anxiety-based pattern manifestation related to unprocessed sexual identity biases. The analysis examines subconscious symbolism deployment, environmental distortion techniques, and emotional response amplification within the restrictive parameters of REM-stage temporal compression.
