@@ -969,9 +969,10 @@ The person who take her in pictures (for her to sell the pictures to the magazin
 # Megumi-Kizuko Pre-Photoshoot Interaction Analysis
 
 At Megumi's home: Megumi is hosting Kizuko at her home for a photo shoot. On TV (Megumi's room is huge, ever since she moved into her mafia-head father's mansion), the news is on, and a report shows a lifeguard in a pool explaining overly technical stuff to the camera, water up to his waist and 5-year-olds around him. His hair is neatly styled, in a wave-like shape held by the gel.
-"Hey, look at the minimum-wage worker's hair, with gel and everything, even though he's waist-deep in water!"
-"We know they have pull wires, but I think the kids are safe, right?"
-"You obviously haven't looked at the CCTV footage! After the guy who went through the grain grinder, I recently saw three kids that age drown right next to the lifeguard!" I was saying that because the guy in the pool can't go in there with his hair gelled, it's so suspicious! There's a whole world out there you don't even know about, Megu-chan. And I was just joking!
+Kizuko: - "Hey, look at the minimum-wage worker's hair, with gel and everything, even though he's waist-deep in water!"
+Megumi: - "We know they have pull wires, but I think the kids are safe, right?"
+- "You obviously haven't looked at the CCTV footage! After the guy who went through the grain grinder, I recently saw three kids that age drown right next to the lifeguard!
+I was saying that because the guy in the pool can't go in there with his hair gelled, it's so suspicious! There's a whole world out there you don't even know about, Megu-chan. And I was just joking!
 - You're so crazy, Kizupun...
 - Haha, we don't even know if he can swim, but given his haircut, I'd never put my kid in the same pool as him!
 - Huh? Like you could have kids, Kizupun. You shouldn't eat the father, at least until conception.
