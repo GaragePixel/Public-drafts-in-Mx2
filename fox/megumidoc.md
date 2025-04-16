@@ -965,3 +965,16 @@ The relationship also demonstrates Megumi's understanding of mutual investment a
 From a narrative perspective, this relationship reveals important dimensions of Megumi's character beyond her Yakuza and Revengeful Girls connections. It demonstrates her capacity for calculated trust-building, strategic vulnerability, and sophisticated relationship management - all skills that would serve her well in both criminal and vigilante contexts.
 
 The person who take her in pictures (for her to sell the pictures to the magazine) is Kazuko. Kazuko, who is the kitsune Katsuo, use these private pictures for his own satisfaction, while he masturbate himself watching the elegant intimate anatomie of Megumi. Megumi, when he found her and made his spell in order to etablish the basement of his mission, was his first crush, as she is for him just perfect in beauty as a woman.
+
+
+#Photo shoot:
+At Megumi's home: Megumi is hosting Kizuko at her home for a photo shoot. On TV (Megumi's room is huge, ever since she moved into her mafia-head father's mansion), the news is on, and a report shows a lifeguard in a pool explaining overly technical stuff to the camera, water up to his waist and 5-year-olds around him. His hair is neatly styled, in a wave-like shape held by the gel.
+"Hey, look at the minimum-wage worker's hair, with gel and everything, even though he's waist-deep in water!"
+"We know they have pull wires, but I think the kids are safe, right?"
+"You obviously haven't looked at the CCTV footage! After the guy who went through the grain grinder, I recently saw three kids that age drown right next to the lifeguard!" I was saying that because the guy in the pool can't go in there with his hair gelled, it's so suspicious! There's a whole world out there you don't even know about, Megu-chan. And I was just joking!
+- You're so crazy, Kizupun...
+- Haha, we don't even know if he can swim, but given his haircut, I'd never put my kid in the same pool as him!
+- Huh? Like you could have kids, Kizupun. You shouldn't eat the father, at least until conception.
+- Hahaha!!
+- Come on, let's make some money off these idiots.
+- Photoshoot!
