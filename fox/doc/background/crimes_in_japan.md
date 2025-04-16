@@ -1,6 +1,6 @@
 # Japan Murder Case Analysis (1996-1999)
 
-*Document by iDkP from GaragePixel • 2025-04-16 • Aida v2.3*
+*Document by iDkP from GaragePixel • 2025-04-16
 
 ## Purpose
 
