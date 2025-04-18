@@ -80,7 +80,7 @@ Hikari's academic implementation requires specific configuration reflecting her 
    - Science: Average performance with biology strength (70-80% range)
    - Social Studies: Above average performance (75-85% range)
    - English: Above average performance (80-90% range)
-   - Physical Education: Below average performance due to chimeric condition (60-70% range)
+   - Physical Education: Below average performance (70-80% range)
 
 2. **Learning Style Configuration**:
    - Primary mode: Visual learning preference
