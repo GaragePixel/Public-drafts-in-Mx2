@@ -15,7 +15,7 @@ This document consolidates all available information about Hikari Akatsuki, the 
 ### Biographical Foundation
 - **Name:** Hikari Akatsuki (光 明月)
 - **Age:** 15 years old, second-year high school student.
-- **Appearance:** Blonde-tinged hair, brown eyes, and chimeric skin patterns on her torso, stomach, and neck.
+- **Appearance:** Blonde-tinged hair, brown eyes, and chimeric skin color on her torso, stomach, neck and left arm/hand.
 - **Background:** 
   - Born with a rare condition resulting from fetal resorption, where she absorbed her twin sister in utero, leaving her with distinctive patterns and supernatural perception.
   - Lost her mother at a young age; her father became an alcoholic and emotionally distant.
