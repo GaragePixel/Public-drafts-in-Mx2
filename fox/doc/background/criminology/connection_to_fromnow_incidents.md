@@ -619,7 +619,7 @@ The "Revengeful Girls," led by Megumi Nakamura, operated as a hierarchical gang 
 ### 1. **Kawasaki Stabbings (Ryuichi Iwasaki)**
 - **Incident Overview:** On May 28, 2019, Ryuichi Iwasaki, 51, attacked a group of schoolchildren in Kawasaki, killing two and injuring 18 before taking his own life.
 - **Connection to Revengeful Girls:**
-  - Iwasaki attended the same Catholic school where Megumi’s gang operated in the late 1990s.
+  - Iwasaki attended a school where numerous network contacts allowed Megumi's gang to operate at that same Catholic school in the late 1990s.
   - Testimonies suggest he was publicly humiliated by the gang for his awkward demeanor and lack of social skills.
   - Sectarian indoctrination later reinforced these feelings, teaching him that "sex is dirty" and isolating him further from society.
 - **Psychological Analysis:**
