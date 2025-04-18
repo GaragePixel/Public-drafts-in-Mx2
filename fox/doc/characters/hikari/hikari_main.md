@@ -1,7 +1,7 @@
 # Hikari Akatsuki: Comprehensive Character Digest
 # iDkP from GaragePixel - 2025-04-18 - Aida v4
 
-Hikari is a character invented by iDkP from Garagepixel in 2019-01-18 (designed in 2019 but the concept about chimerism was imagined probably around 2012) while no similar cases of human chimerism are known anywhere in the world. His theme and Hikari's images were posted on Facebook and quickly served as inspiration for others, in a way or another. Everything is from iDkP: scenario, characters, dialog, gfx... one man team in action.
+Hikari is a character invented by iDkP from Garagepixel in 2019-01-18 (designed in 2019 but the concept about chimerism was imagined probably around 2012) while no similar cases of human chimerism are known anywhere in the world. His theme and Hikari's images were posted on Facebook and quickly becames virals. Everything is from iDkP: scenario, characters, dialog, gfx... one man team in action.
 
 ## Purpose
 This document consolidates all available information about Hikari Akatsuki, the protagonist of *Fox Spirit Romance*. It explores her biographical details, psychological profile, relationships, thematic significance, and narrative development, emphasizing her unique role as a bridge between human and yokai worlds.
