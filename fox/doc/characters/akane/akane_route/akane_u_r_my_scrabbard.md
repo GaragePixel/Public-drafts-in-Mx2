@@ -359,6 +359,8 @@ Here’s a psychological analysis and critique of Akane's statement:
 Akane’s statement is both empowering and vulnerable. It showcases her strength and self-awareness but also hints at unresolved conflicts between her need for autonomy and her desire for connection. Her choice of metaphors highlights a relational philosophy rooted in mutual respect and interdependence, though it leaves room for potential misinterpretation or imbalance.
 
 # Poem adaptation:
+
+```
 My heart and self belong to you,
 My body's warmth forever true,
 [Should you desire], yet my blade remains mine.
@@ -366,6 +368,7 @@ My body's warmth forever true,
 This steel I wield by my command,
 My essence in its edge does stand,
 [Though flames burn higher], you're my sheath that shines.
+```
 
 # Lyric adaptation:
 
@@ -395,6 +398,7 @@ You're my sheath that shines.
 
 # Long lyric adaptation:
 
+```
 My flesh surrenders to your touch,
 This body offered, yours to claim.
 But steel that burns within my soul
@@ -409,3 +413,4 @@ You hold my form but not my fire;
 My essence dwells in tempered steel.
 I choose your shelter, not your chains —
 You guard the weapon you can never wield.
+```
