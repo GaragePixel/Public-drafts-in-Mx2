@@ -3,11 +3,31 @@
 
 ### You have myself for you. 
 ### I will give you my body,
-### If you want me, but my sword is mine.
+### [If you want me], but my sword is mine.
 ### I use my sword for myself.
 ### My sword is my essence.
-### I'm belong to you, you are my scabbards
+### [I'm belong to you], you are my scabbards
 ####                    Ae-san
+Dedication: "You have myself for you."
+Physical Offering: "I will give you my body."
+Conditional Attachment: "[If you want me], but my sword is mine."
+Independence: "I use my sword for myself."
+Identity: "My sword is my essence."
+Interdependence: "[I'm belong to you], you are my scabbards."
+
+
+### 私自身はあなたのもの。
+Watakushijishin wa anata no mono. 
+### この身体を差し上げましょう。            
+Kono karada o sashiagemashou. 
+### [望むならば]、ですが、剣は私のものです。
+[Nozomunaraba],desuga, ken wa watashi no monodesu. 
+### この刀は自分のために振るう。
+Kono katana wa jibun no tame ni furū. 
+### 剣は私の本質。
+Ken wa watashi no honshitsu. 
+### [あなたに属し]、私の鞘。
+[Anata ni zokushi], watashi no saya
 
 ## Purpose
 This document provides a psychological and thematic analysis of Akane's statement following the story of Hikari. The analysis seeks to uncover the emotional, symbolic, and psychological layers within her words, examining themes of identity, agency, and relational dynamics.
@@ -337,3 +357,55 @@ Here’s a psychological analysis and critique of Akane's statement:
 
 ### **Final Thoughts**
 Akane’s statement is both empowering and vulnerable. It showcases her strength and self-awareness but also hints at unresolved conflicts between her need for autonomy and her desire for connection. Her choice of metaphors highlights a relational philosophy rooted in mutual respect and interdependence, though it leaves room for potential misinterpretation or imbalance.
+
+# Poem adaptation:
+My heart and self belong to you,
+My body's warmth forever true,
+[Should you desire], yet my blade remains mine.
+
+This steel I wield by my command,
+My essence in its edge does stand,
+[Though flames burn higher], you're my sheath that shines.
+
+# Lyric adaptation:
+
+### Partition for "You're My Sheath That Shines"
+
+#### **Main Voice:**
+My heart and self belong to you,  
+My body's warmth forever true,  
+
+#### **Second Voice (sung):**
+[Should you desire],  
+
+#### **Main Voice:**
+Yet my blade remains mine.  
+
+---
+
+#### **Main Voice:**
+This steel I wield by my command,  
+My essence in its edge does stand,  
+
+#### **Second Voice (sung):**
+[Though flames burn higher],  
+
+#### **Main Voice:**
+You're my sheath that shines.  
+
+# Long lyric adaptation:
+
+My flesh surrenders to your touch,
+This body offered, yours to claim.
+But steel that burns within my soul
+Remains untamed, forever mine.
+
+My blade cuts paths that I alone decide,
+Its edge defines where I begin.
+Though in your arms my body sleeps,
+My warrior's heart acknowledges no master.
+
+You hold my form but not my fire;
+My essence dwells in tempered steel.
+I choose your shelter, not your chains —
+You guard the weapon you can never wield.
