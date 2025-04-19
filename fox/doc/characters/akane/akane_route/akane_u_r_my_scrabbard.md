@@ -2,7 +2,7 @@
 # iDkP from GaragePixel - 2025-04-19 - Aida v1.4
 
 ### You have myself for you. 
-### I will give you my body.
+### I will give you my body,
 ### If you want me, but my sword is mine.
 ### I use my sword for myself.
 ### My sword is my essence.
