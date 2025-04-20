@@ -92,7 +92,6 @@ This document consolidates the calendar of activities for gymnastics dance, kara
 
 ---
 
-
 ### 9. **New Class: Debate and Public Speaking**
 - **Days:** Fridays
 - **Times:** 10:45–12:30
@@ -173,8 +172,6 @@ This type of class would align with **討論 (とうろん, Tōron)** or **弁�
 	- **弁論 (Benron)** – Speech/Argumentation
 	- **プレゼンテーション (Presentation)** – Public Speaking
 
-
-### **Debate and Public Speaking**
 - **Plausibility in 1996**:
   - Debate and public speaking as formal classes (**討論, Tōron** or **弁論, Benron**) were **less common** in 1996 compared to the present day.
   - Japanese education at the time emphasized rote memorization and standardized testing, with fewer opportunities for activities requiring critical thinking or oral expression.
@@ -248,3 +245,58 @@ If you want to ensure historical accuracy for a 1996 Japanese school setting, **
 - **Class Distribution:** Subjects are evenly distributed across the week to avoid monotony and align with Japanese educational priorities.
 - **Weather Integration:** Outdoor sessions like Physical Education are scheduled flexibly based on historical weather data.
 - **Narrative Opportunities:** The ceremony and class details provide immersive storytelling elements, reflecting authentic student experiences in 1996 Kanagawa.
+
+# Japanese Upper Secondary School Ceremonies
+# iDkP from GaragePixel - 2025-04-20 - Aida v4
+
+## Purpose
+This document provides a detailed analysis of ceremonial practices in Japanese upper secondary schools, focusing on the **Second Term Opening Ceremony (二学期始業式)** held in early September.
+
+---
+
+## Functionality
+
+### **Second Term Opening Ceremony (二学期始業式)**
+- **Date:** Early September (e.g., September 2, 1996)
+- **Purpose:** Marks the official start of the second academic term.
+- **Participants:** All students (10th–12th grades), teaching staff, and administration.
+- **Structure:**
+	1. **Morning Assembly (8:15–9:00):**
+		- Location: Gymnasium
+		- Activities include:
+			- Singing of the national anthem (**君が代, Kimigayo**) and school anthem (**校歌, Kōka**).
+			- Principal's address outlining the term's goals and expectations.
+			- Introduction of new staff or teachers.
+			- Formal speech by a representative student (typically a second-year).
+	2. **Homeroom Orientation (9:15–10:30):**
+		- Location: Respective classrooms.
+		- Activities include:
+			- Distribution of updated schedules, textbooks, and important notices.
+			- Homeroom teacher's address, emphasizing rules and term highlights.
+			- Icebreaker activities to reintroduce the class dynamic post-summer break.
+	3. **Normal Classes Commence (10:45–12:30):**
+		- Regular classes begin with the first and second periods.
+
+---
+
+## Notes
+- **Seasonal Context:** The ceremony reflects the transition from summer break to the structured academic term, emphasizing renewal and preparation.
+- **Cultural Significance:** Singing the national and school anthems reinforces national pride and school identity.
+- **Student Engagement:** Including a student speech fosters leadership and participation.
+
+---
+
+## Technical Advantages
+
+### Structured Progression
+- The ceremony transitions seamlessly into regular classes, ensuring minimal downtime and maximum productivity.
+
+### Cultural Representation
+- Traditional elements like anthems and formal speeches align with Japanese educational values.
+
+### Student-Centric Focus
+- Activities like homeroom orientation and student speeches create a sense of community and shared purpose.
+
+### Flexibility
+- The inclusion of normal classes after the ceremony maximizes the use of the day while maintaining ceremonial importance.
+
