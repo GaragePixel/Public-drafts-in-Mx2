@@ -92,6 +92,15 @@ This document consolidates the calendar of activities for gymnastics dance, kara
 
 ---
 
+
+### 9. **New Class: Debate and Public Speaking**
+- **Days:** Fridays
+- **Times:** 10:45–12:30
+- **Details:**  
+	A session aimed at improving students' communication and critical thinking skills through debates and public speaking exercises. This fosters confidence and teamwork while addressing contemporary topics.
+
+---
+
 ## Notes
 1. **Weather Adjustments:**
    - September 10's swimming session was likely canceled due to rain.
@@ -131,3 +140,34 @@ This document consolidates the calendar of activities for gymnastics dance, kara
 	- **September 21:** Clear, 24°C
 	- **September 22:** Overcast, 23°C
 
+Yes, the classes described—**Cultural Workshop** and **Debate and Public Speaking**—exist in various forms in the Japanese secondary education curriculum, though they may not be formal classes with those exact names. Here are the potential equivalents in Japanese education and their real names in **hiragana** and **kanji**:
+
+---
+
+### 1. **Cultural Workshop**
+This could refer to classes or activities commonly known as **伝統文化教育 (でんとうぶんかきょういく, Dentō Bunka Kyōiku)**, which translates to "Traditional Cultural Education." These are often supplemental or extracurricular activities focusing on cultural practices like **茶道 (さどう, Sadō; Tea Ceremony)**, **華道 (かどう, Kadō; Flower Arrangement)**, and **書道 (しょどう, Shodō; Calligraphy)**.
+
+- **Kanji**: 伝統文化教育
+- **Hiragana**: でんとうぶんかきょういく
+- Common Activities:
+	- **茶道 (Sadō)** – Tea Ceremony
+	- **書道 (Shodō)** – Calligraphy
+	- **華道 (Kadō)** – Flower Arrangement
+
+---
+
+### 2. **Debate and Public Speaking**
+This type of class would align with **討論 (とうろん, Tōron)** or **弁論 (べんろん, Benron)**, which mean "Debate" or "Speech." While debate is not traditionally emphasized in Japanese education, modern schools, especially those with an international focus, are incorporating classes to develop skills in **討論 (Tōron)** and **プレゼンテーション (Presentation)** as part of "active learning" reforms.
+
+- **Kanji**: 討論 or 弁論
+- **Hiragana**: とうろん or べんろん
+- Common Focus:
+	- **討論 (Tōron)** – Debate
+	- **弁論 (Benron)** – Speech/Argumentation
+	- **プレゼンテーション (Presentation)** – Public Speaking
+
+---
+
+### Additional Notes
+- These classes are typically found in **高等学校 (こうとうがっこう, Kōtō Gakkō; High Schools)** or specialized programs, aligning with Japan's push for **21世紀型スキル (21st Century Skills)**.
+- Names may vary by school, but the concepts of **cultural education** and **debate/public speaking** are increasingly part of **特別活動 (とくべつかつどう, Tokubetsu Katsudō; Special Activities)** or elective programs.
