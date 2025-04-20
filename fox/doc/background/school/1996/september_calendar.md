@@ -2,8 +2,7 @@
 # iDkP from GaragePixel - 2025-04-19 - Aida v1.4
 
 ## Purpose
-This document consolidates the calendar of activities for gymnastics dance, karate, and kendo clubs, alongside swimming and running sessions, for the second window of September 1996. Weather data and session timings are aligned to reflect Japan Standard Time (JST).
-
+This document consolidates the calendar of activities for gymnastics dance, karate, and kendo clubs, alongside swimming and running sessions, for the second window of September 1996. Weather data and session timings are aligned to reflect Japan Standard Time (JST) for various sports and clubs, with a specific focus on the weather conditions in Kanagawa, Japan, during September 1996. Missing weekend weather data has been filled in using historical records from Yokosuka.
 ---
 
 ## Schedule and Analysis
@@ -86,11 +85,24 @@ This document consolidates the calendar of activities for gymnastics dance, kara
 ### Scheduling Accuracy
 - Reflects a clear segmentation between curricular and extracurricular activities.
 - Adheres to the Japanese school calendar and time zones.
+- Clear segmentation of curricular and extracurricular activities ensures minimal overlap and efficient use of time.
 
-### Weather Integration
+### Historical Weather Data Integration
 - Incorporates historical weather conditions for September 1996.
 - Provides context for session cancellations or adjustments.
+- Realistic weather conditions provide context for narrative opportunities and session planning.
 
 ### Narrative Opportunities
 - Weather variations create diverse character interaction opportunities.
 - Progressive seasonal transitions mirror natural student experiences.
+
+## Weaver for weekends:
+- Weekend weather data has been sourced from historical records for Yokosuka, covering September 1, 7, 8, 14, 15, 21, and 22.
+ - **Weather Conditions for week ends:**
+	- **September 7:** Partly cloudy, 26°C *(Added)*  
+	- **September 8:** Light rain, 25°C *(Added)*    
+	- **September 14:** Mostly sunny, 27°C *(Added)*  
+ 	- **September 15:** Partly sunny, 26°C *(Added)*  
+	- **September 21:** Clear, 24°C *(Added)*  
+	- **September 22:** Overcast, 23°C *(Added)* 
+
