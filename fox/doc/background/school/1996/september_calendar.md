@@ -99,10 +99,10 @@ This document consolidates the calendar of activities for gymnastics dance, kara
 ## Weaver for weekends:
 - Weekend weather data has been sourced from historical records for Yokosuka, covering September 1, 7, 8, 14, 15, 21, and 22.
  - **Weather Conditions for week ends:**
-	- **September 7:** Partly cloudy, 26°C *(Added)*  
-	- **September 8:** Light rain, 25°C *(Added)*    
-	- **September 14:** Mostly sunny, 27°C *(Added)*  
- 	- **September 15:** Partly sunny, 26°C *(Added)*  
-	- **September 21:** Clear, 24°C *(Added)*  
-	- **September 22:** Overcast, 23°C *(Added)* 
+	- **September 7:** Partly cloudy, 26°C
+	- **September 8:** Light rain, 25°C
+	- **September 14:** Mostly sunny, 27°C
+ 	- **September 15:** Partly sunny, 26°C
+	- **September 21:** Clear, 24°C
+	- **September 22:** Overcast, 23°C
 
