@@ -2,7 +2,7 @@
 # iDkP from GaragePixel - 2025-04-19 - Aida v1.4
 
 ## Purpose
-This document consolidates the calendar of activities for gymnastics dance, karate, and kendo clubs, alongside swimming and running sessions, for the second window of September 1996. Weather data and session timings are aligned to reflect Japan Standard Time (JST) for various sports and clubs, with a specific focus on the weather conditions in Kanagawa, Japan, during September 1996. Missing weekend weather data has been filled in using historical records from Yokosuka.
+This document consolidates the calendar of activities for gymnastics dance, karate, and kendo clubs, alongside swimming and running sessions, for the second window of September 1996. Weather data and session timings are aligned to reflect Japan Standard Time (JST) for various sports and clubs, with a specific focus on the weather conditions in Kanagawa, Japan, during September 1996. Missing weekend weather data has been filled in using historical records from Yokosuka. It includes club schedules, school sessions, weather data, and now regular classes to complete a comprehensive academic calendar. Additionally, it includes updates for the **Second Term Opening Ceremony (二学期始業式)** held on September 2, 1996.
 ---
 
 ## Schedule and Analysis
@@ -195,4 +195,56 @@ In 1996, the **Cultural Workshop** and **Debate and Public Speaking** classes co
 - **Cultural Workshop**: Highly plausible in 1996, as traditional cultural education has deep roots in Japanese schools.
 - **Debate and Public Speaking**: Less common but not implausible, particularly in private or progressive schools. It could exist as an **elective class** or part of a debate club.
 
-If you want to ensure historical accuracy for a 1996 Japanese school setting, **Cultural Workshop** is a safer choice, while **Debate and Public Speaking** would likely need to be framed as a special or experimental program, depending on the school type. Let me know if you'd like adjustments based on this!
+If you want to ensure historical accuracy for a 1996 Japanese school setting, **Cultural Workshop** is a safer choice, while **Debate and Public Speaking** would likely need to be framed as a special or experimental program, depending on the school type. 
+
+---
+
+## Schedule and Analysis
+
+### **Second Term Opening Ceremony (二学期始業式)**
+- **Date:** Monday, September 2, 1996
+- **Structure and Details:**
+	1. **Morning Assembly (8:15–9:00):**
+		- Location: Gymnasium
+		- Activities:
+			- National anthem (**君が代, Kimigayo**) and school anthem (**校歌, Kōka**).
+			- Principal's address emphasizing second-term goals.
+			- Introduction of new teachers or staff.
+			- Representative speech by a second-year student.
+	2. **Homeroom Orientation (9:15–10:30):**
+		- Students meet in their respective classrooms with homeroom teachers.
+		- Distribution of updated schedules and materials for the term.
+		- Discussion about the term's objectives, rules, and important dates.
+	3. **Break (10:30–10:45):**
+		- Short recess for students to relax.
+	4. **Normal Classes Begin (10:45–12:30):**
+		- Classes commence with the first and second periods (subjects vary depending on the grade and homeroom).
+
+---
+
+### **Regular Class Sessions (September 2–22, 1996)**
+#### **Weekly Class Schedule**
+- Monday–Friday (standard school days):
+	1. **First Period:** 8:50–9:40
+	2. **Second Period:** 9:50–10:40
+	3. **Break:** 10:40–10:50
+	4. **Third Period:** 10:50–11:40
+	5. **Fourth Period:** 11:50–12:40
+	6. **Lunch Break:** 12:40–13:30
+	7. **Fifth Period:** 13:30–14:20
+	8. **Sixth Period:** 14:30–15:20
+
+#### **Subjects Covered (Example Week)**
+- **Monday:** Mathematics, Japanese, Science, History, Physical Education, Art
+- **Tuesday:** English, Science, Mathematics, Home Economics, Cultural Activity (e.g., Calligraphy)
+- **Wednesday:** Social Studies, History, Science, Physical Education, Music
+- **Thursday:** Japanese, English, Geography, Laboratory Work (Science), Art
+- **Friday:** Mathematics, Japanese, English, Debate/Public Speaking, Club Preparation
+
+---
+
+## Notes
+- **Ceremonial Adaptations:** The second-term ceremony balances tradition (e.g., singing anthems) with practicality (e.g., starting normal classes by mid-morning to maximize the day).
+- **Class Distribution:** Subjects are evenly distributed across the week to avoid monotony and align with Japanese educational priorities.
+- **Weather Integration:** Outdoor sessions like Physical Education are scheduled flexibly based on historical weather data.
+- **Narrative Opportunities:** The ceremony and class details provide immersive storytelling elements, reflecting authentic student experiences in 1996 Kanagawa.
