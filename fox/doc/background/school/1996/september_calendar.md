@@ -68,6 +68,30 @@ This document consolidates the calendar of activities for gymnastics dance, kara
 
 ---
 
+### 6. **Cooking Class**
+- **Days:** Tuesdays
+- **Times:** 10:45–12:30
+- **Details:**  
+	A hands-on cooking class held in the school's kitchen facilities. All students from the same promotion participate together.
+
+---
+
+### 7. **Laboratory Class**
+- **Days:** Thursdays
+- **Times:** 10:45–12:30
+- **Details:**  
+	A practical session in the school's science laboratory. Students engage in group experiments and discussions, fostering teamwork and scientific exploration.
+
+---
+
+### 8. **New Class: Cultural Workshop**
+- **Days:** Wednesdays
+- **Times:** 10:45–12:30
+- **Details:**  
+	A workshop focused on Japanese culture and traditions, featuring activities like calligraphy, tea ceremony, and ikebana (flower arrangement). This class enriches students' understanding of their cultural heritage.
+
+---
+
 ## Notes
 1. **Weather Adjustments:**
    - September 10's swimming session was likely canceled due to rain.
@@ -99,6 +123,7 @@ This document consolidates the calendar of activities for gymnastics dance, kara
 ## Weaver for weekends:
 - Weekend weather data has been sourced from historical records for Yokosuka, covering September 1, 7, 8, 14, 15, 21, and 22.
  - **Weather Conditions for week ends:**
+   	- **September 1:** Clear, 28°C
 	- **September 7:** Partly cloudy, 26°C
 	- **September 8:** Light rain, 25°C
 	- **September 14:** Mostly sunny, 27°C
