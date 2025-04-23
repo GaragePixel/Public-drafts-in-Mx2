@@ -1,5 +1,23 @@
 # The Forgotten Rite: Solar Disc Cosmogony of Northern Europe
-**Implementation by iDkP from GaragePixel - 2025-04-23 - Aida v1.2.3**
+**Implementation by iDkP from GaragePixel - 2025-04-23 - Aida v4**
+
+Read https://www.herodote.net/Culture_de_la_ceramique_cordee_3000_a_2350_av_J_C_-synthese-3466-531.php
+https://www.academia.edu/49636896/Culte_solaire_et_savoir_astronomique_dans_le_Nord_ancien
+https://www.prehistoire.org/offres/doc_inline_src/515/BSPF_2015_1_p148-151_Guerin.pdf
+https://en.wikipedia.org/wiki/Tangendorf_disc_brooch
+
+The attempt is to create a hypothesis recreating the cosmogony of the Rite involving the sun discs of Northern Europe, such as the Ribécourt gold disc.
+
+Jesus is a figure of a worldwide sect, called the Christian religion. It is a combination of stories (an amalgamation) from several other religions, such as Godama Buddha or the Egyptian religion.
+On French calendars, you can read the dates of the holidays of this Christian religion.
+
+Make a list of all the Christian holidays on the French calendar.
+From this list, make a collection of holidays that evoke the sun, even if only mentioning it, and sometimes in the form of other symbols associated with the sun (Hatta, man, mature age, love, because just as for woman, who is represented by the moon and symbolizes silence, night, reproduction, man, the sun, can be represented by the idea of ​​strength, the active one, the day, etc.).
+In this collection of holidays involving the sun, for each of these holidays, look for the holidays whose origins are unknown. For example, since the story of Jesus is an amalgamation of elements found in Egyptian religion, we must assimilate the god Re, as well as the episode of the death and resurrection of Jesus, with the story of Osiris. In short, we know that Jesus amalgamated the Egyptian religion, so the symbolized sun is sourced here. And if we detect such an origin in the holiday linked to the calendar, then we ignore this holiday, whereas if we cannot find the origin of this holiday, then we place it in a new list.
+
+In this new list, which contains holidays from the calendar used in France for which no link has been found with an assimilated myth having the symbolized sun as a common feature, there are clues to the Forgotten Rite. The Forgotten Rite is at the origin of the existence of the golden records. These discs were to be used by a druid/shaman who, facing the crowd and the sun, would carry the disc at arm's length to reveal the sun's reflection (highlight), which would create the illusion of tangible power, in the form of a powerful luminous emission. These discs, now crushed because they were unearthed during excavations, would have been slightly curved so that the cone of light would widen, illuminating the entire audience. This idea, combined with clues left in the calendar festivals contained in the new list, should produce a set of elements that could be combined in the manner of a cosmogony to recreate the Rite of the Golden Discs. The goal is not to create a theory, but to propose a version of what could be the theology of this Rite using the golden discs.
+
+Create this theology and explain the logic behind your hypothesis, while citing your sources.
 
 ## Purpose
 This document synthesizes archaeological, calendrical, and cultural evidence to reconstruct the hypothetical cosmogony behind ancient Northern European sun disc rituals, particularly focusing on artifacts such as the Ribécourt gold disc and Tangendorf disc brooch, while tracing potential vestiges preserved in modern calendar traditions.
@@ -208,5 +226,89 @@ The Forgotten Rite likely revolved around the interplay of light and celestial p
 - Ribécourt Gold Disc: [Prehistoire.org](https://www.prehistoire.org)  
 - French Calendar: General knowledge and observation.  
 - Solar symbolism: Synthesized from academic and historical sources.
+
+- # iDkP from GaragePixel - 2025-04-23 - Aida v1.4
+
+## Purpose
+	This document presents a hypothesis for a Forgotten Rite—a long-lost solar cult that utilized golden discs, much like the Ribécourt gold disc, in ritual practices. The hypothesis synthesizes clues from Christian liturgical dates on the French calendar with archaeological and cultural evidence from Northern Europe. The goal is to propose a version of the solar theology underlying this rite.
+
+## List of Functionality
+	1. Compile a list of Christian holidays observed on the French calendar.
+	2. Isolate holidays that evoke the sun symbolically (through direct imagery of light, fire, and celestial guidance, or indirectly via symbols such as strength, active life, or maturity).
+	3. From the sun-evocative holiday collection, filter out those with clearly documented origins derived from assimilated myths (e.g., Egyptian or classical solar cults).
+	4. Produce a new list containing the holidays with unknown or ambiguous mythic origins.
+	5. Construct a cosmogony—the theology of the Forgotten Rite—using the clues provided by this remaining set, particularly highlighting the role of golden discs in channeling the sun’s luminous power.
+
+## Technical Analysis and Hypothesis Development
+
+### Step 1: List of Christian Holidays in the French Calendar
+	- Christmas (Noël) – December 25
+	- Easter (Pâques) – Date varies (spring)
+	- Easter Monday (Lundi de Pâques) – The day after Easter
+	- Ascension (Ascension) – 40 days after Easter
+	- Pentecost (Pentecôte) – 50 days after Easter
+	- Pentecost Monday (Lundi de Pentecôte) – The day after Pentecost
+	- All Saints’ Day (Toussaint) – November 1
+	- Assumption (Assomption) – August 15
+	- Epiphany (Épiphanie) – January 6
+	- (Others: Feast of the Immaculate Conception, Holy Saturday, Palm Sunday, etc.)
+
+### Step 2: Collection of Holidays Evoking the Sun
+	The following holidays evoke solar imagery through themes of light, renewal, and celestial revelation:
+	- **Christmas (Noël):** Beyond its winter solstice associations and parallels with pagan festivals, it radiates the theme of returning light.
+	- **Easter (Pâques):** The resurrection metaphor embodies the victory of light (day) over darkness (night), paralleling the sun's daily rebirth.
+	- **Epiphany (Épiphanie):** Centers on the revelation of divine light through the “star” that guided the Magi; its narrative emphasizes mysterious celestial guidance.
+	- **Ascension and Pentecost:** While scriptural in origin, these feasts incorporate imagery of ascent and tongues of fire, respectively, evoking the dynamic energy of the sun.
+
+### Step 3: Filter by Unknown or Ambiguous Origins
+	An analysis of the mythic origins of these holidays reveals:
+	- **Christmas:** Its date and many ritual elements are clearly linked to pre-Christian, pagan midwinter solstice celebrations.
+	- **Easter:** The death and resurrection motif bears strong similarity to assimilated myths such as the Osiris legend from Egyptian religion.
+	- **Ascension/Pentecost:** Their origins are explicitly biblical, originating in Jewish traditions (Passover, Shavuot) and later theological codifications.
+	- **Epiphany:** Whereas the other holidays have clearly traceable mytho-historical roots, the origin of Epiphany—with its enigmatic celebration of the guiding star—remains more ambiguous and less directly assimilated from another solar myth.
+	
+	Thus, **Epiphany (Épiphanie)** is retained as the prime candidate for further analysis and serves as an archetype for the solar symbolism that may date back to the Forgotten Rite.
+
+### Step 4: Hypothesized Theology of the Forgotten Rite
+	This hypothesis proposes that, before the widespread absorption of solar myths into later religious traditions, an ancient solar cult existed in Northern Europe. Its central ritual instrument was a set of golden discs—similar in nature to the Ribécourt gold disc—that were used in public ceremonies as follows:
+
+	- **Core Ritual:**
+		The druid/shaman, standing before a gathered audience and aligned to face the sun, would extend the golden disc to capture and reflect sunlight. The disc's slightly curved design would amplify and diffuse the central sunbeam into a cone of radiant light, blessing the assembly with what appeared as tangible, almost divine, energy.
+
+	- **Cosmogonic Symbolism:**
+		The moment when the sun’s reflection is cast en masse onto the audience is symbolic of the transfer of celestial power to the people. This ritual act serves as a microcosm of creation—a demonstration of the sun as the progenitor of life, representing cosmic order and regenerative energy.
+
+	- **Connection to Epiphany:**
+		The ambiguous narrative in the Christian celebration of Epiphany, with its focus on a guiding star and the revelation of light, is reinterpreted as a vestige of this ancient rite. In this view, the star and the luminous revelation are echoes of the golden disc’s function: manifesting an elusive divine force that once formed the core of pre-Christian cosmogony.
+
+	- **Legacy and Forgotten Knowledge:**
+		Although later theological elaborations transformed these symbols into elements of Christian ritual, the original, unassimilated solar cult remains hinted at — a "Forgotten Rite" that left behind a legacy in the form of golden disc artifacts. These artifacts likely served as both ritualistic tools and as cosmogonic symbols, linking those ancient ceremonies to the enduring human fascination with the sun.
+
+## Notes on Implementation Choices
+	- The list of Christian holidays is based on traditional liturgical calendars used in France.
+	- Selection criteria for sun-evocative holidays considered both direct (e.g., imagery of light, fire, or celestial bodies) and symbolic associations (e.g., themes of strength, renewal, and active radiance).
+	- Holidays with well-documented roots in assimilated solar myths (such as those with clear ties to pagan solstice celebrations or Egyptian resurrection motifs) were deliberately filtered out.
+	- Epiphany was singled out for its ambiguous origin and its central theme of revelation through celestial light, making it a compelling candidate as a remnant signal of the Forgotten Rite.
+
+## Technical Advantages and Detailed Explanations
+	- **Interdisciplinary Synthesis:** Combines archaeological findings (e.g., the Ribécourt gold disc), scholarly work on ancient solar worship (Herodote; Guerin, Prehistoire.org; Academia.edu studies), and liturgical analysis from the Christian calendar.
+	- **Innovative Cosmogony Reconstruction:** Provides a speculative yet theoretically grounded approach to reconstructing ancient ritual praxis using the golden disc as a focal symbol, thereby illuminating the potential continuity between forgotten solar rites and later religious festivals.
+	- **Cultural Relevance:** Recognizes the syncretic nature of Christian liturgy in France, which often embeds older pagan symbols. This approach respects the historical layering of religious practices and offers a new lens through which to view these traditions.
+	- **Clarity and Flexibility:** The hypothesis is presented in clearly delineated sections, allowing for iterative development and future validation against further archaeological or textual evidence.
+
+## Sources
+	- Herodote.net – Culture de la céramique cordée (3000 à 2350 av. J.-C.) – Synthèse  
+	  (https://www.herodote.net/Culture_de_la_ceramique_cordee_3000_a_2350_av_J_C_-synthese-3466-531.php)
+	- Academia.edu – Culte solaire et savoir astronomique dans le Nord ancien  
+	  (https://www.academia.edu/49636896/Culte_solaire_et_savoir_astronomique_dans_le_Nord_ancien)
+	- Prehistoire.org – Guerin, BSPF 2015, p148-151  
+	  (https://www.prehistoire.org/offres/doc_inline_src/515/BSPF_2015_1_p148-151_Guerin.pdf)
+	- Wikipedia – Tangendorf disc brooch  
+	  (https://en.wikipedia.org/wiki/Tangendorf_disc_brooch)
+
+## Final Remarks
+	This proposed theology of the Forgotten Rite does not claim to be a definitive reconstruction but rather offers a plausible version of an ancient solar cult based on cross-disciplinary clues. The emphasis on Epiphany as a potential surviving echo of these rites invites further scholarly investigation into the continuity of solar symbolism from ancient practices into later liturgical traditions.
+	
+	For future work, additional comparisons with other regional solar cults and a deeper linguistic analysis of feast names in the French calendar might further substantiate this hypothesis.
 
 This reconstruction offers a speculative but coherent theology grounded in historical artifacts and solar mythology.
