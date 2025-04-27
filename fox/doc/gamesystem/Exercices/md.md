@@ -1,13 +1,12 @@
+
 # Game System – Intro
 
 iDkP from GaragePixel - 2025-04-27 - Aida v1.4
 
--------------------------------------------------------------------------------
 ## Purpose
 
 	This document is a complete Markdown rewrite of the original XML file defining the introductory game system exercises. It maintains all the essential explanations, layout diagrams, and structural elements as defined in the original file. The goal is to provide clear, accessible documentation that mirrors the original content and honors the design decisions made at the time.
 
--------------------------------------------------------------------------------
 ## List of Functionality
 
 	This rewritten document includes:
@@ -17,7 +16,6 @@ iDkP from GaragePixel - 2025-04-27 - Aida v1.4
 		• Preserved textual fragments and HTML/formatted segments exactly as in the original.
 		• Clear sections delineating purpose, functionality, implementation notes, and technical advantages.
 
--------------------------------------------------------------------------------
 ## Notes
 
 	The original XML file, formatted as an mxGraphModel, used multiple `<mxCell>` elements to define:
@@ -32,7 +30,6 @@ iDkP from GaragePixel - 2025-04-27 - Aida v1.4
 		- Encoded HTML sections (e.g., `<div>`, `<ol>`, `<span>`) are presented in their literal form so the original meaning is preserved.
 		- Diagrams are transformed into Markdown tables to capture their structural essence.
 
--------------------------------------------------------------------------------
 ## Technical Advantages, Detailed Explanations
 
 	The conversion from XML to Markdown offers several benefits:
@@ -44,7 +41,6 @@ iDkP from GaragePixel - 2025-04-27 - Aida v1.4
 	
 	In addition, the document adheres to the Monkey2/Wonkey style guidelines for technical documentation, using tab-only indentation for any pseudo-code examples and maintaining clear, step-by-step descriptions.
 
--------------------------------------------------------------------------------
 ## Diagram Example: Nomenclature Array (First Schema)
 
 Below is the diagram extracted from the original XML file. It provides an overview of the naming conventions used for the questions and answers within the system:
@@ -61,7 +57,6 @@ Below is the diagram extracted from the original XML file. It provides an overvi
 	- **S2Q\***: Represents Set 2 – Questions.
 	- **S2A\***: Represents Set 2 – Answers.
 
--------------------------------------------------------------------------------
 ## Full System Explanation
 
 	The following text is reproduced exactly as it appears in the original XML source. It defines the interactive components and structural details of the game system exercises:
@@ -78,7 +73,6 @@ Below is the diagram extracted from the original XML file. It provides an overvi
 	
 	These components reflect the design considerations necessary for creating an effective, structured interactive exercise program.
 
--------------------------------------------------------------------------------
 ## Additional Details
 
 	The original XML file encompasses further structure, including:
@@ -89,7 +83,6 @@ Below is the diagram extracted from the original XML file. It provides an overvi
 
 	Although these details are part of the underlying XML representation, in the Markdown version they serve as context for understanding the overall structure rather than affecting the functional output.
 
--------------------------------------------------------------------------------
 ## Conclusion
 
 	This Markdown document is a faithful, complete conversion of the original Intro.xml file into a clear, structured format. Every element has been retained in a way that preserves its original intent and meaning, ensuring that the system’s explanatory content, examples, and diagrams remain as effective and accessible as in the initial design.
