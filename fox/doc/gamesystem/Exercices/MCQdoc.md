@@ -147,7 +147,7 @@ The SectionArray is an 0-based 2d array contening codes in the format SxQy and S
 While using the Query as used by the scenario to prompt the player, the sequence is called Prompt.
 
 The Ink script use a template with the maximum number of options, then use conditional logic to only display valid options:
-
+```
 === query_template ===
 {question_text}
 * [{option_1_text}]
@@ -159,6 +159,8 @@ The Ink script use a template with the maximum number of options, then use condi
 * {option_count >= 4: [{option_4_text}]
     -> {option_4_destination}}
 // And so on...
+```
+
 These are a maximum of 6 options by Prompt in the current project. But it's important to note isn't a part of the MCQSelector algorithm.
 
 ## SectionArray: ##
@@ -193,11 +195,13 @@ If the possible Options are choosen in the relative y range 0,0, and in the rela
 A last subsystem is the Substitution system who works with a boolean to activated it (SubstitutionMode) and a range x,y with local/global coordinate options for the two axis. This system allows to substitute the Question with any other Item within the range. This process occurs at the end of the Section selection process. See the last pratical example for usage.
 
 ## Dynamic Content Substitution: ##
+
 The Substitution system transforms the way Questions and Answers relate to each other. By enabling the SubstitutionMode, the system can create exercises that test relationships between items rather than direct knowledge. This is particularly powerful for generating problems that test understanding of complementary concepts, opposites, or transformations.
 
 The temporary storage of the substituted question (TempSubstitutedQuestion) ensures that the distractor selection process remains coherent even when the final question will be different from the initial selection.
 
 ## Boundary Management: ##
+
 While the MCQGenerator itself doesn't implement boundary protections, the document outlines strategies for the larger ExerciseSystem to handle out-of-bounds selections. This separation of concerns ensures that the generator remains focused on its core responsibility (creating diverse question sets) while allowing integration points for error handling.
 
 The modular design enables different ExerciseSystems to implement custom boundary handling strategies appropriate to their specific needs, whether through trimming, modulo arithmetic, or other approaches.
