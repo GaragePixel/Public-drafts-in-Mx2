@@ -40,16 +40,15 @@
 	</tr>
 </table>
 
-The Question and the Option are called "Item" because the system operates indifferently on a set to construct the Multiple Choice Questions form.
+- The Question and the Option are called "Item" because the system operates indifferently on a set to construct the Multiple Choice Questions form.
 
+- Multiple Questions (Question's Serie) is called Section.
 
-Multiple Questions (Question's Serie) is called Section.
+- A Question/Options pair is called Query.
 
-A Question/Options pair is called Query.
+- The outputed Section always produce the Key (good answer) as Option 1, while the Distractors (bad answers) are the next Options.
 
-The outputed Section always produce the Key (good answer) as Option 1, while the Distractors (bad answers) are the next Options.
-
-Hierarchical structure:
+## Hierarchical structure: ##
 
 Section (contains multiple Queries)
 Query (contains one Question Item and multiple Option Items)
@@ -99,48 +98,46 @@ The SectionArray is an 0-based 2d array contening codes in the format SxQy and S
 
 ## Section: ##
 
-	- Multiple Question/Options is a called Section
-	- Question/Options pair is called Query
+- Multiple Question/Options is a called Section
+- Question/Options pair is called Query
 
 ## Query: ##
 
-	- Each Query is set from the data send to build a Section
-	- Range Question x,y
-	- Range Option x,y
-	- Key always Option #1
-	- Distractors always the next Options
+- Each Query is set from the data send to build a Section
+- Range Question x,y
+- Range Option x,y
+- Key always Option #1
+- Distractors always the next Options
 
-	- Selected Question in range x,y
-	- Selected Answers (Options) in range x,y in relative/absolute coordinates
-	- No out-of-bound guard in the selection process
+- Selected Question in range x,y
+- Selected Answers (Options) in range x,y in relative/absolute coordinates
+- No out-of-bound guard in the selection process
 
-	- Number of Question by Section unlimited (list of Question)
-	- Number of Options by Questions unlimited (list of Options per list of Question)
+- Number of Question by Section unlimited (list of Question)
+- Number of Options by Questions unlimited (list of Options per list of Question)
 
-	- Within a Query, each Distractors is unique and different from the Key and Question, 	it uses the Comparator system.
+- Within a Query, each Distractors is unique and different from the Key and Question, 	it uses the Comparator system.
 
 ## Comparator System: ##
 
-	- Compare level 0
-		- SaQb compare a,b
-	- Compare level 1
-		- SaQb compare a
-	- Compare level 2
-		- SaQb compare b
+- Compare level 0
+	- SaQb compare a,b
+- Compare level 1
+	- SaQb compare a
+- Compare level 2
+	- SaQb compare b
 
-	- The comparison can compare Q or A item codes.
+- The comparison can compare Q or A item codes.
 
-	- Guard -> Abord after 1000 try by Query
+- Guard -> Abord after 1000 try by Query
 
 ## Substitution System: ##
 
-	- SubstitutionMode:Bool
-	- TempSubstitutedQuestion contains an item code
-	- Range x,y in relative/absolute coordinates per axis
-	- Substituted question choosen at the start of the Query set up 
-	and stored in TmpSubstituted
-	- At the very end of the Query's set up, the initial choosen Question is replaced by 
-	the value stored in TmpSubstitutedQuestion
+- SubstitutionMode:Bool
+- TempSubstitutedQuestion contains an item code
+- Range x,y in relative/absolute coordinates per axis
+- Substituted question choosen at the start of the Query set up and stored in TmpSubstituted
+- At the very end of the Query's set up, the initial choosen Question is replaced by the value stored in TmpSubstitutedQuestion
 
 ## Ink Format implementation of a Query's Prompt: ##
 
