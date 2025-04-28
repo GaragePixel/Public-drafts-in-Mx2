@@ -144,7 +144,7 @@ The SectionArray is an 0-based 2d array contening codes in the format SxQy and S
 While using the Query as used by the scenario to prompt the player, the sequence is called Prompt.
 
 The Ink script use a template with the maximum number of options, then use conditional logic to only display valid options:
-```
+``` "Ink"
 === query_template ===
 {question_text}
 * [{option_1_text}]
@@ -175,11 +175,11 @@ So, the MCQGenerator is lunched with its parameters (ranges, etc), and then we u
 Configurable Comparison Logic
 The Comparator level provides granular control over the item matching process. By setting the appropriate level (0, 1, 2, etc.), the system can intelligently select Distractors that challenge learners in specific ways:
 
-Level 0: Exact matching (compare full identifiers)
+- Level 0: Exact matching (compare full identifiers)
 
-Level 1: Category matching (compare only the category portion)
+- Level 1: Category matching (compare only the category portion)
 
-Level 2: Subcategory matching (compare category and subcategory)
+- Level 2: Subcategory matching (compare category and subcategory)
 
 When the MCQGenerator set the Items, any Distractors are repeated, and no Distractors are equal to the Key. This system use a Comparator algorithm which the behaviour can be set in order to selectively compare a part of the Item name.
 By default, the Comparator is always 0, so each elements of the Answer (Key and Distractors) are compared. By example, if "S1Q1" and "S1Q2" are compared, when the Comparator is set to 0, "S1Q1"<>"S1Q2", the same if the Comparator is set to 2 because "Q1"<>"Q2". But if the Comparator is set to 1, then "S1"="S1". The consequence of this match will force the MCQGenerator to search another Item where Distractor="Sn"<>"S1". If the equation isn't satisfacted according the range given to the function, a primitive guard against infinite loop crashes the scenario after 1000 attempts by Question.
