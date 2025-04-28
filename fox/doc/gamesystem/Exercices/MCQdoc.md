@@ -1,3 +1,4 @@
+'''html
 <div style="font-family: monospace; margin: 20px 0;">
   <div style="display: flex;">
     <div style="width: 40px; height: 30px; border: 1px solid #ccc; display: flex; justify-content: center; align-items: center; background: #f5f5f5;">
@@ -46,3 +47,4 @@
     </div>
   </div>
 </div>
+'''
