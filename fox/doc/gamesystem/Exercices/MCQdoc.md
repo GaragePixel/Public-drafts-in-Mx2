@@ -80,7 +80,7 @@ This documentation serves as an essential reference for **GaragePixel** implemen
 
 - Multiple **Question**s (**Question**'s Serie) is called **Section**.
 
-- A **Question**/**Option**s pair is called Query.
+- A **Question**/**Option**s pair is called **Query**.
 
 - The outputed **Section** always produce the **Key** (good **Answer**) as **Option** 1, while the **Distractor**s (bad **Answer**s) are the next **Option**s.
 
