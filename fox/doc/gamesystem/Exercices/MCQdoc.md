@@ -15,7 +15,7 @@ This introduction provides an overview of the **MCQSelector** documentation, exp
 
 The MCQSelector documentation presents a comprehensive overview of the GaragePixel's coordinate-based multiple-choice **Question** system. The document employs visual representations alongside technical explanations to illustrate how our array-based approach enables flexible **Question** generation through coordinate selection.
 
-The document successfully demonstrates the relationship between **Section**s, Queries, and **Item**s through both visual diagrams and structural explanations. The array visualizations clearly show how **Question**s and answers are organized in a grid format that supports programmatic selection and relationship mapping.
+The document successfully demonstrates the relationship between **Section**s, **Querie**s, and **Item**s through both visual diagrams and structural explanations. The array visualizations clearly show how **Question**s and answers are organized in a grid format that supports programmatic selection and relationship mapping.
 
 No logical errors were detected in the documentation. The relationships between components are consistently represented, and the data structures align with the described implementation patterns. The coordinate system provides a solid foundation for the MCQ generation algorithms described throughout the document.
 
@@ -81,13 +81,13 @@ This documentation serves as an essential reference for GaragePixel implementing
 
 ## Hierarchical structure: ##
 
-**Section** (contains multiple Queries)
+**Section** (contains multiple **Querie**s)
 Query (contains one **Question** **Item** and multiple **Option** **Item**s)
 **Item** (atomic component, either a **Question** or an **Option**)
 This creates a clean separation between:
 
 The atomic components (**Item**s) that are selected by coordinates
-The logical groupings (Queries) that represent complete **Question**/answer sets
+The logical groupings (**Querie**s) that represent complete **Question**/answer sets
 The organizational units (**Section**s) that structure the overall assessment
 
 ## **SectionArray**: ##
