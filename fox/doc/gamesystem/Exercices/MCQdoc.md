@@ -173,7 +173,7 @@ The **SectionArray** is an 0-based 2d array contening codes in the format SxQy a
 
 ## Ink Format implementation of a Query's **Prompt**: ##
 
-While using the Query as used by the scenario to **Prompt** the player, the sequence is called **Prompt**.
+While using the **Query** as used by the scenario to **Prompt** the player, the sequence is called **Prompt**.
 
 The Ink script use a template with the maximum number of **Option**s, then use conditional logic to only display valid **Option**s:
 ``` "Ink"
