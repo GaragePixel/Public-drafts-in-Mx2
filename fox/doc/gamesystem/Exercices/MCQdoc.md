@@ -3,7 +3,7 @@
 
 ## Purpose
 This introduction provides an overview of the **MCQSelector** documentation, explaining the system architecture and data structures that enable flexible, coordinate-based multiple-choice **Question** generation.
-This document provides a comprehensive technical overview of the MCQSelector system, detailing the core architecture, data structures, and operational patterns that enable dynamic, coordinate-based multiple-choice question selection and presentation through a structured array approach.
+This document provides a comprehensive technical overview of the **MCQSelector** system, detailing the core architecture, data structures, and operational patterns that enable dynamic, coordinate-based multiple-choice question selection and presentation through a structured array approach.
 
 ## List of Functionality
 * Content overview and navigation guidance
