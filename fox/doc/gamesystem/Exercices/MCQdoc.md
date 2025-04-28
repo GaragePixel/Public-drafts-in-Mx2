@@ -2,7 +2,7 @@
 **Implementation by iDkP from GaragePixel - 2025-04-28 - Aida v4**
 
 ## Purpose
-This introduction provides an overview of the ****MCQSelector**** documentation, explaining the system architecture and data structures that enable flexible, coordinate-based multiple-choice **Question** generation.
+This introduction provides an overview of the **MCQSelector** documentation, explaining the system architecture and data structures that enable flexible, coordinate-based multiple-choice **Question** generation.
 
 ## List of Functionality
 * Content overview and navigation guidance
@@ -21,11 +21,11 @@ No logical errors were detected in the documentation. The relationships between 
 
 ## Technical Advantages
 
-The documentation effectively communicates the ****MCQSelector****'s core design principles, particularly its use of:
+The documentation effectively communicates the **MCQSelector**'s core design principles, particularly its use of:
 
 1. **Coordinate-Based Selection**: The grid structure enables precise targeting of **Question**s and their related **Answer**s.
 
-2. ****Section** Encapsulation**: The organization of content into topic-specific **Section**s provides logical separation of quiz material.
+2. **Section Encapsulation**: The organization of content into topic-specific **Section**s provides logical separation of quiz material.
 
 3. **Query Construction Pattern**: The relationship between **Item**s, **Question**s, and **Option**s follows a consistent pattern that supports diverse **Question** types.
 
@@ -84,11 +84,12 @@ This documentation serves as an essential reference for **GaragePixel** implemen
 **Section** (contains multiple **Querie**s)
 Query (contains one **Question** **Item** and multiple **Option** **Item**s)
 **Item** (atomic component, either a **Question** or an **Option**)
+
 This creates a clean separation between:
 
-The atomic components (**Item**s) that are selected by coordinates
-The logical groupings (**Querie**s) that represent complete **Question**/**Answer** sets
-The organizational units (**Section**s) that structure the overall assessment
+- The atomic components (**Item**s) that are selected by coordinates
+- The logical groupings (**Querie**s) that represent complete **Question**/**Answer** sets
+- The organizational units (**Section**s) that structure the overall assessment
 
 ## **SectionArray**: ##
 
@@ -134,7 +135,7 @@ The **SectionArray** is an 0-based 2d array contening codes in the format SxQy a
 
 ## Query: ##
 
-- Each Query is set from the data send to build a **Section**
+- Each **Query** is set from the data send to build a **Section**
 - Range **Question** x,y
 - Range **Option** x,y
 - **Key** always **Option** #1
@@ -147,7 +148,7 @@ The **SectionArray** is an 0-based 2d array contening codes in the format SxQy a
 - Number of **Question** by **Section** unlimited (list of **Question**)
 - Number of **Option**s by **Question**s unlimited (list of **Option**s per list of **Question**)
 
-- Within a Query, each **Distractor**s is unique and different from the **Key** and **Question**, 	it uses the **Comparator** system.
+- Within a **Query**, each **Distractor**s is unique and different from the **Key** and **Question**, it uses the **Comparator** system.
 
 ## **Comparator** System: ##
 
@@ -160,15 +161,15 @@ The **SectionArray** is an 0-based 2d array contening codes in the format SxQy a
 
 - The comparison can compare Q or A **Item** codes.
 
-- Guard -> Abord after 1000 try by Query
+- Guard -> Abord after 1000 try by **Query**
 
 ## **Substitution** System: ##
 
-- ****Substitution**Mode**:Bool
-- TempSubstituted**Question** contains an **Item** code
+- **SubstitutionMode:Bool**
+- **TempSubstitutedQuestion** contains an **Item** code
 - Range x,y in relative/absolute coordinates per axis
-- Substituted **Question** choosen at the start of the Query set up and stored in TmpSubstituted
-- At the very end of the Query's set up, the initial choosen **Question** is replaced by the value stored in TmpSubstituted**Question**
+- Substituted **Question** choosen at the start of the **Query** set up and stored in **TmpSubstitutedQuestion**
+- At the very end of the Query's set up, the initial choosen **Question** is replaced by the value stored in **TmpSubstitutedQuestion**
 
 ## Ink Format implementation of a Query's **Prompt**: ##
 
@@ -177,15 +178,15 @@ While using the Query as used by the scenario to **Prompt** the player, the sequ
 The Ink script use a template with the maximum number of **Option**s, then use conditional logic to only display valid **Option**s:
 ``` "Ink"
 === query_template ===
-{**Question**_text}
-* [{**Option**_1_text}]
-    -> {**Option**_1_destination}
-* {**Option**_count >= 2: [{**Option**_2_text}]
-    -> {**Option**_2_destination}}
-* {**Option**_count >= 3: [{**Option**_3_text}]
-    -> {**Option**_3_destination}}
-* {**Option**_count >= 4: [{**Option**_4_text}]
-    -> {**Option**_4_destination}}
+{Question_text}
+* [{Option_1_text}]
+    -> {Option_1_destination}
+* {Option_count >= 2: [{Option_2_text}]
+    -> {Option_2_destination}}
+* {Option_count >= 3: [{Option_3_text}]
+    -> {Option_3_destination}}
+* {Option_count >= 4: [{Option_4_text}]
+    -> {Option_4_destination}}
 // And so on...
 ```
 
@@ -194,34 +195,34 @@ But it's important to note that this implementation isn't a part of the **MCQSel
 
 ## **SectionArray**: ##
 
-The ****MCQSelector**** works independently and aside the **SectionArray** containing **Question**s/**Key**s. When the ****MCQSelector**** is lunched, it will generate a **Section** of **Question**s who can have any number of **Option**s we want and any **Question** we want too. The number of **Question**s for the **Section** is choosen in a range. 
+The **MCQSelector** works independently and aside the **SectionArray** containing **Question**s/**Key**s. When the **MCQSelector** is lunched, it will generate a **Section** of **Question**s who can have any number of **Option**s we want and any **Question** we want too. The number of **Question**s for the **Section** is choosen in a range. 
 If we want always, per example, 3 **Question**s by **Section**s, we set the range at 3,3. The same for the **Option**s, we can set a range of number of **Option**s. 
 If, per example, we set the number of **Option**s at 3,6, the number of **Option**s generated by **Question**s in the **Section** will be randomly between 3 and 6.
 
 For simplicity, the **Key** is always the **Option** 1 within the generated list of **Answer**s. This **Answer**/**Key** is indicated in the **SectionArray** as like in the example (green cells). 
 
-So, we pass to the function of the ****MCQSelector**** a range of possible selected **Question**s in X and Y. Then a range of possible **Option**s in X and Y in absolute coordinates, or relative coordinates to the selected **Question**. Within the generator itself, they is no boundary guard.
+So, we pass to the function of the **MCQSelector** a range of possible selected **Question**s in X and Y. Then a range of possible **Option**s in X and Y in absolute coordinates, or relative coordinates to the selected **Question**. Within the generator itself, they is no boundary guard.
 The **Section** generated is the output, as a serie of reference codes in lists. These reference codes can allows to load the content in the **SectionArray**. This array is zero-based, as it's more easy to operate in local coordinate within. But note that the **Item**'s code nomenclature uses a 1-based system.
 
-So, the ****MCQSelector**** is lunched with its parameters (ranges, etc), and then we use the output to find the **Item**s in the **SectionArray** we want. There not limit about the number of **Question** by **Section**, and the number of **Option** by **Question**.
+So, the **MCQSelector** is lunched with its parameters (ranges, etc), and then we use the output to find the **Item**s in the **SectionArray** we want. There not limit about the number of **Question** by **Section**, and the number of **Option** by **Question**.
 Configurable Comparison Logic
 The **Comparator** level provides granular control over the **Item** matching process. By setting the appropriate level (0, 1, 2, etc.), the system can intelligently select **Distractor**s that challenge learners in specific ways:
 
-- Level 0: Exact matching (compare full identifiers)
+- **Level 0**: Exact matching (compare full identifiers)
 
-- Level 1: Category matching (compare only the category portion)
+- **Level 1**: Category matching (compare only the category portion)
 
-- Level 2: Subcategory matching (compare category and subcategory)
+- **Level 2**: Subcategory matching (compare category and subcategory)
 
-When the ****MCQSelector**** set the **Item**s, any **Distractor**s are repeated, and no **Distractor**s are equal to the **Key**. This system use a **Comparator** algorithm which the behaviour can be set in order to selectively compare a part of the **Item** name.
-By default, the **Comparator** is always 0, so each elements of the **Answer** (**Key** and **Distractor**s) are compared. By example, if "S1Q1" and "S1Q2" are compared, when the **Comparator** is set to 0, "S1Q1"<>"S1Q2", the same if the **Comparator** is set to 2 because "Q1"<>"Q2". But if the **Comparator** is set to 1, then "S1"="S1". The consequence of this match will force the ****MCQSelector**** to search another **Item** where **Distractor**="Sn"<>"S1". If the equation isn't satisfacted according the range given to the function, a primitive guard against infinite loop crashes the scenario after 1000 attempts by **Question**.
+When the **MCQSelector** set the **Item**s, any **Distractor**s are repeated, and no **Distractor**s are equal to the **Key**. This system use a **Comparator** algorithm which the behaviour can be set in order to selectively compare a part of the **Item** name.
+By default, the **Comparator** is always 0, so each elements of the **Answer** (**Key** and **Distractor**s) are compared. By example, if "S1Q1" and "S1Q2" are compared, when the **Comparator** is set to 0, "S1Q1"<>"S1Q2", the same if the **Comparator** is set to 2 because "Q1"<>"Q2". But if the **Comparator** is set to 1, then "S1"="S1". The consequence of this match will force the **MCQSelector** to search another **Item** where **Distractor**="Sn"<>"S1". If the equation isn't satisfacted according the range given to the function, a primitive guard against infinite loop crashes the scenario after 1000 attempts by **Question**.
 
-While the ****MCQSelector**** itself do not rules the boundary guards, the program can attempt to point an **Item** (as code) that do not exists in the **SectionArray**. The guards can be implemented in the **ExerciceSystem** code.
+While the **MCQSelector** itself do not rules the boundary guards, the program can attempt to point an **Item** (as code) that do not exists in the **SectionArray**. The guards can be implemented in the **ExerciceSystem** code.
 
 So, this is how an **ExerciceSystem** could handles a boundary error: 
-If the possible **Option**s are choosen in the relative y range 0,0, and in the relative coordinates x in the range -1,1, if the selected **Question** is "S2Q2", then the list of **Option** will be "S2A2" (the **Key**), "S2A1" and "S2A3" (the **Distractor**s). But if the selected **Question** is "S2A1", the **Option**s should contains "S2A0" code that do not exists in the **SectionArray** (out of bounds). So the **ExerciceSystem** could trims the code as "S2A1" or mod the code as "S2A2". Anyway, the behaviour depends on how the **ExerciceSystem** is implemented, not the ****MCQSelector****.
+If the possible **Option**s are choosen in the relative y range 0,0, and in the relative coordinates x in the range -1,1, if the selected **Question** is "S2Q2", then the list of **Option** will be "S2A2" (the **Key**), "S2A1" and "S2A3" (the **Distractor**s). But if the selected **Question** is "S2A1", the **Option**s should contains "S2A0" code that do not exists in the **SectionArray** (out of bounds). So the **ExerciceSystem** could trims the code as "S2A1" or mod the code as "S2A2". Anyway, the behaviour depends on how the **ExerciceSystem** is implemented, not the **MCQSelector**.
 
-A last subsystem is the **Substitution** system who works with a boolean to activated it (****Substitution**Mode**) and a range x,y with local/global coordinate **Option**s for the two axis. This system allows to substitute the **Question** with any other **Item** within the range. This process occurs at the end of the **Section** selection process. See the last pratical example for usage.
+A last subsystem is the **Substitution** system who works with a boolean to activated it (**SubstitutionMode**) and a range x,y with local/global coordinate **Option**s for the two axis. This system allows to substitute the **Question** with any other **Item** within the range. This process occurs at the end of the **Section** selection process. See the last pratical example for usage.
 
 ## Dynamic Content **Substitution**: ##
 
@@ -231,13 +232,13 @@ The temporary storage of the substituted **Question** (TempSubstituted**Question
 
 ## Boundary Management: ##
 
-While the ****MCQSelector**** itself doesn't implement boundary protections, the document outlines strategies for the larger ExerciseSystem to handle out-of-bounds selections. This separation of concerns ensures that the generator remains focused on its core responsibility (creating diverse **Question** sets) while allowing integration points for error handling.
+While the **MCQSelector** itself doesn't implement boundary protections, the document outlines strategies for the larger ExerciseSystem to handle out-of-bounds selections. This separation of concerns ensures that the generator remains focused on its core responsibility (creating diverse **Question** sets) while allowing integration points for error handling.
 
 The modular design enables different ExerciseSystems to implement custom boundary handling strategies appropriate to their specific needs, whether through trimming, modulo arithmetic, or other approaches.
 
 ## Example: ##
 
-We lunch the ****MCQSelector**** who will produce a **Section** of one **Question** and two **Option**s.
+We lunch the **MCQSelector** who will produce a **Section** of one **Question** and two **Option**s.
 The **Question** is choosen within the range x 0,2 and y 1,1. While the **Option**'s Number is in the range 2,2 (always 2 **Option**s), and are choosen in the range x 0,2 in absolute coordinate, and in the range y 0,0 in relative coordinate.
 
 So, the List of **Question**s in the **Section** could contains: "S2Q1" or "S2Q2"or "S2Q3"
@@ -293,15 +294,15 @@ If the choosen **Question** was S2Q1, the **Key** in the **Option**'s list is "S
 
 ### Example: "Match the color with its corresponding name in French" ###
 
-We lunch the ****MCQSelector**** who will produce a **Section** of one **Question** and two **Option**s.
+We lunch the **MCQSelector** who will produce a **Section** of one **Question** and two **Option**s.
 In the **ExerciceSystem**'s side, the **Prompt** is "Match the color with its corresponding name in French". 
 The **Question** is choosen within the range x 0,2 and y 0,1. While the **Option**'s Number is in the range 2,2 (always 2 **Option**s), and are choosen in the range x 0,2 in absolute coordinate, and in the range y 0,1 in absolute coordinate.
 
 For the example, we choose the **Question** "Red", the **Key** is then "Rouge". The  unique **Distractor** is choosen from "Vert", "Bleu", "Cyan", "Magenta" and "Jaune".
 As the **ExerciceSystem** **Prompt**s a color, the same system knows it must display the second **Item** from the **Answer** **Item**s. For this **Prompt**, knowing that the **Question** is the **Item** S1Q1, the **Key** is S1A1, and the **Distractor**s could be S1An or S2An. In this example, the right **Answer** share the first and second offset (1 and 1 of S1A1) with the **Question**. So from the displayed **Prompt**, it could be like:
 
-"Match the color with its corresponding name in French"
-   (shawn a red square)
+*"Match the color with its corresponding name in French"*
+   *(shawn a red square)*
    1. Rouge (S1A1, the **Key**)
    2. Magenta (S2A2, the **Distractor**)
 
@@ -311,13 +312,13 @@ Second example, the **ExerciceSystem** **Prompt**s "Name the category of this co
 The **Question** is choosen within the range x 0,2 and y 0,1. While the **Option**'s Number is in the range 2,2 (always 2 **Option**s), and are choosen in the range x 0,2 in absolute coordinate, and in the range y 0,1 in absolute coordinate. In the ****MCQSelector****, we set the **Comparator** to 1, to compare the first **Item** only.
 
 In this example, we choose the **Question** "Red". The **Key** is 
-then "Primary","Rouge". Since the list in the Inc format is defined as 1-based, "Primary" is the first part, "Rouge" the second part. Since the **Comparator** is set to 1, the ****MCQSelector**** will compares "Primary" with another **Item**'s first part in the **Distractor** selection process. Selecting this **Distractor** (unique since the range is 2,2 for two **Option**s in any case), the **Distractor** is choosen from "Vert", "Bleu", "Cyan", "Magenta" and "Jaune" where only "Cyan", "Magenta" and "Jaune" are valids, since the first part of these **Item**s is "Secondary", which match with the **Item** category S2An. The ****MCQSelector**** will pick any **Item**s which the first part verify S1<>Sn. 
-Since the ****MCQSelector**** will search a different **Item**s as **Distractor**s, this is important in this case to propose only 2 **Option**s, because if we set more possible **Option**s, like for example 3, the algorithm will search a 3th **Distractor** who don't match S1 and the S2 from the second **Distractor**, entering then in a infinite loop, until we enlarge the y range of the **Option**s.
+then "Primary","Rouge". Since the list in the Inc format is defined as 1-based, "Primary" is the first part, "Rouge" the second part. Since the **Comparator** is set to 1, the **MCQSelector** will compares "Primary" with another **Item**'s first part in the **Distractor** selection process. Selecting this **Distractor** (unique since the range is 2,2 for two **Option**s in any case), the **Distractor** is choosen from "Vert", "Bleu", "Cyan", "Magenta" and "Jaune" where only "Cyan", "Magenta" and "Jaune" are valids, since the first part of these **Item**s is "Secondary", which match with the **Item** category S2An. The **MCQSelector** will pick any **Item**s which the first part verify S1<>Sn. 
+Since the **MCQSelector** will search a different **Item**s as **Distractor**s, this is important in this case to propose only 2 **Option**s, because if we set more possible **Option**s, like for example 3, the algorithm will search a 3th **Distractor** who don't match S1 and the S2 from the second **Distractor**, entering then in a infinite loop, until we enlarge the y range of the **Option**s.
 
 So, this is how the **Prompt** is be shown from a **ExerciceSystem**:
 
-"Name the category of this color"
-   (shawn a red square)
+*"Name the category of this color"*
+   *(shawn a red square)*
    1. Primary (S1A1, the **Key**)
    2. Seconday (S2A2, the **Distractor**)
 
@@ -326,12 +327,12 @@ The limitation of this system is that a "category", or "set" can be only defined
 ### Example: "Find the complementary color" ###
 
 Thirth example that use the **Substitution** process, the **ExerciceSystem** **Prompt**s "Find the complementary color".
-The **Question** is choosen within the range x 0,2 and y 0,1. While the **Option**'s Number is in the range 2,2 (always 2 **Option**s), and are choosen in the range x 0,2 in absolute coordinate, and in the range y 0,1 in absolute coordinate. In the ****MCQSelector****, we set the **Comparator** to 1, to compare the first **Item** only, and the ****Substitution**Mode** to True.
+The **Question** is choosen within the range x 0,2 and y 0,1. While the **Option**'s Number is in the range 2,2 (always 2 **Option**s), and are choosen in the range x 0,2 in absolute coordinate, and in the range y 0,1 in absolute coordinate. In the **MCQSelector**, we set the **Comparator** to 1, to compare the first **Item** only, and the ****Substitution**Mode** to True.
 
 In this example, we choose the **Question** "Red". The **Key** is 
-then "Primary","Rouge". Since the ****Substitution**Mode** is set to True, and the range is set in local coordinate in x with the range 0,0 and the y axis is set in local coordinate in the range 0,1, the ****MCQSelector**** will chooses any other **Item**s within this range, so in this example, "Cyan" is the only valid **Substitution**. The **Key** becomes "Primary", "Cyan", from the **Item** S2Q1 (it's Cyan from french, not english). But the **Substitution** process only operates at the very end of the **Section**'s set up. For now, the whole system use Red (S1Q1) as the **Question** and considerate "Primary", "Rouge" as the **Key** (S1A1), but already choose the subtitued **Key** as a temp value (TempSubstitued**Question**).
+then "Primary","Rouge". Since the ****Substitution**Mode** is set to True, and the range is set in local coordinate in x with the range 0,0 and the y axis is set in local coordinate in the range 0,1, the **MCQSelector** will chooses any other **Item**s within this range, so in this example, "Cyan" is the only valid **Substitution**. The **Key** becomes "Primary", "Cyan", from the **Item** S2Q1 (it's Cyan from french, not english). But the **Substitution** process only operates at the very end of the **Section**'s set up. For now, the whole system use Red (S1Q1) as the **Question** and considerate "Primary", "Rouge" as the **Key** (S1A1), but already choose the subtitued **Key** as a temp value (TempSubstitued**Question**).
 
-Since the **Comparator** is set to 1, the ****MCQSelector**** will compares "Primary" with another **Item**'s first part in the **Distractor** selection process. The **Distractor** is choosen from "Vert", "Bleu", "Cyan", "Magenta" and "Jaune" where only "Cyan", "Magenta" and "Jaune" are valids, since the first part of these **Item**s is "Secondary", which match with the **Item** category S2An. The ****MCQSelector**** will pick any **Item**s which the first part verify S1<>Sn. 
+Since the **Comparator** is set to 1, the **MCQSelector** will compares "Primary" with another **Item**'s first part in the **Distractor** selection process. The **Distractor** is choosen from "Vert", "Bleu", "Cyan", "Magenta" and "Jaune" where only "Cyan", "Magenta" and "Jaune" are valids, since the first part of these **Item**s is "Secondary", which match with the **Item** category S2An. The **MCQSelector** will pick any **Item**s which the first part verify S1<>Sn. 
 
 In this example, we want the **Key** for "Red" is "Cyan", so Cyan can't be picked neither as **Distractor**, because it matches with the temp substitued value. When an **Item** is selected as potential **Distractor** while the ****Substitution**Mode** is activated, the **Item** is verified to not matches with the **Question** and the TempSubstituted**Question**. 
 The valid **Distractor**s are "Magenta" and "Jaune".
@@ -339,8 +340,8 @@ At the end of the process, the TempSubstituted**Question** (here, it's S2Q1) rep
 
 So, this is how the **Prompt** is be shown from a **ExerciceSystem** if we choose to read the Q for S2Q1 corresponding with the A of S2A1:
 
-"Find the complementary color"
-   (shawn a red square)
+*"Find the complementary color"*
+   *(shawn a red square)*
    1. Cyan (S1Q1, the **Key**)
    2. Yellow (S2Q3, possible **Distractor**)
 
