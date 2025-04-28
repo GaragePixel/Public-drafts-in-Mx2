@@ -231,7 +231,7 @@ A last subsystem is the **Substitution** system who works with a boolean to acti
 
 ## Dynamic Content **Substitution**: ##
 
-The **Substitution** system transforms the way **Question**s and **Answer**s relate to each other. By enabling the ****SubstitutionMode**, the system can create exercises that test relationships between **Item**s rather than direct knowledge. This is particularly powerful for generating problems that test understanding of complementary concepts, opposites, or transformations.
+The **Substitution** system transforms the way **Question**s and **Answer**s relate to each other. By enabling the **SubstitutionMode**, the system can create exercises that test relationships between **Item**s rather than direct knowledge. This is particularly powerful for generating problems that test understanding of complementary concepts, opposites, or transformations.
 
 The temporary storage of the substituted **Question** (TempSubstituted**Question**) ensures that the **Distractor** selection process remains coherent even when the final **Question** will be different from the initial selection.
 
