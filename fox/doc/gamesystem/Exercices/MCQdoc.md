@@ -174,7 +174,7 @@ The **SectionArray** is an 0-based 2d array contening codes in the format SxQy a
 - **TempSubstitutedQuestion** contains an **Item** code
 - Range x,y in relative/absolute coordinates per axis
 - Substituted **Question** choosen at the start of the **Query** set up and stored in **TmpSubstitutedQuestion**
-- At the very end of the Query's set up, the initial choosen **Question** is replaced by the value stored in **TmpSubstitutedQuestion**
+- At the very end of the **Query**'s set up, the initial choosen **Question** is replaced by the value stored in **TmpSubstitutedQuestion**
 
 ## Ink Format implementation of a Query's **Prompt**: ##
 
@@ -233,7 +233,7 @@ A last subsystem is the **Substitution** system who works with a boolean to acti
 
 The **Substitution** system transforms the way **Question**s and **Answer**s relate to each other. By enabling the **SubstitutionMode**, the system can create exercises that test relationships between **Item**s rather than direct knowledge. This is particularly powerful for generating problems that test understanding of complementary concepts, opposites, or transformations.
 
-The temporary storage of the substituted **Question** (TempSubstituted**Question**) ensures that the **Distractor** selection process remains coherent even when the final **Question** will be different from the initial selection.
+The temporary storage of the substituted **Question** (**TempSubstitutedQuestion**) ensures that the **Distractor** selection process remains coherent even when the final **Question** will be different from the initial selection.
 
 ## Boundary Management: ##
 
