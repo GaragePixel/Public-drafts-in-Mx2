@@ -14,6 +14,10 @@ This document provides a comprehensive technical overview of the MCQSelector sys
 
 ## Notes on Implementation
 
+The **MCQSelector** employs a coordinate-based approach to question generation, using a two-dimensional array structure (**SectionArray**) as its foundational data container. This design enables precise targeting of related question-answer pairs through coordinate relationships rather than hard-coded connections, providing significant flexibility for quiz content creation and maintenance.
+
+Each Section contains a **SectionArray** where Items are positioned according to logical relationships, allowing the system to generate **Queries** by selecting elements based on their coordinate positions. For example, questions might occupy even-numbered rows with their corresponding answers in the following odd-numbered rows, creating an inherent relationship through array positioning.
+
 The **MCQSelector** documentation presents a comprehensive overview of the **GaragePixel**'s coordinate-based multiple-choice **Question** system. The document employs visual representations alongside technical explanations to illustrate how our array-based approach enables flexible **Question** generation through coordinate selection.
 
 The document successfully demonstrates the relationship between **Section**s, **Querie**s, and **Item**s through both visual diagrams and structural explanations. The array visualizations clearly show how **Question**s and **Answer**s are organized in a grid format that supports programmatic selection and relationship mapping.
