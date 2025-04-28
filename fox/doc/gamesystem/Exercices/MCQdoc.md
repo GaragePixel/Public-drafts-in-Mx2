@@ -237,7 +237,7 @@ The temporary storage of the substituted **Question** (**TempSubstitutedQuestion
 
 ## Boundary Management: ##
 
-While the **MCQSelector** itself doesn't implement boundary protections, the document outlines strategies for the larger ExerciseSystem to handle out-of-bounds selections. This separation of concerns ensures that the generator remains focused on its core responsibility (creating diverse **Question** sets) while allowing integration points for error handling.
+While the **MCQSelector** itself doesn't implement boundary protections, the document outlines strategies for the larger **ExerciseSystem** to handle out-of-bounds selections. This separation of concerns ensures that the generator remains focused on its core responsibility (creating diverse **Question** sets) while allowing integration points for error handling.
 
 The modular design enables different ExerciseSystems to implement custom boundary handling strategies appropriate to their specific needs, whether through trimming, modulo arithmetic, or other approaches.
 
