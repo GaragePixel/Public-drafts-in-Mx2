@@ -40,18 +40,18 @@ This documentation serves as an essential reference for **GaragePixel** implemen
 
 <table border="0" cellpadding="8">
 	<tr>
-		<td width="100" valign="middle" align="left">**Section**</td>
+		<td width="100" valign="middle" align="left">Section</td>
 		<td width="50" valign="middle" align="center">→</td>
 		<td width="160" valign="top">
 			<table border="1" cellpadding="4" width="100%">
 				<tr><th align="left">Query</th></tr>
-				<tr><td align="left">**Question**</td></tr>
-				<tr><td align="left">**Option** 2</td></tr>
-				<tr><td align="left">**Option** 3</td></tr>
+				<tr><td align="left">Question</td></tr>
+				<tr><td align="left">Option 2</td></tr>
+				<tr><td align="left">Option 3</td></tr>
 			</table>
 		</td>
 		<td width="50" valign="middle" align="center">←</td>
-		<td width="100" valign="middle" align="left">**Item**s</td>
+		<td width="100" valign="middle" align="left">Items</td>
 	</tr>
 	<tr>
 		<td width="100" valign="middle"></td>
@@ -66,13 +66,13 @@ This documentation serves as an essential reference for **GaragePixel** implemen
 		<td width="160" valign="top">
 			<table border="1" cellpadding="4" width="100%">
 				<tr><th align="left">Query</th></tr>
-				<tr><td align="left">**Question**</td></tr>
-				<tr><td align="left">**Option** 2</td></tr>
-				<tr><td align="left">**Option** 3</td></tr>
+				<tr><td align="left">Question</td></tr>
+				<tr><td align="left">Option 2</td></tr>
+				<tr><td align="left">Option 3</td></tr>
 			</table>
 		</td>
 		<td width="50" valign="middle" align="center">←</td>
-		<td width="100" valign="middle" align="left">**Item**s</td>
+		<td width="100" valign="middle" align="left">Items</td>
 	</tr>
 </table>
 
