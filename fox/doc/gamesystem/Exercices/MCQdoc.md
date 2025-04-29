@@ -338,7 +338,7 @@ In this example, we choose the **Question** "Red". The **Key** is then "Primary"
 
 Since the **Comparator** is set to 1, the **MCQSelector** will compares "Primary" with another **Item**'s first part in the **Distractor** selection process. The **Distractor** is choosen from "Vert", "Bleu", "Cyan", "Magenta" and "Jaune" where only "Cyan", "Magenta" and "Jaune" are valids, since the first part of these **Item**s is "Secondary", which match with the **Item** category C2An. The **MCQSelector** will pick any **Item**s which the first part verify C1<>Cn. 
 
-In this example, we want the **Key** for "Red" is "Cyan", so Cyan can't be picked neither as **Distractor**, because it matches with the temp substitued value. When an **Item** is selected as potential **Distractor** while the ****Substitution**Mode** is activated, the **Item** is verified to not matches with the **Question** and the **TempSubstitutedQuestion**. 
+In this example, we want the **Key** for "Red" is "Cyan", so Cyan can't be picked neither as **Distractor**, because it matches with the temp substitued value. When an **Item** is selected as potential **Distractor** while the **SubstitutionMode** is activated, the **Item** is verified to not matches with the **Question** and the **TempSubstitutedQuestion**. 
 The valid **Distractor**s are "Magenta" and "Jaune".
 At the end of the process, the **TempSubstitutedQuestion** (here, it's C2Q1) replace the **Question** (here, C1Q1). And the **Section** is done.
 
