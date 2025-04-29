@@ -353,8 +353,6 @@ The subtituted **Item** can be picked randomly in a range, so this system is onl
 
 # Ink Variable-Length Nested Lists for MCQSelector
 
-# Ink Variable Structure for MCQSelector
-
 ## Purpose
 This technical document provides a streamlined implementation for representing the MCQSelector's hierarchical data structure in Ink script, showing how we can maintain sections with variable-length queries and options while working within Ink's variable system constraints.
 
@@ -383,18 +381,11 @@ VAR currentSection = ""
 VAR currentQuestion = ""
 VAR currentOptions = ""
 VAR sections = ""
-
-=== function CreateOption(optionCode) ===
-	~ return optionCode
-===
-
-=== function CreateQuestion(questionCode) ===
-	~ return questionCode
-===
+VAR savedState = ""
 
 === function BeginQuery(questionCode) ===
 	// Start a new query
-	~ currentQuestion = CreateQuestion(questionCode)
+	~ currentQuestion = questionCode
 	~ currentOptions = ""
 	~ return true
 ===
@@ -403,9 +394,9 @@ VAR sections = ""
 	// Add option to current query's options
 	{
 		- currentOptions == "":
-			~ currentOptions = CreateOption(optionCode)
+			~ currentOptions = optionCode
 		- else:
-			~ currentOptions = currentOptions + ITEM_DELIM + CreateOption(optionCode)
+			~ currentOptions = currentOptions + ITEM_DELIM + optionCode
 	}
 	~ return true
 ===
