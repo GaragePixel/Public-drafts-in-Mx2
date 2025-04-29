@@ -701,42 +701,42 @@ End
 
 4. **State Persistence**: The string representation enables saving and restoring quiz state during runtime:
 
-	```ink
-	=== SaveAndRestoreDemo ===
-		~ CreateMathQuiz()
-		~ temp savedState = SaveQuizState()
+```ink
+=== SaveAndRestoreDemo ===
+	~ CreateMathQuiz()
+	~ temp savedState = SaveQuizState()
 		
-		// Clear everything by starting a new quiz
-		~ StartSection()
-		~ BeginQuery("Temporary question")
-		~ AddOption("Temporary option")
-		~ FinishQuery()
-		~ EndSection("Temporary")
+	// Clear everything by starting a new quiz
+	~ StartSection()
+	~ BeginQuery("Temporary question")
+	~ AddOption("Temporary option")
+	~ FinishQuery()
+	~ EndSection("Temporary")
 		
-		// Now restore the original state
-		~ LoadQuizState(savedState)
-		~ temp quizCount = CountQueriesInSection("MathQuiz")
+	// Now restore the original state
+	~ LoadQuizState(savedState)
+	~ temp quizCount = CountQueriesInSection("MathQuiz")
 		
-		Successfully restored Math Quiz with {quizCount} questions.
-	===
+	Successfully restored Math Quiz with {quizCount} questions.
+===
 
 
 5. **Section Iteration Capability**: The structure supports listing and iterating through all sections:
 
-	```ink
-	=== DisplayAllQuizzes ===
-		~ temp allSections = ListAllSections()
-		~ temp i = 0
-		
-		Available quizzes:
-		{
-			- i < LIST_COUNT(allSections):
-				{i+1}. {LIST_VALUE(allSections, i)}
-				~ i = i + 1
-				-> LOOP
-		}
-	===
-	```
+```ink
+=== DisplayAllQuizzes ===
+	~ temp allSections = ListAllSections()
+	~ temp i = 0
+	
+	Available quizzes:
+	{
+		- i < LIST_COUNT(allSections):
+			{i+1}. {LIST_VALUE(allSections, i)}
+			~ i = i + 1
+			-> LOOP
+	}
+===
+```
 
 This implementation fully integrates with the MCQSelector's namecode system, which relies on string identifiers for content elements. Using delimiter-based encoding, we can maintain the hierarchical relationships between sections, queries, and options that MCQSelector requires, while working entirely within Ink's native capabilities.
 
