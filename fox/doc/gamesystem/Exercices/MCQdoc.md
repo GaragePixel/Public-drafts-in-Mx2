@@ -557,7 +557,7 @@ VAR sections = ""
 	~ FinishQuery()
 	
 	// Finalize the section
-	~ EndSection("Cection1")
+	~ EndSection("Section1")
 ===
 
 === CreateMathQuiz ===
