@@ -355,20 +355,21 @@ The subtituted **Item** can be picked randomly in a range, so this system is onl
 # Ink Variable-Length Nested Lists for MCQSelector
 
 ## Purpose
-This part of the document explores implementing variable-length nested list structures in Ink for our MCQSelector system, specifically addressing the challenge of creating hierarchical quiz structures with variable numbers of options per question using Ink's constrained variable system.
+This part of the document provides a comprehensive implementation approach for representing the MCQSelector's hierarchical data structure in Ink script language, demonstrating how to maintain multiple sections containing variable-length queries with variable-length option lists while working within Ink's variable system constraints.
 
 ## List of Functionality
-* Dynamic section/queries data structure implementation in Ink
-* Variable-length option lists per query
-* Hierarchical relationship preservation
-* Query and option access functions
-* Serialization and deserialization support
-* String-based encoding for nested relationships
-* Arbitrary depth query storage and retrieval
+* Section/Query/Option hierarchy representation in Ink
+* Variable-length option lists per question
+* Query creation and management API
+* Section management functions
+* Query retrieval and display functions
+* Quiz state serialization and restoration
+* String-based hierarchical encoding
+* Complete compatibility with MCQSelector namecode system
 
 ## Notes on Implementation
 
-Implementing a variable-length nested list structure in Ink requires creative use of string encoding since Ink doesn't natively support reference-based data structures or true nested lists. The following approach uses delimiters to encode the hierarchical structure:
+Ink presents unique challenges for complex data structures due to its variable system limitations. This implementation uses delimiter-based string encoding to create a flexible hierarchy that supports variable-length lists at each level. This approach enables us to maintain the MCQSelector's structure while working entirely within Ink's native capabilities.
 
 ```ink
 // Define our section storage and separator constants
@@ -440,13 +441,114 @@ VAR sections = ""
 	}
 	~ return sectionName
 ===
-```
 
-The structure allows for a variable number of Query items per Section and a variable number of Option items per Query, fulfilling our requirements for flexible MCQSelector data structures in Ink.
+=== function DisplayQuery(queryStr) ===
+	~ temp parts = queryStr.Split(QUERY_DELIM)
+	~ temp question = parts[0]
+	~ temp optionsStr = parts[1]
+	~ temp options = optionsStr.Split(ITEM_DELIM)
+	~ temp i = 0
+	~ temp optionLabel = ""
+	
+	Question: {question}
+	Options:
+	{
+		- i < LIST_COUNT(options):
+			{
+				- i == 0: ~ optionLabel = "A"
+				- i == 1: ~ optionLabel = "B"
+				- i == 2: ~ optionLabel = "C"
+				- i == 3: ~ optionLabel = "D"
+				- i == 4: ~ optionLabel = "E"
+				- i == 5: ~ optionLabel = "F"
+				- i == 6: ~ optionLabel = "G"
+				- else: ~ optionLabel = "{i+1}"
+			}
+			{optionLabel}) {LIST_VALUE(options, i)}
+			~ i = i + 1
+			-> LOOP
+	}
+	~ return true
+===
 
-Let's examine how to implement this to create our hierarchical quiz structure:
+=== function GetQueryAt(sectionName, queryIndex) ===
+	~ temp sectionsList = sections.Split(SECTION_DELIM)
+	~ temp i = 0
+	~ temp result = ""
+	
+	{
+		- i < LIST_COUNT(sectionsList):
+			~ temp sectionParts = LIST_VALUE(sectionsList, i).Split(QUERY_DELIM)
+			~ temp currentSectionName = sectionParts[0]
+			
+			{
+				- currentSectionName == sectionName:
+					~ temp sectionContent = sectionParts[1]
+					~ temp queriesList = sectionContent.Split(SECTION_DELIM)
+					
+					{
+						- queryIndex >= 0 && queryIndex < LIST_COUNT(queriesList):
+							~ result = LIST_VALUE(queriesList, queryIndex)
+					}
+			}
+			
+			~ i = i + 1
+			-> LOOP
+	}
+	
+	~ return result
+===
 
-```ink
+=== function SaveQuizState() ===
+	~ return sections
+===
+
+=== function LoadQuizState(savedState) ===
+	~ sections = savedState
+	~ return true
+===
+
+=== function CountQueriesInSection(sectionName) ===
+	~ temp sectionsList = sections.Split(SECTION_DELIM)
+	~ temp i = 0
+	~ temp queryCount = 0
+	
+	{
+		- i < LIST_COUNT(sectionsList):
+			~ temp sectionParts = LIST_VALUE(sectionsList, i).Split(QUERY_DELIM)
+			~ temp currentSectionName = sectionParts[0]
+			
+			{
+				- currentSectionName == sectionName:
+					~ temp sectionContent = sectionParts[1]
+					~ temp queriesList = sectionContent.Split(SECTION_DELIM)
+					~ queryCount = LIST_COUNT(queriesList)
+			}
+			
+			~ i = i + 1
+			-> LOOP
+	}
+	
+	~ return queryCount
+===
+
+=== function ListAllSections() ===
+	~ temp sectionsList = sections.Split(SECTION_DELIM)
+	~ temp i = 0
+	~ temp sectionNames = ()
+	
+	{
+		- i < LIST_COUNT(sectionsList):
+			~ temp sectionParts = LIST_VALUE(sectionsList, i).Split(QUERY_DELIM)
+			~ temp currentSectionName = sectionParts[0]
+			~ sectionNames += currentSectionName
+			~ i = i + 1
+			-> LOOP
+	}
+	
+	~ return sectionNames
+===
+
 === CreateMathQuiz ===
 	// Start a new section
 	~ StartSection()
@@ -490,115 +592,83 @@ Let's examine how to implement this to create our hierarchical quiz structure:
 
 ## Technical Advantages
 
-### Flexible Structure with Arbitrary Depth
+### String-Encoded Hierarchy for Ink Constraints
 
-This implementation offers key advantages for our MCQSelector Ink integration:
+This implementation offers significant advantages for our MCQSelector Ink integration:
 
-1. **Variable-Length Support**: The delimiter-based approach supports any number of options per query without modification:
+1. **Pure Ink Implementation**: The solution uses only native Ink features while achieving the complex data hierarchy needed:
 
-```
-Function DisplayQuery(queryStr)
-	Local parts:String[] = queryStr.Split(QUERY_DELIM)
-	Local question:String = parts[0]
-	Local options:String[] = parts[1].Split(ITEM_DELIM)
-	
-	Print "Q: " + question
-	
-	For Local i:Int = 0 Until options.Length
-		Print Chr(65 + i) + ") " + options[i]
-	Next
-End
-```
-
-2. **Hierarchical Navigation**: The structure preserves relationships while allowing direct access:
-
-```
-Function GetQueryAt(sectionName:String, queryIndex:Int)
-	Local sectionsList:String[] = sections.Split(SECTION_DELIM)
-	
-	For Local i:Int = 0 Until sectionsList.Length
-		Local sectionParts:String[] = sectionsList[i].Split(QUERY_DELIM)
-		Local currentSectionName:String = sectionParts[0]
+	```ink
+	=== TestQuizGeneration ===
+		~ CreateMathQuiz()
 		
-		If currentSectionName = sectionName
-			Local queriesList:String[] = sectionParts[1].Split(SECTION_DELIM)
-			
-			If queryIndex >= 0 And queryIndex < queriesList.Length
-				Return queriesList[queryIndex]
-			End
-		End
-	Next
-	
-	Return ""
-End
-```
-
-3. **Serialization Support**: The encoded structure can be easily saved and restored:
-
-```
-Function SaveQuizState()
-	Return sections
-End
-
-Function LoadQuizState(savedState:String)
-	sections = savedState
-End
-```
-
-4. **Extendable Pattern**: The approach scales to more complex structures by adding delimiters:
-
-```
-// Add metadata to queries
-Function AddMetadataToQuery(queryStr:String, metadata:String)
-	Return queryStr + "^" + metadata
-End
-
-Function GetQueryMetadata(queryStr:String)
-	Local parts:String[] = queryStr.Split("^")
-	If parts.Length > 1
-		Return parts[1]
-	End
-	
-	Return ""
-End
-```
-
-### Iteration and Processing
-
-The structure allows for complete iteration and manipulation of the quiz hierarchy:
-
-```
-Function ProcessAllQuizzes()
-	Local sectionsList:String[] = sections.Split(SECTION_DELIM)
-	
-	For Local s:Int = 0 Until sectionsList.Length
-		Local sectionParts:String[] = sectionsList[s].Split(QUERY_DELIM)
-		Local sectionName:String = sectionParts[0]
+		// Display quiz details
+		Math Quiz has {CountQueriesInSection("MathQuiz")} questions.
 		
-		Print "Section: " + sectionName
+		Let's see the third question:
+		{DisplayQuery(GetQueryAt("MathQuiz", 2))}
+	===
+	```
+
+2. **Variable Length Options Support**: The delimiter-based structure allows any number of questions and options:
+
+	```ink
+	=== CreateCustomMCQ ===
+		~ StartSection()
+		~ BeginQuery("S1Q1")
+		~ AddOption("S1A1")
+		~ AddOption("S1A2")
+		~ AddOption("S1A3")
+		~ FinishQuery()
 		
-		If sectionParts.Length > 1
-			Local queriesList:String[] = sectionParts[1].Split(SECTION_DELIM)
-			
-			For Local q:Int = 0 Until queriesList.Length
-				Local queryParts:String[] = queriesList[q].Split(QUERY_DELIM)
-				Local question:String = queryParts[0]
-				
-				Print "  Question " + (q+1) + ": " + question
-				
-				If queryParts.Length > 1
-					Local options:String[] = queryParts[1].Split(ITEM_DELIM)
-					
-					For Local o:Int = 0 Until options.Length
-						Print "    Option " + (o+1) + ": " + options[o]
-					Next
-				End
-			Next
-		End
-	Next
-End
-```
+		~ BeginQuery("S1Q2")
+		~ AddOption("S1A4")
+		~ AddOption("S1A5")
+		~ FinishQuery()
+		
+		~ EndSection("CustomQuiz")
+	===
+	```
 
-This implementation enables us to create an arbitrarily deep and wide structure for our MCQSelector while working within Ink's variable system constraints. The string-based approach maintains flexibility while providing necessary access patterns for quiz generation and processing.
+3. **State Persistence**: The string representation enables saving and restoring quiz state during runtime:
 
-By implementing this structure, we gain the ability to create complex quiz hierarchies with varying numbers of options per question, perfectly suited for the MCQSelector system's dynamic content requirements.
+	```ink
+	=== SaveAndRestoreDemo ===
+		~ CreateMathQuiz()
+		~ temp savedState = SaveQuizState()
+		
+		// Clear everything by starting a new quiz
+		~ StartSection()
+		~ BeginQuery("Temporary question")
+		~ AddOption("Temporary option")
+		~ FinishQuery()
+		~ EndSection("Temporary")
+		
+		// Now restore the original state
+		~ LoadQuizState(savedState)
+		~ temp quizCount = CountQueriesInSection("MathQuiz")
+		
+		Successfully restored Math Quiz with {quizCount} questions.
+	===
+	```
+
+4. **Section Iteration Capability**: The structure supports listing and iterating through all sections:
+
+	```ink
+	=== DisplayAllQuizzes ===
+		~ temp allSections = ListAllSections()
+		~ temp i = 0
+		
+		Available quizzes:
+		{
+			- i < LIST_COUNT(allSections):
+				{i+1}. {LIST_VALUE(allSections, i)}
+				~ i = i + 1
+				-> LOOP
+		}
+	===
+	```
+
+This implementation fully integrates with the MCQSelector's namecode system, which relies on string identifiers for content elements. Using delimiter-based encoding, we can maintain the hierarchical relationships between sections, queries, and options that MCQSelector requires, while working entirely within Ink's native capabilities.
+
+The approach creates a standardized API for quiz creation and access that mirrors the MCQSelector's structure while accommodating the constraint of working with Ink's value-based variable system rather than reference-based object models. This enables us to deliver consistent quiz experiences across platforms while leveraging Ink's narrative capabilities.
