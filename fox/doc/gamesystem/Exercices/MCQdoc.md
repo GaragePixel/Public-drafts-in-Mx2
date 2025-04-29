@@ -351,3 +351,254 @@ So, this is how the **Prompt** is be shown from a **ExerciceSystem** if we choos
    2. Yellow (S2Q3, possible **Distractor**)
 
 The subtituted **Item** can be picked randomly in a range, so this system is only worst to explore.
+
+# Ink Variable-Length Nested Lists for MCQSelector
+
+## Purpose
+This part of the document explores implementing variable-length nested list structures in Ink for our MCQSelector system, specifically addressing the challenge of creating hierarchical quiz structures with variable numbers of options per question using Ink's constrained variable system.
+
+## List of Functionality
+* Dynamic section/queries data structure implementation in Ink
+* Variable-length option lists per query
+* Hierarchical relationship preservation
+* Query and option access functions
+* Serialization and deserialization support
+* String-based encoding for nested relationships
+* Arbitrary depth query storage and retrieval
+
+## Notes on Implementation
+
+Implementing a variable-length nested list structure in Ink requires creative use of string encoding since Ink doesn't natively support reference-based data structures or true nested lists. The following approach uses delimiters to encode the hierarchical structure:
+
+```ink
+// Define our section storage and separator constants
+VAR SECTION_DELIM = "§"
+VAR QUERY_DELIM = "¶"
+VAR ITEM_DELIM = "|"
+
+// Storage variables
+VAR currentSection = ""
+VAR currentQuestion = ""
+VAR currentOptions = ""
+VAR sections = ""
+
+=== function CreateOption(optionText) ===
+	~ return optionText
+===
+
+=== function CreateQuestion(questionText) ===
+	~ return questionText
+===
+
+=== function BeginQuery(questionText) ===
+	// Start a new query
+	~ currentQuestion = CreateQuestion(questionText)
+	~ currentOptions = ""
+	~ return true
+===
+
+=== function AddOption(optionText) ===
+	// Add option to current query's options
+	{
+		- currentOptions == "":
+			~ currentOptions = CreateOption(optionText)
+		- else:
+			~ currentOptions = currentOptions + ITEM_DELIM + CreateOption(optionText)
+	}
+	~ return true
+===
+
+=== function FinishQuery() ===
+	// Combine question and options into a query
+	~ temp query = currentQuestion + QUERY_DELIM + currentOptions
+	
+	// Add to current section
+	{
+		- currentSection == "":
+			~ currentSection = query
+		- else:
+			~ currentSection = currentSection + SECTION_DELIM + query
+	}
+	~ return true
+===
+
+=== function StartSection() ===
+	~ currentSection = ""
+	~ return true
+===
+
+=== function EndSection(sectionName) ===
+	// Store the complete section
+	~ temp sectionEntry = sectionName + QUERY_DELIM + currentSection
+	
+	// Add to all sections
+	{
+		- sections == "":
+			~ sections = sectionEntry
+		- else:
+			~ sections = sections + SECTION_DELIM + sectionEntry
+	}
+	~ return sectionName
+===
+```
+
+The structure allows for a variable number of Query items per Section and a variable number of Option items per Query, fulfilling our requirements for flexible MCQSelector data structures in Ink.
+
+Let's examine how to implement this to create our hierarchical quiz structure:
+
+```ink
+=== CreateMathQuiz ===
+	// Start a new section
+	~ StartSection()
+	
+	// Create first query with 3 options
+	~ BeginQuery("What is 2+2?")
+	~ AddOption("3")
+	~ AddOption("4")
+	~ AddOption("5")
+	~ FinishQuery()
+	
+	// Create second query with 7 options
+	~ BeginQuery("Which are prime numbers?")
+	~ AddOption("1")
+	~ AddOption("2")
+	~ AddOption("3") 
+	~ AddOption("4")
+	~ AddOption("5")
+	~ AddOption("6")
+	~ AddOption("7")
+	~ FinishQuery()
+	
+	// Create third query with 2 options
+	~ BeginQuery("Is 9 divisible by 3?")
+	~ AddOption("Yes")
+	~ AddOption("No")
+	~ FinishQuery()
+	
+	// Create fourth query with 4 options
+	~ BeginQuery("What is the square root of 16?")
+	~ AddOption("2")
+	~ AddOption("4")
+	~ AddOption("8")
+	~ AddOption("16")
+	~ FinishQuery()
+	
+	// Finalize the section
+	~ EndSection("MathQuiz")
+===
+```
+
+## Technical Advantages
+
+### Flexible Structure with Arbitrary Depth
+
+This implementation offers key advantages for our MCQSelector Ink integration:
+
+1. **Variable-Length Support**: The delimiter-based approach supports any number of options per query without modification:
+
+```
+Function DisplayQuery(queryStr)
+	Local parts:String[] = queryStr.Split(QUERY_DELIM)
+	Local question:String = parts[0]
+	Local options:String[] = parts[1].Split(ITEM_DELIM)
+	
+	Print "Q: " + question
+	
+	For Local i:Int = 0 Until options.Length
+		Print Chr(65 + i) + ") " + options[i]
+	Next
+End
+```
+
+2. **Hierarchical Navigation**: The structure preserves relationships while allowing direct access:
+
+```
+Function GetQueryAt(sectionName:String, queryIndex:Int)
+	Local sectionsList:String[] = sections.Split(SECTION_DELIM)
+	
+	For Local i:Int = 0 Until sectionsList.Length
+		Local sectionParts:String[] = sectionsList[i].Split(QUERY_DELIM)
+		Local currentSectionName:String = sectionParts[0]
+		
+		If currentSectionName = sectionName
+			Local queriesList:String[] = sectionParts[1].Split(SECTION_DELIM)
+			
+			If queryIndex >= 0 And queryIndex < queriesList.Length
+				Return queriesList[queryIndex]
+			End
+		End
+	Next
+	
+	Return ""
+End
+```
+
+3. **Serialization Support**: The encoded structure can be easily saved and restored:
+
+```
+Function SaveQuizState()
+	Return sections
+End
+
+Function LoadQuizState(savedState:String)
+	sections = savedState
+End
+```
+
+4. **Extendable Pattern**: The approach scales to more complex structures by adding delimiters:
+
+```
+// Add metadata to queries
+Function AddMetadataToQuery(queryStr:String, metadata:String)
+	Return queryStr + "^" + metadata
+End
+
+Function GetQueryMetadata(queryStr:String)
+	Local parts:String[] = queryStr.Split("^")
+	If parts.Length > 1
+		Return parts[1]
+	End
+	
+	Return ""
+End
+```
+
+### Iteration and Processing
+
+The structure allows for complete iteration and manipulation of the quiz hierarchy:
+
+```
+Function ProcessAllQuizzes()
+	Local sectionsList:String[] = sections.Split(SECTION_DELIM)
+	
+	For Local s:Int = 0 Until sectionsList.Length
+		Local sectionParts:String[] = sectionsList[s].Split(QUERY_DELIM)
+		Local sectionName:String = sectionParts[0]
+		
+		Print "Section: " + sectionName
+		
+		If sectionParts.Length > 1
+			Local queriesList:String[] = sectionParts[1].Split(SECTION_DELIM)
+			
+			For Local q:Int = 0 Until queriesList.Length
+				Local queryParts:String[] = queriesList[q].Split(QUERY_DELIM)
+				Local question:String = queryParts[0]
+				
+				Print "  Question " + (q+1) + ": " + question
+				
+				If queryParts.Length > 1
+					Local options:String[] = queryParts[1].Split(ITEM_DELIM)
+					
+					For Local o:Int = 0 Until options.Length
+						Print "    Option " + (o+1) + ": " + options[o]
+					Next
+				End
+			Next
+		End
+	Next
+End
+```
+
+This implementation enables us to create an arbitrarily deep and wide structure for our MCQSelector while working within Ink's variable system constraints. The string-based approach maintains flexibility while providing necessary access patterns for quiz generation and processing.
+
+By implementing this structure, we gain the ability to create complex quiz hierarchies with varying numbers of options per question, perfectly suited for the MCQSelector system's dynamic content requirements.
