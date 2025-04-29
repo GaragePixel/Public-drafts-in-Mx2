@@ -741,3 +741,102 @@ End
 This implementation fully integrates with the MCQSelector's namecode system, which relies on string identifiers for content elements. Using delimiter-based encoding, we can maintain the hierarchical relationships between sections, queries, and options that MCQSelector requires, while working entirely within Ink's native capabilities.
 
 The approach creates a standardized API for quiz creation and access that mirrors the MCQSelector's structure while accommodating the constraint of working with Ink's value-based variable system rather than reference-based object models. This enables us to deliver consistent quiz experiences across platforms while leveraging Ink's narrative capabilities.
+
+# Ink Codename Comparator for MCQSelector
+
+## Purpose
+
+These functions implement the MCQSelector's code comparison algorithm in Ink format, enables flexible relationships between codenames. The system to determine relationships between different codenames based on configurable comparison modes. Here's a pure Ink implementation of the comparator function that supports the three comparison modes (0 = exact match, 1 = section match, 2 = item match):
+The MCQSelector uses a flexible codename format (SxYz where x=section number, Y=Q/A, z=item number) which requires robust parsing. These functions correctly extract the components from any valid codename and compare them according to the specified mode.
+
+```ink
+=== function CompareCodenames(codename1, codename2, mode) ===
+    // Mode 0: exact comparison
+    {
+        - mode == 0:
+            ~ return codename1 == codename2
+    }
+    
+    // Mode 1: Compare section code (S1 == S1)
+    {
+        - mode == 1:
+            ~ temp part1 = GetSectionCode(codename1)
+            ~ temp part2 = GetSectionCode(codename2)
+            ~ return part1 == part2
+    }
+    
+    // Mode 2: Compare item code (Q1 == Q1)
+    {
+        - mode == 2:
+            ~ temp part1 = GetItemCode(codename1)
+            ~ temp part2 = GetItemCode(codename2)
+            ~ return part1 == part2
+    }
+    
+    ~ return false
+===
+
+=== function GetSectionCode(codename) ===
+    // Find first A or Q to split the string
+    ~ temp i = 1 // Start after first character (S)
+    ~ temp foundSplit = false
+    ~ temp splitPos = 0
+    
+    {
+        - i < STRING_LENGTH(codename) && !foundSplit:
+            {
+                - SUBSTRING(codename, i, 1) == "A" || SUBSTRING(codename, i, 1) == "Q":
+                    ~ foundSplit = true
+                    ~ splitPos = i
+                - else:
+                    ~ i = i + 1
+                    -> LOOP
+            }
+    }
+    
+    {
+        - foundSplit:
+            ~ return SUBSTRING(codename, 0, splitPos)
+        - else:
+            ~ return ""
+    }
+===
+
+=== function GetItemCode(codename) ===
+    // Find first A or Q to extract item code
+    ~ temp i = 1 // Start after first character (S)
+    ~ temp foundSplit = false
+    ~ temp splitPos = 0
+    
+    {
+        - i < STRING_LENGTH(codename) && !foundSplit:
+            {
+                - SUBSTRING(codename, i, 1) == "A" || SUBSTRING(codename, i, 1) == "Q":
+                    ~ foundSplit = true
+                    ~ splitPos = i
+                - else:
+                    ~ i = i + 1
+                    -> LOOP
+            }
+    }
+    
+    {
+        - foundSplit:
+            ~ return SUBSTRING(codename, splitPos)
+        - else:
+            ~ return ""
+    }
+===
+```
+
+## Technical Advantages
+
+The implementation uses character-by-character parsing to correctly handle any valid codename in our system:
+
+1. **Section Extraction Algorithm**: Identifies the section portion by finding the first A or Q character, then extracting everything before it
+   
+2. **Item Extraction Algorithm**: Similarly extracts the item code by finding the first A or Q and taking everything from that position onward
+   
+3. **Flexible Number Support**: Works with any number of digits in both section and item identifiers (S1A10, S234Q56, etc.)
+
+This approach aligns with the MCQSelector's array-based implementation as documented in our technical specifications, enabling flexible coordinate-based relationships between questions and answers through codename pattern matching.
