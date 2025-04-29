@@ -354,22 +354,25 @@ The subtituted **Item** can be picked randomly in a range, so this system is onl
 
 # Ink Variable-Length Nested Lists for MCQSelector
 
+# Ink Variable Structure for MCQSelector
+**Implementation by iDkP from GaragePixel - 2025-04-29 - Aida v1.2.3**
+
 ## Purpose
-This part of the document provides a comprehensive implementation approach for representing the MCQSelector's hierarchical data structure in Ink script language, demonstrating how to maintain multiple sections containing variable-length queries with variable-length option lists while working within Ink's variable system constraints.
+This technical document provides a streamlined implementation for representing the MCQSelector's hierarchical data structure in Ink script, showing how we can maintain sections with variable-length queries and options while working within Ink's variable system constraints.
 
 ## List of Functionality
-* Section/Query/Option hierarchy representation in Ink
+* Section/Query/Option hierarchy using string-encoded structure
 * Variable-length option lists per question
-* Query creation and management API
-* Section management functions
-* Query retrieval and display functions
-* Quiz state serialization and restoration
-* String-based hierarchical encoding
-* Complete compatibility with MCQSelector namecode system
+* Section and query creation API
+* Query retrieval functions
+* Section navigation capabilities
+* Quiz state serialization
+* MCQSelector namecode system compatibility (SnQn, SnAn format)
+* Minimal implementation with no unnecessary features
 
 ## Notes on Implementation
 
-Ink presents unique challenges for complex data structures due to its variable system limitations. This implementation uses delimiter-based string encoding to create a flexible hierarchy that supports variable-length lists at each level. This approach enables us to maintain the MCQSelector's structure while working entirely within Ink's native capabilities.
+Ink's variable system presents unique challenges for representing hierarchical data. This implementation uses delimiter-based string encoding to create the Section → Query → Options structure needed for MCQSelector while maintaining compatibility with our namecode system. The implementation focuses only on essential functionality with no unnecessary overhead.
 
 ```ink
 // Define our section storage and separator constants
@@ -383,28 +386,28 @@ VAR currentQuestion = ""
 VAR currentOptions = ""
 VAR sections = ""
 
-=== function CreateOption(optionText) ===
-	~ return optionText
+=== function CreateOption(optionCode) ===
+	~ return optionCode
 ===
 
-=== function CreateQuestion(questionText) ===
-	~ return questionText
+=== function CreateQuestion(questionCode) ===
+	~ return questionCode
 ===
 
-=== function BeginQuery(questionText) ===
+=== function BeginQuery(questionCode) ===
 	// Start a new query
-	~ currentQuestion = CreateQuestion(questionText)
+	~ currentQuestion = CreateQuestion(questionCode)
 	~ currentOptions = ""
 	~ return true
 ===
 
-=== function AddOption(optionText) ===
+=== function AddOption(optionCode) ===
 	// Add option to current query's options
 	{
 		- currentOptions == "":
-			~ currentOptions = CreateOption(optionText)
+			~ currentOptions = CreateOption(optionCode)
 		- else:
-			~ currentOptions = currentOptions + ITEM_DELIM + CreateOption(optionText)
+			~ currentOptions = currentOptions + ITEM_DELIM + CreateOption(optionCode)
 	}
 	~ return true
 ===
@@ -448,23 +451,12 @@ VAR sections = ""
 	~ temp optionsStr = parts[1]
 	~ temp options = optionsStr.Split(ITEM_DELIM)
 	~ temp i = 0
-	~ temp optionLabel = ""
 	
 	Question: {question}
 	Options:
 	{
 		- i < LIST_COUNT(options):
-			{
-				- i == 0: ~ optionLabel = "A"
-				- i == 1: ~ optionLabel = "B"
-				- i == 2: ~ optionLabel = "C"
-				- i == 3: ~ optionLabel = "D"
-				- i == 4: ~ optionLabel = "E"
-				- i == 5: ~ optionLabel = "F"
-				- i == 6: ~ optionLabel = "G"
-				- else: ~ optionLabel = "{i+1}"
-			}
-			{optionLabel}) {LIST_VALUE(options, i)}
+			- {LIST_VALUE(options, i)}
 			~ i = i + 1
 			-> LOOP
 	}
@@ -549,6 +541,27 @@ VAR sections = ""
 	~ return sectionNames
 ===
 
+=== CreateMCQExample ===
+	// Start a new section
+	~ StartSection()
+	
+	// Create first query with 3 options
+	~ BeginQuery("S1Q1")
+	~ AddOption("S1A1")
+	~ AddOption("S1A2")
+	~ AddOption("S1A3")
+	~ FinishQuery()
+	
+	// Create second query with 2 options
+	~ BeginQuery("S1Q2")
+	~ AddOption("S1A4")
+	~ AddOption("S1A5")
+	~ FinishQuery()
+	
+	// Finalize the section
+	~ EndSection("Section1")
+===
+
 === CreateMathQuiz ===
 	// Start a new section
 	~ StartSection()
@@ -592,45 +605,101 @@ VAR sections = ""
 
 ## Technical Advantages
 
-### String-Encoded Hierarchy for Ink Constraints
+### Explanation of DisplayQuery Function
 
-This implementation offers significant advantages for our MCQSelector Ink integration:
+The DisplayQuery function simply displays the question code and option codes without additional formatting. I previously included alphabet labels (A, B, C, etc.), but that was unnecessary since your MCQSelector uses a namecode system where:
 
-1. **Pure Ink Implementation**: The solution uses only native Ink features while achieving the complex data hierarchy needed:
+1. Questions are coded as SnQm (Section n, Question m)
+2. Options/answers are coded as SnAm (Section n, Answer m)
 
-	```ink
-	=== TestQuizGeneration ===
-		~ CreateMathQuiz()
+These codes already contain the necessary identifiers, so no additional labeling is needed. The revised DisplayQuery function simply outputs:
+
+```
+Question: S1Q1
+Options:
+- S1A1
+- S1A2
+- S1A3
+```
+
+The dash before each option is just for Ink's text formatting; it doesn't add any processing complexity.
+
+### Advantages of This Approach
+
+This string-encoded approach provides several key advantages for the MCQSelector implementation:
+
+1. **Pure Value-Based Storage**: Since Ink doesn't support references or pointers, our encoding approach uses only value-based variables, the solution uses only native Ink features while achieving the complex data hierarchy needed:
+
+```ink
+=== TestCreation ===
+	~ CreateMCQExample()
+	~ temp query = GetQueryAt("Section1", 0)
+	
+	First query:
+	{DisplayQuery(query)}
+	
+	This section has {CountQueriesInSection("Section1")} queries.
+===
+
+
+=== TestQuizGeneration ===
+	~ CreateMathQuiz()
 		
-		// Display quiz details
-		Math Quiz has {CountQueriesInSection("MathQuiz")} questions.
+	// Display quiz details
+	Math Quiz has {CountQueriesInSection("MathQuiz")} questions.
 		
-		Let's see the third question:
-		{DisplayQuery(GetQueryAt("MathQuiz", 2))}
-	===
-	```
+	Let's see the third question:
+	{DisplayQuery(GetQueryAt("MathQuiz", 2))}
+===
+```
 
-2. **Variable Length Options Support**: The delimiter-based structure allows any number of questions and options:
+2. **Data Integrity**: The hierarchical structure is preserved despite Ink's flat variable system:
 
-	```ink
-	=== CreateCustomMCQ ===
-		~ StartSection()
-		~ BeginQuery("S1Q1")
-		~ AddOption("S1A1")
-		~ AddOption("S1A2")
-		~ AddOption("S1A3")
-		~ FinishQuery()
-		
-		~ BeginQuery("S1Q2")
-		~ AddOption("S1A4")
-		~ AddOption("S1A5")
-		~ FinishQuery()
-		
-		~ EndSection("CustomQuiz")
-	===
-	```
+```
+Function BuildFromArray(array:String[,])
+	StartSection()
+	
+	For Local y:Int = 0 Until array.GetSize(0) Step 2
+		For Local x:Int = 0 Until array.GetSize(1)
+			BeginQuery(array[y,x])
+			AddOption(array[y+1,x])
+			FinishQuery()
+		Next
+	End
+	
+	EndSection("ArraySection")
+End
+```
 
-3. **State Persistence**: The string representation enables saving and restoring quiz state during runtime:
+3. **Variable-Length Support**: The delimiter approach accommodates any number of options per query:
+
+```ink
+=== CreateVariableOptionsQuiz ===
+	~ StartSection()
+	
+	// Question with 2 options
+	~ BeginQuery("S1Q1")
+	~ AddOption("S1A1")
+	~ AddOption("S1A2")
+	~ FinishQuery()
+	
+	// Question with 7 options
+	~ BeginQuery("S1Q2")
+	~ AddOption("S1A3")
+	~ AddOption("S1A4")
+	~ AddOption("S1A5")
+	~ AddOption("S1A6")
+	~ AddOption("S1A7")
+	~ AddOption("S1A8")
+	~ AddOption("S1A9")
+	~ FinishQuery()
+	
+	~ EndSection("VarOptionQuiz")
+===
+```
+
+
+4. **State Persistence**: The string representation enables saving and restoring quiz state during runtime:
 
 	```ink
 	=== SaveAndRestoreDemo ===
@@ -650,9 +719,9 @@ This implementation offers significant advantages for our MCQSelector Ink integr
 		
 		Successfully restored Math Quiz with {quizCount} questions.
 	===
-	```
 
-4. **Section Iteration Capability**: The structure supports listing and iterating through all sections:
+
+5. **Section Iteration Capability**: The structure supports listing and iterating through all sections:
 
 	```ink
 	=== DisplayAllQuizzes ===
