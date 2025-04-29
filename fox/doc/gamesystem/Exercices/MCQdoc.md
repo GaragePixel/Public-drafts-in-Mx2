@@ -836,6 +836,6 @@ The implementation uses character-by-character parsing to correctly handle any v
    
 2. **Item Extraction Algorithm**: Similarly extracts the item code by finding the first A or Q and taking everything from that position onward
    
-3. **Flexible Number Support**: Works with any number of digits in both section and item identifiers (C1A10, C234Q56, etc.)
+3. **Flexible Number Support**: Works with any number of digits in both category and subcategory identifiers (C1A10, C234Q56, etc.)
 
-This approach aligns with the MCQSelector's array-based implementation as documented in our technical specifications, enabling flexible coordinate-based relationships between questions and answers through codename pattern matching.
+This approach aligns with the **MCQSelector**'s array-based implementation as documented in our technical specifications, enabling flexible coordinate-based relationships between questions and answers through codename pattern matching.
