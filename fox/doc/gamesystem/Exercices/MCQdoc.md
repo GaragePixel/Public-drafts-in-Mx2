@@ -839,3 +839,233 @@ The implementation uses character-by-character parsing to correctly handle any v
 3. **Flexible Number Support**: Works with any number of digits in both category and subcategory identifiers (C1A10, C234Q56, etc.)
 
 This approach aligns with the **MCQSelector**'s array-based implementation as documented in our technical specifications, enabling flexible coordinate-based relationships between questions and answers through codename pattern matching.
+
+# MCQSelector Display and Shuffle System for Ink Format
+
+## Purpose
+This implementation provides a way to display **MCQSelector** query content with randomized option order while tracking the position of the key (correct answer) for validation purposes in Ink format.
+
+## List of Functionality
+* Query display showing question and shuffled options
+* Option randomization with key position tracking
+* Compatibility with MCQSelector category-based codename system (CxQ/Ay)
+* Position-based answer validation capability
+* Separation of display and shuffle logic
+
+## Notes on Implementation
+
+The Ink format has specific limitations for displaying content and manipulating lists. To overcome these constraints, we use global variables to track the shuffled options and the key position after randomization, allowing us to maintain option randomization while preserving answer validation capabilities.
+
+```ink
+// Global variables for tracking shuffled options and key position
+VAR shuffledOptions = ()
+VAR keyPosition = -1
+
+// Our query separator constants
+VAR QUERY_DELIM = "¶"
+VAR ITEM_DELIM = "|"
+
+=== function ShuffleOptions(optionsList) ===
+    // Create a shuffled copy of the options list
+    ~ shuffledOptions = ()
+    ~ temp originalList = optionsList
+    ~ temp listSize = LIST_COUNT(originalList)
+    ~ temp keyFound = false
+    ~ keyPosition = -1
+    
+    // Get key (first option in original list)
+    ~ temp keyOption = LIST_VALUE(originalList, 0)
+    
+    // Create a copy of the list for shuffling
+    ~ temp remainingOptions = ()
+    ~ temp i = 0
+    
+    {
+        - i < listSize:
+            ~ remainingOptions += LIST_VALUE(originalList, i)
+            ~ i = i + 1
+            -> LOOP
+    }
+    
+    // Fisher-Yates shuffle algorithm
+    ~ temp shuffleSize = LIST_COUNT(remainingOptions)
+    ~ temp j = 0
+    
+    {
+        - shuffleSize > 0:
+            // Pick a random element from remaining options
+            ~ temp randIndex = RANDOM(0, shuffleSize - 1)
+            ~ temp selectedOption = LIST_VALUE(remainingOptions, randIndex)
+            
+            // Add to our shuffled list
+            ~ shuffledOptions += selectedOption
+            
+            // Track key position if this is the key
+            {
+                - selectedOption == keyOption && !keyFound:
+                    ~ keyPosition = j
+                    ~ keyFound = true
+            }
+            
+            // Remove the selected option from remaining options
+            ~ temp newRemaining = ()
+            ~ temp k = 0
+            
+            {
+                - k < shuffleSize:
+                    {
+                        - k != randIndex:
+                            ~ newRemaining += LIST_VALUE(remainingOptions, k)
+                    }
+                    ~ k = k + 1
+                    -> LOOP
+            }
+            
+            ~ remainingOptions = newRemaining
+            ~ shuffleSize = shuffleSize - 1
+            ~ j = j + 1
+            -> LOOP
+    }
+    
+    ~ return keyPosition
+===
+
+=== function ExtractOptions(queryStr) ===
+    ~ temp parts = queryStr.Split(QUERY_DELIM)
+    ~ temp optionsStr = parts[1]
+    ~ temp options = optionsStr.Split(ITEM_DELIM)
+    ~ return options
+===
+
+=== function ExtractQuestion(queryStr) ===
+    ~ temp parts = queryStr.Split(QUERY_DELIM)
+    ~ temp question = parts[0]
+    ~ return question
+===
+
+=== DisplayShuffledQuery(queryStr) ===
+    // Extract question and options
+    ~ temp question = ExtractQuestion(queryStr)
+    ~ temp options = ExtractOptions(queryStr)
+    
+    // Shuffle the options and track key position
+    ~ ShuffleOptions(options)
+    
+    // Display question
+    Question: {question}
+    
+    // Display shuffled options
+    Options:
+    ~ temp i = 0
+    ~ temp optionLabel = ""
+    
+    {
+        - i < LIST_COUNT(shuffledOptions):
+            {
+                - i == 0: ~ optionLabel = "A"
+                - i == 1: ~ optionLabel = "B"
+                - i == 2: ~ optionLabel = "C"
+                - i == 3: ~ optionLabel = "D"
+                - i == 4: ~ optionLabel = "E"
+                - i == 5: ~ optionLabel = "F"
+                - i == 6: ~ optionLabel = "G"
+                - else: ~ optionLabel = "{i+1}"
+            }
+            {optionLabel}) {LIST_VALUE(shuffledOptions, i)}
+            ~ i = i + 1
+            -> LOOP
+    }
+    
+    // Display key information (for testing)
+    The key is option {keyPosition + 1} (letter {
+        - keyPosition == 0: A
+        - keyPosition == 1: B
+        - keyPosition == 2: C
+        - keyPosition == 3: D
+        - keyPosition == 4: E
+        - keyPosition == 5: F
+        - keyPosition == 6: G
+        - else: {keyPosition + 1}
+    })
+===
+
+=== function ValidateAnswer(answerIndex) ===
+    // Check if the provided answer matches the key position
+    ~ return answerIndex == keyPosition
+===
+
+// Example usage
+=== TestShuffledDisplay ===
+    // Sample query to test with
+    ~ temp queryStr = "C1Q1¶C1A1|C1A2|C1A3|C1A4"
+    
+    ~ DisplayShuffledQuery(queryStr)
+    
+    // Test answer validation
+    {
+        - ValidateAnswer(0):
+            Correct! A is the right answer.
+        - ValidateAnswer(1):
+            Correct! B is the right answer.
+        - ValidateAnswer(2):
+            Correct! C is the right answer.
+        - ValidateAnswer(3):
+            Correct! D is the right answer.
+        - else:
+            No matching answer found.
+    }
+===
+```
+
+## Technical Advantages
+
+### Shuffle Algorithm with Key Tracking
+
+The implementation offers significant advantages for MCQSelector's Ink implementation:
+
+1. **Fisher-Yates Shuffle Algorithm**: Provides truly random option ordering using an implementation adapted for Ink's constraints:
+
+```ink
+// Instead of in-place array shuffling as we would in Monkey2:
+Function ShuffleArray:Void(array:String[])
+	For Local i:Int = array.Length - 1 To 1 Step -1
+		Local j:Int = Rnd(0, i + 1)
+		Local temp:String = array[i]
+		array[i] = array[j]
+		array[j] = temp
+	Next
+End
+```
+
+2. **Key Position Tracking**: Maintains the relationship between the correct answer and its new position:
+
+```ink
+// In Ink we track the key as we shuffle
+~ temp keyOption = LIST_VALUE(originalList, 0)
+...
+{
+    - selectedOption == keyOption && !keyFound:
+        ~ keyPosition = j
+        ~ keyFound = true
+}
+```
+
+3. **Display Flexibility**: Supports various output formats through label mapping while maintaining data consistency:
+
+```ink
+{
+    - i == 0: ~ optionLabel = "A"
+    - i == 1: ~ optionLabel = "B"
+    ...
+}
+```
+
+4. **Answer Validation**: Enables straightforward validation against the tracked key position:
+
+```ink
+=== function ValidateAnswer(answerIndex) ===
+    ~ return answerIndex == keyPosition
+===
+```
+
+This implementation provides the necessary components for displaying MCQSelector queries with randomized options while maintaining the ability to track and validate correct answers, all within the constraints of Ink's scripting environment. The approach allows for seamless integration with the rest of the MCQSelector system while ensuring questions are presented with appropriately randomized options.
