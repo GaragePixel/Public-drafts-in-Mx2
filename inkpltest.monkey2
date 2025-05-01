@@ -5,28 +5,30 @@
 ' 2025-04-30, Aida 4
 '
 ' Purpose:
-' 
+'
 ' A simple player to test Ink stories. Loads a story,
-' displays text, provides choices, and handles basic
-' input (mouse and keyboard) for navigation.
+' compiles it into JSON, and uses the InkRuntime's state
+' system to play through the story, displaying text and
+' handling choices.
 '
 ' List of Functionality:
 '
-' - Display story text and choices.
-' - Handle keyboard and mouse input to select choices.
+' - Load and compile an Ink story into JSON.
+' - Use InkRuntime to play through the story.
+' - Display story text and handle choices via keyboard input.
 '
 ' Notes:
 '
-' This implementation is intentionally simple, designed
-' only for testing purposes. It does not include advanced
-' features like per example the editor capabilities of Inky.
+' This implementation focuses strictly on functionality
+' and excludes graphical rendering or mouse interactions.
 '
 ' Technical Advantages:
 '
 ' - Lightweight and focused on story functionality.
-' - Utilizes sdk_mojo for rendering and input handling.
+' - Utilizes the InkRuntime state system for seamless story progression.
 '
 Namespace sdk_games.parsers.ink.player
+
 
 #Import "<stdlib>"
 #Import "<sdk_games>"
@@ -42,142 +44,120 @@ Using sdk_mojo.m2..
 '-------------------------------------------------
 ' InkPlayer Class Definition
 '-------------------------------------------------
-
-Class InkPlayer Extends sdk_mojo.m2.app.Window
+Class InkPlayer
 
 	Private
-	
-	Field runtime:InkRuntime
-	Field storyText:String
-	Field choices:List<Choice>
-	Field selectedChoice:Int = 0
+
+		Field runtime:InkRuntime
+		Field storyText:String
+		Field choices:Stack<JsonObject>
+		Field selectedChoice:Int = 0
 
 	Public
-	
-	Method New()
-		Super.New("Ink Story Player", 800, 600)
-		runtime = New InkRuntime()
-		storyText = ""
-		choices = New List<Choice>()
-	End
 
-	Method LoadStory(json:JsonValue)
-		' Load a story into the player
-		runtime.LoadStory(json)
-		AdvanceStory()
-	End
-
-	Method AdvanceStory()
-		' Progress the story and update display
-		storyText = runtime.AdvanceStory()
-		choices = runtime.GetChoices()
-		selectedChoice = 0
-	End
-
-	Method OnRender(canvas:Canvas) Override
-		App.RequestRender()
-		
-		' Run Update()
-		OnUpdate()
-
-		' Clear the screen
-		canvas.Color = New Color(0, 0, 0)
-		canvas.DrawRect(0, 0, Width, Height)
-
-		' Draw the story text
-		canvas.Color = New Color(1, 1, 1)
-		canvas.DrawText(storyText, 20, 20)
-
-		' Draw choices
-		Local choicesCount:=choices.Count()
-		Local i:Int=0
-		For Local c:=Eachin choices
-				
-			If i = selectedChoice
-				canvas.Color = New Color(0.5, 1, 0.5) ' Highlighted choice
-			Else
-				canvas.Color = New Color(1, 1, 1)
-			End
-			canvas.DrawText((i + 1) + ". " + c, 40, 60 + i * 30)
-			i+=1
-		End
-	End
-
-	Method OnUpdate()
-		' Handle keyboard input for navigation
-		Local choicesCount:=choices.Count()
-		If Keyboard.KeyHit(Key.Up)
-			selectedChoice = Max(selectedChoice - 1, 0)
+		Method New()
+			' Initialize the runtime and state
+			runtime = New InkRuntime()
+			storyText = ""
+			choices = New Stack<JsonObject>()
 		End
 
-		If Keyboard.KeyHit(Key.Down)
-			selectedChoice = Min(selectedChoice + 1, choicesCount - 1)
-		End
-
-		If Keyboard.KeyHit(Key.Enter) And choicesCount > 0
-			runtime.Choose(selectedChoice)
+		Method LoadStory(json:JsonObject)
+			' Load the story into the runtime
+			runtime.LoadStory(json)
 			AdvanceStory()
 		End
-	End
 
-	Method OnMouseDown(button:Int, x:Float, y:Float)
-		Local choicesCount:=choices.Count()
-		' Handle mouse input for choice selection
-		For Local i:Int = 0 Until choicesCount
-			Local choiceY:Float = 60 + i * 30
-			If y >= choiceY And y < choiceY + 20
-				runtime.Choose(i)
-				AdvanceStory()
-				Exit
+		Method AdvanceStory()
+			' Progress the story and update state
+			storyText = runtime.AdvanceStory()
+			choices = runtime.GetChoices()
+			selectedChoice = 0
+		End
+
+		Method DisplayStory()
+			' Display the story text and choices in the console
+			Print("Story:")
+			Print(storyText)
+			Print("")
+
+			' Display the choices
+			Local i:Int = 1
+			For Local choice:JsonObject = Eachin choices
+				Print(i + ". " + choice["text"].ToString())
+				i += 1
 			End
 		End
-	End
+
+		Method HandleInput()
+			' Handle user input for navigating choices
+			Print("Enter choice number: ")
+			Local input:String = Input()
+			Local choiceIndex:Int = Int(input) - 1
+
+			If choiceIndex >= 0 And choiceIndex < choices.Length
+				runtime.Choose(choiceIndex)
+				AdvanceStory()
+			Else
+				Print("Invalid choice. Try again.")
+			End
+		End
+
 End
 
 '-------------------------------------------------
 ' Program Entry Point
 '-------------------------------------------------
-
-
-
 Function Main()
-	' Temporaly string containing the story, normally using the io's read functionnalities of stdlib
-	Local InkStoryStr:String = LoadTextFile("Z:\$$5__MAD2nd\__MONKEY2\PROJECTS2025\TestFoxSpiritRomancheIntro01.ink")
-	Local json:=JsonObject.Parse(InkStoryStr) 'Parse to loaded ink file to Ink JSON file
-	InkStoryStr=Null 'Freed the memory
-	New AppInstance
+	' Path to the Ink file
+	Local InkStoryStr:String = LoadTextFile("Z:\\$$5__MAD2nd\\__MONKEY2\\PROJECTS2025\\TestFoxSpiritRomancheIntro01.ink")
+	
+	' Compile the Ink story into JSON
+	Local json:JsonObject = JsonObject.Parse(InkStoryStr)
+	InkStoryStr = Null ' Free the memory
+
+	' Create an InkPlayer instance
 	Local player:InkPlayer = New InkPlayer()
 	player.LoadStory(json)
-	App.Run()
+
+	' Play through the story
+	While Not player.runtime.GetStoryState().IsComplete()
+		player.DisplayStory()
+		player.HandleInput()
+	Wend
+
+	Print("The story has ended.")
 End
 
+'-------------------------------------------------
+' LoadTextFile Function
+'-------------------------------------------------
 Function LoadTextFile:String(filePath:String, defaultContent:String="")
 	' Check if file path is valid
 	If filePath.Trim() = "" Then
 		Print("Error: Empty file path provided")
 		Return defaultContent
 	End
-	
+
 	' Open the file stream
 	Local fileStream:Stream = Stream.Open(filePath, "r")
 	If fileStream = Null Then
 		Print("Warning: Could not open file: " + filePath)
 		Return defaultContent
 	End
-	
+
 	' Read the file content
 	Local content:String = ""
-	
+
 	' Read until end of file
 	While Not fileStream.Eof
 		Local line:String = fileStream.ReadLine()
 		content += line
 		If Not fileStream.Eof Then content += "~n"
 	Wend
-	
+
 	' Close the stream
 	fileStream.Close()
-	
+
 	Return content
 End
-
