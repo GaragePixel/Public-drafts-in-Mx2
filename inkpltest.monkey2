@@ -37,7 +37,7 @@ Using stdlib.io.json..
 Using stdlib.graphics..
 Using stdlib.collections..
 Using stdlib.system..
-Using sdk_games.parsers.ink
+Using sdk_games.parsers.ink..
 Using sdk_mojo.m2..
 
 '-------------------------------------------------
@@ -96,21 +96,29 @@ End
 '-------------------------------------------------
 Function Main()
 	' Path to the Ink file
-	Local InkStoryStr:String = LoadTextFile("Z:\\$$5__MAD2nd\\__MONKEY2\\PROJECTS2025\\TestFoxSpiritRomancheIntro01.ink")
+	Local InkStoryStr:String = LoadTextFile("Z:\\$$5__MAD2nd\\__MONKEY2\\PROJECTS2025\\TestFoxSpiritRomancheIntro01.json")
+	Print InkStoryStr
 	
 	' Compile the Ink story into JSON
 	Local json:JsonObject = JsonObject.Parse(InkStoryStr)
+	Print json.ToString()
 	InkStoryStr = Null ' Free the memory
 
 	' Create an InkPlayer instance
 	Local player:InkPlayer = New InkPlayer()
 	player.LoadStory(json)
 
+	player.DisplayStory()
+	Print player.runtime.AdvanceStory()
+	player.DisplayStory()
+	Print player.runtime.AdvanceStory()
+	player.DisplayStory()
+
 	' Play through the story
-	While Not player.runtime.IsComplete() ' Use IsComplete directly
-		player.DisplayStory()
-		player.HandleInput()
-	Wend
+'	While Not player.runtime.CurrentState.IsComplete() ' Use IsComplete directly
+'		player.DisplayStory()
+		'player.HandleInput()
+'	Wend
 
 	Print("The story has ended.")
 End
