@@ -96,8 +96,8 @@ End
 '-------------------------------------------------
 Function Main()
 	' Path to the Ink file
-	Local InkStoryStr:String = LoadTextFile("Z:\\$$5__MAD2nd\\__MONKEY2\\PROJECTS2025\\TestFoxSpiritRomancheIntro01.json")
-	Print InkStoryStr
+	'Local InkStoryStr:String = LoadTextFile("Z:\\$$5__MAD2nd\\__MONKEY2\\PROJECTS2025\\TestFoxSpiritRomancheIntro01.json")
+	'Print InkStoryStr
 	
 	' Compile the Ink story into JSON
 '	Local json:JsonObject = JsonObject.Parse(InkStoryStr)
