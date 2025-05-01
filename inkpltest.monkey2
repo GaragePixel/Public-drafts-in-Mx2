@@ -2,7 +2,7 @@
 ' InkPlayer - Simple Ink Story Player for Testing
 '-------------------------------------------------
 ' iDkP from GaragePixel
-' 2025-04-30, Aida 4
+' 2025-05-01, Aida 4
 '
 ' Purpose:
 '
@@ -20,7 +20,7 @@
 ' Notes:
 '
 ' This implementation focuses strictly on functionality
-' and excludes graphical rendering or mouse interactions.
+' and excludes advanced graphical rendering or mouse interactions.
 '
 ' Technical Advantages:
 '
@@ -28,7 +28,6 @@
 ' - Utilizes the InkRuntime state system for seamless story progression.
 '
 Namespace sdk_games.parsers.ink.player
-
 
 #Import "<stdlib>"
 #Import "<sdk_games>"
@@ -89,19 +88,6 @@ Class InkPlayer
 			End
 		End
 
-		Method HandleInput()
-			' Handle user input for navigating choices
-			Print("Enter choice number: ")
-			Local input:String = Input()
-			Local choiceIndex:Int = Int(input) - 1
-
-			If choiceIndex >= 0 And choiceIndex < choices.Length
-				runtime.Choose(choiceIndex)
-				AdvanceStory()
-			Else
-				Print("Invalid choice. Try again.")
-			End
-		End
 
 End
 
@@ -121,7 +107,7 @@ Function Main()
 	player.LoadStory(json)
 
 	' Play through the story
-	While Not player.runtime.GetStoryState().IsComplete()
+	While Not player.runtime.IsComplete() ' Use IsComplete directly
 		player.DisplayStory()
 		player.HandleInput()
 	Wend
