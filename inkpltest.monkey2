@@ -100,19 +100,21 @@ Function Main()
 	Print InkStoryStr
 	
 	' Compile the Ink story into JSON
-	Local json:JsonObject = JsonObject.Parse(InkStoryStr)
-	Print json.ToString()
-	InkStoryStr = Null ' Free the memory
+'	Local json:JsonObject = JsonObject.Parse(InkStoryStr)
+	Local json:JsonObject = JsonObject.Load("Z:\\$$5__MAD2nd\\__MONKEY2\\PROJECTS2025\\TestFoxSpiritRomancheIntro01.json")
+	
+	print json=Null ? "empty" Else "not empty"
+
+	Print json.Empty
+	Print json.Count()
+'	InkStoryStr = Null ' Free the memory
 
 	' Create an InkPlayer instance
 	Local player:InkPlayer = New InkPlayer()
 	player.LoadStory(json)
 
 	player.DisplayStory()
-	Print player.runtime.AdvanceStory()
-	player.DisplayStory()
-	Print player.runtime.AdvanceStory()
-	player.DisplayStory()
+'	Print player.runtime.AdvanceStory()
 
 	' Play through the story
 '	While Not player.runtime.CurrentState.IsComplete() ' Use IsComplete directly
