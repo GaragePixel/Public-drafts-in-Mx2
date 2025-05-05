@@ -1,0 +1,1748 @@
+{
+    "inkVersion": 21,
+    "root": [
+        [
+            "#",
+            "^image: city_summer_afternoon",
+            "/#",
+            "#",
+            "^music: summer_ambient",
+            "/#",
+            "#",
+            "^sfx: cicadas",
+            "/#",
+            "^The summer heat shimmered over the pavement as I walked through the shopping district, heading nowhere in particular. School was out, and I had all the time in the world to wander.",
+            "\n",
+            "^That's when I noticed him.",
+            "\n",
+            "#",
+            "^image: katsuo_lost",
+            "/#",
+            "#",
+            "^music: encounter_theme",
+            "/#",
+            "^A boy my age stood at the intersection, his gaze flickering between a crumpled piece of paper in his hands and the buildings surrounding him. Something about him immediately caught my attention.",
+            "\n",
+            "^Not only was he handsome—though he definitely was—but there was something... different.",
+            "\n",
+            "^Yes, that's how I've seen the world. Ever since I was little. But it got me into some pretty serious trouble, and I promised not to talk about it anymore, I promised to ignore it. But how could I ignore what was right in front of my eyes that day?",
+            "\n",
+            "^I hesitated for a moment, then decided to approach him.",
+            "\n",
+            "#",
+            "^image: katsuo_closeup",
+            "/#",
+            "^\"Are you lost?\" I asked.",
+            "\n",
+            "^He looked up, startled by my voice. \"Ah, yes.\" His voice was surprisingly gentle. \"I'm looking for the Yokai Artifacts Museum. It's supposed to be somewhere in this area.\"",
+            "\n",
+            "^I smiled. The Yokai Museum was small but fascinating—one of my favorite places.",
+            "\n",
+            "^\"You're not too far off. It's just a few blocks that way.\" I pointed down the side street.",
+            "\n",
+            "^For just a moment—so briefly I almost thought I imagined it—I saw something shimmer around his form. Like an outline of... something else.",
+            "\n",
+            "ev",
+            "str",
+            "^Pretend not to notice",
+            "/str",
+            "/ev",
+            {
+                "*": "0.c-0",
+                "flg": 20
+            },
+            "ev",
+            "str",
+            "^Look more carefully",
+            "/str",
+            "/ev",
+            {
+                "*": "0.c-1",
+                "flg": 20
+            },
+            {
+                "c-0": [
+                    "^ ",
+                    {
+                        "->": "notice_nothing"
+                    },
+                    "\n",
+                    {
+                        "->": "0.g-0"
+                    },
+                    {
+                        "#f": 5
+                    }
+                ],
+                "c-1": [
+                    "^ ",
+                    {
+                        "->": "notice_something"
+                    },
+                    "\n",
+                    {
+                        "->": "0.g-0"
+                    },
+                    {
+                        "#f": 5
+                    }
+                ],
+                "g-0": [
+                    "done",
+                    {
+                        "#f": 5
+                    }
+                ]
+            }
+        ],
+        "done",
+        {
+            "notice_nothing": [
+                "#",
+                "^sound: heart_beat",
+                "/#",
+                "^I blinked and kept my expression neutral. Whatever I'd seen—or thought I'd seen—was none of my business. Some people deserved their privacy, their secrets. I couldn't help it: I looked at him discreetly. I saw, I saw his tails, his pointy ears... this boy... whom everyone could see, was an image. The real boy, however, was something else, a spirit, the kind that resembles humans!",
+                "\n",
+                "^I've always been able to see these things floating everywhere. It's hard to ignore them. But how can you ignore something so magnificent?",
+                "\n",
+                "^\"Sorry hmm... do you feel alright?\" he asked cautiously.",
+                "\n",
+                "^\"Ho! Sorry, it's nothing! \" I said quickly. 'Hmm... Have I met you anywhere before?\"",
+                "\n",
+                "^He relaxed. \"Oh, you know... I look a bit like everyone else!\"",
+                "\n",
+                "^I thought then: \"Or no one else.\"",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "trust_level"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "trust_level",
+                    "re": true
+                },
+                "/ev",
+                {
+                    "->": "continue_conversation"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "notice_something": [
+                "#",
+                "^sound: heart_beat",
+                "/#",
+                "^I couldn't help it: my eyes widened slightly as I looked at him more closely. Yes, I saw, I saw his tails, his pointy ears... this boy... whom everyone could see, was an image. The real boy, however, was something else, a spirit, the kind that resembles humans!",
+                "\n",
+                "^I've always been able to see these things floating everywhere. It's caused me some problems. It's hard to ignore them. But how can you ignore something so magnificent?",
+                "\n",
+                "^As I stared at his face, he tensed, his eyes narrowing in sudden suspicion.",
+                "\n",
+                "^\"What are you looking at?\" he asked cautiously.",
+                "\n",
+                "^\"Nothing! Sorry,\" I said quickly. \"I just thought... I recognized you from somewhere.\"",
+                "\n",
+                "^He relaxed. \"Oh, you know... I look a bit like everyone else!\"",
+                "\n",
+                "^I thought then: \"Or no one else.\"",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "trust_level"
+                },
+                1,
+                "-",
+                {
+                    "VAR=": "trust_level",
+                    "re": true
+                },
+                "/ev",
+                {
+                    "->": "continue_conversation"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "continue_conversation": [
+                [
+                    "^\"The Yokai Museum...\" he repeated, looking at his map again. However, curious plan, very cute. \"I'm afraid I'm still not familiar with this area. I'm... new in town.\"",
+                    "\n",
+                    "ev",
+                    "str",
+                    "^Offer to guide him there",
+                    "/str",
+                    "/ev",
+                    {
+                        "*": ".^.c-0",
+                        "flg": 20
+                    },
+                    "ev",
+                    "str",
+                    "^Just give directions",
+                    "/str",
+                    "/ev",
+                    {
+                        "*": ".^.c-1",
+                        "flg": 20
+                    },
+                    {
+                        "c-0": [
+                            "^ ",
+                            {
+                                "->": "offer_guide"
+                            },
+                            "\n",
+                            {
+                                "#f": 5
+                            }
+                        ],
+                        "c-1": [
+                            "^ ",
+                            {
+                                "->": "give_directions"
+                            },
+                            "\n",
+                            {
+                                "#f": 5
+                            }
+                        ]
+                    }
+                ],
+                {
+                    "#f": 1
+                }
+            ],
+            "offer_guide": [
+                [
+                    "^I wanted to be with him a little longer, find any excuse, but I wanted it to last longer than a fleeting encounter. \"I could show you the way, if you'd like,\" I offered. \"It's one of my favorite places, actually.\"",
+                    "\n",
+                    "^He seemed surprised by my offer, but then he smiled—a warm, genuine expression that made my heart race.",
+                    "\n",
+                    "^\"That's very kind of you. I'd appreciate it.\"",
+                    "\n",
+                    "#",
+                    "^image: city_streets_walking",
+                    "/#",
+                    "#",
+                    "^music: gentle_walk",
+                    "/#",
+                    "^As we walked together, I had to choose my next words carefully.",
+                    "\n",
+                    "ev",
+                    "str",
+                    "^Ask about his interest in yokai",
+                    "/str",
+                    "/ev",
+                    {
+                        "*": ".^.c-0",
+                        "flg": 20
+                    },
+                    "ev",
+                    "str",
+                    "^Keep the conversation casual",
+                    "/str",
+                    "/ev",
+                    {
+                        "*": ".^.c-1",
+                        "flg": 20
+                    },
+                    {
+                        "c-0": [
+                            "^ ",
+                            {
+                                "->": "ask_about_yokai"
+                            },
+                            "\n",
+                            {
+                                "#f": 5
+                            }
+                        ],
+                        "c-1": [
+                            "^ ",
+                            {
+                                "->": "casual_conversation"
+                            },
+                            "\n",
+                            {
+                                "#f": 5
+                            }
+                        ]
+                    }
+                ],
+                {
+                    "#f": 1
+                }
+            ],
+            "ask_about_yokai": [
+                "^\"So, what brings you to the Yokai Museum?\" I asked. \"Are you interested in folklore?\"",
+                "\n",
+                "^A slight tension appeared in his shoulders.",
+                "\n",
+                "^\"I find the stories... relevant to my studies,\" he said carefully. \"The way different cultures interpret the supernatural reveals much about human nature, don't you think?\"",
+                "\n",
+                "^There was something evasive about his answer that only heightened my curiosity.",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "trust_level"
+                },
+                1,
+                "-",
+                {
+                    "VAR=": "trust_level",
+                    "re": true
+                },
+                "/ev",
+                {
+                    "->": "arrive_at_museum"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "casual_conversation": [
+                "^\"It's a really interesting little museum,\" I said, keeping the conversation light. \"Not many people know about it, though. It's kind of a hidden gem.\"",
+                "\n",
+                "^He nodded, visibly relaxing as we walked.",
+                "\n",
+                "^\"I appreciate places that preserve old knowledge,\" he said. \"Things that might otherwise be forgotten.\"",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "trust_level"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "trust_level",
+                    "re": true
+                },
+                "/ev",
+                {
+                    "->": "arrive_at_museum"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "give_directions": [
+                "^\"It's three blocks down this street, then turn left at the bookstore. You'll see it just past the old temple gate. You can't miss the kitsune statues outside.\"",
+                "\n",
+                "^He nodded gratefully. \"Thank you for your help.\"",
+                "\n",
+                "^As he walked away, I couldn't help feeling I'd just let something important slip through my fingers.",
+                "\n",
+                {
+                    "->": "arrive_at_museum_alone"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "arrive_at_museum": [
+                "#",
+                "^image: museum_entrance",
+                "/#",
+                "#",
+                "^sound: footsteps_stopping",
+                "/#",
+                "^We arrived at the small, traditional building that housed the Yokai Museum. Two weathered kitsune statues guarded the entrance, their stone expressions both mischievous and wise.",
+                "\n",
+                "^\"Here we are,\" I said, stopping at the steps.",
+                "\n",
+                "^He turned to me, studying my face for a moment.",
+                "\n",
+                "^\"Thank you for guiding me. May I ask your name?\"",
+                "\n",
+                "^\"Hikari,\" I said.",
+                "\n",
+                "^\"Hikari,\" he repeated, as if testing how it felt to say it. \"I'm Katsuo.\"",
+                "\n",
+                "^He hesitated, as if considering something, then gave a small bow.",
+                "\n",
+                "^\"Perhaps we'll meet again, Hikari.\"",
+                "\n",
+                "^With that, he turned and entered the museum, leaving me standing there with the strange feeling that something significant had just happened.",
+                "\n",
+                {
+                    "->": "summer_search"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "arrive_at_museum_alone": [
+                "#",
+                "^image: museum_entrance_distant",
+                "/#",
+                "#",
+                "^sound: city_ambient",
+                "/#",
+                "^From a distance, I watched as the mysterious boy found the museum and went inside. Something told me I should have accompanied him, that I'd missed an opportunity.",
+                "\n",
+                "^But why did I feel so drawn to a complete stranger?",
+                "\n",
+                "^Just because he's a yokai?",
+                "\n",
+                "^I know they're there, but seeing one like that, humanoid in form, moving in the material world, is a rather rare encounter. I was paralyzed, I didn't know what to do to get its attention on me.",
+                "\n",
+                "^I stood there for several minutes before finally turning away, unable to shake the feeling that something important had just slipped through my fingers.",
+                "\n",
+                {
+                    "->": "summer_search"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "summer_search": [
+                [
+                    "#",
+                    "^image: calendar_summer",
+                    "/#",
+                    "#",
+                    "^music: summer_progression",
+                    "/#",
+                    "^The encounter with Katsuo lingered in my mind for days and weeks. I couldn't forget him, his magnificent tails, his splendid natural aura, the feeling of well-being I felt by his side.",
+                    "\n",
+                    "^Did I really see a humanoid yokai that day? I've been waiting for this moment for so long.",
+                    "\n",
+                    "^I decided I needed to learn more, both about the yokai and the mysterious Katsuo. Yet I was certain of what I had seen.",
+                    "\n",
+                    "ev",
+                    "str",
+                    "^Research kitsune folklore intensively",
+                    "/str",
+                    {
+                        "VAR?": "research_visits"
+                    },
+                    0,
+                    "==",
+                    {
+                        "VAR?": "museum_visits"
+                    },
+                    0,
+                    "==",
+                    "&&",
+                    {
+                        "VAR?": "came_from_research"
+                    },
+                    "!",
+                    "&&",
+                    {
+                        "VAR?": "dreams_visited"
+                    },
+                    "!",
+                    "&&",
+                    "/ev",
+                    {
+                        "*": ".^.c-0",
+                        "flg": 5
+                    },
+                    "ev",
+                    "str",
+                    "^Visit the museum regularly",
+                    "/str",
+                    {
+                        "VAR?": "museum_visits"
+                    },
+                    0,
+                    "==",
+                    {
+                        "VAR?": "research_visits"
+                    },
+                    0,
+                    ">",
+                    "&&",
+                    {
+                        "VAR?": "came_from_museum"
+                    },
+                    "!",
+                    "&&",
+                    {
+                        "VAR?": "dreams_visited"
+                    },
+                    "!",
+                    "&&",
+                    "/ev",
+                    {
+                        "*": ".^.c-1",
+                        "flg": 5
+                    },
+                    "ev",
+                    "str",
+                    "^Wait at our meeting spot",
+                    "/str",
+                    {
+                        "VAR?": "wait_visits"
+                    },
+                    2,
+                    "<",
+                    {
+                        "VAR?": "came_from_waiting"
+                    },
+                    "!",
+                    "&&",
+                    {
+                        "VAR?": "dreams_visited"
+                    },
+                    "!",
+                    "&&",
+                    "/ev",
+                    {
+                        "*": ".^.c-2",
+                        "flg": 5
+                    },
+                    "ev",
+                    "str",
+                    "^Try to forget the encounter",
+                    "/str",
+                    {
+                        "VAR?": "dreams_visited"
+                    },
+                    "!",
+                    "/ev",
+                    {
+                        "*": ".^.c-3",
+                        "flg": 5
+                    },
+                    "ev",
+                    "str",
+                    "^Continue my journey",
+                    "/str",
+                    {
+                        "VAR?": "research_visits"
+                    },
+                    1,
+                    ">=",
+                    {
+                        "VAR?": "museum_visits"
+                    },
+                    1,
+                    ">=",
+                    "&&",
+                    {
+                        "VAR?": "wait_visits"
+                    },
+                    2,
+                    ">=",
+                    "&&",
+                    {
+                        "VAR?": "dreams_visited"
+                    },
+                    false,
+                    "==",
+                    "&&",
+                    "/ev",
+                    {
+                        "*": ".^.c-4",
+                        "flg": 5
+                    },
+                    "ev",
+                    "str",
+                    "^Continue my journey",
+                    "/str",
+                    {
+                        "VAR?": "dreams_visited"
+                    },
+                    true,
+                    "==",
+                    "/ev",
+                    {
+                        "*": ".^.c-5",
+                        "flg": 5
+                    },
+                    {
+                        "c-0": [
+                            "^ ",
+                            {
+                                "->": "research_folklore"
+                            },
+                            "\n",
+                            {
+                                "#f": 5
+                            }
+                        ],
+                        "c-1": [
+                            "^ ",
+                            {
+                                "->": "visit_museum"
+                            },
+                            "\n",
+                            {
+                                "#f": 5
+                            }
+                        ],
+                        "c-2": [
+                            "^ ",
+                            {
+                                "->": "wait_spot"
+                            },
+                            "\n",
+                            {
+                                "#f": 5
+                            }
+                        ],
+                        "c-3": [
+                            "^ ",
+                            {
+                                "->": "recurring_dreams"
+                            },
+                            "\n",
+                            {
+                                "#f": 5
+                            }
+                        ],
+                        "c-4": [
+                            "^ ",
+                            {
+                                "->": "summer_end"
+                            },
+                            "\n",
+                            {
+                                "#f": 5
+                            }
+                        ],
+                        "c-5": [
+                            "^ ",
+                            {
+                                "->": "summer_end"
+                            },
+                            "\n",
+                            {
+                                "#f": 5
+                            }
+                        ]
+                    }
+                ],
+                {
+                    "#f": 1
+                }
+            ],
+            "research_folklore": [
+                "#",
+                "^image: library_books",
+                "/#",
+                "#",
+                "^sound: page_turning",
+                "/#",
+                "ev",
+                {
+                    "VAR?": "knowledge_level"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "knowledge_level",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                {
+                    "VAR?": "research_visits"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "research_visits",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                {
+                    "VAR?": "total_choices_made"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "total_choices_made",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                true,
+                "/ev",
+                {
+                    "VAR=": "credits_research",
+                    "re": true
+                },
+                "ev",
+                true,
+                "/ev",
+                {
+                    "VAR=": "came_from_research",
+                    "re": true
+                },
+                "ev",
+                false,
+                "/ev",
+                {
+                    "VAR=": "came_from_museum",
+                    "re": true
+                },
+                "ev",
+                false,
+                "/ev",
+                {
+                    "VAR=": "came_from_waiting",
+                    "re": true
+                },
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "credits_shown",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                1,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Director - Yumiko Hayashi",
+                            {
+                                "->": ".^.^.^.52"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                2,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Writer - Kazuto Ishiguro",
+                            {
+                                "->": ".^.^.^.61"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                3,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Character Design - Mei Zhang",
+                            {
+                                "->": ".^.^.^.70"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                4,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Music Composition - Hiroshi Takahashi",
+                            {
+                                "->": ".^.^.^.79"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "^I immersed myself in my research, spending long hours at the local library reading everything I could find about kitsune and other yokai.",
+                "\n",
+                "^The stories fascinated me: fox spirits with the power to shapeshift, create illusions, and bewitch humans. Creatures both feared and revered throughout Japanese history.",
+                "\n",
+                "^I discovered their weaknesses: it is said that running water could disrupt their magic, or that dogs could perceive their true nature. I studied accounts of kitsune-human relationships, some ending tragically, others in transcendence.",
+                "\n",
+                "^With each book, with each story, my conviction grew: Katsuo was a kitsune.",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "understanding_level"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "understanding_level",
+                    "re": true
+                },
+                "/ev",
+                "^I still had two more weeks of summer vacation. What should I do next?",
+                "\n",
+                {
+                    "->": "summer_search"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "visit_museum": [
+                "#",
+                "^image: museum_interior",
+                "/#",
+                "#",
+                "^sound: museum_ambient",
+                "/#",
+                "ev",
+                {
+                    "VAR?": "museum_visits"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "museum_visits",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                {
+                    "VAR?": "total_choices_made"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "total_choices_made",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                true,
+                "/ev",
+                {
+                    "VAR=": "credits_museum",
+                    "re": true
+                },
+                "ev",
+                false,
+                "/ev",
+                {
+                    "VAR=": "came_from_research",
+                    "re": true
+                },
+                "ev",
+                true,
+                "/ev",
+                {
+                    "VAR=": "came_from_museum",
+                    "re": true
+                },
+                "ev",
+                false,
+                "/ev",
+                {
+                    "VAR=": "came_from_waiting",
+                    "re": true
+                },
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "credits_shown",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                1,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Director - Yumiko Hayashi",
+                            {
+                                "->": ".^.^.^.46"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                2,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Writer - Kazuto Ishiguro",
+                            {
+                                "->": ".^.^.^.55"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                3,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Character Design - Mei Zhang",
+                            {
+                                "->": ".^.^.^.64"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                4,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Music Composition - Hiroshi Takahashi",
+                            {
+                                "->": ".^.^.^.73"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "^I began visiting the Yokai Museum regularly, studying the exhibits while discreetly asking questions about new employees or regular visitors.",
+                "\n",
+                "^The elderly caretaker, Mr. Tanaka, eventually noticed my repeated visits.",
+                "\n",
+                "^“You’ve developed a keen interest in yokai, young lady,” he remarked one afternoon as I examined a display of kitsune artifacts.",
+                "\n",
+                "^“I’ve always been fascinated,” I replied. “But recently, I’ve been wondering… do you believe they still exist today? Among us?”",
+                "\n",
+                "^Mr. Tanaka gave me a knowing smile. “Old stories say that yokai are masters of disguise. Who can say what—or who—they are in the modern world?”",
+                "\n",
+                "^As we talked, I felt his presence. Not that he was there, hidden, but perhaps not so far away. In any case, he was still there not long ago.",
+                "\n",
+                "^When I asked him about a boy who might have come to the museum, perhaps to give a presentation at school or something, Mr. Tanaka was simply evasive. \"This museum is visited by a lot of high school students! I can't remember everyone. Try the Purikura!\"",
+                "\n",
+                "^I had the distinct impression he knew more than he was letting on.",
+                "\n",
+                "^I still had time before the end of summer. What to do next?",
+                "\n",
+                {
+                    "->": "summer_search"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "wait_spot": [
+                "#",
+                "^image: meeting_spot_sunset",
+                "/#",
+                "#",
+                "^music: waiting_theme",
+                "/#",
+                "ev",
+                {
+                    "VAR?": "patience_level"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "patience_level",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                {
+                    "VAR?": "wait_visits"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "wait_visits",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                {
+                    "VAR?": "total_choices_made"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "total_choices_made",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                true,
+                "/ev",
+                {
+                    "VAR=": "credits_waiting",
+                    "re": true
+                },
+                "ev",
+                false,
+                "/ev",
+                {
+                    "VAR=": "came_from_research",
+                    "re": true
+                },
+                "ev",
+                false,
+                "/ev",
+                {
+                    "VAR=": "came_from_museum",
+                    "re": true
+                },
+                "ev",
+                true,
+                "/ev",
+                {
+                    "VAR=": "came_from_waiting",
+                    "re": true
+                },
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "credits_shown",
+                    "re": true
+                },
+                "/ev",
+                [
+                    "ev",
+                    "visit",
+                    1,
+                    "MIN",
+                    "/ev",
+                    "ev",
+                    "du",
+                    0,
+                    "==",
+                    "/ev",
+                    {
+                        "->": ".^.s0",
+                        "c": true
+                    },
+                    "ev",
+                    "du",
+                    1,
+                    "==",
+                    "/ev",
+                    {
+                        "->": ".^.s1",
+                        "c": true
+                    },
+                    "nop",
+                    {
+                        "s0": [
+                            "pop",
+                            "ev",
+                            {
+                                "VAR?": "credits_shown"
+                            },
+                            1,
+                            "==",
+                            "/ev",
+                            [
+                                {
+                                    "->": ".^.b",
+                                    "c": true
+                                },
+                                {
+                                    "b": [
+                                        "^ ",
+                                        "#",
+                                        "^credit: Director - Yumiko Hayashi",
+                                        {
+                                            "->": ".^.^.^.7"
+                                        },
+                                        null
+                                    ]
+                                }
+                            ],
+                            "nop",
+                            "/#",
+                            "ev",
+                            {
+                                "VAR?": "credits_shown"
+                            },
+                            2,
+                            "==",
+                            "/ev",
+                            [
+                                {
+                                    "->": ".^.b",
+                                    "c": true
+                                },
+                                {
+                                    "b": [
+                                        "^ ",
+                                        "#",
+                                        "^credit: Writer - Kazuto Ishiguro",
+                                        {
+                                            "->": ".^.^.^.15"
+                                        },
+                                        null
+                                    ]
+                                }
+                            ],
+                            "nop",
+                            "/#",
+                            "ev",
+                            {
+                                "VAR?": "credits_shown"
+                            },
+                            3,
+                            "==",
+                            "/ev",
+                            [
+                                {
+                                    "->": ".^.b",
+                                    "c": true
+                                },
+                                {
+                                    "b": [
+                                        "^ ",
+                                        "#",
+                                        "^credit: Character Design - Mei Zhang",
+                                        {
+                                            "->": ".^.^.^.23"
+                                        },
+                                        null
+                                    ]
+                                }
+                            ],
+                            "nop",
+                            "/#",
+                            "ev",
+                            {
+                                "VAR?": "credits_shown"
+                            },
+                            4,
+                            "==",
+                            "/ev",
+                            [
+                                {
+                                    "->": ".^.b",
+                                    "c": true
+                                },
+                                {
+                                    "b": [
+                                        "^ ",
+                                        "#",
+                                        "^credit: Music Composition - Hiroshi Takahashi",
+                                        {
+                                            "->": ".^.^.^.31"
+                                        },
+                                        null
+                                    ]
+                                }
+                            ],
+                            "nop",
+                            "/#",
+                            {
+                                "->": ".^.^.17"
+                            },
+                            null
+                        ],
+                        "s1": [
+                            "pop",
+                            {
+                                "->": ".^.^.17"
+                            },
+                            null
+                        ],
+                        "#f": 5
+                    }
+                ],
+                "\n",
+                "^I returned to the spot where we'd first met, day after day, hoping to encounter Katsuo again.",
+                "\n",
+                "^Some days I'd wait for hours, watching people pass by. Once, I even spent the entire night at the bus stop nearby, watching the intersection until dawn painted the sky pink.",
+                "\n",
+                "^\"Looking for someone?\" an old woman selling flowers asked me on my fifth day of waiting.",
+                "\n",
+                "^\"A friend,\" I replied, though I wasn't sure if that was the right word for Katsuo.",
+                "\n",
+                "^\"Must be someone special,\" she observed, noting the intensity of my vigil.",
+                "\n",
+                "^I nodded. \"I think he might be.\"",
+                "\n",
+                "^But despite my persistence, Katsuo never appeared. It was as if he'd vanished from the city entirely—or perhaps had never truly been there at all.",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "determination_level"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "determination_level",
+                    "re": true
+                },
+                "/ev",
+                "^I still had time before summer ended. What should I do next?",
+                "\n",
+                {
+                    "->": "summer_search"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "recurring_dreams": [
+                "#",
+                "^image: dreamscape_fox",
+                "/#",
+                "#",
+                "^music: dream_sequence",
+                "/#",
+                "ev",
+                {
+                    "VAR?": "trust_level"
+                },
+                1,
+                "-",
+                {
+                    "VAR=": "trust_level",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                true,
+                "/ev",
+                {
+                    "VAR=": "dreams_visited",
+                    "re": true
+                },
+                "ev",
+                {
+                    "VAR?": "total_choices_made"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "total_choices_made",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                true,
+                "/ev",
+                {
+                    "VAR=": "credits_dreams",
+                    "re": true
+                },
+                "ev",
+                false,
+                "/ev",
+                {
+                    "VAR=": "came_from_research",
+                    "re": true
+                },
+                "ev",
+                false,
+                "/ev",
+                {
+                    "VAR=": "came_from_museum",
+                    "re": true
+                },
+                "ev",
+                false,
+                "/ev",
+                {
+                    "VAR=": "came_from_waiting",
+                    "re": true
+                },
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                1,
+                "+",
+                {
+                    "VAR=": "credits_shown",
+                    "re": true
+                },
+                "/ev",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                1,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Director - Yumiko Hayashi",
+                            {
+                                "->": ".^.^.^.50"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                2,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Writer - Kazuto Ishiguro",
+                            {
+                                "->": ".^.^.^.59"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                3,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Character Design - Mei Zhang",
+                            {
+                                "->": ".^.^.^.68"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "credits_shown"
+                },
+                4,
+                "==",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ ",
+                            "#",
+                            "^credit: Music Composition - Hiroshi Takahashi",
+                            {
+                                "->": ".^.^.^.77"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "/#",
+                "\n",
+                "^I tried to push this strange encounter from my mind. It had been brief, perhaps meaningless. Just a lost boy looking for a museum. Perhaps, seeing invisible yokai everywhere and hoping to meet a spirit, I had undoubtedly imagined all this.",
+                "\n",
+                "^But at night, this dream betrayed my determination.",
+                "\n",
+                "^In it, Katsuo appeared with golden eyes and multiple tails swirling around him like flames. He looked at me with that impossible gaze and asked, \"Do you really see me, Hikari?\"",
+                "\n",
+                "^I woke up with my heart pounding, the question echoing in my mind.",
+                "\n",
+                "^Things I had always glimpsed, I had learned to ignore. But it was becoming harder and harder to deny: something had awakened inside me after my encounter with Katsuo. Something that couldn't be put back to sleep. Instead of ignoring this world that had caused me problems, I had to... on the contrary, try to communicate with them. Do it more discreetly, but stop ignoring them.",
+                "\n",
+                "^I still had time before the end of summer. What should I do next?",
+                "\n",
+                {
+                    "->": "summer_search"
+                },
+                {
+                    "#f": 1
+                }
+            ],
+            "summer_end": [
+                "#",
+                "^image: summer_ending",
+                "/#",
+                "#",
+                "^music: season_transition",
+                "/#",
+                "^As August drew to a close, I had to accept that my summer quest had yielded no concrete results. Katsuo remained elusive, a mystery I could not solve.",
+                "\n",
+                "^Yet, this experience had transformed me. I noticed these things more and more, discerning them more precisely: wisps of energy around certain people, small creatures hidden in the shadows, patterns; the whole invisible world lurking beneath the material world and reflecting it.",
+                "\n",
+                "^The world seemed bigger now, full of possibilities and secrets. Whatever Katsuo was, meeting him had awakened something in me I couldn't—and wouldn't—repress.",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "trust_level"
+                },
+                0,
+                ">",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ My intuition told me our paths would cross again. I had respected his secrets, and perhaps that would matter when we next met.",
+                            {
+                                "->": ".^.^.^.18"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "knowledge_level"
+                },
+                0,
+                ">",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ Armed with knowledge about kitsune and other yokai, I felt better prepared for whatever might come next. If Katsuo was indeed a fox spirit, I now understood more about what that might mean.",
+                            {
+                                "->": ".^.^.^.26"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "understanding_level"
+                },
+                0,
+                ">",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ My research had given me perspective. The relationship between humans and yokai was never simple in the old stories. I would need to be careful, but also open to possibilities beyond normal human experience.",
+                            {
+                                "->": ".^.^.^.34"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "determination_level"
+                },
+                0,
+                ">",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ Though my search had been fruitless, my determination had only grown stronger. If Katsuo was still in this city, I would find him eventually. I just needed to be patient.",
+                            {
+                                "->": ".^.^.^.42"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "\n",
+                "ev",
+                {
+                    "VAR?": "patience_level"
+                },
+                0,
+                ">",
+                "/ev",
+                [
+                    {
+                        "->": ".^.b",
+                        "c": true
+                    },
+                    {
+                        "b": [
+                            "^ All those hours of waiting had taught me patience. If this was meant to be, it would happen in its own time. I couldn't force it.",
+                            {
+                                "->": ".^.^.^.50"
+                            },
+                            null
+                        ]
+                    }
+                ],
+                "nop",
+                "\n",
+                "^As I prepared for the new school year, I carried with me the memory of our brief encounter—a past love, never realized, and forever regretted. Or perhaps just delayed, waiting for the right moment to begin.",
+                "\n",
+                "#",
+                "^music: fade_out",
+                "/#",
+                "#",
+                "^delay: 3",
+                "/#",
+                "#",
+                "^music: title_theme",
+                "/#",
+                "#",
+                "^image: title_screen",
+                "/#",
+                "#",
+                "^title: FOX SPIRIT ROMANCE",
+                "/#",
+                "end",
+                {
+                    "#f": 1
+                }
+            ],
+            "global decl": [
+                "ev",
+                "str",
+                "^Hikari",
+                "/str",
+                {
+                    "VAR=": "player_name"
+                },
+                0,
+                {
+                    "VAR=": "trust_level"
+                },
+                0,
+                {
+                    "VAR=": "knowledge_level"
+                },
+                0,
+                {
+                    "VAR=": "understanding_level"
+                },
+                0,
+                {
+                    "VAR=": "determination_level"
+                },
+                0,
+                {
+                    "VAR=": "patience_level"
+                },
+                0,
+                {
+                    "VAR=": "research_visits"
+                },
+                0,
+                {
+                    "VAR=": "museum_visits"
+                },
+                0,
+                {
+                    "VAR=": "wait_visits"
+                },
+                false,
+                {
+                    "VAR=": "dreams_visited"
+                },
+                0,
+                {
+                    "VAR=": "total_choices_made"
+                },
+                false,
+                {
+                    "VAR=": "came_from_research"
+                },
+                false,
+                {
+                    "VAR=": "came_from_museum"
+                },
+                false,
+                {
+                    "VAR=": "came_from_waiting"
+                },
+                false,
+                {
+                    "VAR=": "credits_museum"
+                },
+                false,
+                {
+                    "VAR=": "credits_research"
+                },
+                false,
+                {
+                    "VAR=": "credits_waiting"
+                },
+                false,
+                {
+                    "VAR=": "credits_dreams"
+                },
+                0,
+                {
+                    "VAR=": "credits_shown"
+                },
+                "/ev",
+                "end",
+                null
+            ],
+            "#f": 1
+        }
+    ],
+    "listDefs": {}
+}
