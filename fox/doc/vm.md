@@ -30,8 +30,8 @@ Major technology conferences feature disproportionate representation from interp
 	Campaigns simulate organic, grassroots support by paying influencers, sponsoring conferences, and flooding forums with positive testimonials.
 - **Education System Penetration**  
 	Tech companies fund university curricula, MOOCs, and coding bootcamps, ensuring interpreted languages are primary teaching vehicles for “the next generation.”
-- **E---sm Programs**  
-	Hire “developer e---sm” whose job is not technical contribution but relentless promotion, both online and in person.
+- **propagandist Programs**  
+	Hire “developer propagandist” whose job is not technical contribution but relentless promotion, both online and in person.
 - **Conference Sponsorship & Swag**  
 	Visibility at tech events through branded content, free courses, and incentives for “community leaders” to push the narrative.
 
