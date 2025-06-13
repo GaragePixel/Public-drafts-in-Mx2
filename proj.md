@@ -450,6 +450,40 @@ Function UnitTest_Params()
 	'---
 	Print "~n[Edge #16] encode ob1 ~qfile1.svg~q mytext.txt -o=~qc:/out/~q ob3 -a=bl ob4" ' Append contains space (should return Null)"
 	Print ParseParams( "encode ob1 ~qfile1.svg~q mytext.txt -o=~qc:/out/~q ob3 -a=bl ob4" )
+	'---
+	Print "~n~nwith html flag detected~n"
+	'---
+	'---
+	Print "~n[HTML #1] encode file.svg -o=out/ -html"
+	Print ParseParams( "encode file.svg -o=out/ -html" )
+	'---
+	Print "~n[HTML #2] encode file.svg -o=out/ -html=image"
+	Print ParseParams( "encode file.svg -o=out/ -html=image" )
+	'---
+	Print "~n[HTML #3] encode file.svg -o=out/ -html=text"
+	Print ParseParams( "encode file.svg -o=out/ -html=text" )
+	'---
+	Print "~n[HTML #4] encode file.svg -o=out/ -html="
+	Print ParseParams( "encode file.svg -o=out/ -html=" )
+	'---
+	Print "~n[HTML #5] encode file.svg -o=out/ -html=~q~q"
+	Print ParseParams( "encode file.svg -o=out/ -html=~q~q" )
+	'---
+	Print "~n[HTML #6] encode file.svg -o=out/ -h"
+	Print ParseParams( "encode file.svg -o=out/ -h" )
+	'---
+	Print "~n[HTML #7] encode file.svg -o=out/ --html"
+	Print ParseParams( "encode file.svg -o=out/ --html" )
+	'---
+	Print "~n[HTML #8] encode file.svg -o=out/ --h"
+	Print ParseParams( "encode file.svg -o=out/ --h" )
+	'---
+	Print "~n[HTML #9] encode file.svg -o=out/ --html=~qtext~q"
+	Print ParseParams( "encode file.svg -o=out/ --html=~qtext~q" )
+	'---
+	Print "~n[HTML #10] encode file.svg -o=out/ --html=~qimage~q"
+	Print ParseParams( "encode file.svg -o=out/ --html=~qimage~q" )
+
 End 
 
 #Rem monkeydoc ParseParams
