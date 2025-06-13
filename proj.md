@@ -67,7 +67,7 @@ Const CONTACT:="garagepixel@outlook.com~nhttps://github.com/GaragePixel~nhttps:/
 #End 
 Function Cmd( input:String )
 	
-	input = "mo -h" 'Test
+	'input = "-t" 'Test
 	
 	Local result:=ParseInput(input)
 	
@@ -350,7 +350,7 @@ Function _Base64HelpString:String()
 			"  -a" + "~n" +
 			"  -c" + "~n" +
 			"  -l" + "~n" +
-			"  -t" + "~n" +
+			"  -t" + "~n~n" +
 			"ARGUMENTS:" + "~n" +
 			"  encode | decode       Selects the operation mode (encoding or decoding)." + "~n" +
 			"  file(s)               One or more input files (quoted with ~q if containing spaces)." + "~n" +
@@ -452,22 +452,21 @@ Function UnitTest_Params()
 	Print ParseParams( "encode ob1 ~qfile1.svg~q mytext.txt -o=~qc:/out/~q ob3 -a=bl ob4" )
 End 
 
-
 #Rem monkeydoc ParseParams
 @author [iDkP from GaragePixel](https://github.com/GaragePixel)
-@version 0.2
-@since 2025-06-12
+@version 0.1
+@since 2025-06-13
 
 Parses a command-line parameter string for a CLI base64 utility 
-and returns a map of parameters, options, and file/data/url items in a normalized, ordered form.
+and returns a map of parameters, options, file/data/url items, and html embedding intent in a normalized, ordered form.
 
 ---
 
 @Parameters
 
 - `params:String`  
-	Command-line string containing file paths, output path, and options.
-	- File paths can be quoted with ~q (Monkey2/Wonkey safe), or unquoted.
+	Command-line string containing file paths, output path, options, and html embedding intent.
+	- File paths can be quoted  or unquoted.
 	- Output path must use `-o=`, `-output=`, `--o=`, or `--output=` and be quoted or unquoted.
 	- Options must use recognized flags or forms; see below.
 
@@ -487,6 +486,13 @@ and returns a map of parameters, options, and file/data/url items in a normalize
 - `-d`, `-decode` — enables decode mode.
 - `-a=`, `--a=`, `-append=`, `--append=` — append string to file name after extension (no spaces).
 - `-pr=`, `--pr=`, `-prefix=`, `--prefix=` — string to prefix each output blob (no spaces).
+- `-html`, `--html`, `-h`, `--h`, `-html=`, `--html=`, `-html=image`, `-html=text`, `-html=""`, `-html="image"`, `-html="text"`  
+	- Controls embedding in HTML output:
+		- Default: [html][none]
+		- -html, --html, -h, --h, -html=image, -html="image" → [html][image]
+		- -html=text, -html="text" → [html][text]
+		- -html=, -html="", -html=" " → [html][none]
+		- Any html parsing error is resolved silently (never returns Null).
 
 ---
 
@@ -495,6 +501,7 @@ and returns a map of parameters, options, and file/data/url items in a normalize
 - Files, data, or urls are detected and classified by prefix (file, data, url).
 - Map includes key "kind" with value "file", "data", or "url" accordingly.
 - All input items are mapped as "item0", "item1", ... (for file and url), or single "item" (for data).
+- "mode" ("encode"/"decode") is never included as an item.
 - Output path must end with `/` (directory) or `.<ext>` (fullpath with extension).
 - If not matching expected syntax, function returns Null.
 
@@ -502,7 +509,7 @@ and returns a map of parameters, options, and file/data/url items in a normalize
 
 @Return value
 
-Returns a `Map<String,String>` with a normalized, ordered set of options, output path, kind, and items.
+Returns a `Map<String,String>` with a normalized, ordered set of options, output path, html intent, kind, and items.
 Returns Null if any error or invalid syntax detected.
 
 ---
@@ -523,11 +530,20 @@ After a valid preset, only outputPath and items are parsed; all other options ar
 
 ---
 
+@HTML behaviour
+
+- If [html][image], the output will wrap the base64 blob in an `<img>` HTML tag (future implementation will extract image size from the file header if possible).
+- If [html][text], the output will wrap the blob in a text-based HTML tag.
+- If [html][none], no HTML wrapping is performed.
+- This only affects the output, not the parsing of the command-line arguments.
+
+---
+
 @Example
 
-	ParseParams("encode ~qfile1.svg~q ~qfile2.svg~q -o=~qc:/out/~q -a=blob -pr=DATA")
+	ParseParams("encode ~qfile1.svg~q ~qfile2.svg~q -o=~qc:/out/~q -a=blob -pr=DATA -html=image")
 	' Result: Map with mode="encode", outputPath="c:/out/", append="blob", prefix="DATA", kind="file",
-	' item0="file1.svg", item1="file2.svg"
+	' item0="file1.svg", item1="file2.svg", html="image"
 
 ---
 
@@ -538,7 +554,8 @@ After a valid preset, only outputPath and items are parsed; all other options ar
 - All values are returned unquoted.
 - Items are classified and indexed as item0, item1, etc. (file, url) or item (data).
 - OutputPath must end with / or .ext or .ext.ext (as file).
-- Returns Null if syntax is not respected.
+- If -html is not specified, [html][none] is always present.
+- Returns Null if syntax is not respected (except for -html errors, which are resolved silently).
 #End
 Function ParseParams:Map<String,String>( params:String )
 
@@ -559,7 +576,8 @@ Function ParseParams:Map<String,String>( params:String )
 	map.Add("append","")
 	map.Add("mode","")
 	map.Add("kind","")
-	
+	map.Add("html","none")
+
 	'--- Preset profiles (hard-coded for clarity)
 	Local presets:=New Map<String,Int>
 	presets.Add("RFC 1421",1)
@@ -618,20 +636,42 @@ Function ParseParams:Map<String,String>( params:String )
 		End
 	End
 
+	'--- HTML option handling: always default to "none"
+	Local htmlDetected:Bool=False
+
 	If presetIdx>0
-		' Apply preset to map
-		' ... [unchanged preset code from your version] ...
-		' After preset, parse ONLY files/data/url and outputPath, kind
+		' Apply preset to map (no changes here)
 		Local fileCount:=0
 		Local kind:=""
 		For Local i:=0 Until tokens.Length
 			Local t:=tokens[i]
+			' parse html option if encountered
+			If t.StartsWith("-html") Or t.StartsWith("--html") Or t.StartsWith("-h") Or t.StartsWith("--h")
+				htmlDetected=True
+				Local val:String=""
+				If t.Find("=")>=0
+					val = t.Slice(t.Find("=")+1)
+					If val.StartsWith("~q") And val.EndsWith("~q") And val.Length>=2
+						val = val.Slice(1, val.Length-1)
+					End
+					val = val.Trim()
+					If val.ToLower()="image"
+						map["html"]="image"
+					ElseIf val.ToLower()="text"
+						map["html"]="text"
+					Else 
+						map["html"]="none"
+					End
+				Else
+					map["html"]="image"
+				End
+				Continue
+			End
 			If t.StartsWith("-o=") Or t.StartsWith("--o=") Or t.StartsWith("-output=") Or t.StartsWith("--output=")
 				Local v:=t.Slice(t.Find("=")+1)
 				If v.StartsWith("~q") And v.EndsWith("~q") And v.Length>=2
 					v = v.Slice(1, v.Length-1)
 				End
-				' Validate outputPath
 				If Not (v.EndsWith("/") Or v.Find(".", v.Length-5)>=0)
 					Return Null
 				End
@@ -644,15 +684,20 @@ Function ParseParams:Map<String,String>( params:String )
 				' Detect kind: url/data/file
 				If v.StartsWith("url:")
 					kind="url"
-					map["item"+fileCount]=v.Slice(4)
-					fileCount+=1
+					Local vSlice4:=v.Slice(4)
+					If vSlice4<>"encode" And vSlice4<>"decode"
+						map["item"+fileCount]=vSlice4
+						fileCount+=1
+					End
 				ElseIf v.StartsWith("data:")
 					kind="data"
 					map["item"]=v.Slice(5)
 				Else
-					kind="file"
-					map["item"+fileCount]=v
-					fileCount+=1
+					If v<>"encode" And v<>"decode"
+						kind="file"
+						map["item"+fileCount]=v
+						fileCount+=1
+					End 
 				End
 			End
 		End
@@ -660,19 +705,40 @@ Function ParseParams:Map<String,String>( params:String )
 		Return map
 	End
 
-	'--- 2. If NO preset, parse all options and files/outputPath/kind
+	'--- 2. If NO preset, parse all options and files/outputPath/kind and html
 	Local fileCount:=0
 	Local found_e62:Bool=False, found_e43:Bool=False
 	Local e62val:="+", e43val:="/"
 	Local kind:=""
 	For Local i:=0 Until tokens.Length
 		Local t:=tokens[i]
+		' HTML option
+		If t.StartsWith("-html") Or t.StartsWith("--html") Or t.StartsWith("-h") Or t.StartsWith("--h")
+			htmlDetected=True
+			Local val:String=""
+			If t.Find("=")>=0
+				val = t.Slice(t.Find("=")+1)
+				If val.StartsWith("~q") And val.EndsWith("~q") And val.Length>=2
+					val = val.Slice(1, val.Length-1)
+				End
+				val = val.Trim()
+				If val.ToLower()="image" 
+					map["html"]="image"
+				ElseIf val.ToLower()="text" 
+					map["html"]="text"
+				Else 
+					map["html"]="none"
+				End
+			Else
+				map["html"]="image"
+			End
+			Continue
+		End
 		If t.StartsWith("-o=") Or t.StartsWith("--o=") Or t.StartsWith("-output=") Or t.StartsWith("--output=")
 			Local v:=t.Slice(t.Find("=")+1)
 			If v.StartsWith("~q") And v.EndsWith("~q") And v.Length>=2
 				v = v.Slice(1, v.Length-1)
 			End
-			' Validate outputPath
 			If Not (v.EndsWith("/") Or v.Find(".", v.Length-5)>=0)
 				Return Null
 			End
@@ -739,17 +805,22 @@ Function ParseParams:Map<String,String>( params:String )
 			' Detect kind: url/data/file
 			If v.StartsWith("url:")
 				kind="url"
-				map["item"+fileCount]=v.Slice(4)
-				fileCount+=1
+				Local vSlice4:=v.Slice(4)
+				If vSlice4<>"encode" And vSlice4<>"decode"
+					map["item"+fileCount]=vSlice4
+					fileCount+=1
+				End
 			ElseIf v.StartsWith("data:")
 				kind="data"
 				map["item"]=v.Slice(5)
 			Else
-				If kind="" Then kind="file"
-				map["item"+fileCount]=v
-				fileCount+=1
+				If v<>"encode" And v<>"decode"
+					If kind="" kind="file"
+					map["item"+fileCount]=v
+					fileCount+=1
+				End 
 			End
-		Endif
+		End
 	End
 
 	If kind<>"" Then map["kind"]=kind
@@ -760,6 +831,9 @@ Function ParseParams:Map<String,String>( params:String )
 	ElseIf found_e62
 		map["62nd"]=e62val
 	End
+
+	' Ensure html="none" if not set
+	If Not htmlDetected Then map["html"]="none"
 
 	Return map
 End
@@ -785,6 +859,13 @@ Function AppArgsContat:String( separator:String=" " )
 	Return result.Left(result.Length-1)
 End
 
+'			"  -h" + "~n" +
+'			"  -i" + "~n" +
+'			"  -v" + "~n" +
+'			"  -a" + "~n" +
+'			"  -c" + "~n" +
+'			"  -l" + "~n" +
+'			"  -t" + "~n" +
 Function Main()
 
 	'stdlib.plugins.libc.fflush(stdlib.plugins.libc.stdout)
