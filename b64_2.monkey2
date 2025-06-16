@@ -219,6 +219,7 @@ Function DecodeBase64_:DataBuffer( str:String, mode:EncodeBase64_Modes_=EncodeBa
 	' Remove line breaks and delimiters for RFC1421 and RFC2045 modes
 	If mode = EncodeBase64_Modes_.RFC1421 Or mode = EncodeBase64_Modes_.RFC2045 Or mode = EncodeBase64_Modes_.RFC9580
 		str = str.Replace(delimiter, "")
+		str = str.Replace(" ", "")
 	End
 
 	' Initialize decoding table if needed
@@ -236,8 +237,8 @@ Function DecodeBase64_:DataBuffer( str:String, mode:EncodeBase64_Modes_=EncodeBa
 	While i < str.Length
 		Local c := str[i]
 		If c < 0 Or c >= decode.Length Or decode[c] = -1
-			' Skip non-alphabet characters for RFC1421 and RFC2045
-			If mode = EncodeBase64_Modes_.RFC1421 Or mode = EncodeBase64_Modes_.RFC2045
+			' Skip non-alphabet characters for RFC2045
+			If mode = EncodeBase64_Modes_.RFC2045 Or mode = EncodeBase64_Modes_.RFC1421 Or mode = EncodeBase64_Modes_.RFC9580
 				i += 1
 				Continue
 			ElseIf c = CHAR_EQUALS
@@ -263,6 +264,11 @@ Function DecodeBase64_:DataBuffer( str:String, mode:EncodeBase64_Modes_=EncodeBa
 	' Remove fake checksum for RFC1421 and RFC9580 modes
 	If mode = EncodeBase64_Modes_.RFC1421 Or mode = EncodeBase64_Modes_.RFC9580
 		SkipFakeChecksum( Varptr(buf), Varptr(mode) )
+	End
+
+	' Validate decoded length for noisy input
+	If buf.Length < 1
+		Print "Decoded buffer length mismatch"
 	End
 
 	Print "decoded: "+ToString( Varptr(buf) )
@@ -847,6 +853,10 @@ Function Main()
 			Print EncodeBase64_ModeToString(mode)
 
 			For Local p:=0 Until pads.Length
+				
+				Print "----------------------------"
+				Print "pad test: "+p
+				
 				Local pad:=pads[p]
 
 				'Test with/without line length (where supported)
@@ -856,25 +866,25 @@ Function Main()
 				Local encoded:=EncodeBase64_( data, mode, pad, lnlength )
 				Local decoded:=DecodeBase64_( encoded, mode, pad, lnlength )
 
-'				If data.Length<>decoded.Length
-'					Print "Fail: mode="+EncodeBase64_ModeToString(mode)+", pad="+pad+", len="+data.Length+" -> "+decoded.Length
-'					Return
-'				End
-
-'				If stdlib.plugins.libc.memcmp( data.Data, decoded.Data, data.Length )
-'					Print "Fail: mode="+EncodeBase64_ModeToString(mode)+", pad="+pad+", data mismatch"
-'					Return
-'				End
+				If data.Length<>decoded.Length
+					Print "Fail A: mode="+EncodeBase64_ModeToString(mode)+", pad="+pad+", len="+data.Length+" -> "+decoded.Length
+					Return
+				End
+'
+				If stdlib.plugins.libc.memcmp( data.Data, decoded.Data, data.Length )
+					Print "Fail B: mode="+EncodeBase64_ModeToString(mode)+", pad="+pad+", data mismatch"
+					Return
+				End
 
 				' Test decode robustness: add random line breaks/spaces (RFC2045, RFC1421, RFC9580, RFC2152)
 				'If mode=EncodeBase64_Modes_.RFC2045 Or mode=EncodeBase64_Modes_.RFC1421 Or mode=EncodeBase64_Modes_.RFC9580 Or mode=EncodeBase64_Modes_.
 				If mode=EncodeBase64_Modes_.RFC2045
 					Local noisy:=InjectNoise(encoded)
 					Local decoded2:=DecodeBase64_( noisy, mode, pad, lnlength )
-'					If data.Length<>decoded2.Length
-'						Print "Fail: mode="+EncodeBase64_ModeToString(mode)+" (noisy), pad="+pad+", len mismatch"
-'						Return
-'					End
+					If data.Length<>decoded2.Length
+						Print "Fail C: mode="+EncodeBase64_ModeToString(mode)+" (noisy), pad="+pad+", len mismatch"
+						Return
+					End
 					If stdlib.plugins.libc.memcmp( data.Data, decoded2.Data, data.Length )
 						Print "Fail: mode="+EncodeBase64_ModeToString(mode)+" (noisy), pad="+pad+", data mismatch"
 						Print "data: "+data.Length
