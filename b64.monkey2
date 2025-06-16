@@ -292,6 +292,11 @@ Function EncodeBase64_:String( 	data:UByte Ptr,length:Int,
 	
 	End
 	
+	' Inject fake checksum for RFC1421 and RFC9580
+	If mode = EncodeBase64_Modes_.RFC1421 Or mode = EncodeBase64_Modes_.RFC9580
+		FakeChecksumData( Varptr(buf), Varptr(mode) )
+	End
+		
 	Return String.FromCString( buf.Data.Data,buf.Length )
 End
 
@@ -388,6 +393,11 @@ Function DecodeBase64_:DataBuffer( 	str:String,
 		If j=1 Print "Base64 decode error"
 		If j>1 buf.Add( tmp[0] Shl 2 | (tmp[1] & $30) Shr 4)
 		If j>2 buf.Add( (tmp[1] & $0f) Shl 4 | (tmp[2] & $3c) Shr 2)
+	End
+
+	' Remove fake checksum for RFC1421 and RFC9580
+	If mode = EncodeBase64_Modes_.RFC1421 Or mode = EncodeBase64_Modes_.RFC9580
+		SkipFakeChecksum( Varptr(buf), Varptr(mode) )
 	End
 	
 	Local data:=New DataBuffer( buf.Length )
@@ -535,6 +545,27 @@ Function FakeChecksumData( buf:Stack<UByte> Ptr, mode:EncodeBase64_Modes_ Ptr )
 		buf[0].Add( 0 ) ' Append fake checksum (all zeros)
 	End
 End
+
+#Rem monkeydoc hidden 
+Temporary fake checksum removal routine for DecodeBase64_.
+#End
+Function SkipFakeChecksum:Void( buf:Stack<UByte> Ptr, mode:EncodeBase64_Modes_ Ptr )
+	Local checksumBytes:Int
+	Select mode[0]
+		Case EncodeBase64_Modes_.RFC1421
+			checksumBytes = 3
+		Case EncodeBase64_Modes_.RFC9580
+			checksumBytes = 4
+		Default
+			Return
+	End
+	' Remove checksum bytes
+	For Local i:=0 Until checksumBytes
+		If buf[0].Length > 0 Then buf[0].Pop()
+	End
+End
+
+'==================================================================================== TEST UNIT
 
 'Injects line breaks and spaces at random positions to test decoder robustness
 Function InjectNoise:String(str:String)
