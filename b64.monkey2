@@ -39,7 +39,7 @@ but retained the same bitwise and loop logic from the public domain sources.
 - Adds full mode support for all common RFCs and cryptographic use-cases (PEM, MIME, IMAP, JWT, SRP, PQC/9580, UTF-7)
 - Implements line wrapping and multi-character delimiters
 - Adds flexible padding handling
-- Defines extensible and explicit `EncodeBase64Modes`
+- Defines extensible and explicit `EncodeBase64_Modes`
 - Includes a framework for checksum support (CRC-24, CRC32)
 - Refactors all code for idiomatic Monkey2/Wonkey style, block structure, and doc clarity
 - Provides extensive technical documentation and commentary
@@ -129,7 +129,7 @@ Using stdlib..
 
 Public
 
-#rem monkeydoc The EncodeBase64Modes are used with the Base64 function.
+#rem monkeydoc The EncodeBase64_Modes are used with the Base64 function.
 
 | Mode        | encode[62] | encode[63] | Padding | Line Length | Notes                  |
 |-------------|------------|------------|---------|-------------|------------------------|
@@ -215,7 +215,7 @@ Definitions:
 					Used in modern PQC PEMs (post-quantum certs, keys)
 
 #End
-Enum EncodeBase64Modes	
+Enum EncodeBase64_Modes	
 	Standard	
 	URLsafe
 	SRP
@@ -228,20 +228,20 @@ Enum EncodeBase64Modes
 	RFC9580
 End 
 
-#Rem monkeydoc Convert EncodeBase64Modes value to string for error reporting
+#Rem monkeydoc Convert EncodeBase64_Modes value to string for error reporting
 #End
-Function EncodeBase64ModeToString:String( mode:EncodeBase64Modes )
+Function EncodeBase64_ModeToString_:String( mode:EncodeBase64_Modes )
 	Select mode
-		Case EncodeBase64Modes.Standard		Return "Standard"
-		Case EncodeBase64Modes.URLsafe		Return "URLsafe"
-		Case EncodeBase64Modes.SRP			Return "SRP"
-		Case EncodeBase64Modes.RFC1421 		Return "RFC1421"
-		Case EncodeBase64Modes.RFC2045		Return "RFC2045"
-		Case EncodeBase64Modes.RFC2152		Return "RFC2152"
-		Case EncodeBase64Modes.RFC3501		Return "RFC3501"
-		Case EncodeBase64Modes.RFC4648_4	Return "RFC4648_4"
-		Case EncodeBase64Modes.RFC4648_5	Return "RFC4648_5"
-		Case EncodeBase64Modes.RFC9580		Return "RFC9580"
+		Case EncodeBase64_Modes.Standard		Return "Standard"
+		Case EncodeBase64_Modes.URLsafe		Return "URLsafe"
+		Case EncodeBase64_Modes.SRP			Return "SRP"
+		Case EncodeBase64_Modes.RFC1421 		Return "RFC1421"
+		Case EncodeBase64_Modes.RFC2045		Return "RFC2045"
+		Case EncodeBase64_Modes.RFC2152		Return "RFC2152"
+		Case EncodeBase64_Modes.RFC3501		Return "RFC3501"
+		Case EncodeBase64_Modes.RFC4648_4	Return "RFC4648_4"
+		Case EncodeBase64_Modes.RFC4648_5	Return "RFC4648_5"
+		Case EncodeBase64_Modes.RFC9580		Return "RFC9580"
 	End
 	Return "Unknown"
 End
@@ -283,8 +283,8 @@ either for formatting, email transmission, or as accidental noise.
 | LF     | `"~n"`                | 10                | Line Feed, Unix style               |
 | CRLF   | `"~r~n"`              | 13, 10            | Carriage Return + Line Feed, DOS/Win|
 #end
-Function EncodeBase64:String( 	data:UByte Ptr,length:Int,
-								mode:EncodeBase64Modes=EncodeBase64Modes.Standard,
+Function EncodeBase64_:String( 	data:UByte Ptr,length:Int,
+								mode:EncodeBase64_Modes=EncodeBase64_Modes.Standard,
 								pad:Bool=True, 				'Used only for URLsafe and RFC4648_5
 								lnlength:UInt=Null,	 		'Very optional but can be overriden in some cases
 								delimiter:String="~r~n"	)	'For Line wrapping (RFC2045, RFC1421, RFC9580)
@@ -297,11 +297,11 @@ Function EncodeBase64:String( 	data:UByte Ptr,length:Int,
 	Local delimLen:=0
 	
 	'Set mode-specific chars and options
-	Base64Setup(Varptr(mode), Varptr(pad), Varptr(lnlength), Varptr(separator), Varptr(charDelim[0]), Varptr(delimiter), Varptr(nonEncodingChar), Varptr(delimLen))
+	Base64Setup_(Varptr(mode), Varptr(pad), Varptr(lnlength), Varptr(separator), Varptr(charDelim[0]), Varptr(delimiter), Varptr(nonEncodingChar), Varptr(delimLen))
 	
 	Local buf:=New Stack<UByte>,tmp:=New UByte[3],i:=0,j:=0
 	
-	If mode=EncodeBase64Modes.RFC2045 Or mode=EncodeBase64Modes.RFC1421 Or mode=EncodeBase64Modes.RFC9580
+	If mode=EncodeBase64_Modes.RFC2045 Or mode=EncodeBase64_Modes.RFC1421 Or mode=EncodeBase64_Modes.RFC9580
 		
 		'Line wrapping version (RFC2045, RFC1421, RFC9580)
 		Local lineCount:=0
@@ -392,13 +392,13 @@ End
 #rem monkeydoc Encode binary data to base64 text.
 #end
 
-Function EncodeBase64:String( 	data:DataBuffer,
-								mode:EncodeBase64Modes=EncodeBase64Modes.Standard,
+Function EncodeBase64_:String( 	data:DataBuffer,
+								mode:EncodeBase64_Modes=EncodeBase64_Modes.Standard,
 								pad:Bool=True, 				'Used only for URLsafe and RFC4648_5
 								lnlength:UInt=Null,	 		'Very optional but can be overriden in some cases
 								delimiter:String="~r~n"	)	'For Line wrapping (RFC2045, RFC1421, RFC9580)
 	
-	Return EncodeBase64( data.Data,data.Length,mode,pad,lnlength,delimiter )
+	Return EncodeBase64_( data.Data,data.Length,mode,pad,lnlength,delimiter )
 End
 
 #rem monkeydoc Decode base64 text to binary data.
@@ -412,7 +412,7 @@ End
 | URL-safe  | Optional                      |
 #end
 Function DecodeBase64_:DataBuffer( 	str:String,
-									mode:EncodeBase64Modes=EncodeBase64Modes.Standard,
+									mode:EncodeBase64_Modes=EncodeBase64_Modes.Standard,
 									pad:Bool=True,
 									lnlength:UInt=Null,
 									delimiter:String="~r~n"	 )
@@ -429,7 +429,7 @@ Function DecodeBase64_:DataBuffer( 	str:String,
 	Local delimLen:=0
 
 	' Remove all CR and LF (linebreaks) for RFC1421, RFC2045, and RFC9580
-	If mode=EncodeBase64Modes.RFC1421 Or mode=EncodeBase64Modes.RFC2045 Or mode=EncodeBase64Modes.RFC9580 Or mode=EncodeBase64Modes.RFC2152
+	If mode=EncodeBase64_Modes.RFC1421 Or mode=EncodeBase64_Modes.RFC2045 Or mode=EncodeBase64_Modes.RFC9580 Or mode=EncodeBase64_Modes.RFC2152
 	'I know, it's brutal
 		str = str.Replace(delimiter,"")
 		str = str.Replace("10","")'
@@ -439,7 +439,7 @@ Function DecodeBase64_:DataBuffer( 	str:String,
 	End
 	
 	'And then set mode-specific chars
-	Base64Setup(Varptr(mode), Varptr(pad), Varptr(lnlength), Varptr(separator), Varptr(charDelim[0]), Varptr(delimiter), Varptr(nonEncodingChar), Varptr(delimLen))
+	Base64Setup_(Varptr(mode), Varptr(pad), Varptr(lnlength), Varptr(separator), Varptr(charDelim[0]), Varptr(delimiter), Varptr(nonEncodingChar), Varptr(delimLen))
 	
 	If Not decode
 		decode=New Int[128]
@@ -524,7 +524,7 @@ End
 #rem monkeydoc hidden 
 Setup for mode-specific chars and options
 #end
-Function Base64Setup( 	mode:EncodeBase64Modes Ptr, 
+Function Base64Setup_( 	mode:EncodeBase64_Modes Ptr, 
 						pad:Bool Ptr, 
 						lnlength:UInt Ptr, 
 						separator:Bool Ptr, 
@@ -541,7 +541,7 @@ Function Base64Setup( 	mode:EncodeBase64Modes Ptr,
 		encode[63]=47
 	End 
 	
-	If mode[0]=EncodeBase64Modes.RFC9580 ' <---- DO NOT WORKS
+	If mode[0]=EncodeBase64_Modes.RFC9580 ' <---- DO NOT WORKS
 		'Checksum
 		separator[0]=True
 		Local arr:=StringToCharArray(delimiter[0])
@@ -555,7 +555,7 @@ Function Base64Setup( 	mode:EncodeBase64Modes Ptr,
 		End
 		lnlength[0]=lnlength[0]=Null ? lnlength[0]=76 Else ( lnlength[0]>76 ? lnlength[0]=76 Else lnlength[0] )
 		pad[0]=True
-	Elseif mode[0]=EncodeBase64Modes.RFC1421 ' <---- DO NOT WORKS
+	Elseif mode[0]=EncodeBase64_Modes.RFC1421 ' <---- DO NOT WORKS
 		
 		separator[0]=True
 		Local arr:=StringToCharArray(delimiter[0])
@@ -570,7 +570,7 @@ Function Base64Setup( 	mode:EncodeBase64Modes Ptr,
 		lnlength[0]=lnlength[0]=Null ? lnlength[0]=64 Else ( lnlength[0]>64 ? lnlength[0]=64 Else lnlength[0] )
 		'Checksum
 		pad[0]=True
-	Elseif mode[0]=EncodeBase64Modes.RFC2045 ' <---- DO NOT WORKS
+	Elseif mode[0]=EncodeBase64_Modes.RFC2045 ' <---- DO NOT WORKS
 		
 		separator[0]=True
 		Local arr:=StringToCharArray(delimiter[0])
@@ -584,17 +584,17 @@ Function Base64Setup( 	mode:EncodeBase64Modes Ptr,
 		End
 		lnlength[0]=lnlength[0]=Null ? lnlength[0]=76 Else ( lnlength[0]>76 ? lnlength[0]=76 Else lnlength[0] )
 		pad[0]=False
-	Elseif mode[0]=EncodeBase64Modes.RFC2152
+	Elseif mode[0]=EncodeBase64_Modes.RFC2152
 		
 		pad[0]=False
 		nonEncodingChar[0]=True
-	Elseif mode[0]=EncodeBase64Modes.RFC3501
+	Elseif mode[0]=EncodeBase64_Modes.RFC3501
 		encode[62]=43
 		encode[63]=44
 		pad[0]=False
-	Elseif mode[0]=EncodeBase64Modes.RFC4648_4
+	Elseif mode[0]=EncodeBase64_Modes.RFC4648_4
 		pad[0]=False
-	Elseif mode[0]=EncodeBase64Modes.SRP
+	Elseif mode[0]=EncodeBase64_Modes.SRP
 		
 		'SRP: 0-9, A-Z, a-z, ., /
 		For Local i:=0 Until 10         ' 0-9
@@ -611,12 +611,12 @@ Function Base64Setup( 	mode:EncodeBase64Modes Ptr,
 		separator[0]=False
 		pad[0]=False					' RFC for SRP, typically no padding
 		normalCharBaseDirty=True
-	Elseif mode[0]=EncodeBase64Modes.URLsafe Or mode[0]=EncodeBase64Modes.RFC4648_5
+	Elseif mode[0]=EncodeBase64_Modes.URLsafe Or mode[0]=EncodeBase64_Modes.RFC4648_5
 		
 		encode[62]=45
 		encode[63]=95
 		'pad=optional
-	Else 'mode=EncodeBase64Modes.Standard
+	Else 'mode=EncodeBase64_Modes.Standard
 		
 		pad[0]=True
 	End
@@ -651,17 +651,17 @@ Function Main()
 	Local minLen:=1
 	Local maxLen:=256
 
-	Local modes:=New EncodeBase64Modes[](
-		EncodeBase64Modes.Standard,
-		EncodeBase64Modes.URLsafe,
-		EncodeBase64Modes.SRP,
-		EncodeBase64Modes.RFC1421,
-		EncodeBase64Modes.RFC2045,
-		EncodeBase64Modes.RFC2152,
-		EncodeBase64Modes.RFC3501,
-		EncodeBase64Modes.RFC4648_4,
-		EncodeBase64Modes.RFC4648_5,
-		EncodeBase64Modes.RFC9580	)
+	Local modes:=New EncodeBase64_Modes[](
+		EncodeBase64_Modes.Standard,
+		EncodeBase64_Modes.URLsafe,
+		EncodeBase64_Modes.SRP,
+		EncodeBase64_Modes.RFC1421,
+		EncodeBase64_Modes.RFC2045,
+		EncodeBase64_Modes.RFC2152,
+		EncodeBase64_Modes.RFC3501,
+		EncodeBase64_Modes.RFC4648_4,
+		EncodeBase64_Modes.RFC4648_5,
+		EncodeBase64_Modes.RFC9580	)
 
 	For Local t:=0 Until numTests
 		'Random buffer length per test
@@ -677,7 +677,7 @@ Function Main()
 			'Test with/without explicit padding where possible
 			Local pads:=New Bool[](1)
 			Select mode
-				Case EncodeBase64Modes.URLsafe, EncodeBase64Modes.RFC4648_5
+				Case EncodeBase64_Modes.URLsafe, EncodeBase64_Modes.RFC4648_5
 					pads=New Bool[](2)
 					pads[0]=True
 					pads[1]=False
@@ -685,39 +685,39 @@ Function Main()
 					pads[0]=True
 			End
 
-			Print EncodeBase64ModeToString(mode)
+			Print EncodeBase64_ModeToString_(mode)
 
 			For Local p:=0 Until pads.Length
 				Local pad:=pads[p]
 
 				'Test with/without line length (where supported)
-				Local testLn:Bool=(mode=EncodeBase64Modes.RFC2045 Or mode=EncodeBase64Modes.RFC1421 Or mode=EncodeBase64Modes.RFC9580)
+				Local testLn:Bool=(mode=EncodeBase64_Modes.RFC2045 Or mode=EncodeBase64_Modes.RFC1421 Or mode=EncodeBase64_Modes.RFC9580)
 				Local lnlength:=testLn ? 76 Else Null
 
-				Local encoded:=EncodeBase64( data, mode, pad, lnlength )
+				Local encoded:=EncodeBase64_( data, mode, pad, lnlength )
 				Local decoded:=DecodeBase64_( encoded, mode, pad, lnlength )
 
 '				If data.Length<>decoded.Length
-'					Print "Fail: mode="+EncodeBase64ModeToString(mode)+", pad="+pad+", len="+data.Length+" -> "+decoded.Length
+'					Print "Fail: mode="+EncodeBase64_ModeToString_(mode)+", pad="+pad+", len="+data.Length+" -> "+decoded.Length
 '					Return
 '				End
 
 '				If stdlib.plugins.libc.memcmp( data.Data, decoded.Data, data.Length )
-'					Print "Fail: mode="+EncodeBase64ModeToString(mode)+", pad="+pad+", data mismatch"
+'					Print "Fail: mode="+EncodeBase64_ModeToString_(mode)+", pad="+pad+", data mismatch"
 '					Return
 '				End
 
 				' Test decode robustness: add random line breaks/spaces (RFC2045, RFC1421, RFC9580, RFC2152)
-				'If mode=EncodeBase64Modes.RFC2045 Or mode=EncodeBase64Modes.RFC1421 Or mode=EncodeBase64Modes.RFC9580 Or mode=EncodeBase64Modes.
-				If mode=EncodeBase64Modes.RFC2045
+				'If mode=EncodeBase64_Modes.RFC2045 Or mode=EncodeBase64_Modes.RFC1421 Or mode=EncodeBase64_Modes.RFC9580 Or mode=EncodeBase64_Modes.
+				If mode=EncodeBase64_Modes.RFC2045
 					Local noisy:=InjectNoise(encoded)
 					Local decoded2:=DecodeBase64_( noisy, mode, pad, lnlength )
 '					If data.Length<>decoded2.Length
-'						Print "Fail: mode="+EncodeBase64ModeToString(mode)+" (noisy), pad="+pad+", len mismatch"
+'						Print "Fail: mode="+EncodeBase64_ModeToString_(mode)+" (noisy), pad="+pad+", len mismatch"
 '						Return
 '					End
 					If stdlib.plugins.libc.memcmp( data.Data, decoded2.Data, data.Length )
-						Print "Fail: mode="+EncodeBase64ModeToString(mode)+" (noisy), pad="+pad+", data mismatch"
+						Print "Fail: mode="+EncodeBase64_ModeToString_(mode)+" (noisy), pad="+pad+", data mismatch"
 						Print "data: "+data.Length
 						Print "encoded: "+encoded.Length
 						Print "noisy: "+noisy.Length
