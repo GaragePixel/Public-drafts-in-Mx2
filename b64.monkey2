@@ -195,6 +195,8 @@ Function EncodeBase64_:String( 	data:UByte Ptr,length:Int,
 								lnlength:UInt=Null,	 		'Very optional but can be overriden in some cases
 								delimiter:String="~r~n"	)	'For Line wrapping (RFC2045, RFC1421, RFC9580)
 
+	Print "encode: "+CharToString( data )
+
 	'Alphabet, padding, line-wrapping, non-encoding char skipping is in one function.
 
 	Local nonEncodingChar:=False 
@@ -296,6 +298,8 @@ Function EncodeBase64_:String( 	data:UByte Ptr,length:Int,
 	If mode = EncodeBase64_Modes_.RFC1421 Or mode = EncodeBase64_Modes_.RFC9580
 		FakeChecksumData( Varptr(buf), Varptr(mode) )
 	End
+	
+	Print "encoded: "+ToString( Varptr(buf) )
 		
 	Return String.FromCString( buf.Data.Data,buf.Length )
 End
@@ -330,6 +334,8 @@ Function DecodeBase64_:DataBuffer( 	str:String,
 	'- Original code will abort or break on any unexpected char.
 	'- Now (iDkP's): Ignore (skip) any char not part of the base64 alphabet or "=". 
 	'This makes them compatible with all real-world usages.
+	
+	Print "str to decode: ~n"+str.Replace("~n"," ")
 	
 	Global decode:Int[]
 
@@ -399,6 +405,9 @@ Function DecodeBase64_:DataBuffer( 	str:String,
 	If mode = EncodeBase64_Modes_.RFC1421 Or mode = EncodeBase64_Modes_.RFC9580
 		SkipFakeChecksum( Varptr(buf), Varptr(mode) )
 	End
+	
+	Print "decoded: "+ToString( Varptr(buf) )
+	Print "decoded: "+CharToString( Varptr(buf) )
 	
 	Local data:=New DataBuffer( buf.Length )
 	
@@ -532,38 +541,101 @@ End
 Temporary fake checksum injection and comparison routines added for RFC1421 and RFC9580.
 #End
 Function FakeChecksumData( buf:Stack<UByte> Ptr, mode:EncodeBase64_Modes_ Ptr )
-	Local checksumBytes:Int
+	Print "FakeChecksumData for this mode: "+EncodeBase64_ModeToString(mode[0])
+	Local checksumBytes:UByte
 	Select mode[0]
 		Case EncodeBase64_Modes_.RFC1421
+			Print "wants inject 3 bytes"
 			checksumBytes = 3
 		Case EncodeBase64_Modes_.RFC9580
+			Print "wants inject 4 bytes"
 			checksumBytes = 4
 		Default
 			Return
 	End
 	For Local i:=0 Until checksumBytes
+		Print "1 injected bytes"
 		buf[0].Add( 0 ) ' Append fake checksum (all zeros)
 	End
+	
+	Print "faked checksumed buf: "+ToString( buf )
 End
 
 #Rem monkeydoc hidden 
 Temporary fake checksum removal routine for DecodeBase64_.
 #End
 Function SkipFakeChecksum:Void( buf:Stack<UByte> Ptr, mode:EncodeBase64_Modes_ Ptr )
-	Local checksumBytes:Int
+	Print "SkipFakeChecksum for this mode: "+EncodeBase64_ModeToString(mode[0])
+	Local checksumBytes:UByte
 	Select mode[0]
 		Case EncodeBase64_Modes_.RFC1421
+			Print "checksumBytes set to 3"
 			checksumBytes = 3
 		Case EncodeBase64_Modes_.RFC9580
+			Print "checksumBytes set to 4"
 			checksumBytes = 4
 		Default
+			Print "bad mode, return"
 			Return
 	End
 	' Remove checksum bytes
 	For Local i:=0 Until checksumBytes
 		If buf[0].Length > 0 Then buf[0].Pop()
+		Print "Byte "+i+" was pop"
 	End
+	
+	Print "skipped decoded buf: "+ToString( buf )
 End
+
+#Rem monkeydoc pro Gets a string from a collection
+The custom type T must implements an operator To.String
+#end
+Function ToString<T>:String( c:Stack<T> Ptr )
+	Local ctn:String
+	For Local i:=Eachin c[0]
+		ctn+=i
+	End 
+	Return ctn
+End 
+
+#Rem monkeydoc pro Gets a string from an array
+The custom type T must implements an operator To.String
+#end 
+Function ToString<T>:String( c:T Ptr )
+	Local ctn:String
+	Local i:Int=0
+	While c[i]
+		i+=1
+		ctn+=c[i]
+	Wend
+	Return ctn
+End 
+
+#Rem monkeydoc pro Gets a string of chars
+The custom type T must implements an operator To.String
+#end 
+Function CharToString<T>:String( c:Stack<T> Ptr )
+	Local ctn:String
+	Local i:Int=0
+	While c[0][i]
+		i+=1
+		ctn+=String.FromChar(c[0][i])
+	Wend
+	Return ctn
+End 
+
+#Rem monkeydoc pro Gets a string of chars from a custom type
+The custom type T must implements an operator To.String
+#end 
+Function CharToString<T>:String( c:T Ptr )
+	Local ctn:String
+	Local i:Int=0
+	While c[i]
+		i+=1
+		ctn+=String.FromChar(c[i])
+	Wend
+	Return ctn
+End 
 
 '==================================================================================== TEST UNIT
 
